@@ -15,6 +15,10 @@ namespace Library.DataContext
         {
             Database.Connection.ConnectionString = "Server=LAPTOP-CF7VKITM;Database=LibraryAutomation;uid=sa;password=1";
         }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
         public DbSet<Member> members { get; set; }
         public DbSet<Admin> admins { get; set; }
         public DbSet<Book> books { get; set; }
