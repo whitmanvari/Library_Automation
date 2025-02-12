@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Model.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,75 +7,26 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class User
+    public class User: Person
     {
-        private int _id;
-        private string _name;
-        private string _surname;
-        private DateTime _birthDate;
-        private string _email;
-        private string _password;
+        public override string Password { get; set; }
+        public override string Phone { get; set; }
+        public override string Address { get; set; }
+        public override int Id { get; set; }
+        public override string Name { get; set; }
+        public override string Surname { get; set; }
+        public override string Email { get; set; }
 
-        //Id is read-only.
-        public int Id
+        //Birth date value cannot be in the future.
+        public override DateTime BirthDate
         {
-            get { return _id; }
-            private set
+            get => BirthDate;
+            set 
             {
-                if (value < 0)
+                if(BirthDate < DateTime.Now)
                 {
-                    throw new ArgumentException("Id cannot be a negative value!");
-                    _id = value;
+                    throw new ArgumentException("Birth date cannot be in the future!");
                 }
             }
-        }
-        public string Name
-        {
-            get { return _name; }
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value) && string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException("Name cannot be an empty value!");
-                    _name = value.Trim();
-                }
-            }
-        }
-        public string Surname
-        {
-            get { return _surname; }
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value) && string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException("Surname cannot be an empty value!");
-                    _surname = value.Trim();
-                }
-            }
-        }
-        //Birth-Date cannot be setted in the future.
-        public DateTime BirthDate
-        {
-            get { return _birthDate; } 
-            set
-            {
-                if (_birthDate < DateTime.Now)
-                {
-                    throw new ArgumentException("Birth-Date cannot be in the future!");
-                    _birthDate = value;
-                }
-            }
-        }
-        public string Email
-        {
-            get { return _email; }
-            set { _email = value; }
-        }
-        public string Password
-        {
-            get { return _password; }
-            set { _password = value; }
-        }
-
     }
 }
