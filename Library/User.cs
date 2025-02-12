@@ -14,5 +14,19 @@ namespace Library
         private DateTime _birthDate;
         private string _email;
         private string _password;
+
+        //Id is read-only.
+        public int Id
+        {
+            get { return _id; }
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Id cannot be a negative value!");
+                    _id = value;
+                }
+            }
+        }
     }
 }
