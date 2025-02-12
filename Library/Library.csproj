@@ -56,7 +56,9 @@
     <Compile Include="Model\Abstract\IRepository.cs" />
     <Compile Include="Model\Abstract\Person.cs" />
     <Compile Include="Model\Concrete\Book.cs" />
+    <Compile Include="Model\Concrete\BookRepository.cs" />
     <Compile Include="Model\Concrete\Member.cs" />
+    <Compile Include="Model\Concrete\MemberRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Concrete\Admin.cs" />
