@@ -19,8 +19,8 @@ namespace Library.DataContext
         {
             base.OnModelCreating(modelBuilder);
         }
-        public DbSet<Member> members { get; set; }
-        public DbSet<Admin> admins { get; set; }
-        public DbSet<Book> books { get; set; }
+        public DbSet<Member> member { get; set; }
+        public DbSet<Admin> admin { get; set; }
+        public DbSet<Book> book { get; set; }
     }
 }
