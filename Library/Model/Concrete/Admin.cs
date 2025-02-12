@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class User : Person
+    public class Admin : Person
     {
-        //User information.
+        //Admin information.
         public string Role { get; set; }
         public override string Password { get; set; }
         public override string Phone { get; set; }
