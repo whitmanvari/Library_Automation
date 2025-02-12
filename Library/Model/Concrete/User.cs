@@ -9,6 +9,7 @@ namespace Library
 {
     public class User : Person
     {
+        //User information.
         public string Role { get; set; }
         public override string Password { get; set; }
         public override string Phone { get; set; }

@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Model\Abstract\IRepository.cs" />
     <Compile Include="Model\Abstract\Person.cs" />
+    <Compile Include="Model\Concrete\Book.cs" />
     <Compile Include="Model\Concrete\Member.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

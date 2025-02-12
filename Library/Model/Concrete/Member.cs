@@ -9,6 +9,7 @@ namespace Library.Model.Concrete
 {
     public class Member : Person
     {
+        //Member information.
         public override int Id { get; set; }
         public override string Name { get; set; }
         public override string Surname { get; set; }
