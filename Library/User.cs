@@ -52,6 +52,19 @@ namespace Library
                 }
             }
         }
+        //Birth-Date cannot be setted in the future.
+        public DateTime BirthDate
+        {
+            get { return _birthDate; } 
+            set
+            {
+                if (_birthDate < DateTime.Now)
+                {
+                    throw new ArgumentException("Birth-Date cannot be in the future!");
+                    _birthDate = value;
+                }
+            }
+        }
 
     }
 }
