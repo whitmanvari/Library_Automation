@@ -66,11 +66,35 @@
     <Compile Include="View\Presentation\Admin_MainMenu.Designer.cs">
       <DependentUpon>Admin_MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Presentation\BookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Presentation\BookList.Designer.cs">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Presentation\Loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Presentation\Loan.Designer.cs">
+      <DependentUpon>Loan.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Presentation\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Presentation\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Presentation\MemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Presentation\MemberList.Designer.cs">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Presentation\MemberUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Presentation\MemberUpdate.Designer.cs">
+      <DependentUpon>MemberUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Presentation\Member_MainMenu.cs">
       <SubType>Form</SubType>
@@ -78,12 +102,17 @@
     <Compile Include="View\Presentation\Member_MainMenu.Designer.cs">
       <DependentUpon>Member_MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Presentation\Presentation.cs" />
     <Compile Include="View\Presentation\Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Presentation\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Presentation\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Presentation\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
