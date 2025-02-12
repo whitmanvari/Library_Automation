@@ -28,5 +28,18 @@ namespace Library
                 }
             }
         }
+        public string Name
+        { 
+            get { return _name; }
+            set 
+            { 
+                if (string.IsNullOrWhiteSpace(value) && string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException("Name cannot be an empty value!");
+                    _name = value.Trim();
+                }
+            }
+        }
+
     }
 }
