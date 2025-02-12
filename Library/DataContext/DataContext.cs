@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Library.DataContext
 {
-    public class DataContext
+    public class DataContext: DbContext
     {
         //Mssql connection string will be add.
+        public DataContext()
+        {
+            
+        }
     }
 }
