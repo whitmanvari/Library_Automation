@@ -63,6 +63,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202502122304254_MyFirstMigration.cs" />
+    <Compile Include="Migrations\202502122304254_MyFirstMigration.Designer.cs">
+      <DependentUpon>202502122304254_MyFirstMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Abstract\IRepository.cs" />
     <Compile Include="Model\Abstract\Person.cs" />
     <Compile Include="Model\Concrete\Book.cs" />
@@ -126,6 +131,9 @@
     <Compile Include="View\Presentation\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Migrations\202502122304254_MyFirstMigration.resx">
+      <DependentUpon>202502122304254_MyFirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
