@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Model.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -12,7 +13,10 @@ namespace Library.DataContext
         //Mssql connection string will be add.
         public DataContext()
         {
-            Database.Connection.ConnectionString = "";
+            Database.Connection.ConnectionString = "Server=LAPTOP-CF7VKITM;Database=LibraryAutomation;uid=sa;password=1";
         }
+        public DbSet<Member> members { get; set; }
+        public DbSet<Admin> admins { get; set; }
+        public DbSet<Book> books { get; set; }
     }
 }
