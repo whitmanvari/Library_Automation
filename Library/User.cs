@@ -65,6 +65,16 @@ namespace Library
                 }
             }
         }
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; }
+        }
+        public string Password
+        {
+            get { return _password; }
+            set { _password = value; }
+        }
 
     }
 }
