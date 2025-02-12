@@ -17,6 +17,9 @@ namespace Library.DataContext
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Member>().ToTable("Member");
+            modelBuilder.Entity<Admin>().ToTable("Admin");
+            modelBuilder.Entity<Book>().ToTable("Book");
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Member> member { get; set; }

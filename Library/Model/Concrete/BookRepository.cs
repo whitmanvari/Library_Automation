@@ -8,9 +8,10 @@ namespace Library.Model.Concrete
 {
     public class BookRepository : IRepository<Book>
     {
+        
         public void Add(Book entity)
         {
-            throw new NotImplementedException();
+           
         }
 
         public void Delete(Book entity)
