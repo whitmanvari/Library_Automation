@@ -29,14 +29,26 @@ namespace Library
             }
         }
         public string Name
-        { 
+        {
             get { return _name; }
-            set 
-            { 
+            set
+            {
                 if (string.IsNullOrWhiteSpace(value) && string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentException("Name cannot be an empty value!");
                     _name = value.Trim();
+                }
+            }
+        }
+        public string Surname
+        {
+            get { return _surname; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value) && string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException("Surname cannot be an empty value!");
+                    _surname = value.Trim();
                 }
             }
         }
