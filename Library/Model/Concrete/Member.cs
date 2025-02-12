@@ -5,18 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library
+namespace Library.Model.Concrete
 {
-    public class User : Person
+    public class Member : Person
     {
-        public string Role { get; set; }
-        public override string Password { get; set; }
-        public override string Phone { get; set; }
-        public override string Address { get; set; }
         public override int Id { get; set; }
         public override string Name { get; set; }
         public override string Surname { get; set; }
         public override string Email { get; set; }
-
+        public override string Password { get; set; }
+        public override string Phone { get; set; }
+        public override string Address { get; set; }
     }
 }

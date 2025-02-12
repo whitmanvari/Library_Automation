@@ -11,8 +11,18 @@ namespace Library.Model.Abstract
         public abstract int Id { get; set; }
         public abstract string Name { get; set; }
         public abstract string Surname { get; set; }
+        public DateTime BirthDate 
+        { 
+            get => BirthDate;
+            set
+            {
+                if (BirthDate < DateTime.Now)
+                {
+                    throw new ArgumentException("Birth date cannot be in the future!");
+                }
+            }
+        }
         public abstract string Email { get; set; }
-        public abstract DateTime BirthDate { get; set; }
         public abstract string Password { get; set; }
         public abstract string Phone { get; set; }
         public abstract string Address { get; set; }
