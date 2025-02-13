@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label_Loan_signinPage = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -37,7 +37,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Plum;
-            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label_Loan_signinPage);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -45,15 +45,16 @@
             this.panel1.Size = new System.Drawing.Size(800, 41);
             this.panel1.TabIndex = 3;
             // 
-            // label19
+            // label_Loan_signinPage
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(729, 9);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 24);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Sign In";
+            this.label_Loan_signinPage.AutoSize = true;
+            this.label_Loan_signinPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Loan_signinPage.Location = new System.Drawing.Point(729, 9);
+            this.label_Loan_signinPage.Name = "label_Loan_signinPage";
+            this.label_Loan_signinPage.Size = new System.Drawing.Size(59, 24);
+            this.label_Loan_signinPage.TabIndex = 7;
+            this.label_Loan_signinPage.Text = "Sign In";
+            this.label_Loan_signinPage.Click += new System.EventHandler(this.label_Loan_signinPage_Click);
             // 
             // label_TitleLogin
             // 
@@ -83,7 +84,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label_Loan_signinPage;
         private System.Windows.Forms.Label label_TitleLogin;
     }
 }

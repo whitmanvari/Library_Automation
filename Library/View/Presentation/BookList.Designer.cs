@@ -43,7 +43,7 @@
             this.libraryAutomationDataSet = new Library.LibraryAutomationDataSet();
             this.booksTableAdapter = new Library.LibraryAutomationDataSetTableAdapters.BooksTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label_signin_BookList = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
@@ -143,7 +143,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Plum;
-            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label_signin_BookList);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -151,15 +151,16 @@
             this.panel1.Size = new System.Drawing.Size(942, 41);
             this.panel1.TabIndex = 3;
             // 
-            // label19
+            // label_signin_BookList
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(871, 13);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 24);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Sign In";
+            this.label_signin_BookList.AutoSize = true;
+            this.label_signin_BookList.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_signin_BookList.Location = new System.Drawing.Point(871, 13);
+            this.label_signin_BookList.Name = "label_signin_BookList";
+            this.label_signin_BookList.Size = new System.Drawing.Size(59, 24);
+            this.label_signin_BookList.TabIndex = 7;
+            this.label_signin_BookList.Text = "Sign In";
+            this.label_signin_BookList.Click += new System.EventHandler(this.label_signin_BookList_Click);
             // 
             // label_TitleLogin
             // 
@@ -207,7 +208,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bookGenreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bookDescriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label_signin_BookList;
         private System.Windows.Forms.Label label_TitleLogin;
     }
 }

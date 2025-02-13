@@ -23,5 +23,12 @@ namespace Library.View.Presentation
             this.booksTableAdapter.Fill(this.libraryAutomationDataSet.Books);
 
         }
+
+        private void label_signin_BookList_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

@@ -17,9 +17,12 @@ namespace Library.View.Presentation
             InitializeComponent();
         }
 
-        private void tabPage_AdminRegister_Click(object sender, EventArgs e)
-        {
 
+        private void label_Register_SignIn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

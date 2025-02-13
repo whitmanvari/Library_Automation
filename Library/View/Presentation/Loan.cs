@@ -16,5 +16,12 @@ namespace Library.View.Presentation
         {
             InitializeComponent();
         }
+
+        private void label_Loan_signinPage_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

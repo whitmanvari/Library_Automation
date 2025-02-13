@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.libraryAutomationDataSet4 = new Library.LibraryAutomationDataSet4();
-            this.membersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.membersTableAdapter = new Library.LibraryAutomationDataSet4TableAdapters.MembersTableAdapter();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,12 +37,15 @@
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.membershipDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birthDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryAutomationDataSet4 = new Library.LibraryAutomationDataSet4();
+            this.membersTableAdapter = new Library.LibraryAutomationDataSet4TableAdapters.MembersTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.label_MemberList_signIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet4)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,20 +66,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(744, 380);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // libraryAutomationDataSet4
-            // 
-            this.libraryAutomationDataSet4.DataSetName = "LibraryAutomationDataSet4";
-            this.libraryAutomationDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // membersBindingSource
-            // 
-            this.membersBindingSource.DataMember = "Members";
-            this.membersBindingSource.DataSource = this.libraryAutomationDataSet4;
-            // 
-            // membersTableAdapter
-            // 
-            this.membersTableAdapter.ClearBeforeFill = true;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -123,10 +109,24 @@
             this.birthDateDataGridViewTextBoxColumn.HeaderText = "BirthDate";
             this.birthDateDataGridViewTextBoxColumn.Name = "birthDateDataGridViewTextBoxColumn";
             // 
+            // membersBindingSource
+            // 
+            this.membersBindingSource.DataMember = "Members";
+            this.membersBindingSource.DataSource = this.libraryAutomationDataSet4;
+            // 
+            // libraryAutomationDataSet4
+            // 
+            this.libraryAutomationDataSet4.DataSetName = "LibraryAutomationDataSet4";
+            this.libraryAutomationDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // membersTableAdapter
+            // 
+            this.membersTableAdapter.ClearBeforeFill = true;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Plum;
-            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label_MemberList_signIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -134,15 +134,16 @@
             this.panel1.Size = new System.Drawing.Size(773, 41);
             this.panel1.TabIndex = 3;
             // 
-            // label19
+            // label_MemberList_signIn
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(697, 9);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 24);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Sign In";
+            this.label_MemberList_signIn.AutoSize = true;
+            this.label_MemberList_signIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberList_signIn.Location = new System.Drawing.Point(697, 9);
+            this.label_MemberList_signIn.Name = "label_MemberList_signIn";
+            this.label_MemberList_signIn.Size = new System.Drawing.Size(59, 24);
+            this.label_MemberList_signIn.TabIndex = 7;
+            this.label_MemberList_signIn.Text = "Sign In";
+            this.label_MemberList_signIn.Click += new System.EventHandler(this.label_MemberList_signIn_Click);
             // 
             // label_TitleLogin
             // 
@@ -166,8 +167,8 @@
             this.Text = "MemberList";
             this.Load += new System.EventHandler(this.MemberList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -188,7 +189,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn membershipDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn birthDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label_MemberList_signIn;
         private System.Windows.Forms.Label label_TitleLogin;
     }
 }

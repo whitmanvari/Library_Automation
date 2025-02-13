@@ -23,5 +23,12 @@ namespace Library.View.Presentation
             this.membersTableAdapter.Fill(this.libraryAutomationDataSet4.Members);
 
         }
+
+        private void label_MemberList_signIn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
