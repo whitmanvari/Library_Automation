@@ -37,6 +37,8 @@
             this.txt_AdminRole_Login = new System.Windows.Forms.TextBox();
             this.txt_AdminEmail_Login = new System.Windows.Forms.TextBox();
             this.txt_AdminPassword_Login = new System.Windows.Forms.TextBox();
+            this.button_Enter_LoginPage = new System.Windows.Forms.Button();
+            this.linkLabel_AdminLogin = new System.Windows.Forms.LinkLabel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +55,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.linkLabel_AdminLogin);
+            this.tabPage1.Controls.Add(this.button_Enter_LoginPage);
             this.tabPage1.Controls.Add(this.txt_AdminPassword_Login);
             this.tabPage1.Controls.Add(this.txt_AdminEmail_Login);
             this.tabPage1.Controls.Add(this.txt_AdminRole_Login);
@@ -81,7 +85,7 @@
             // 
             this.lbl_AdminRole_Login.AutoSize = true;
             this.lbl_AdminRole_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminRole_Login.Location = new System.Drawing.Point(69, 60);
+            this.lbl_AdminRole_Login.Location = new System.Drawing.Point(64, 55);
             this.lbl_AdminRole_Login.Name = "lbl_AdminRole_Login";
             this.lbl_AdminRole_Login.Size = new System.Drawing.Size(52, 25);
             this.lbl_AdminRole_Login.TabIndex = 0;
@@ -91,7 +95,7 @@
             // 
             this.lbl_AdminEmail_Login.AutoSize = true;
             this.lbl_AdminEmail_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminEmail_Login.Location = new System.Drawing.Point(69, 137);
+            this.lbl_AdminEmail_Login.Location = new System.Drawing.Point(64, 124);
             this.lbl_AdminEmail_Login.Name = "lbl_AdminEmail_Login";
             this.lbl_AdminEmail_Login.Size = new System.Drawing.Size(62, 25);
             this.lbl_AdminEmail_Login.TabIndex = 0;
@@ -101,7 +105,7 @@
             // 
             this.lbl_AdminPassword_Login.AutoSize = true;
             this.lbl_AdminPassword_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminPassword_Login.Location = new System.Drawing.Point(69, 207);
+            this.lbl_AdminPassword_Login.Location = new System.Drawing.Point(64, 196);
             this.lbl_AdminPassword_Login.Name = "lbl_AdminPassword_Login";
             this.lbl_AdminPassword_Login.Size = new System.Drawing.Size(95, 25);
             this.lbl_AdminPassword_Login.TabIndex = 0;
@@ -109,27 +113,51 @@
             // 
             // txt_AdminRole_Login
             // 
-            this.txt_AdminRole_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_AdminRole_Login.Location = new System.Drawing.Point(175, 52);
+            this.txt_AdminRole_Login.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_AdminRole_Login.Location = new System.Drawing.Point(171, 55);
             this.txt_AdminRole_Login.Name = "txt_AdminRole_Login";
-            this.txt_AdminRole_Login.Size = new System.Drawing.Size(217, 33);
+            this.txt_AdminRole_Login.Size = new System.Drawing.Size(225, 25);
             this.txt_AdminRole_Login.TabIndex = 1;
+            this.txt_AdminRole_Login.TextChanged += new System.EventHandler(this.txt_AdminRole_Login_TextChanged);
             // 
             // txt_AdminEmail_Login
             // 
-            this.txt_AdminEmail_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_AdminEmail_Login.Location = new System.Drawing.Point(175, 129);
+            this.txt_AdminEmail_Login.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_AdminEmail_Login.Location = new System.Drawing.Point(171, 124);
             this.txt_AdminEmail_Login.Name = "txt_AdminEmail_Login";
-            this.txt_AdminEmail_Login.Size = new System.Drawing.Size(217, 33);
+            this.txt_AdminEmail_Login.Size = new System.Drawing.Size(225, 25);
             this.txt_AdminEmail_Login.TabIndex = 1;
             // 
             // txt_AdminPassword_Login
             // 
-            this.txt_AdminPassword_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_AdminPassword_Login.Location = new System.Drawing.Point(175, 199);
+            this.txt_AdminPassword_Login.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_AdminPassword_Login.Location = new System.Drawing.Point(171, 196);
             this.txt_AdminPassword_Login.Name = "txt_AdminPassword_Login";
-            this.txt_AdminPassword_Login.Size = new System.Drawing.Size(217, 33);
+            this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 25);
             this.txt_AdminPassword_Login.TabIndex = 1;
+            // 
+            // button_Enter_LoginPage
+            // 
+            this.button_Enter_LoginPage.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Enter_LoginPage.Location = new System.Drawing.Point(257, 257);
+            this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
+            this.button_Enter_LoginPage.Size = new System.Drawing.Size(139, 31);
+            this.button_Enter_LoginPage.TabIndex = 2;
+            this.button_Enter_LoginPage.Text = "Enter";
+            this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel_AdminLogin
+            // 
+            this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.Maroon;
+            this.linkLabel_AdminLogin.AutoSize = true;
+            this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.Maroon;
+            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(254, 291);
+            this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
+            this.linkLabel_AdminLogin.Size = new System.Drawing.Size(142, 13);
+            this.linkLabel_AdminLogin.TabIndex = 3;
+            this.linkLabel_AdminLogin.TabStop = true;
+            this.linkLabel_AdminLogin.Text = "Don\'t you have an account?";
+            this.linkLabel_AdminLogin.VisitedLinkColor = System.Drawing.Color.Navy;
             // 
             // Login
             // 
@@ -157,5 +185,7 @@
         private System.Windows.Forms.Label lbl_AdminPassword_Login;
         private System.Windows.Forms.Label lbl_AdminEmail_Login;
         private System.Windows.Forms.Label lbl_AdminRole_Login;
+        private System.Windows.Forms.Button button_Enter_LoginPage;
+        private System.Windows.Forms.LinkLabel linkLabel_AdminLogin;
     }
 }

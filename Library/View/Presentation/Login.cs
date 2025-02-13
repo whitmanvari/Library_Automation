@@ -16,5 +16,10 @@ namespace Library.View.Presentation
         {
             InitializeComponent();
         }
+
+        private void txt_AdminRole_Login_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
