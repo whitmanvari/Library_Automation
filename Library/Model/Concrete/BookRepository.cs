@@ -9,11 +9,6 @@ namespace Library.Model.Concrete
 {
     public class BookRepository : IRepository<Book>
     {
-        private readonly Context _context;
-        public BookRepository(Context context)
-        {
-            _context = context;
-        }
         public void Add(Book addBookEntity)
         {
            
