@@ -68,6 +68,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LibraryAutomationDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LibraryAutomationDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryAutomationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryAutomationDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryAutomationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryAutomationDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryAutomationDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202502122304254_MyFirstMigration.cs" />
     <Compile Include="Migrations\202502122304254_MyFirstMigration.Designer.cs">
       <DependentUpon>202502122304254_MyFirstMigration.cs</DependentUpon>
@@ -136,6 +151,9 @@
     <Compile Include="View\Presentation\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502122304254_MyFirstMigration.resx">
       <DependentUpon>202502122304254_MyFirstMigration.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +182,39 @@
     </None>
     <None Include="LibraryAutomationDataSet.xss">
       <DependentUpon>LibraryAutomationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet1.xsc">
+      <DependentUpon>LibraryAutomationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryAutomationDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryAutomationDataSet1.xss">
+      <DependentUpon>LibraryAutomationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet2.xsc">
+      <DependentUpon>LibraryAutomationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryAutomationDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryAutomationDataSet2.xss">
+      <DependentUpon>LibraryAutomationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet3.xsc">
+      <DependentUpon>LibraryAutomationDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryAutomationDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryAutomationDataSet3.xss">
+      <DependentUpon>LibraryAutomationDataSet3.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
