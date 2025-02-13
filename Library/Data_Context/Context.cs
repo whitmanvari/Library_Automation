@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Library.DataContext
 {
-    public class DataContext: DbContext
+    public class Context: DbContext
     {
         //Mssql connection string will be add.
-        public DataContext()
+        public Context()
         {
             Database.Connection.ConnectionString = "Server=LAPTOP-CF7VKITM;Database=LibraryAutomation;uid=sa;password=1";
         }

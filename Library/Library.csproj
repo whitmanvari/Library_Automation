@@ -56,7 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataContext\DataContext.cs" />
+    <Compile Include="Data_Context\Context.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

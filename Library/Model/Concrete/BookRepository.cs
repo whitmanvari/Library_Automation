@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.DataContext;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,17 @@ namespace Library.Model.Concrete
 {
     public class BookRepository : IRepository<Book>
     {
-        
-        public void Add(Book entity)
+        private readonly Context _context;
+        public BookRepository(Context context)
+        {
+            _context = context;
+        }
+        public void Add(Book addBookEntity)
         {
            
         }
 
-        public void Delete(Book entity)
+        public void Delete(Book deleteBookEntity)
         {
             throw new NotImplementedException();
         }
@@ -24,7 +29,7 @@ namespace Library.Model.Concrete
             throw new NotImplementedException();
         }
 
-        public void Update(Book entity)
+        public void Update(Book updateBookEntity)
         {
             throw new NotImplementedException();
         }
