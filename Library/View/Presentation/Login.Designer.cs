@@ -43,6 +43,7 @@
             this.libraryAutomationDataSet3 = new Library.LibraryAutomationDataSet3();
             this.adminsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.adminsTableAdapter = new Library.LibraryAutomationDataSet3TableAdapters.AdminsTableAdapter();
+            this.btn_ExitLoginPage = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet3)).BeginInit();
@@ -91,7 +92,7 @@
             // 
             this.lbl_AdminRole_Login.AutoSize = true;
             this.lbl_AdminRole_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminRole_Login.Location = new System.Drawing.Point(64, 55);
+            this.lbl_AdminRole_Login.Location = new System.Drawing.Point(60, 134);
             this.lbl_AdminRole_Login.Name = "lbl_AdminRole_Login";
             this.lbl_AdminRole_Login.Size = new System.Drawing.Size(52, 25);
             this.lbl_AdminRole_Login.TabIndex = 0;
@@ -101,7 +102,7 @@
             // 
             this.lbl_AdminEmail_Login.AutoSize = true;
             this.lbl_AdminEmail_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminEmail_Login.Location = new System.Drawing.Point(64, 124);
+            this.lbl_AdminEmail_Login.Location = new System.Drawing.Point(60, 203);
             this.lbl_AdminEmail_Login.Name = "lbl_AdminEmail_Login";
             this.lbl_AdminEmail_Login.Size = new System.Drawing.Size(62, 25);
             this.lbl_AdminEmail_Login.TabIndex = 0;
@@ -111,7 +112,7 @@
             // 
             this.lbl_AdminPassword_Login.AutoSize = true;
             this.lbl_AdminPassword_Login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminPassword_Login.Location = new System.Drawing.Point(64, 196);
+            this.lbl_AdminPassword_Login.Location = new System.Drawing.Point(60, 275);
             this.lbl_AdminPassword_Login.Name = "lbl_AdminPassword_Login";
             this.lbl_AdminPassword_Login.Size = new System.Drawing.Size(95, 25);
             this.lbl_AdminPassword_Login.TabIndex = 0;
@@ -120,7 +121,7 @@
             // txt_AdminEmail_Login
             // 
             this.txt_AdminEmail_Login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_AdminEmail_Login.Location = new System.Drawing.Point(171, 124);
+            this.txt_AdminEmail_Login.Location = new System.Drawing.Point(167, 203);
             this.txt_AdminEmail_Login.Name = "txt_AdminEmail_Login";
             this.txt_AdminEmail_Login.Size = new System.Drawing.Size(225, 23);
             this.txt_AdminEmail_Login.TabIndex = 1;
@@ -128,7 +129,7 @@
             // txt_AdminPassword_Login
             // 
             this.txt_AdminPassword_Login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_AdminPassword_Login.Location = new System.Drawing.Point(171, 196);
+            this.txt_AdminPassword_Login.Location = new System.Drawing.Point(167, 275);
             this.txt_AdminPassword_Login.Name = "txt_AdminPassword_Login";
             this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 23);
             this.txt_AdminPassword_Login.TabIndex = 1;
@@ -136,7 +137,7 @@
             // button_Enter_LoginPage
             // 
             this.button_Enter_LoginPage.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Enter_LoginPage.Location = new System.Drawing.Point(257, 257);
+            this.button_Enter_LoginPage.Location = new System.Drawing.Point(253, 336);
             this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
             this.button_Enter_LoginPage.Size = new System.Drawing.Size(139, 31);
             this.button_Enter_LoginPage.TabIndex = 2;
@@ -148,7 +149,7 @@
             this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.Maroon;
             this.linkLabel_AdminLogin.AutoSize = true;
             this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.Maroon;
-            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(254, 291);
+            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(250, 370);
             this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
             this.linkLabel_AdminLogin.Size = new System.Drawing.Size(142, 13);
             this.linkLabel_AdminLogin.TabIndex = 3;
@@ -162,7 +163,7 @@
             this.comboBox1.DataSource = this.adminsBindingSource;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(171, 59);
+            this.comboBox1.Location = new System.Drawing.Point(167, 138);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(225, 23);
             this.comboBox1.TabIndex = 4;
@@ -181,11 +182,21 @@
             // 
             this.adminsTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_ExitLoginPage
+            // 
+            this.btn_ExitLoginPage.Location = new System.Drawing.Point(410, 479);
+            this.btn_ExitLoginPage.Name = "btn_ExitLoginPage";
+            this.btn_ExitLoginPage.Size = new System.Drawing.Size(75, 23);
+            this.btn_ExitLoginPage.TabIndex = 1;
+            this.btn_ExitLoginPage.Text = "Exit";
+            this.btn_ExitLoginPage.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 485);
+            this.ClientSize = new System.Drawing.Size(509, 509);
+            this.Controls.Add(this.btn_ExitLoginPage);
             this.Controls.Add(this.tabControl1);
             this.Name = "Login";
             this.Text = "Login";
@@ -215,5 +226,6 @@
         private LibraryAutomationDataSet3 libraryAutomationDataSet3;
         private System.Windows.Forms.BindingSource adminsBindingSource;
         private LibraryAutomationDataSet3TableAdapters.AdminsTableAdapter adminsTableAdapter;
+        private System.Windows.Forms.Button btn_ExitLoginPage;
     }
 }
