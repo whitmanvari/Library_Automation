@@ -46,8 +46,6 @@
             this.adminsTableAdapter = new Library.LibraryAutomationDataSet3TableAdapters.AdminsTableAdapter();
             this.btn_ExitLoginPage = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label_TitleLogin = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label_Email_UserName_assword_MemberLoginPage = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
@@ -67,15 +65,17 @@
             this.linkLabel_MemberLogin = new System.Windows.Forms.LinkLabel();
             this.toolTip_clickToSignUp = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_clickSignUp = new System.Windows.Forms.ToolTip(this.components);
+            this.label_TitleLogin = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminLogin.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -87,7 +87,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(634, 407);
-            this.tabControl1.TabIndex = 0;
+            this.tabControl1.TabIndex = 1;
             // 
             // tabPage_AdminLogin
             // 
@@ -173,7 +173,7 @@
             this.txt_AdminEmail_Login.Location = new System.Drawing.Point(109, 176);
             this.txt_AdminEmail_Login.Name = "txt_AdminEmail_Login";
             this.txt_AdminEmail_Login.Size = new System.Drawing.Size(225, 23);
-            this.txt_AdminEmail_Login.TabIndex = 1;
+            this.txt_AdminEmail_Login.TabIndex = 2;
             // 
             // txt_AdminPassword_Login
             // 
@@ -181,7 +181,7 @@
             this.txt_AdminPassword_Login.Location = new System.Drawing.Point(109, 233);
             this.txt_AdminPassword_Login.Name = "txt_AdminPassword_Login";
             this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 23);
-            this.txt_AdminPassword_Login.TabIndex = 1;
+            this.txt_AdminPassword_Login.TabIndex = 3;
             // 
             // button_Enter_LoginPage
             // 
@@ -189,7 +189,7 @@
             this.button_Enter_LoginPage.Location = new System.Drawing.Point(195, 278);
             this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
             this.button_Enter_LoginPage.Size = new System.Drawing.Size(139, 36);
-            this.button_Enter_LoginPage.TabIndex = 2;
+            this.button_Enter_LoginPage.TabIndex = 4;
             this.button_Enter_LoginPage.Text = "Enter";
             this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
             // 
@@ -216,7 +216,7 @@
             this.comboBox1.Location = new System.Drawing.Point(109, 121);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(225, 23);
-            this.comboBox1.TabIndex = 4;
+            this.comboBox1.TabIndex = 1;
             // 
             // libraryAutomationDataSet3
             // 
@@ -238,7 +238,7 @@
             this.btn_ExitLoginPage.Location = new System.Drawing.Point(517, 456);
             this.btn_ExitLoginPage.Name = "btn_ExitLoginPage";
             this.btn_ExitLoginPage.Size = new System.Drawing.Size(97, 44);
-            this.btn_ExitLoginPage.TabIndex = 1;
+            this.btn_ExitLoginPage.TabIndex = 0;
             this.btn_ExitLoginPage.Text = "Exit";
             this.btn_ExitLoginPage.UseVisualStyleBackColor = true;
             // 
@@ -251,28 +251,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(279, 386);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // label_TitleLogin
-            // 
-            this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
-            this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
-            this.label_TitleLogin.TabIndex = 2;
-            this.label_TitleLogin.Text = "Library Automation";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label_TitleLogin);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(646, 41);
-            this.panel1.TabIndex = 2;
             // 
             // label_Email_UserName_assword_MemberLoginPage
             // 
@@ -324,7 +302,7 @@
             this.textBox1.Location = new System.Drawing.Point(196, 150);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(179, 26);
-            this.textBox1.TabIndex = 4;
+            this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -332,14 +310,14 @@
             this.textBox2.Location = new System.Drawing.Point(196, 197);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(179, 26);
-            this.textBox2.TabIndex = 4;
+            this.textBox2.TabIndex = 2;
             // 
             // btn_Enter_MemberLoginPage
             // 
             this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(300, 244);
             this.btn_Enter_MemberLoginPage.Name = "btn_Enter_MemberLoginPage";
             this.btn_Enter_MemberLoginPage.Size = new System.Drawing.Size(75, 30);
-            this.btn_Enter_MemberLoginPage.TabIndex = 5;
+            this.btn_Enter_MemberLoginPage.TabIndex = 3;
             this.btn_Enter_MemberLoginPage.Text = "Enter";
             this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = true;
             // 
@@ -439,6 +417,17 @@
             this.toolTip_clickSignUp.BackColor = System.Drawing.Color.Plum;
             this.toolTip_clickSignUp.IsBalloon = true;
             // 
+            // label_TitleLogin
+            // 
+            this.label_TitleLogin.AutoSize = true;
+            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
+            this.label_TitleLogin.Name = "label_TitleLogin";
+            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.TabIndex = 2;
+            this.label_TitleLogin.Text = "Library Automation";
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -448,6 +437,17 @@
             this.label19.Size = new System.Drawing.Size(59, 24);
             this.label19.TabIndex = 7;
             this.label19.Text = "Sign In";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label_TitleLogin);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(646, 41);
+            this.panel1.TabIndex = 2;
             // 
             // Login
             // 
@@ -468,9 +468,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -492,9 +492,7 @@
         private System.Windows.Forms.BindingSource adminsBindingSource;
         private LibraryAutomationDataSet3TableAdapters.AdminsTableAdapter adminsTableAdapter;
         private System.Windows.Forms.Button btn_ExitLoginPage;
-        private System.Windows.Forms.Label label_TitleLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label_errorMessage_Loginpage_MemberEmail;
         private System.Windows.Forms.Label label2;
@@ -514,6 +512,8 @@
         private System.Windows.Forms.LinkLabel linkLabel_MemberLogin;
         private System.Windows.Forms.ToolTip toolTip_clickToSignUp;
         private System.Windows.Forms.ToolTip toolTip_clickSignUp;
+        private System.Windows.Forms.Label label_TitleLogin;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Panel panel1;
     }
 }
