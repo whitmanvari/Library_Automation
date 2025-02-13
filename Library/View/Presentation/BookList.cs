@@ -16,5 +16,12 @@ namespace Library.View.Presentation
         {
             InitializeComponent();
         }
+
+        private void BookList_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'libraryAutomationDataSet.Books' table. You can move, or remove it, as needed.
+            this.booksTableAdapter.Fill(this.libraryAutomationDataSet.Books);
+
+        }
     }
 }

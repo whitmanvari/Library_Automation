@@ -63,6 +63,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LibraryAutomationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryAutomationDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202502122304254_MyFirstMigration.cs" />
     <Compile Include="Migrations\202502122304254_MyFirstMigration.Designer.cs">
       <DependentUpon>202502122304254_MyFirstMigration.cs</DependentUpon>
@@ -143,9 +148,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Presentation\BookList.resx">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LibraryAutomationDataSet.xsc">
+      <DependentUpon>LibraryAutomationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryAutomationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryAutomationDataSet.xss">
+      <DependentUpon>LibraryAutomationDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
