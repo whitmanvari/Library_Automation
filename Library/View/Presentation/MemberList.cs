@@ -16,5 +16,12 @@ namespace Library.View.Presentation
         {
             InitializeComponent();
         }
+
+        private void MemberList_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'libraryAutomationDataSet4.Members' table. You can move, or remove it, as needed.
+            this.membersTableAdapter.Fill(this.libraryAutomationDataSet4.Members);
+
+        }
     }
 }

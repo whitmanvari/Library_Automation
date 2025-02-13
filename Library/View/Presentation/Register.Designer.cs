@@ -34,13 +34,6 @@
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.btn_ExitLoginPage = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage_AdminRegister = new System.Windows.Forms.TabPage();
-            this.label_ErrorMessage_LoginPage_AdminPassword = new System.Windows.Forms.Label();
-            this.label_ErrorMessage_LoginPage_AdminEmail = new System.Windows.Forms.Label();
-            this.label_ErrorMessage_LoginPage_AdminRole = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.linkLabel_AdminLogin = new System.Windows.Forms.LinkLabel();
-            this.button_Enter_LoginPage = new System.Windows.Forms.Button();
             this.tabPage_MemberRegister = new System.Windows.Forms.TabPage();
             this.linkLabel_MemberLogin = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,7 +41,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label_errorMessage_LoginPage_MemberPassword = new System.Windows.Forms.Label();
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.toolTip_SignIn = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_SignInTomember = new System.Windows.Forms.ToolTip(this.components);
             this.label_MemberName_RegisterPage = new System.Windows.Forms.Label();
@@ -75,37 +67,42 @@
             this.label_errorMessage_MemberBirthDate_RegisterPage = new System.Windows.Forms.Label();
             this.label_errorMessage_MemberPhone_RegisterPage = new System.Windows.Forms.Label();
             this.label_errorMessage_MemberPassword_RegisterPage = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.button_Enter_LoginPage = new System.Windows.Forms.Button();
+            this.linkLabel_AdminLogin = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label_ErrorMessage_LoginPage_AdminRole = new System.Windows.Forms.Label();
+            this.label_ErrorMessage_LoginPage_AdminEmail = new System.Windows.Forms.Label();
+            this.label_ErrorMessage_LoginPage_AdminPassword = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage_AdminRegister = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage_AdminRegister.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage_MemberRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage_AdminRegister.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,109 +147,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(670, 551);
             this.tabControl1.TabIndex = 3;
-            // 
-            // tabPage_AdminRegister
-            // 
-            this.tabPage_AdminRegister.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage_AdminRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage_AdminRegister.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage_AdminRegister.Controls.Add(this.label2);
-            this.tabPage_AdminRegister.Controls.Add(this.label3);
-            this.tabPage_AdminRegister.Controls.Add(this.label5);
-            this.tabPage_AdminRegister.Controls.Add(this.label6);
-            this.tabPage_AdminRegister.Controls.Add(this.label7);
-            this.tabPage_AdminRegister.Controls.Add(this.label8);
-            this.tabPage_AdminRegister.Controls.Add(this.label9);
-            this.tabPage_AdminRegister.Controls.Add(this.label10);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox9);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox10);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox11);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox12);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox13);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox14);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox15);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox16);
-            this.tabPage_AdminRegister.Controls.Add(this.label11);
-            this.tabPage_AdminRegister.Controls.Add(this.label12);
-            this.tabPage_AdminRegister.Controls.Add(this.label13);
-            this.tabPage_AdminRegister.Controls.Add(this.label14);
-            this.tabPage_AdminRegister.Controls.Add(this.label15);
-            this.tabPage_AdminRegister.Controls.Add(this.label16);
-            this.tabPage_AdminRegister.Controls.Add(this.label17);
-            this.tabPage_AdminRegister.Controls.Add(this.label18);
-            this.tabPage_AdminRegister.Controls.Add(this.label1);
-            this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminPassword);
-            this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminEmail);
-            this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminRole);
-            this.tabPage_AdminRegister.Controls.Add(this.pictureBox1);
-            this.tabPage_AdminRegister.Controls.Add(this.linkLabel_AdminLogin);
-            this.tabPage_AdminRegister.Controls.Add(this.button_Enter_LoginPage);
-            this.tabPage_AdminRegister.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.tabPage_AdminRegister.Location = new System.Drawing.Point(4, 30);
-            this.tabPage_AdminRegister.Name = "tabPage_AdminRegister";
-            this.tabPage_AdminRegister.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_AdminRegister.Size = new System.Drawing.Size(662, 517);
-            this.tabPage_AdminRegister.TabIndex = 0;
-            this.tabPage_AdminRegister.Text = "Admin ";
-            this.tabPage_AdminRegister.Click += new System.EventHandler(this.tabPage_AdminRegister_Click);
-            // 
-            // label_ErrorMessage_LoginPage_AdminPassword
-            // 
-            this.label_ErrorMessage_LoginPage_AdminPassword.AutoSize = true;
-            this.label_ErrorMessage_LoginPage_AdminPassword.Location = new System.Drawing.Point(7, 261);
-            this.label_ErrorMessage_LoginPage_AdminPassword.Name = "label_ErrorMessage_LoginPage_AdminPassword";
-            this.label_ErrorMessage_LoginPage_AdminPassword.Size = new System.Drawing.Size(0, 21);
-            this.label_ErrorMessage_LoginPage_AdminPassword.TabIndex = 8;
-            // 
-            // label_ErrorMessage_LoginPage_AdminEmail
-            // 
-            this.label_ErrorMessage_LoginPage_AdminEmail.AutoSize = true;
-            this.label_ErrorMessage_LoginPage_AdminEmail.Location = new System.Drawing.Point(7, 204);
-            this.label_ErrorMessage_LoginPage_AdminEmail.Name = "label_ErrorMessage_LoginPage_AdminEmail";
-            this.label_ErrorMessage_LoginPage_AdminEmail.Size = new System.Drawing.Size(0, 21);
-            this.label_ErrorMessage_LoginPage_AdminEmail.TabIndex = 8;
-            // 
-            // label_ErrorMessage_LoginPage_AdminRole
-            // 
-            this.label_ErrorMessage_LoginPage_AdminRole.AutoSize = true;
-            this.label_ErrorMessage_LoginPage_AdminRole.Location = new System.Drawing.Point(8, 144);
-            this.label_ErrorMessage_LoginPage_AdminRole.Name = "label_ErrorMessage_LoginPage_AdminRole";
-            this.label_ErrorMessage_LoginPage_AdminRole.Size = new System.Drawing.Size(0, 21);
-            this.label_ErrorMessage_LoginPage_AdminRole.TabIndex = 8;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(305, -52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 627);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // linkLabel_AdminLogin
-            // 
-            this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
-            this.linkLabel_AdminLogin.AutoSize = true;
-            this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.Plum;
-            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(87, 477);
-            this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
-            this.linkLabel_AdminLogin.Size = new System.Drawing.Size(212, 21);
-            this.linkLabel_AdminLogin.TabIndex = 3;
-            this.linkLabel_AdminLogin.TabStop = true;
-            this.linkLabel_AdminLogin.Text = "Do you already have an account?";
-            this.toolTip_SignIn.SetToolTip(this.linkLabel_AdminLogin, "If you have an account click to sign in!");
-            this.linkLabel_AdminLogin.VisitedLinkColor = System.Drawing.Color.Navy;
-            // 
-            // button_Enter_LoginPage
-            // 
-            this.button_Enter_LoginPage.Font = new System.Drawing.Font("Segoe Print", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Enter_LoginPage.Location = new System.Drawing.Point(215, 438);
-            this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
-            this.button_Enter_LoginPage.Size = new System.Drawing.Size(84, 36);
-            this.button_Enter_LoginPage.TabIndex = 2;
-            this.button_Enter_LoginPage.Text = "Enter";
-            this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
             // 
             // tabPage_MemberRegister
             // 
@@ -353,16 +247,6 @@
             this.label_errorMessage_Loginpage_MemberEmail.Name = "label_errorMessage_Loginpage_MemberEmail";
             this.label_errorMessage_Loginpage_MemberEmail.Size = new System.Drawing.Size(0, 21);
             this.label_errorMessage_Loginpage_MemberEmail.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 30);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Please Fill Blanks to Sign Up";
             // 
             // toolTip_SignIn
             // 
@@ -589,222 +473,6 @@
             this.label_errorMessage_MemberPassword_RegisterPage.Size = new System.Drawing.Size(0, 16);
             this.label_errorMessage_MemberPassword_RegisterPage.TabIndex = 13;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 415);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 16);
-            this.label2.TabIndex = 37;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 364);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 16);
-            this.label3.TabIndex = 36;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 316);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 16);
-            this.label5.TabIndex = 35;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 264);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 16);
-            this.label6.TabIndex = 34;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 220);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 16);
-            this.label7.TabIndex = 33;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(24, 177);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 16);
-            this.label8.TabIndex = 32;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(24, 132);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 16);
-            this.label9.TabIndex = 31;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(24, 91);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 16);
-            this.label10.TabIndex = 30;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(98, 391);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(201, 19);
-            this.textBox9.TabIndex = 28;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(98, 340);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(201, 19);
-            this.textBox10.TabIndex = 27;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(98, 292);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(201, 19);
-            this.textBox11.TabIndex = 29;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(98, 240);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(201, 19);
-            this.textBox12.TabIndex = 26;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(98, 196);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(201, 19);
-            this.textBox13.TabIndex = 25;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(98, 153);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(201, 19);
-            this.textBox14.TabIndex = 24;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(98, 108);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(201, 19);
-            this.textBox15.TabIndex = 23;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(98, 65);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(201, 19);
-            this.textBox16.TabIndex = 22;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(18, 391);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 24);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Password:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(18, 340);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 24);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "Phone:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(18, 292);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 24);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "BirthDate:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(18, 240);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 24);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Address:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(18, 196);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(43, 24);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "Role:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(18, 153);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 24);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Email:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(18, 108);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 24);
-            this.label17.TabIndex = 21;
-            this.label17.Text = "Surname:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(18, 65);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(54, 24);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "Name:";
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -814,6 +482,305 @@
             this.label19.Size = new System.Drawing.Size(59, 24);
             this.label19.TabIndex = 6;
             this.label19.Text = "Sign In";
+            // 
+            // button_Enter_LoginPage
+            // 
+            this.button_Enter_LoginPage.Font = new System.Drawing.Font("Segoe Print", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Enter_LoginPage.Location = new System.Drawing.Point(215, 438);
+            this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
+            this.button_Enter_LoginPage.Size = new System.Drawing.Size(84, 36);
+            this.button_Enter_LoginPage.TabIndex = 2;
+            this.button_Enter_LoginPage.Text = "Enter";
+            this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel_AdminLogin
+            // 
+            this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
+            this.linkLabel_AdminLogin.AutoSize = true;
+            this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.Plum;
+            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(87, 477);
+            this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
+            this.linkLabel_AdminLogin.Size = new System.Drawing.Size(212, 21);
+            this.linkLabel_AdminLogin.TabIndex = 3;
+            this.linkLabel_AdminLogin.TabStop = true;
+            this.linkLabel_AdminLogin.Text = "Do you already have an account?";
+            this.toolTip_SignIn.SetToolTip(this.linkLabel_AdminLogin, "If you have an account click to sign in!");
+            this.linkLabel_AdminLogin.VisitedLinkColor = System.Drawing.Color.Navy;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(305, -52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(359, 627);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label_ErrorMessage_LoginPage_AdminRole
+            // 
+            this.label_ErrorMessage_LoginPage_AdminRole.AutoSize = true;
+            this.label_ErrorMessage_LoginPage_AdminRole.Location = new System.Drawing.Point(8, 144);
+            this.label_ErrorMessage_LoginPage_AdminRole.Name = "label_ErrorMessage_LoginPage_AdminRole";
+            this.label_ErrorMessage_LoginPage_AdminRole.Size = new System.Drawing.Size(0, 21);
+            this.label_ErrorMessage_LoginPage_AdminRole.TabIndex = 8;
+            // 
+            // label_ErrorMessage_LoginPage_AdminEmail
+            // 
+            this.label_ErrorMessage_LoginPage_AdminEmail.AutoSize = true;
+            this.label_ErrorMessage_LoginPage_AdminEmail.Location = new System.Drawing.Point(7, 204);
+            this.label_ErrorMessage_LoginPage_AdminEmail.Name = "label_ErrorMessage_LoginPage_AdminEmail";
+            this.label_ErrorMessage_LoginPage_AdminEmail.Size = new System.Drawing.Size(0, 21);
+            this.label_ErrorMessage_LoginPage_AdminEmail.TabIndex = 8;
+            // 
+            // label_ErrorMessage_LoginPage_AdminPassword
+            // 
+            this.label_ErrorMessage_LoginPage_AdminPassword.AutoSize = true;
+            this.label_ErrorMessage_LoginPage_AdminPassword.Location = new System.Drawing.Point(7, 261);
+            this.label_ErrorMessage_LoginPage_AdminPassword.Name = "label_ErrorMessage_LoginPage_AdminPassword";
+            this.label_ErrorMessage_LoginPage_AdminPassword.Size = new System.Drawing.Size(0, 21);
+            this.label_ErrorMessage_LoginPage_AdminPassword.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(308, 30);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Please Fill Blanks to Sign Up";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(18, 83);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(54, 24);
+            this.label18.TabIndex = 14;
+            this.label18.Text = "Name:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(18, 126);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 24);
+            this.label17.TabIndex = 21;
+            this.label17.Text = "Surname:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(18, 171);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(54, 24);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "Email:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(18, 221);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(69, 24);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "Address:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(18, 268);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 24);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "BirthDate:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(18, 321);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(57, 24);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Phone:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(18, 372);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(80, 24);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Password:";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox16.Location = new System.Drawing.Point(103, 83);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(196, 19);
+            this.textBox16.TabIndex = 22;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(103, 126);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(196, 19);
+            this.textBox15.TabIndex = 23;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(103, 171);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(196, 19);
+            this.textBox14.TabIndex = 24;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(103, 221);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(196, 19);
+            this.textBox12.TabIndex = 26;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(103, 273);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(196, 19);
+            this.textBox11.TabIndex = 29;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(103, 321);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(196, 19);
+            this.textBox10.TabIndex = 27;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(103, 372);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(196, 19);
+            this.textBox9.TabIndex = 28;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(18, 109);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 16);
+            this.label10.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(18, 150);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 16);
+            this.label9.TabIndex = 31;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(18, 195);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 16);
+            this.label8.TabIndex = 32;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(19, 245);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 16);
+            this.label6.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 292);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 16);
+            this.label5.TabIndex = 35;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 345);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.TabIndex = 36;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 406);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 16);
+            this.label2.TabIndex = 37;
+            // 
+            // tabPage_AdminRegister
+            // 
+            this.tabPage_AdminRegister.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage_AdminRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage_AdminRegister.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage_AdminRegister.Controls.Add(this.label2);
+            this.tabPage_AdminRegister.Controls.Add(this.label3);
+            this.tabPage_AdminRegister.Controls.Add(this.label5);
+            this.tabPage_AdminRegister.Controls.Add(this.label6);
+            this.tabPage_AdminRegister.Controls.Add(this.label8);
+            this.tabPage_AdminRegister.Controls.Add(this.label9);
+            this.tabPage_AdminRegister.Controls.Add(this.label10);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox9);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox10);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox11);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox12);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox14);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox15);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox16);
+            this.tabPage_AdminRegister.Controls.Add(this.label11);
+            this.tabPage_AdminRegister.Controls.Add(this.label12);
+            this.tabPage_AdminRegister.Controls.Add(this.label13);
+            this.tabPage_AdminRegister.Controls.Add(this.label14);
+            this.tabPage_AdminRegister.Controls.Add(this.label16);
+            this.tabPage_AdminRegister.Controls.Add(this.label17);
+            this.tabPage_AdminRegister.Controls.Add(this.label18);
+            this.tabPage_AdminRegister.Controls.Add(this.label1);
+            this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminPassword);
+            this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminEmail);
+            this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminRole);
+            this.tabPage_AdminRegister.Controls.Add(this.pictureBox1);
+            this.tabPage_AdminRegister.Controls.Add(this.linkLabel_AdminLogin);
+            this.tabPage_AdminRegister.Controls.Add(this.button_Enter_LoginPage);
+            this.tabPage_AdminRegister.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.tabPage_AdminRegister.Location = new System.Drawing.Point(4, 30);
+            this.tabPage_AdminRegister.Name = "tabPage_AdminRegister";
+            this.tabPage_AdminRegister.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_AdminRegister.Size = new System.Drawing.Size(662, 517);
+            this.tabPage_AdminRegister.TabIndex = 0;
+            this.tabPage_AdminRegister.Text = "Admin ";
+            this.tabPage_AdminRegister.Click += new System.EventHandler(this.tabPage_AdminRegister_Click);
             // 
             // Register
             // 
@@ -828,12 +795,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage_AdminRegister.ResumeLayout(false);
-            this.tabPage_AdminRegister.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage_MemberRegister.ResumeLayout(false);
             this.tabPage_MemberRegister.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage_AdminRegister.ResumeLayout(false);
+            this.tabPage_AdminRegister.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -844,13 +811,6 @@
         private System.Windows.Forms.Label label_TitleLogin;
         private System.Windows.Forms.Button btn_ExitLoginPage;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage_AdminRegister;
-        private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminPassword;
-        private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminEmail;
-        private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminRole;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.LinkLabel linkLabel_AdminLogin;
-        private System.Windows.Forms.Button button_Enter_LoginPage;
         private System.Windows.Forms.TabPage tabPage_MemberRegister;
         private System.Windows.Forms.LinkLabel linkLabel_MemberLogin;
         private System.Windows.Forms.Label label4;
@@ -858,7 +818,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label_errorMessage_LoginPage_MemberPassword;
         private System.Windows.Forms.Label label_errorMessage_Loginpage_MemberEmail;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolTip toolTip_SignIn;
         private System.Windows.Forms.ToolTip toolTip_SignInTomember;
         private System.Windows.Forms.TextBox textBox8;
@@ -885,11 +844,12 @@
         private System.Windows.Forms.Label label_errorMessage_MemberRole_RegisterPage;
         private System.Windows.Forms.Label label_errorMessage_MemberEmail_RegisterPage;
         private System.Windows.Forms.Label label_errorMessage_MemberSurname_RegisterPage;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TabPage tabPage_AdminRegister;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -897,7 +857,6 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
@@ -905,10 +864,15 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminPassword;
+        private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminEmail;
+        private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminRole;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel linkLabel_AdminLogin;
+        private System.Windows.Forms.Button button_Enter_LoginPage;
     }
 }
