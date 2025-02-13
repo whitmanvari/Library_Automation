@@ -16,5 +16,10 @@ namespace Library.View.Presentation
         {
             InitializeComponent();
         }
+
+        private void tabPage_AdminRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

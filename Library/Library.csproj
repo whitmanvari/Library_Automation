@@ -172,6 +172,9 @@
     <EmbeddedResource Include="View\Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Presentation\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="LibraryAutomationDataSet.xsc">
       <DependentUpon>LibraryAutomationDataSet.xsd</DependentUpon>
     </None>

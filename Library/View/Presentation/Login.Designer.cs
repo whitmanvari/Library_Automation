@@ -67,6 +67,7 @@
             this.linkLabel_MemberLogin = new System.Windows.Forms.LinkLabel();
             this.toolTip_clickToSignUp = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_clickSignUp = new System.Windows.Forms.ToolTip(this.components);
+            this.label19 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminLogin.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -245,7 +246,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(355, -30);
+            this.pictureBox1.Location = new System.Drawing.Point(358, -15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(279, 386);
             this.pictureBox1.TabIndex = 5;
@@ -265,6 +266,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -305,9 +307,9 @@
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(376, -13);
+            this.pictureBox2.Location = new System.Drawing.Point(361, -13);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(247, 383);
+            this.pictureBox2.Size = new System.Drawing.Size(279, 386);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -437,6 +439,16 @@
             this.toolTip_clickSignUp.BackColor = System.Drawing.Color.Plum;
             this.toolTip_clickSignUp.IsBalloon = true;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(555, 10);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 24);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "Sign In";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,5 +514,6 @@
         private System.Windows.Forms.LinkLabel linkLabel_MemberLogin;
         private System.Windows.Forms.ToolTip toolTip_clickToSignUp;
         private System.Windows.Forms.ToolTip toolTip_clickSignUp;
+        private System.Windows.Forms.Label label19;
     }
 }
