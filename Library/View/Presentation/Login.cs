@@ -28,5 +28,10 @@ namespace Library.View.Presentation
             this.adminsTableAdapter.Fill(this.libraryAutomationDataSet3.Admins);
 
         }
+
+        private void toolTip__Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }
