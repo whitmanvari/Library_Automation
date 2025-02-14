@@ -51,8 +51,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Enter_MemberLoginPage = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_MemberPasswordControl_LoginPage = new System.Windows.Forms.TextBox();
+            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label_errorMessage_LoginPage_MemberPassword = new System.Windows.Forms.Label();
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
@@ -245,8 +245,8 @@
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.btn_Enter_MemberLoginPage);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.textBox_MemberPasswordControl_LoginPage);
+            this.tabPage2.Controls.Add(this.textBox_MemberEmail_Phone_UserNameControl_LoginPage);
             this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.label_errorMessage_LoginPage_MemberPassword);
             this.tabPage2.Controls.Add(this.label_errorMessage_Loginpage_MemberEmail);
@@ -305,21 +305,21 @@
             this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = true;
             this.btn_Enter_MemberLoginPage.Click += new System.EventHandler(this.btn_Enter_MemberLoginPage_Click_1);
             // 
-            // textBox2
+            // textBox_MemberPasswordControl_LoginPage
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(196, 197);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 26);
-            this.textBox2.TabIndex = 2;
+            this.textBox_MemberPasswordControl_LoginPage.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_MemberPasswordControl_LoginPage.Location = new System.Drawing.Point(196, 197);
+            this.textBox_MemberPasswordControl_LoginPage.Name = "textBox_MemberPasswordControl_LoginPage";
+            this.textBox_MemberPasswordControl_LoginPage.Size = new System.Drawing.Size(179, 26);
+            this.textBox_MemberPasswordControl_LoginPage.TabIndex = 2;
             // 
-            // textBox1
+            // textBox_MemberEmail_Phone_UserNameControl_LoginPage
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(196, 150);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 26);
-            this.textBox1.TabIndex = 1;
+            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Location = new System.Drawing.Point(196, 150);
+            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Name = "textBox_MemberEmail_Phone_UserNameControl_LoginPage";
+            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Size = new System.Drawing.Size(179, 26);
+            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -477,8 +477,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_Email_UserName_assword_MemberLoginPage;
         private System.Windows.Forms.Button btn_Enter_MemberLoginPage;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_MemberPasswordControl_LoginPage;
+        private System.Windows.Forms.TextBox textBox_MemberEmail_Phone_UserNameControl_LoginPage;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_WelcomeMessage;
