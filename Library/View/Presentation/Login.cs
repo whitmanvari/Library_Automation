@@ -1,5 +1,6 @@
 ﻿using Library.DataContext;
 using System;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -80,23 +81,28 @@ namespace Library.View.Presentation
 
         private void btn_Enter_MemberLoginPage_Click_1(object sender, EventArgs e)
         {
-            string emailControl = textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text.Trim();
-            string phoneControl = textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text.Trim();
-            string userNameControl = textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text.Trim();
+            string inputControl = textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text.Trim();
             string passwordControl = textBox_MemberPasswordControl_LoginPage.Text.Trim();
 
-            if (StringControl(emailControl) || StringControl(phoneControl) || StringControl(userNameControl))
+            if (StringControl(inputControl) || StringControl(passwordControl))
             {
                 MessageBox.Show("Error, incorrect informations. If you do not have an account please sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            var memberUser = context.Users.FirstOrDefault(u => u.Email == textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text
-            || u.Phone == textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text 
-            || u.Name == textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text 
-            && u.Password == textBox_MemberPasswordControl_LoginPage.Text);
+            var memberUser = context.Users.FirstOrDefault();
 
 
+        }
+        //Email Control
+        public bool IsValidEmail(string text)
+        {
+            return text.Contains("@") && text.Contains(".") && text.Contains("com");
+        }
+        //Phone Control
+        public bool IsValidPhone(string text)
+        {
+            return text.All(char.IsDigit);
         }
     }
 }
