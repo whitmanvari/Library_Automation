@@ -224,6 +224,7 @@
             this.txt_AdminPassword_Login.Name = "txt_AdminPassword_Login";
             this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 23);
             this.txt_AdminPassword_Login.TabIndex = 3;
+            this.txt_AdminPassword_Login.UseSystemPasswordChar = true;
             // 
             // txt_AdminEmail_Login
             // 

@@ -58,16 +58,36 @@ namespace Library.View.Presentation
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
         {
-            context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text && a.Password == txt_AdminPassword_Login.Text && a.Role == comboBox_LoginRole.Items.ToString());
+           bool isEmailValid = StringControl(txt_AdminEmail_Login.Text, lbl_AdminEmail_Login);
+           bool isPasswordValid = StringControl(txt_AdminPassword_Login.Text, lbl_AdminPassword_Login);
+           bool isRoleValid =  StringControl(comboBox_LoginRole.Text, lbl_AdminRole_Login);
+           var adminUser = context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text && a.Password == txt_AdminPassword_Login.Text && a.Role == comboBox_LoginRole.SelectedItem.ToString());
+           
+            //If one of the validations are false stop the function!
+            if(!isEmailValid || !isPasswordValid || !isRoleValid )
+            {
+                return;
+            }
+            //User
+            if(adminUser == null)
+            {
+                MessageBox.Show("The user could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
+            Admin_MainMenu admin_MainMenu = new Admin_MainMenu();
+            admin_MainMenu.Show();
+            this.Hide();
+            
         }
 
-        public void StringControl(string text, Label label)
+        public bool StringControl(string text, Label label)
         {
-            if(string.IsNullOrEmpty(text))
+            if(string.IsNullOrEmpty(text) && string.IsNullOrWhiteSpace(text))
             {
                 label.Text = "This field cannot be empty!";
+                return false;
             }
+            return true;
         }
     }
 }
