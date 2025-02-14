@@ -9,21 +9,26 @@ namespace Library.Model.Concrete
 {
     public class Member : IPerson
     {
-        public Member()
+        //Member Information
+        private DateTime _birthDate;
+        public DateTime BirthDate
         {
-            MembershipDate = DateTime.Now;
+            get => _birthDate;
+            set
+            {
+                if (value < DateTime.Now)
+                    _birthDate = value;
+            }
         }
-        //Member information.
-        public override int Id { get; set; }
-        public int RoleId { get; set; }
-        public virtual int Role { get; set; }
-        public override string Name { get; set; }
-        public override string Surname { get; set; }
-        public override string Email { get; set; }
-        public override string Password { get; set; }
-        public override string Phone { get; set; }
-        public override string Address { get; set; }
-        //Member registration date will be set to the current date.
-        public DateTime MembershipDate { get; set; }
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public string Name { get; set; }
+        public string Surname { get; set; }
+       
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
+        public int Id { get; set; }
+        
     }
 }
