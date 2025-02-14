@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace Library.Model.Concrete
 {
-    public class MemberRepository : IRepository<Member>
+    public class UserRepository : IRepository<User>
     {
-        public void Add(Member entity)
+        public void Add(User entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Member entity)
+        public void Delete(User entity)
         {
             throw new NotImplementedException();
         }
 
-        public List<Member> Get()
+        public List<User> Get()
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Member entity)
+        public void Update(User entity)
         {
             throw new NotImplementedException();
         }
