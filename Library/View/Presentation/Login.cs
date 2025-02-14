@@ -90,7 +90,19 @@ namespace Library.View.Presentation
                 return;
             }
 
-            var memberUser = context.Users.FirstOrDefault();
+            var memberUser = context.Users.FirstOrDefault(u => (IsValidEmail(inputControl) && u.Email == inputControl) ||
+             (IsValidPhone(inputControl) && u.Phone == inputControl) ||
+             (IsValidUserName(inputControl) && u.Name == inputControl)
+             && u.Password == passwordControl);
+
+            if(memberUser == null)
+            {
+                MessageBox.Show("The user could not be found, if you are not a member first sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            Member_MainMenu member_MainMenu = new Member_MainMenu();
+            member_MainMenu.Show();
+            this.Hide();
 
 
         }
@@ -103,6 +115,11 @@ namespace Library.View.Presentation
         public bool IsValidPhone(string text)
         {
             return text.All(char.IsDigit);
+        }
+        //User Name Control
+        public bool IsValidUserName(string text)
+        {
+            return text.All(char.IsLetterOrDigit);
         }
     }
 }
