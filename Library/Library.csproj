@@ -93,9 +93,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LibraryAutomationDataSet5.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202502141321572_MigrationVersion4.cs" />
-    <Compile Include="Migrations\202502141321572_MigrationVersion4.Designer.cs">
-      <DependentUpon>202502141321572_MigrationVersion4.cs</DependentUpon>
+    <Compile Include="Migrations\202502141349000_init.cs" />
+    <Compile Include="Migrations\202502141349000_init.Designer.cs">
+      <DependentUpon>202502141349000_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Abstract\IBase.cs" />
@@ -172,8 +172,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202502141321572_MigrationVersion4.resx">
-      <DependentUpon>202502141321572_MigrationVersion4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202502141349000_init.resx">
+      <DependentUpon>202502141349000_init.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
