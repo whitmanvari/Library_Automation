@@ -328,7 +328,6 @@
             this.btn_Enter_MemberLoginPage.TabIndex = 3;
             this.btn_Enter_MemberLoginPage.Text = "Enter";
             this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = true;
-            this.btn_Enter_MemberLoginPage.Click += new System.EventHandler(this.btn_Enter_MemberLoginPage_Click);
             // 
             // textBox2
             // 

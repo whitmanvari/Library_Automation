@@ -51,6 +51,11 @@ namespace Library.View.Presentation
             this.Hide();
         }
 
+        private void Button_Enter_LoginPage_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_Enter_MemberLoginPage_Click(object sender, EventArgs e)
         {
             txt_AdminEmail_Login.Text = context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text).Email;
@@ -58,33 +63,43 @@ namespace Library.View.Presentation
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
         {
-           bool isEmailValid = StringControl(txt_AdminEmail_Login.Text, lbl_AdminEmail_Login);
-           bool isPasswordValid = StringControl(txt_AdminPassword_Login.Text, lbl_AdminPassword_Login);
-           bool isRoleValid =  StringControl(comboBox_LoginRole.Text, lbl_AdminRole_Login);
-           var adminUser = context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text && a.Password == txt_AdminPassword_Login.Text && a.Role == comboBox_LoginRole.SelectedItem.ToString());
-           
-            //If one of the validations are false stop the function!
-            if(!isEmailValid || !isPasswordValid || !isRoleValid )
+            string EmailControl = txt_AdminEmail_Login.Text?.Trim();
+            string PasswordControl = txt_AdminPassword_Login.Text?.Trim();
+            string RoleControl = comboBox_LoginRole.SelectedItem.ToString().Trim();
+            if(StringControl(EmailControl) || StringControl(PasswordControl) || StringControl(RoleControl))
             {
-                return;
-            }
-            //User cannot be null.
-            if(adminUser == null)
-            {
-                MessageBox.Show("The user could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error!");
             }
 
-            Admin_MainMenu admin_MainMenu = new Admin_MainMenu();
-            admin_MainMenu.Show();
-            this.Hide();
+            bool isEmailValid = StringControl(txt_AdminEmail_Login.Text);
+            bool isPasswordValid = StringControl(txt_AdminPassword_Login.Text);
+            bool isRoleValid = StringControl(comboBox_LoginRole.Text);
+            //var adminUser = context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text && a.Password == txt_AdminPassword_Login.Text && a.Role == comboBox_LoginRole.SelectedItem.ToString());
+
+            // User cannot be null.
+            //if (adminUser == null)
+            //{
+            //    MessageBox.Show("The user could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+
+            //If one of the validations are false stop the function!
+            if (isEmailValid || isPasswordValid || isRoleValid)
+            {
+                Admin_MainMenu admin_MainMenu = new Admin_MainMenu();
+                admin_MainMenu.Show();
+                this.Hide();
+            }
             
+
+
+
+
         }
 
-        public bool StringControl(string text, Label label)
+        public bool StringControl(string text)
         {
-            if(string.IsNullOrEmpty(text) && string.IsNullOrWhiteSpace(text))
+            if (string.IsNullOrEmpty(text) && string.IsNullOrWhiteSpace(text))
             {
-                label.Text = "This field cannot be empty!";
                 return false;
             }
             return true;

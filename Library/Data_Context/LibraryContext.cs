@@ -17,12 +17,16 @@ namespace Library.DataContext
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Member>().ToTable("Member");
-            modelBuilder.Entity<Admin>().ToTable("Admin");
-            modelBuilder.Entity<Book>().ToTable("Book");
+            modelBuilder.Entity<Member>().ToTable("Members");
+            modelBuilder.Entity<Admin>().ToTable("Admins");
+            modelBuilder.Entity<Book>().ToTable("Books");
+            modelBuilder.Entity<Role>().ToTable("Roles");
+
+
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Member> member { get; set; }
+        public DbSet<Role> role { get; set; }
         public DbSet<Admin> admin { get; set; }
         public DbSet<Book> book { get; set; }
     }

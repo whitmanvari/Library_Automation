@@ -121,7 +121,7 @@
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHj1SURBVHhe7b0H
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHj1SURBVHhe7b0H
         mBZVmvY/M/v/9r8OTZNz7m6aDE3ONDkHyanJOYPkIJIkSg6SJakomFAUFbPgOOqYE+acxpnZ/O337e75
         6i7edrF4uuoNleu+r+t3za70W/F5zrmr6pzn/IaiUtDvChWqnpOWljU9LS1zt/a/TxQunHlF43uNf9ZQ
         hJCUQS4hp66kpWU8fjXXMqYVKlStgZaDv72aihRFUY6rzt9rDVH/9PTMe7X//bOG1GARQtzhJy0X79H+
@@ -644,17 +644,11 @@
   <metadata name="adminsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>214, 17</value>
   </metadata>
+  <metadata name="libraryAutomationDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="toolTip_clickSignUp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>479, 54</value>
-  </metadata>
-  <metadata name="adminsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>214, 17</value>
-  </metadata>
-  <metadata name="libraryAutomationDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="libraryAutomationDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
   </metadata>
   <metadata name="toolTip_clickToSignUp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>309, 54</value>
@@ -662,7 +656,7 @@
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHj1SURBVHhe7b0H
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAHj1SURBVHhe7b0H
         mBZVmvY/M/v/9r8OTZNz7m6aDE3ONDkHyanJOYPkIJIkSg6SJakomFAUFbPgOOqYE+acxpnZ/O337e75
         6i7edrF4uuoNleu+r+t3za70W/F5zrmr6pzn/IaiUtDvChWqnpOWljU9LS1zt/a/TxQunHlF43uNf9ZQ
         hJCUQS4hp66kpWU8fjXXMqYVKlStgZaDv72aihRFUY6rzt9rDVH/9PTMe7X//bOG1GARQtzhJy0X79H+
@@ -1187,11 +1181,5 @@
   </metadata>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>546, 17</value>
-  </metadata>
-  <metadata name="toolTip_clickToSignUp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>309, 54</value>
-  </metadata>
-  <metadata name="toolTip_clickSignUp.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>479, 54</value>
   </metadata>
 </root>

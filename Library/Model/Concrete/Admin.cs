@@ -7,17 +7,27 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public class Admin : Person
+    public class Admin : IPerson
     {
         //Admin information.
-        public string Role { get; set; }
-        public override string Password { get; set; }
-        public override string Phone { get; set; }
-        public override string Address { get; set; }
-        public override int Id { get; set; }
-        public override string Name { get; set; }
-        public override string Surname { get; set; }
-        public override string Email { get; set; }
-
+       
+        private DateTime _birthDate;
+        public DateTime BirthDate
+        {
+            get => _birthDate;
+            set
+            {
+                if (value < DateTime.Now)
+                    _birthDate = value;
+            }
+        }
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
+        public int Id { get; set; }
     }
 }

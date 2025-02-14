@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Model.Concrete
 {
-    public class Member : Person
+    public class Member : IPerson
     {
         public Member()
         {
@@ -15,6 +15,8 @@ namespace Library.Model.Concrete
         }
         //Member information.
         public override int Id { get; set; }
+        public int RoleId { get; set; }
+        public virtual int Role { get; set; }
         public override string Name { get; set; }
         public override string Surname { get; set; }
         public override string Email { get; set; }
