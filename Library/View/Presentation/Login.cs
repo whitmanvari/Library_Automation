@@ -68,7 +68,7 @@ namespace Library.View.Presentation
             {
                 return;
             }
-            //User
+            //User cannot be null.
             if(adminUser == null)
             {
                 MessageBox.Show("The user could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
