@@ -38,7 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label_WelcomeMessage = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_LoginRole = new System.Windows.Forms.ComboBox();
             this.adminsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.libraryAutomationDataSet3 = new Library.LibraryAutomationDataSet3();
             this.linkLabel_AdminLogin = new System.Windows.Forms.LinkLabel();
@@ -100,7 +100,7 @@
             this.tabPage_AdminLogin.Controls.Add(this.label1);
             this.tabPage_AdminLogin.Controls.Add(this.label_WelcomeMessage);
             this.tabPage_AdminLogin.Controls.Add(this.pictureBox1);
-            this.tabPage_AdminLogin.Controls.Add(this.comboBox1);
+            this.tabPage_AdminLogin.Controls.Add(this.comboBox_LoginRole);
             this.tabPage_AdminLogin.Controls.Add(this.linkLabel_AdminLogin);
             this.tabPage_AdminLogin.Controls.Add(this.button_Enter_LoginPage);
             this.tabPage_AdminLogin.Controls.Add(this.txt_AdminPassword_Login);
@@ -170,16 +170,16 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // comboBox_LoginRole
             // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.adminsBindingSource, "Role", true));
-            this.comboBox1.DataSource = this.adminsBindingSource;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(225, 23);
-            this.comboBox1.TabIndex = 1;
+            this.comboBox_LoginRole.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.adminsBindingSource, "Role", true));
+            this.comboBox_LoginRole.DataSource = this.adminsBindingSource;
+            this.comboBox_LoginRole.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_LoginRole.FormattingEnabled = true;
+            this.comboBox_LoginRole.Location = new System.Drawing.Point(109, 121);
+            this.comboBox_LoginRole.Name = "comboBox_LoginRole";
+            this.comboBox_LoginRole.Size = new System.Drawing.Size(225, 23);
+            this.comboBox_LoginRole.TabIndex = 1;
             // 
             // adminsBindingSource
             // 
@@ -215,6 +215,7 @@
             this.button_Enter_LoginPage.TabIndex = 4;
             this.button_Enter_LoginPage.Text = "Enter";
             this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
+            this.button_Enter_LoginPage.Click += new System.EventHandler(this.button_Enter_LoginPage_Click);
             // 
             // txt_AdminPassword_Login
             // 
@@ -491,7 +492,7 @@
         private System.Windows.Forms.Label lbl_AdminRole_Login;
         private System.Windows.Forms.Button button_Enter_LoginPage;
         private System.Windows.Forms.LinkLabel linkLabel_AdminLogin;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_LoginRole;
         private LibraryAutomationDataSet3 libraryAutomationDataSet3;
         private System.Windows.Forms.BindingSource adminsBindingSource;
         private LibraryAutomationDataSet3TableAdapters.AdminsTableAdapter adminsTableAdapter;

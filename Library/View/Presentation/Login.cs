@@ -1,5 +1,6 @@
 ﻿using Library.DataContext;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Library.View.Presentation
@@ -52,7 +53,21 @@ namespace Library.View.Presentation
 
         private void btn_Enter_MemberLoginPage_Click(object sender, EventArgs e)
         {
+            txt_AdminEmail_Login.Text = context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text).Email;
+        }
 
+        private void button_Enter_LoginPage_Click(object sender, EventArgs e)
+        {
+            context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text && a.Password == txt_AdminPassword_Login.Text && a.Role == comboBox_LoginRole.Items.ToString());
+
+        }
+
+        public void StringControl(string text, Label label)
+        {
+            if(string.IsNullOrEmpty(text))
+            {
+                label.Text = "This field cannot be empty!";
+            }
         }
     }
 }
