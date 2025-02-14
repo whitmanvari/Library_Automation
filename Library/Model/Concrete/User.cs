@@ -29,6 +29,6 @@ namespace Library.Model.Concrete
         public string Address { get; set; }
         public int Id { get; set; }
         public int RoleId { get; set; }
-        public virtual int Role { get; set; }
+        public virtual Role Role { get; set; }
     }
 }

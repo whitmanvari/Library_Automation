@@ -22,8 +22,14 @@ namespace Library.DataContext
             modelBuilder.Entity<User>()
                 .HasRequired(u => u.Role)
                 .WithMany(r => r.Users)
-                .HasForeignKey(u => u.RoleId);
+                .HasForeignKey(u => u.RoleId)
+                .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<Book>()
+           .HasRequired(b => b.Category)
+           .WithMany(c => c.Books)
+           .HasForeignKey(b => b.CategoryId)
+           .WillCascadeOnDelete(false);
         }
 
         public DbSet<Role> Roles { get; set; }

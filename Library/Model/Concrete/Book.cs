@@ -21,5 +21,7 @@ namespace Library.Model.Concrete
         public string BookGenre { get; set; }
         public string BookDescription { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public int CategoryId { get; set; }
+        public virtual Category Category { get; set; }
     }
 }
