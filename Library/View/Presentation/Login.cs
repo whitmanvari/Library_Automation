@@ -69,7 +69,8 @@ namespace Library.View.Presentation
             admin_MainMenu.Show();
             this.Hide();
         }
-
+        
+        //String Text Control
         public bool StringControl(string text)
         {
             if (string.IsNullOrEmpty(text) && string.IsNullOrWhiteSpace(text))

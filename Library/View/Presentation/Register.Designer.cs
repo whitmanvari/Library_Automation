@@ -36,27 +36,27 @@
             this.btn_ExitLoginPage = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_AdminRegister = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.label_AdminPasswordError_Register = new System.Windows.Forms.Label();
+            this.label_AdminPhoneError_Register = new System.Windows.Forms.Label();
+            this.label_AdminBirthDateError_Register = new System.Windows.Forms.Label();
+            this.label_AdminAdressError_Register = new System.Windows.Forms.Label();
+            this.lbl_AdminEmailError_Register = new System.Windows.Forms.Label();
+            this.lbl_errorAdminSurname_Register = new System.Windows.Forms.Label();
+            this.label_AdminNameError_Register = new System.Windows.Forms.Label();
+            this.textBox_AdminPassword_Register = new System.Windows.Forms.TextBox();
+            this.textBox_AdminPhone_Register = new System.Windows.Forms.TextBox();
+            this.textBox_AdminBirthDate_Register = new System.Windows.Forms.TextBox();
+            this.textBox_AdminAdress_Register = new System.Windows.Forms.TextBox();
+            this.textBox_AdminEmail_Register = new System.Windows.Forms.TextBox();
+            this.textBox_AdminSurname_Register = new System.Windows.Forms.TextBox();
+            this.textBox_AdminName_Register = new System.Windows.Forms.TextBox();
+            this.label_AdminPassword = new System.Windows.Forms.Label();
+            this.label_AdminPhone = new System.Windows.Forms.Label();
+            this.label_AdminBirthDate = new System.Windows.Forms.Label();
+            this.label_AdminAdress = new System.Windows.Forms.Label();
+            this.label_AdminEmail = new System.Windows.Forms.Label();
+            this.label_AdminSurname = new System.Windows.Forms.Label();
+            this.label_AdminName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_ErrorMessage_LoginPage_AdminPassword = new System.Windows.Forms.Label();
             this.label_ErrorMessage_LoginPage_AdminEmail = new System.Windows.Forms.Label();
@@ -164,27 +164,27 @@
             this.tabPage_AdminRegister.BackColor = System.Drawing.Color.Transparent;
             this.tabPage_AdminRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage_AdminRegister.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage_AdminRegister.Controls.Add(this.label2);
-            this.tabPage_AdminRegister.Controls.Add(this.label3);
-            this.tabPage_AdminRegister.Controls.Add(this.label5);
-            this.tabPage_AdminRegister.Controls.Add(this.label6);
-            this.tabPage_AdminRegister.Controls.Add(this.label8);
-            this.tabPage_AdminRegister.Controls.Add(this.label9);
-            this.tabPage_AdminRegister.Controls.Add(this.label10);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox9);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox10);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox11);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox12);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox14);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox15);
-            this.tabPage_AdminRegister.Controls.Add(this.textBox16);
-            this.tabPage_AdminRegister.Controls.Add(this.label11);
-            this.tabPage_AdminRegister.Controls.Add(this.label12);
-            this.tabPage_AdminRegister.Controls.Add(this.label13);
-            this.tabPage_AdminRegister.Controls.Add(this.label14);
-            this.tabPage_AdminRegister.Controls.Add(this.label16);
-            this.tabPage_AdminRegister.Controls.Add(this.label17);
-            this.tabPage_AdminRegister.Controls.Add(this.label18);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminPasswordError_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminPhoneError_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminBirthDateError_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminAdressError_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.lbl_AdminEmailError_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.lbl_errorAdminSurname_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminNameError_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminPassword_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminPhone_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminBirthDate_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminAdress_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminEmail_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminSurname_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminName_Register);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminPassword);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminPhone);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminBirthDate);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminAdress);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminEmail);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminSurname);
+            this.tabPage_AdminRegister.Controls.Add(this.label_AdminName);
             this.tabPage_AdminRegister.Controls.Add(this.label1);
             this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminPassword);
             this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminEmail);
@@ -200,194 +200,201 @@
             this.tabPage_AdminRegister.TabIndex = 0;
             this.tabPage_AdminRegister.Text = "Admin ";
             // 
-            // label2
+            // label_AdminPasswordError_Register
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 406);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 16);
-            this.label2.TabIndex = 37;
+            this.label_AdminPasswordError_Register.AutoSize = true;
+            this.label_AdminPasswordError_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminPasswordError_Register.ForeColor = System.Drawing.Color.Maroon;
+            this.label_AdminPasswordError_Register.Location = new System.Drawing.Point(28, 406);
+            this.label_AdminPasswordError_Register.Name = "label_AdminPasswordError_Register";
+            this.label_AdminPasswordError_Register.Size = new System.Drawing.Size(0, 16);
+            this.label_AdminPasswordError_Register.TabIndex = 37;
             // 
-            // label3
+            // label_AdminPhoneError_Register
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 345);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 16);
-            this.label3.TabIndex = 36;
+            this.label_AdminPhoneError_Register.AutoSize = true;
+            this.label_AdminPhoneError_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminPhoneError_Register.ForeColor = System.Drawing.Color.Maroon;
+            this.label_AdminPhoneError_Register.Location = new System.Drawing.Point(28, 345);
+            this.label_AdminPhoneError_Register.Name = "label_AdminPhoneError_Register";
+            this.label_AdminPhoneError_Register.Size = new System.Drawing.Size(0, 16);
+            this.label_AdminPhoneError_Register.TabIndex = 36;
             // 
-            // label5
+            // label_AdminBirthDateError_Register
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 292);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 16);
-            this.label5.TabIndex = 35;
+            this.label_AdminBirthDateError_Register.AutoSize = true;
+            this.label_AdminBirthDateError_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminBirthDateError_Register.ForeColor = System.Drawing.Color.Maroon;
+            this.label_AdminBirthDateError_Register.Location = new System.Drawing.Point(28, 292);
+            this.label_AdminBirthDateError_Register.Name = "label_AdminBirthDateError_Register";
+            this.label_AdminBirthDateError_Register.Size = new System.Drawing.Size(0, 16);
+            this.label_AdminBirthDateError_Register.TabIndex = 35;
             // 
-            // label6
+            // label_AdminAdressError_Register
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 245);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 16);
-            this.label6.TabIndex = 34;
+            this.label_AdminAdressError_Register.AutoSize = true;
+            this.label_AdminAdressError_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminAdressError_Register.ForeColor = System.Drawing.Color.Maroon;
+            this.label_AdminAdressError_Register.Location = new System.Drawing.Point(19, 245);
+            this.label_AdminAdressError_Register.Name = "label_AdminAdressError_Register";
+            this.label_AdminAdressError_Register.Size = new System.Drawing.Size(0, 16);
+            this.label_AdminAdressError_Register.TabIndex = 34;
             // 
-            // label8
+            // lbl_AdminEmailError_Register
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 195);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 16);
-            this.label8.TabIndex = 32;
+            this.lbl_AdminEmailError_Register.AutoSize = true;
+            this.lbl_AdminEmailError_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_AdminEmailError_Register.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_AdminEmailError_Register.Location = new System.Drawing.Point(18, 195);
+            this.lbl_AdminEmailError_Register.Name = "lbl_AdminEmailError_Register";
+            this.lbl_AdminEmailError_Register.Size = new System.Drawing.Size(0, 16);
+            this.lbl_AdminEmailError_Register.TabIndex = 32;
             // 
-            // label9
+            // lbl_errorAdminSurname_Register
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(18, 150);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 16);
-            this.label9.TabIndex = 31;
+            this.lbl_errorAdminSurname_Register.AutoSize = true;
+            this.lbl_errorAdminSurname_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_errorAdminSurname_Register.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_errorAdminSurname_Register.Location = new System.Drawing.Point(19, 150);
+            this.lbl_errorAdminSurname_Register.Name = "lbl_errorAdminSurname_Register";
+            this.lbl_errorAdminSurname_Register.Size = new System.Drawing.Size(0, 16);
+            this.lbl_errorAdminSurname_Register.TabIndex = 31;
             // 
-            // label10
+            // label_AdminNameError_Register
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(18, 109);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 16);
-            this.label10.TabIndex = 30;
+            this.label_AdminNameError_Register.AutoSize = true;
+            this.label_AdminNameError_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminNameError_Register.ForeColor = System.Drawing.Color.Maroon;
+            this.label_AdminNameError_Register.Location = new System.Drawing.Point(18, 109);
+            this.label_AdminNameError_Register.Name = "label_AdminNameError_Register";
+            this.label_AdminNameError_Register.Size = new System.Drawing.Size(0, 16);
+            this.label_AdminNameError_Register.TabIndex = 30;
             // 
-            // textBox9
+            // textBox_AdminPassword_Register
             // 
-            this.textBox9.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(103, 372);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(196, 19);
-            this.textBox9.TabIndex = 28;
+            this.textBox_AdminPassword_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminPassword_Register.Location = new System.Drawing.Point(112, 372);
+            this.textBox_AdminPassword_Register.Name = "textBox_AdminPassword_Register";
+            this.textBox_AdminPassword_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminPassword_Register.TabIndex = 28;
             // 
-            // textBox10
+            // textBox_AdminPhone_Register
             // 
-            this.textBox10.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(103, 321);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(196, 19);
-            this.textBox10.TabIndex = 27;
+            this.textBox_AdminPhone_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminPhone_Register.Location = new System.Drawing.Point(112, 321);
+            this.textBox_AdminPhone_Register.Name = "textBox_AdminPhone_Register";
+            this.textBox_AdminPhone_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminPhone_Register.TabIndex = 27;
             // 
-            // textBox11
+            // textBox_AdminBirthDate_Register
             // 
-            this.textBox11.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(103, 273);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(196, 19);
-            this.textBox11.TabIndex = 29;
+            this.textBox_AdminBirthDate_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminBirthDate_Register.Location = new System.Drawing.Point(112, 273);
+            this.textBox_AdminBirthDate_Register.Name = "textBox_AdminBirthDate_Register";
+            this.textBox_AdminBirthDate_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminBirthDate_Register.TabIndex = 29;
             // 
-            // textBox12
+            // textBox_AdminAdress_Register
             // 
-            this.textBox12.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(103, 221);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(196, 19);
-            this.textBox12.TabIndex = 26;
+            this.textBox_AdminAdress_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminAdress_Register.Location = new System.Drawing.Point(112, 221);
+            this.textBox_AdminAdress_Register.Name = "textBox_AdminAdress_Register";
+            this.textBox_AdminAdress_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminAdress_Register.TabIndex = 26;
             // 
-            // textBox14
+            // textBox_AdminEmail_Register
             // 
-            this.textBox14.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(103, 171);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(196, 19);
-            this.textBox14.TabIndex = 24;
+            this.textBox_AdminEmail_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminEmail_Register.Location = new System.Drawing.Point(112, 171);
+            this.textBox_AdminEmail_Register.Name = "textBox_AdminEmail_Register";
+            this.textBox_AdminEmail_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminEmail_Register.TabIndex = 24;
             // 
-            // textBox15
+            // textBox_AdminSurname_Register
             // 
-            this.textBox15.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(103, 126);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(196, 19);
-            this.textBox15.TabIndex = 23;
+            this.textBox_AdminSurname_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminSurname_Register.Location = new System.Drawing.Point(112, 126);
+            this.textBox_AdminSurname_Register.Name = "textBox_AdminSurname_Register";
+            this.textBox_AdminSurname_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminSurname_Register.TabIndex = 23;
             // 
-            // textBox16
+            // textBox_AdminName_Register
             // 
-            this.textBox16.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(103, 83);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(196, 19);
-            this.textBox16.TabIndex = 22;
+            this.textBox_AdminName_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminName_Register.Location = new System.Drawing.Point(112, 83);
+            this.textBox_AdminName_Register.Name = "textBox_AdminName_Register";
+            this.textBox_AdminName_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminName_Register.TabIndex = 22;
             // 
-            // label11
+            // label_AdminPassword
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(18, 372);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 24);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Password:";
+            this.label_AdminPassword.AutoSize = true;
+            this.label_AdminPassword.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminPassword.Location = new System.Drawing.Point(18, 372);
+            this.label_AdminPassword.Name = "label_AdminPassword";
+            this.label_AdminPassword.Size = new System.Drawing.Size(80, 24);
+            this.label_AdminPassword.TabIndex = 20;
+            this.label_AdminPassword.Text = "Password:";
             // 
-            // label12
+            // label_AdminPhone
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(18, 321);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 24);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "Phone:";
+            this.label_AdminPhone.AutoSize = true;
+            this.label_AdminPhone.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminPhone.Location = new System.Drawing.Point(18, 321);
+            this.label_AdminPhone.Name = "label_AdminPhone";
+            this.label_AdminPhone.Size = new System.Drawing.Size(57, 24);
+            this.label_AdminPhone.TabIndex = 19;
+            this.label_AdminPhone.Text = "Phone:";
             // 
-            // label13
+            // label_AdminBirthDate
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(18, 268);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 24);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "BirthDate:";
+            this.label_AdminBirthDate.AutoSize = true;
+            this.label_AdminBirthDate.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminBirthDate.Location = new System.Drawing.Point(18, 268);
+            this.label_AdminBirthDate.Name = "label_AdminBirthDate";
+            this.label_AdminBirthDate.Size = new System.Drawing.Size(84, 24);
+            this.label_AdminBirthDate.TabIndex = 18;
+            this.label_AdminBirthDate.Text = "BirthDate:";
             // 
-            // label14
+            // label_AdminAdress
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(18, 221);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 24);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Address:";
+            this.label_AdminAdress.AutoSize = true;
+            this.label_AdminAdress.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminAdress.Location = new System.Drawing.Point(18, 221);
+            this.label_AdminAdress.Name = "label_AdminAdress";
+            this.label_AdminAdress.Size = new System.Drawing.Size(69, 24);
+            this.label_AdminAdress.TabIndex = 17;
+            this.label_AdminAdress.Text = "Address:";
             // 
-            // label16
+            // label_AdminEmail
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(18, 171);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 24);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Email:";
+            this.label_AdminEmail.AutoSize = true;
+            this.label_AdminEmail.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminEmail.Location = new System.Drawing.Point(18, 171);
+            this.label_AdminEmail.Name = "label_AdminEmail";
+            this.label_AdminEmail.Size = new System.Drawing.Size(54, 24);
+            this.label_AdminEmail.TabIndex = 15;
+            this.label_AdminEmail.Text = "Email:";
             // 
-            // label17
+            // label_AdminSurname
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(18, 126);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 24);
-            this.label17.TabIndex = 21;
-            this.label17.Text = "Surname:";
+            this.label_AdminSurname.AutoSize = true;
+            this.label_AdminSurname.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminSurname.Location = new System.Drawing.Point(18, 126);
+            this.label_AdminSurname.Name = "label_AdminSurname";
+            this.label_AdminSurname.Size = new System.Drawing.Size(77, 24);
+            this.label_AdminSurname.TabIndex = 21;
+            this.label_AdminSurname.Text = "Surname:";
             // 
-            // label18
+            // label_AdminName
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(18, 83);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(54, 24);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "Name:";
+            this.label_AdminName.AutoSize = true;
+            this.label_AdminName.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_AdminName.Location = new System.Drawing.Point(18, 83);
+            this.label_AdminName.Name = "label_AdminName";
+            this.label_AdminName.Size = new System.Drawing.Size(54, 24);
+            this.label_AdminName.TabIndex = 14;
+            this.label_AdminName.Text = "Name:";
             // 
             // label1
             // 
@@ -438,7 +445,7 @@
             this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_AdminLogin.AutoSize = true;
             this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.Plum;
-            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(87, 477);
+            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(87, 457);
             this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
             this.linkLabel_AdminLogin.Size = new System.Drawing.Size(212, 21);
             this.linkLabel_AdminLogin.TabIndex = 3;
@@ -450,12 +457,13 @@
             // button_Enter_LoginPage
             // 
             this.button_Enter_LoginPage.Font = new System.Drawing.Font("Segoe Print", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Enter_LoginPage.Location = new System.Drawing.Point(215, 438);
+            this.button_Enter_LoginPage.Location = new System.Drawing.Point(215, 418);
             this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
             this.button_Enter_LoginPage.Size = new System.Drawing.Size(84, 36);
             this.button_Enter_LoginPage.TabIndex = 2;
             this.button_Enter_LoginPage.Text = "Enter";
             this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
+            this.button_Enter_LoginPage.Click += new System.EventHandler(this.button_Enter_LoginPage_Click);
             // 
             // tabPage_MemberRegister
             // 
@@ -846,27 +854,27 @@
         private System.Windows.Forms.Label label_errorMessage_MemberSurname_RegisterPage;
         private System.Windows.Forms.Label label_Register_SignIn;
         private System.Windows.Forms.TabPage tabPage_AdminRegister;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label_AdminPasswordError_Register;
+        private System.Windows.Forms.Label label_AdminPhoneError_Register;
+        private System.Windows.Forms.Label label_AdminBirthDateError_Register;
+        private System.Windows.Forms.Label label_AdminAdressError_Register;
+        private System.Windows.Forms.Label lbl_AdminEmailError_Register;
+        private System.Windows.Forms.Label lbl_errorAdminSurname_Register;
+        private System.Windows.Forms.Label label_AdminNameError_Register;
+        private System.Windows.Forms.TextBox textBox_AdminPassword_Register;
+        private System.Windows.Forms.TextBox textBox_AdminPhone_Register;
+        private System.Windows.Forms.TextBox textBox_AdminBirthDate_Register;
+        private System.Windows.Forms.TextBox textBox_AdminAdress_Register;
+        private System.Windows.Forms.TextBox textBox_AdminEmail_Register;
+        private System.Windows.Forms.TextBox textBox_AdminSurname_Register;
+        private System.Windows.Forms.TextBox textBox_AdminName_Register;
+        private System.Windows.Forms.Label label_AdminPassword;
+        private System.Windows.Forms.Label label_AdminPhone;
+        private System.Windows.Forms.Label label_AdminBirthDate;
+        private System.Windows.Forms.Label label_AdminAdress;
+        private System.Windows.Forms.Label label_AdminEmail;
+        private System.Windows.Forms.Label label_AdminSurname;
+        private System.Windows.Forms.Label label_AdminName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminPassword;
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminEmail;
