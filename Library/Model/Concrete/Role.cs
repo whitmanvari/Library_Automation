@@ -9,5 +9,6 @@ namespace Library.Model.Concrete
     public class Role
     {
         public int Id { get; set; }
+        public virtual List<User> Users { get; set; }
     }
 }

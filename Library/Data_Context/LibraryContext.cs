@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Library.DataContext
 {
-    public class LibraryContext: DbContext
+    public class LibraryContext : DbContext
     {
         //Mssql connection string will be add.
         public LibraryContext()
@@ -17,17 +17,18 @@ namespace Library.DataContext
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-           
-            modelBuilder.Entity<Book>().ToTable("Books");
-            modelBuilder.Entity<Role>().ToTable("Roles");
-            modelBuilder.Entity<User>().ToTable("Users");
-
-
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>()
+                .HasRequired(u => u.Role)
+                .WithMany(r => r.Users)
+                .HasForeignKey(u => u.RoleId);
+
         }
-       
-        public DbSet<Role> role { get; set; }
-        public DbSet<User> users { get; set; }
-        public DbSet<Book> book { get; set; }
+
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

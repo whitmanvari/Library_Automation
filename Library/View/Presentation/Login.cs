@@ -58,7 +58,7 @@ namespace Library.View.Presentation
 
         private void btn_Enter_MemberLoginPage_Click(object sender, EventArgs e)
         {
-            txt_AdminEmail_Login.Text = context.admin.FirstOrDefault(a => a.Email == txt_AdminEmail_Login.Text).Email;
+           
         }
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
