@@ -46,14 +46,11 @@ namespace Library.View.Presentation
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
         {
-            string EmailControl = txt_AdminEmail_Login.Text?.Trim();
-            string PasswordControl = txt_AdminPassword_Login.Text?.Trim();
+            string emailControl = txt_AdminEmail_Login.Text?.Trim();
+            string passwordControl = txt_AdminPassword_Login.Text?.Trim();
 
-            if (StringControl(EmailControl) || StringControl(PasswordControl))
-            {
-                MessageBox.Show("Error, incorrect informations. If you do not have an account, please sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            if (StringControl(emailControl, label_errorEmail)) { return; }
+            if (StringControl(passwordControl, label_errorPassword)) { return; }
 
             var adminUser = context.Users.FirstOrDefault(u => u.Email == txt_AdminEmail_Login.Text && u.Password == txt_AdminPassword_Login.Text);
             //User cannot be null.
@@ -70,9 +67,16 @@ namespace Library.View.Presentation
         }
 
         //String Text Control
-        public bool StringControl(string text)
+        public bool StringControl(string text, Label label)
         {
-            return string.IsNullOrWhiteSpace(text);
+            bool control = false;
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                label.Text = "This area is mandatory!";
+                control = true;
+                return control;
+            }
+            return control;
         }
 
         private void btn_Enter_MemberLoginPage_Click_1(object sender, EventArgs e)
@@ -80,11 +84,8 @@ namespace Library.View.Presentation
             string inputControl = textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text.Trim();
             string passwordControl = textBox_MemberPasswordControl_LoginPage.Text.Trim();
 
-            if (StringControl(inputControl) || StringControl(passwordControl))
-            {
-                MessageBox.Show("Error, incorrect informations. If you do not have an account please sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            if (StringControl(inputControl, label_ErrorMessage_LoginPage_AdminEmail)) { return; }
+            if (StringControl(passwordControl, label_ErrorMessage_LoginPage_AdminPassword)) { return; }
 
             var memberUser = context.Users.FirstOrDefault(u =>
            (IsValidEmail(inputControl) && u.Email == inputControl) ||
@@ -118,6 +119,26 @@ namespace Library.View.Presentation
         public bool IsValidUserName(string text)
         {
             return text.All(char.IsLetterOrDigit);
+        }
+
+        private void txt_AdminEmail_Login_TextChanged(object sender, EventArgs e)
+        {
+            label_errorEmail.Text = "";
+        }
+
+        private void txt_AdminPassword_Login_TextChanged(object sender, EventArgs e)
+        {
+            label_errorPassword.Text = "";
+        }
+
+        private void textBox_MemberEmail_Phone_UserNameControl_LoginPage_TextChanged(object sender, EventArgs e)
+        {
+            label_errorMessage_Loginpage_MemberEmail.Text = "";
+        }
+
+        private void textBox_MemberPasswordControl_LoginPage_TextChanged(object sender, EventArgs e)
+        {
+            label_ErrorMessage_LoginPage_AdminPassword.Text = "";
         }
     }
 }

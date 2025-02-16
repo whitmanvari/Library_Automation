@@ -38,8 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label_WelcomeMessage = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.adminsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryAutomationDataSet3 = new Library.LibraryAutomationDataSet3();
             this.linkLabel_AdminLogin = new System.Windows.Forms.LinkLabel();
             this.button_Enter_LoginPage = new System.Windows.Forms.Button();
             this.txt_AdminPassword_Login = new System.Windows.Forms.TextBox();
@@ -58,6 +56,8 @@
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_Email_UserName_assword_MemberLoginPage = new System.Windows.Forms.Label();
+            this.adminsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryAutomationDataSet3 = new Library.LibraryAutomationDataSet3();
             this.adminsTableAdapter = new Library.LibraryAutomationDataSet3TableAdapters.AdminsTableAdapter();
             this.btn_ExitLoginPage = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -66,13 +66,15 @@
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.label_LoginPage_Signin = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_errorPassword = new System.Windows.Forms.Label();
+            this.label_errorEmail = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adminsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet3)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet3)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +94,8 @@
             this.tabPage_AdminLogin.BackColor = System.Drawing.Color.Transparent;
             this.tabPage_AdminLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage_AdminLogin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage_AdminLogin.Controls.Add(this.label_errorEmail);
+            this.tabPage_AdminLogin.Controls.Add(this.label_errorPassword);
             this.tabPage_AdminLogin.Controls.Add(this.label_ErrorMessage_LoginPage_AdminPassword);
             this.tabPage_AdminLogin.Controls.Add(this.label_ErrorMessage_LoginPage_AdminEmail);
             this.tabPage_AdminLogin.Controls.Add(this.label_ErrorMessage_LoginPage_AdminRole);
@@ -166,16 +170,6 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // adminsBindingSource
-            // 
-            this.adminsBindingSource.DataMember = "Admins";
-            this.adminsBindingSource.DataSource = this.libraryAutomationDataSet3;
-            // 
-            // libraryAutomationDataSet3
-            // 
-            this.libraryAutomationDataSet3.DataSetName = "LibraryAutomationDataSet3";
-            this.libraryAutomationDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // linkLabel_AdminLogin
             // 
             this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
@@ -210,6 +204,7 @@
             this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 23);
             this.txt_AdminPassword_Login.TabIndex = 3;
             this.txt_AdminPassword_Login.UseSystemPasswordChar = true;
+            this.txt_AdminPassword_Login.TextChanged += new System.EventHandler(this.txt_AdminPassword_Login_TextChanged);
             // 
             // txt_AdminEmail_Login
             // 
@@ -218,6 +213,7 @@
             this.txt_AdminEmail_Login.Name = "txt_AdminEmail_Login";
             this.txt_AdminEmail_Login.Size = new System.Drawing.Size(225, 23);
             this.txt_AdminEmail_Login.TabIndex = 2;
+            this.txt_AdminEmail_Login.TextChanged += new System.EventHandler(this.txt_AdminEmail_Login_TextChanged);
             // 
             // lbl_AdminPassword_Login
             // 
@@ -312,6 +308,7 @@
             this.textBox_MemberPasswordControl_LoginPage.Name = "textBox_MemberPasswordControl_LoginPage";
             this.textBox_MemberPasswordControl_LoginPage.Size = new System.Drawing.Size(179, 26);
             this.textBox_MemberPasswordControl_LoginPage.TabIndex = 2;
+            this.textBox_MemberPasswordControl_LoginPage.TextChanged += new System.EventHandler(this.textBox_MemberPasswordControl_LoginPage_TextChanged);
             // 
             // textBox_MemberEmail_Phone_UserNameControl_LoginPage
             // 
@@ -320,6 +317,7 @@
             this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Name = "textBox_MemberEmail_Phone_UserNameControl_LoginPage";
             this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Size = new System.Drawing.Size(179, 26);
             this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.TabIndex = 1;
+            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.TextChanged += new System.EventHandler(this.textBox_MemberEmail_Phone_UserNameControl_LoginPage_TextChanged);
             // 
             // pictureBox2
             // 
@@ -367,6 +365,16 @@
             this.label_Email_UserName_assword_MemberLoginPage.Size = new System.Drawing.Size(184, 24);
             this.label_Email_UserName_assword_MemberLoginPage.TabIndex = 0;
             this.label_Email_UserName_assword_MemberLoginPage.Text = "Email/Phone/UserName:";
+            // 
+            // adminsBindingSource
+            // 
+            this.adminsBindingSource.DataMember = "Admins";
+            this.adminsBindingSource.DataSource = this.libraryAutomationDataSet3;
+            // 
+            // libraryAutomationDataSet3
+            // 
+            this.libraryAutomationDataSet3.DataSetName = "LibraryAutomationDataSet3";
+            this.libraryAutomationDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // adminsTableAdapter
             // 
@@ -430,6 +438,22 @@
             this.panel1.Size = new System.Drawing.Size(646, 41);
             this.panel1.TabIndex = 2;
             // 
+            // label_errorPassword
+            // 
+            this.label_errorPassword.AutoSize = true;
+            this.label_errorPassword.Location = new System.Drawing.Point(9, 227);
+            this.label_errorPassword.Name = "label_errorPassword";
+            this.label_errorPassword.Size = new System.Drawing.Size(0, 21);
+            this.label_errorPassword.TabIndex = 9;
+            // 
+            // label_errorEmail
+            // 
+            this.label_errorEmail.AutoSize = true;
+            this.label_errorEmail.Location = new System.Drawing.Point(9, 170);
+            this.label_errorEmail.Name = "label_errorEmail";
+            this.label_errorEmail.Size = new System.Drawing.Size(0, 21);
+            this.label_errorEmail.TabIndex = 9;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,11 +469,11 @@
             this.tabPage_AdminLogin.ResumeLayout(false);
             this.tabPage_AdminLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adminsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet3)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -494,5 +518,7 @@
         private System.Windows.Forms.Label label_TitleLogin;
         private System.Windows.Forms.Label label_LoginPage_Signin;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label_errorEmail;
+        private System.Windows.Forms.Label label_errorPassword;
     }
 }
