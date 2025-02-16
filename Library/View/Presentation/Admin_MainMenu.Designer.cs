@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label_signin_adminManinMenu = new System.Windows.Forms.Label();
+            this.label_MemberMainMenu_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -37,24 +37,24 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Plum;
-            this.panel1.Controls.Add(this.label_signin_adminManinMenu);
+            this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 41);
-            this.panel1.TabIndex = 3;
+            this.panel1.TabIndex = 4;
             // 
-            // label_signin_adminManinMenu
+            // label_MemberMainMenu_SignIn
             // 
-            this.label_signin_adminManinMenu.AutoSize = true;
-            this.label_signin_adminManinMenu.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_signin_adminManinMenu.Location = new System.Drawing.Point(729, 9);
-            this.label_signin_adminManinMenu.Name = "label_signin_adminManinMenu";
-            this.label_signin_adminManinMenu.Size = new System.Drawing.Size(59, 24);
-            this.label_signin_adminManinMenu.TabIndex = 7;
-            this.label_signin_adminManinMenu.Text = "Sign In";
-            this.label_signin_adminManinMenu.Click += new System.EventHandler(this.label_signin_adminManinMenu_Click);
+            this.label_MemberMainMenu_SignIn.AutoSize = true;
+            this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(729, 10);
+            this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
+            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
+            this.label_MemberMainMenu_SignIn.TabIndex = 7;
+            this.label_MemberMainMenu_SignIn.Text = "Sign In";
+            this.label_MemberMainMenu_SignIn.Click += new System.EventHandler(this.label_MemberMainMenu_SignIn_Click);
             // 
             // label_TitleLogin
             // 
@@ -84,7 +84,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label_signin_adminManinMenu;
+        private System.Windows.Forms.Label label_MemberMainMenu_SignIn;
         private System.Windows.Forms.Label label_TitleLogin;
     }
 }

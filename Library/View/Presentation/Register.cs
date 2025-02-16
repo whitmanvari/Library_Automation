@@ -39,7 +39,7 @@ namespace Library.View.Presentation
 
             bool isNameValid = StringControl(adminName, "Admin name cannot be empty!", label_AdminNameError_Register, label_AdminName);
             bool isSurnameValid = StringControl(adminSurname, "Admin Surname cannot be empty!", lbl_errorAdminSurname_Register, label_AdminSurname);
-            bool isEmailValid = StringControl(adminEmail, "Admin ")
+            //bool isEmailValid = StringControl(adminEmail, "Admin ");
 
 
         }
@@ -58,4 +58,4 @@ namespace Library.View.Presentation
         }
     }
 }
-}
+

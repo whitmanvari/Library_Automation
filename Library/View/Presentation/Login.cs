@@ -17,8 +17,7 @@ namespace Library.View.Presentation
 
         private void Login_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'libraryAutomationDataSet3.Admins' table. You can move, or remove it, as needed.
-            this.adminsTableAdapter.Fill(this.libraryAutomationDataSet3.Admins);
+
 
         }
 
@@ -69,15 +68,11 @@ namespace Library.View.Presentation
             admin_MainMenu.Show();
             this.Hide();
         }
-        
+
         //String Text Control
         public bool StringControl(string text)
         {
-            if (string.IsNullOrEmpty(text) && string.IsNullOrWhiteSpace(text))
-            {
-                return true;
-            }
-            return false;
+            return string.IsNullOrWhiteSpace(text);
         }
 
         private void btn_Enter_MemberLoginPage_Click_1(object sender, EventArgs e)
@@ -91,12 +86,14 @@ namespace Library.View.Presentation
                 return;
             }
 
-            var memberUser = context.Users.FirstOrDefault(u => (IsValidEmail(inputControl) && u.Email == inputControl) ||
-             (IsValidPhone(inputControl) && u.Phone == inputControl) ||
-             (IsValidUserName(inputControl) && u.Name == inputControl)
-             && u.Password == passwordControl);
+            var memberUser = context.Users.FirstOrDefault(u =>
+           (IsValidEmail(inputControl) && u.Email == inputControl) ||
+           (IsValidPhone(inputControl) && u.Phone == inputControl) ||
+           (IsValidUserName(inputControl) && u.Name == inputControl)
+              && u.Password == passwordControl
+             );
 
-            if(memberUser == null)
+            if (memberUser == null)
             {
                 MessageBox.Show("The user could not be found, if you are not a member first sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
