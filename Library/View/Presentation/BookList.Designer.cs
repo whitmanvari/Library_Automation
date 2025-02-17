@@ -66,9 +66,9 @@
             this.bookGenreDataGridViewTextBoxColumn,
             this.bookDescriptionDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.booksBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 40);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 47);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(938, 425);
+            this.dataGridView1.Size = new System.Drawing.Size(930, 425);
             this.dataGridView1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn

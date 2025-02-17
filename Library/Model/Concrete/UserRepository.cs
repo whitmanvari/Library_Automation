@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Library.DataContext;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,22 +12,34 @@ namespace Library.Model.Concrete
     {
         public void Add(User entity)
         {
-            throw new NotImplementedException();
+            using (LibraryContext context = new LibraryContext())
+            {
+                context.Users.Add(entity);
+                context.SaveChanges();
+            }
         }
-
         public void Delete(User entity)
         {
-            throw new NotImplementedException();
+            using (LibraryContext context = new LibraryContext())
+            {
+                context.Entry(entity).State = EntityState.Deleted;
+                context.SaveChanges();
+            }
         }
-
         public List<User> Get()
         {
-            throw new NotImplementedException();
+            using (LibraryContext context = new LibraryContext())
+            {
+                return context.Users.Include(u => u.Role).ToList();
+            }
         }
-
         public void Update(User entity)
         {
-            throw new NotImplementedException();
+            using (LibraryContext context = new LibraryContext())
+            {
+                context.Entry(entity).State = EntityState.Modified;
+                context.SaveChanges();
+            }
         }
     }
 }

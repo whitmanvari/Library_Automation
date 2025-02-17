@@ -1,6 +1,7 @@
 ﻿using Library.DataContext;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,22 +12,34 @@ namespace Library.Model.Concrete
     {
         public void Add(Book addBookEntity)
         {
-           
+            using (LibraryContext context = new LibraryContext())
+            {
+                context.Books.Add(addBookEntity);
+                context.SaveChanges();
+            }
         }
-
         public void Delete(Book deleteBookEntity)
         {
-            throw new NotImplementedException();
+            using (LibraryContext context = new LibraryContext())
+            {
+                context.Entry(deleteBookEntity).State = EntityState.Deleted;
+                context.SaveChanges();
+            }
         }
-
         public List<Book> Get()
         {
-            throw new NotImplementedException();
+            using (LibraryContext context = new LibraryContext())
+            {
+                return context.Books.Include(b => b.Category).ToList();
+            }
         }
-
         public void Update(Book updateBookEntity)
         {
-            throw new NotImplementedException();
+            using (LibraryContext context = new LibraryContext())
+            {
+                context.Entry(updateBookEntity).State = EntityState.Modified;
+                context.SaveChanges();
+            }
         }
     }
 }

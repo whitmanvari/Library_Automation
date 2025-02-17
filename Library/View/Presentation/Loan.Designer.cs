@@ -31,7 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_Loan_signinPage = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,16 +69,27 @@
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 73);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(800, 341);
+            this.dataGridView2.TabIndex = 5;
+            // 
             // Loan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.panel1);
             this.Name = "Loan";
             this.Text = "Loan";
+            this.Load += new System.EventHandler(this.Loan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -86,5 +99,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label_Loan_signinPage;
         private System.Windows.Forms.Label label_TitleLogin;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }

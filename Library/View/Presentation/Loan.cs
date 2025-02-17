@@ -23,5 +23,10 @@ namespace Library.View.Presentation
             login.Show();
             this.Hide();
         }
+
+        private void Loan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

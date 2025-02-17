@@ -1,5 +1,7 @@
 ﻿using Library.DataContext;
+using Library.Model.Concrete;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -8,6 +10,8 @@ namespace Library.View.Presentation
 {
     public partial class Login : Form
     {
+        string Email;
+        string Password;
         LibraryContext context = new LibraryContext();
         public Login()
         {
@@ -46,30 +50,34 @@ namespace Library.View.Presentation
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
         {
-            string emailControl = txt_AdminEmail_Login.Text?.Trim();
-            string passwordControl = txt_AdminPassword_Login.Text?.Trim();
+            List<User> users = new List<User>();
+            users = context.Users.Where(u => u.Email == txt_AdminEmail_Login.Text).ToList();
+            if(StringControl(txt_AdminEmail_Login.Text, label_errorEmail)) { return; }
+            if (StringControl(txt_AdminPassword_Login.Text, label_errorPassword)) { return; }
 
-            if (StringControl(emailControl, label_errorEmail)) { return; }
-            if (StringControl(passwordControl, label_errorPassword)) { return; }
-            var adminUserMailCheck = context.Users.FirstOrDefault(u => u.Email == txt_AdminEmail_Login.Text);
-            var adminUserPasswordCheck = context.Users.FirstOrDefault(u => u.Password == txt_AdminPassword_Login.Text);
-           
-            //User checks cannot be null!
-
-            if (adminUserMailCheck == null)
+            foreach (var admin in users)
             {
-                MessageBox.Show("The user mail could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                Email = admin.Email.ToString();
+                Password = admin.Password.ToString();
             }
-            if(adminUserPasswordCheck == null)
+            if(Email == txt_AdminEmail_Login.Text)
             {
-                MessageBox.Show("The user password is wrong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (Password == txt_AdminPassword_Login.Text)
+                {
+                    MessageBox.Show("Welcome!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Admin_MainMenu adminMainMenu = new Admin_MainMenu();
+                    adminMainMenu.Show();
+                    this.Hide();
+                }
+                else
+                {
+                   MessageBox.Show("The password is wrong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-
-            Admin_MainMenu admin_MainMenu = new Admin_MainMenu();
-            admin_MainMenu.Show();
-            this.Hide();
+            else
+            {
+                MessageBox.Show("The user could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         //String Text Control
