@@ -51,13 +51,19 @@ namespace Library.View.Presentation
 
             if (StringControl(emailControl, label_errorEmail)) { return; }
             if (StringControl(passwordControl, label_errorPassword)) { return; }
+            var adminUserMailCheck = context.Users.FirstOrDefault(u => u.Email == txt_AdminEmail_Login.Text);
+            var adminUserPasswordCheck = context.Users.FirstOrDefault(u => u.Password == txt_AdminPassword_Login.Text);
+           
+            //User checks cannot be null!
 
-            var adminUser = context.Users.FirstOrDefault(u => u.Email == txt_AdminEmail_Login.Text && u.Password == txt_AdminPassword_Login.Text);
-            //User cannot be null.
-
-            if (adminUser == null)
+            if (adminUserMailCheck == null)
             {
-                MessageBox.Show("The user could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The user mail could not be found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if(adminUserPasswordCheck == null)
+            {
+                MessageBox.Show("The user password is wrong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -99,6 +105,7 @@ namespace Library.View.Presentation
                 MessageBox.Show("The user could not be found, if you are not a member first sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             Member_MainMenu member_MainMenu = new Member_MainMenu();
             member_MainMenu.Show();
             this.Hide();

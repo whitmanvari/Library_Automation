@@ -35,11 +35,15 @@ namespace Library.View.Presentation
             string adminPhone = textBox_AdminPhone_Register.Text;
             string adminPassword = textBox_AdminPassword_Register.Text;
             string adminBirthDate = textBox_AdminBirthDate_Register.Text;
-            string adminAddress = textBox_AdminAdress_Register.Text;
+            string adminAddress = fgh.Text;
 
             bool isNameValid = StringControl(adminName, "Admin name cannot be empty!", label_AdminNameError_Register, label_AdminName);
-            bool isSurnameValid = StringControl(adminSurname, "Admin Surname cannot be empty!", lbl_errorAdminSurname_Register, label_AdminSurname);
-            //bool isEmailValid = StringControl(adminEmail, "Admin ");
+            bool isSurnameValid = StringControl(adminSurname, "Admin surname cannot be empty!", lbl_errorAdminSurname_Register, label_AdminSurname);
+            bool isEmailValid = StringControl(adminEmail, "Admin email cannot be empty!", lbl_AdminEmailError_Register, label_AdminEmail);
+            bool isPhoneValid = StringControl(adminPhone, "Admin phone cannot be empty!", label_AdminPhoneError_Register, label_AdminPhone);
+            bool isAddressValid = StringControl(adminAddress, "Admin address cannot be empty!", label_AdminAdressError_Register, label_AdminAdress);
+            bool isPasswordValid = StringControl(adminPassword, "Admin password cannot be empty!", label_AdminPasswordError_Register, label_AdminPassword);
+            bool 
 
 
         }
