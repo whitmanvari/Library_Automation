@@ -7,18 +7,10 @@ using System.Threading.Tasks;
 
 namespace Library.Model.Concrete
 {
-    public class User: IPerson
+    public class User: Person
     {
-        private DateTime _birthDate;
-        public DateTime BirthDate
-        {
-            get => _birthDate;
-            set
-            {
-                if (value < DateTime.Now)
-                    _birthDate = value;
-            }
-        }
+        
+        public DateTime? BirthDate{ get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public string Name { get; set; }
         public string Surname { get; set; }

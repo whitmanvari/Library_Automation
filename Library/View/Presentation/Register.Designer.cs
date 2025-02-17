@@ -36,6 +36,7 @@
             this.btn_ExitLoginPage = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_AdminRegister = new System.Windows.Forms.TabPage();
+            this.textBox_AdminAdress_Register = new System.Windows.Forms.RichTextBox();
             this.label_AdminPasswordError_Register = new System.Windows.Forms.Label();
             this.label_AdminPhoneError_Register = new System.Windows.Forms.Label();
             this.label_AdminBirthDateError_Register = new System.Windows.Forms.Label();
@@ -95,8 +96,6 @@
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
             this.toolTip_SignIn = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_SignInTomember = new System.Windows.Forms.ToolTip(this.components);
-            this.textBox_AdminAdress_Register = new System.Windows.Forms.RichTextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminRegister.SuspendLayout();
@@ -164,7 +163,6 @@
             this.tabPage_AdminRegister.BackColor = System.Drawing.Color.Transparent;
             this.tabPage_AdminRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage_AdminRegister.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage_AdminRegister.Controls.Add(this.dateTimePicker1);
             this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminAdress_Register);
             this.tabPage_AdminRegister.Controls.Add(this.label_AdminPasswordError_Register);
             this.tabPage_AdminRegister.Controls.Add(this.label_AdminPhoneError_Register);
@@ -199,6 +197,14 @@
             this.tabPage_AdminRegister.Size = new System.Drawing.Size(662, 548);
             this.tabPage_AdminRegister.TabIndex = 0;
             this.tabPage_AdminRegister.Text = "Admin ";
+            // 
+            // textBox_AdminAdress_Register
+            // 
+            this.textBox_AdminAdress_Register.Location = new System.Drawing.Point(101, 365);
+            this.textBox_AdminAdress_Register.Name = "textBox_AdminAdress_Register";
+            this.textBox_AdminAdress_Register.Size = new System.Drawing.Size(198, 76);
+            this.textBox_AdminAdress_Register.TabIndex = 38;
+            this.textBox_AdminAdress_Register.Text = "";
             // 
             // label_AdminPasswordError_Register
             // 
@@ -235,7 +241,7 @@
             this.label_AdminAdressError_Register.AutoSize = true;
             this.label_AdminAdressError_Register.Font = new System.Drawing.Font("Segoe Print", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_AdminAdressError_Register.ForeColor = System.Drawing.Color.Maroon;
-            this.label_AdminAdressError_Register.Location = new System.Drawing.Point(18, 425);
+            this.label_AdminAdressError_Register.Location = new System.Drawing.Point(28, 451);
             this.label_AdminAdressError_Register.Name = "label_AdminAdressError_Register";
             this.label_AdminAdressError_Register.Size = new System.Drawing.Size(0, 16);
             this.label_AdminAdressError_Register.TabIndex = 34;
@@ -344,7 +350,7 @@
             // 
             this.label_AdminAdress.AutoSize = true;
             this.label_AdminAdress.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminAdress.Location = new System.Drawing.Point(26, 374);
+            this.label_AdminAdress.Location = new System.Drawing.Point(18, 366);
             this.label_AdminAdress.Name = "label_AdminAdress";
             this.label_AdminAdress.Size = new System.Drawing.Size(69, 24);
             this.label_AdminAdress.TabIndex = 17;
@@ -484,7 +490,7 @@
             this.tabPage_MemberRegister.Location = new System.Drawing.Point(4, 30);
             this.tabPage_MemberRegister.Name = "tabPage_MemberRegister";
             this.tabPage_MemberRegister.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_MemberRegister.Size = new System.Drawing.Size(662, 517);
+            this.tabPage_MemberRegister.Size = new System.Drawing.Size(662, 548);
             this.tabPage_MemberRegister.TabIndex = 1;
             this.tabPage_MemberRegister.Text = "Member";
             this.tabPage_MemberRegister.UseVisualStyleBackColor = true;
@@ -774,21 +780,6 @@
             // 
             this.toolTip_SignInTomember.BackColor = System.Drawing.Color.Plum;
             // 
-            // textBox_AdminAdress_Register
-            // 
-            this.textBox_AdminAdress_Register.Location = new System.Drawing.Point(101, 365);
-            this.textBox_AdminAdress_Register.Name = "textBox_AdminAdress_Register";
-            this.textBox_AdminAdress_Register.Size = new System.Drawing.Size(198, 76);
-            this.textBox_AdminAdress_Register.TabIndex = 38;
-            this.textBox_AdminAdress_Register.Text = "";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(112, 214);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(187, 29);
-            this.dateTimePicker1.TabIndex = 39;
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -799,6 +790,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Register";
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -879,7 +871,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel_AdminLogin;
         private System.Windows.Forms.Button button_Enter_LoginPage;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.RichTextBox textBox_AdminAdress_Register;
     }
 }

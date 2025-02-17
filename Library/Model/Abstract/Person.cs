@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Library.Model.Abstract
 {
-    public interface IPerson : IBase
+    public abstract class Person : IBase
     {
+        public int Id { get; set; }
+        public DateTime CreatedDate { get; set; }
         string Name { get; set; }
         string Surname { get; set; }
-        DateTime BirthDate { get; set; }
+        DateTime? BirthDate { get; set; }
         string Email { get; set; }
         string Password { get; set; }
         string Phone { get; set; }

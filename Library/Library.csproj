@@ -93,14 +93,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LibraryAutomationDataSet5.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202502141349000_init.cs" />
-    <Compile Include="Migrations\202502141349000_init.Designer.cs">
-      <DependentUpon>202502141349000_init.cs</DependentUpon>
+    <Compile Include="Migrations\202502171214218_migration1.cs" />
+    <Compile Include="Migrations\202502171214218_migration1.Designer.cs">
+      <DependentUpon>202502171214218_migration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502171235290_migration2.cs" />
+    <Compile Include="Migrations\202502171235290_migration2.Designer.cs">
+      <DependentUpon>202502171235290_migration2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Abstract\IBase.cs" />
     <Compile Include="Model\Abstract\IRepository.cs" />
-    <Compile Include="Model\Abstract\IPerson.cs" />
+    <Compile Include="Model\Abstract\Person.cs" />
     <Compile Include="Model\Concrete\Book.cs" />
     <Compile Include="Model\Concrete\BookRepository.cs" />
     <Compile Include="Model\Concrete\Category.cs" />
@@ -160,8 +164,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202502141349000_init.resx">
-      <DependentUpon>202502141349000_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202502171214218_migration1.resx">
+      <DependentUpon>202502171214218_migration1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502171235290_migration2.resx">
+      <DependentUpon>202502171235290_migration2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
