@@ -30,8 +30,8 @@ namespace Library.View.Presentation
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
         {
-            libraryContext.Roles.Add(new Role { Name = "Admin"});
-            libraryContext.Roles.Add(new Role { Name = "Member"});
+            libraryContext.Roles.Add(new Role { Name = "Admin" });
+            libraryContext.Roles.Add(new Role { Name = "Member" });
             string adminName = textBox_AdminName_Register.Text;
             string adminSurname = textBox_AdminSurname_Register.Text;
             string adminEmail = textBox_AdminEmail_Register.Text;
@@ -46,9 +46,9 @@ namespace Library.View.Presentation
             bool isPhoneInValid = IsStringValid(adminPhone, "Admin phone cannot be empty!", label_AdminPhoneError_Register);
             bool isAddressInValid = IsStringValid(adminAddress, "Admin address cannot be empty!", label_AdminAdressError_Register);
             bool isPasswordInValid = IsStringValid(adminPassword, "Admin password cannot be empty!", label_AdminPasswordError_Register);
-           
 
-            if (!isAddressInValid && !isEmailInValid && !isNameInValid && !isPasswordInValid && !isPhoneInValid && !isSurnameInValid) 
+
+            if (!isAddressInValid && !isEmailInValid && !isNameInValid && !isPasswordInValid && !isPhoneInValid && !isSurnameInValid)
             {
                 var adminUserMailCheck = libraryContext.Users.FirstOrDefault(u => u.Email == adminEmail);
                 if (adminUserMailCheck != null)
@@ -79,10 +79,10 @@ namespace Library.View.Presentation
 
             libraryContext.Users.Add(adminUser);
             libraryContext.SaveChanges();
-                MessageBox.Show("Admin registration is successful!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Login login = new Login();
-                login.Show();
-                this.Hide();
+            MessageBox.Show("Admin registration is successful!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
         public bool IsStringValid(string text, string errorMessage, Label label)
         {
@@ -110,6 +110,35 @@ namespace Library.View.Presentation
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void btn_Enter_MemberLoginPage_Click(object sender, EventArgs e)
+        {
+            libraryContext.Roles.Add(new Role { Name = "Admin" });
+            libraryContext.Roles.Add(new Role { Name = "Member" });
+            string memberName = textBox_namemember.Text;
+            string memberSurname = textBox_surnamemember.Text;
+            string memberAddress = textbox_adresmember.Text;
+            string memberPhone = textBox_phonemember.Text;
+            string memberPassword = textBox_passwordmember.Text;
+            string memberEmail = textBox_emailmember.Text;
+            DateTime memberBirthdate = dateTimePicker_member.Value;
+
+            bool isNameInvalid = IsStringValid(memberName, "Name cannot be empty!", lbl_nameMemberError);
+            bool isSurnameInvalid = IsStringValid(memberSurname, "Surname cannot be empty!", lbl_surnameMemberError);
+            bool isPhoneInvalid = IsStringValid(memberPhone, "Phone cannot be empty!", lbl_phoneMemberError);
+            bool isEmailInvalid = IsStringValid(memberEmail, "Email cannot be empty!", lbl_emailMemberError);
+            bool isPasswordInvalid = IsStringValid(memberPassword, "Password cannot be empty!", lbl_passwordMemberError);
+            bool isAddressInvalid = IsStringValid(memberAddress, "Address cannot be empty!", lbl_addressMemberError);
+
+            if (!isNameInvalid && !isSurnameInvalid && !isPhoneInvalid && !isEmailInvalid && !isPasswordInvalid)
+            {
+                var memberMailCheck = libraryContext.Users.FirstOrDefault(u => u.Email == memberEmail);
+                if (memberMailCheck != null) { lbl_emailMemberError.Text = "This email is already in use!"; return; }
+                var memberPhoneCheck = libraryContext.Users.FirstOrDefault(u=> u.Phone == memberPhone);
+                if (memberPhoneCheck != null) { lbl_phoneMemberError.Text = "This phone is already in use!"; return; }
+                return;
+            }
         }
     }
 }
