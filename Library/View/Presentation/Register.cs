@@ -39,7 +39,7 @@ namespace Library.View.Presentation
             string adminEmail = textBox_AdminEmail_Register.Text;
             string adminPhone = textBox_AdminPhone_Register.Text;
             string adminPassword = textBox_AdminPassword_Register.Text;
-            //DateTime adminBirthDate = dateTimePicker1.Value;
+            DateTime adminBirthDate = dateTimePicker_birthdate.Value;
             string adminAddress = textBox_AdminAdress_Register.Text;
 
             bool isNameInValid = IsStringValid(adminName, "Admin name cannot be empty!", label_AdminNameError_Register);
@@ -48,9 +48,9 @@ namespace Library.View.Presentation
             bool isPhoneInValid = IsStringValid(adminPhone, "Admin phone cannot be empty!", label_AdminPhoneError_Register);
             bool isAddressInValid = IsStringValid(adminAddress, "Admin address cannot be empty!", label_AdminAdressError_Register);
             bool isPasswordInValid = IsStringValid(adminPassword, "Admin password cannot be empty!", label_AdminPasswordError_Register);
-            //bool isDateInValid = IsStringValid(adminBirthDate.ToString(), "Admin date cannot be empty or out of range!", label_AdminBirthDateError_Register);
+           
 
-            if (!isAddressInValid && !isEmailInValid && !isNameInValid && !isPasswordInValid && !isPhoneInValid && !isSurnameInValid) //&& !isDateInValid)
+            if (!isAddressInValid && !isEmailInValid && !isNameInValid && !isPasswordInValid && !isPhoneInValid && !isSurnameInValid) 
             {
                 var adminUserMailCheck = libraryContext.Users.FirstOrDefault(u => u.Email == adminEmail);
                 if (adminUserMailCheck != null)
@@ -74,7 +74,7 @@ namespace Library.View.Presentation
                 Email = adminEmail,
                 Phone = adminPhone,
                 Password = adminPassword,
-                //BirthDate = adminBirthDate, // Ensure this is within the valid range
+                BirthDate = adminBirthDate, // Ensure this is within the valid range
                 Address = adminAddress,
                 RoleId = 1
             };

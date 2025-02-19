@@ -11,7 +11,7 @@ namespace Library.Model.Concrete
     public class User: Person
     {
 
-        [Column(TypeName = "datetime2")]
+       
         public DateTime? BirthDate { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public string Name { get; set; }

@@ -96,6 +96,7 @@
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
             this.toolTip_SignIn = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_SignInTomember = new System.Windows.Forms.ToolTip(this.components);
+            this.dateTimePicker_birthdate = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminRegister.SuspendLayout();
@@ -163,6 +164,7 @@
             this.tabPage_AdminRegister.BackColor = System.Drawing.Color.Transparent;
             this.tabPage_AdminRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage_AdminRegister.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage_AdminRegister.Controls.Add(this.dateTimePicker_birthdate);
             this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminAdress_Register);
             this.tabPage_AdminRegister.Controls.Add(this.label_AdminPasswordError_Register);
             this.tabPage_AdminRegister.Controls.Add(this.label_AdminPhoneError_Register);
@@ -780,6 +782,13 @@
             // 
             this.toolTip_SignInTomember.BackColor = System.Drawing.Color.Plum;
             // 
+            // dateTimePicker_birthdate
+            // 
+            this.dateTimePicker_birthdate.Location = new System.Drawing.Point(108, 214);
+            this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
+            this.dateTimePicker_birthdate.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker_birthdate.TabIndex = 6;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -872,5 +881,6 @@
         private System.Windows.Forms.LinkLabel linkLabel_AdminLogin;
         private System.Windows.Forms.Button button_Enter_LoginPage;
         private System.Windows.Forms.RichTextBox textBox_AdminAdress_Register;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_birthdate;
     }
 }
