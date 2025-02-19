@@ -142,7 +142,7 @@
             this.btn_ExitLoginPage.Location = new System.Drawing.Point(557, 635);
             this.btn_ExitLoginPage.Name = "btn_ExitLoginPage";
             this.btn_ExitLoginPage.Size = new System.Drawing.Size(97, 44);
-            this.btn_ExitLoginPage.TabIndex = 4;
+            this.btn_ExitLoginPage.TabIndex = 0;
             this.btn_ExitLoginPage.Text = "Exit";
             this.btn_ExitLoginPage.UseVisualStyleBackColor = true;
             // 
@@ -203,7 +203,7 @@
             this.dateTimePicker_birthdate.Location = new System.Drawing.Point(108, 214);
             this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
             this.dateTimePicker_birthdate.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker_birthdate.TabIndex = 6;
+            this.dateTimePicker_birthdate.TabIndex = 4;
             // 
             // textBox_AdminAdress_Register
             // 
@@ -211,7 +211,7 @@
             this.textBox_AdminAdress_Register.Location = new System.Drawing.Point(101, 365);
             this.textBox_AdminAdress_Register.Name = "textBox_AdminAdress_Register";
             this.textBox_AdminAdress_Register.Size = new System.Drawing.Size(198, 76);
-            this.textBox_AdminAdress_Register.TabIndex = 38;
+            this.textBox_AdminAdress_Register.TabIndex = 7;
             this.textBox_AdminAdress_Register.Text = "";
             // 
             // label_AdminPasswordError_Register
@@ -290,7 +290,7 @@
             this.textBox_AdminPassword_Register.Location = new System.Drawing.Point(112, 318);
             this.textBox_AdminPassword_Register.Name = "textBox_AdminPassword_Register";
             this.textBox_AdminPassword_Register.Size = new System.Drawing.Size(187, 31);
-            this.textBox_AdminPassword_Register.TabIndex = 28;
+            this.textBox_AdminPassword_Register.TabIndex = 6;
             // 
             // textBox_AdminPhone_Register
             // 
@@ -298,7 +298,7 @@
             this.textBox_AdminPhone_Register.Location = new System.Drawing.Point(112, 267);
             this.textBox_AdminPhone_Register.Name = "textBox_AdminPhone_Register";
             this.textBox_AdminPhone_Register.Size = new System.Drawing.Size(187, 31);
-            this.textBox_AdminPhone_Register.TabIndex = 27;
+            this.textBox_AdminPhone_Register.TabIndex = 5;
             // 
             // textBox_AdminEmail_Register
             // 
@@ -306,7 +306,7 @@
             this.textBox_AdminEmail_Register.Location = new System.Drawing.Point(112, 171);
             this.textBox_AdminEmail_Register.Name = "textBox_AdminEmail_Register";
             this.textBox_AdminEmail_Register.Size = new System.Drawing.Size(187, 31);
-            this.textBox_AdminEmail_Register.TabIndex = 24;
+            this.textBox_AdminEmail_Register.TabIndex = 3;
             // 
             // textBox_AdminSurname_Register
             // 
@@ -314,7 +314,7 @@
             this.textBox_AdminSurname_Register.Location = new System.Drawing.Point(112, 126);
             this.textBox_AdminSurname_Register.Name = "textBox_AdminSurname_Register";
             this.textBox_AdminSurname_Register.Size = new System.Drawing.Size(187, 31);
-            this.textBox_AdminSurname_Register.TabIndex = 23;
+            this.textBox_AdminSurname_Register.TabIndex = 2;
             // 
             // textBox_AdminName_Register
             // 
@@ -322,7 +322,7 @@
             this.textBox_AdminName_Register.Location = new System.Drawing.Point(112, 83);
             this.textBox_AdminName_Register.Name = "textBox_AdminName_Register";
             this.textBox_AdminName_Register.Size = new System.Drawing.Size(187, 31);
-            this.textBox_AdminName_Register.TabIndex = 22;
+            this.textBox_AdminName_Register.TabIndex = 1;
             // 
             // label_AdminPassword
             // 
@@ -446,7 +446,7 @@
             this.linkLabel_AdminLogin.Location = new System.Drawing.Point(87, 499);
             this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
             this.linkLabel_AdminLogin.Size = new System.Drawing.Size(212, 21);
-            this.linkLabel_AdminLogin.TabIndex = 3;
+            this.linkLabel_AdminLogin.TabIndex = 9;
             this.linkLabel_AdminLogin.TabStop = true;
             this.linkLabel_AdminLogin.Text = "Do you already have an account?";
             this.toolTip_SignIn.SetToolTip(this.linkLabel_AdminLogin, "If you have an account click to sign in!");
@@ -459,7 +459,7 @@
             this.button_Enter_LoginPage.Location = new System.Drawing.Point(215, 460);
             this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
             this.button_Enter_LoginPage.Size = new System.Drawing.Size(84, 36);
-            this.button_Enter_LoginPage.TabIndex = 2;
+            this.button_Enter_LoginPage.TabIndex = 8;
             this.button_Enter_LoginPage.Text = "Enter";
             this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
             this.button_Enter_LoginPage.Click += new System.EventHandler(this.button_Enter_LoginPage_Click);
@@ -580,7 +580,7 @@
             this.textBox_phonemember.Location = new System.Drawing.Point(96, 259);
             this.textBox_phonemember.Name = "textBox_phonemember";
             this.textBox_phonemember.Size = new System.Drawing.Size(201, 19);
-            this.textBox_phonemember.TabIndex = 12;
+            this.textBox_phonemember.TabIndex = 5;
             // 
             // textBox_passwordmember
             // 
@@ -588,7 +588,7 @@
             this.textBox_passwordmember.Location = new System.Drawing.Point(96, 215);
             this.textBox_passwordmember.Name = "textBox_passwordmember";
             this.textBox_passwordmember.Size = new System.Drawing.Size(201, 19);
-            this.textBox_passwordmember.TabIndex = 12;
+            this.textBox_passwordmember.TabIndex = 4;
             // 
             // textBox_emailmember
             // 
@@ -596,7 +596,7 @@
             this.textBox_emailmember.Location = new System.Drawing.Point(96, 172);
             this.textBox_emailmember.Name = "textBox_emailmember";
             this.textBox_emailmember.Size = new System.Drawing.Size(201, 19);
-            this.textBox_emailmember.TabIndex = 12;
+            this.textBox_emailmember.TabIndex = 3;
             // 
             // textBox_surnamemember
             // 
@@ -604,7 +604,7 @@
             this.textBox_surnamemember.Location = new System.Drawing.Point(96, 127);
             this.textBox_surnamemember.Name = "textBox_surnamemember";
             this.textBox_surnamemember.Size = new System.Drawing.Size(201, 19);
-            this.textBox_surnamemember.TabIndex = 12;
+            this.textBox_surnamemember.TabIndex = 2;
             // 
             // textBox_namemember
             // 
@@ -612,7 +612,7 @@
             this.textBox_namemember.Location = new System.Drawing.Point(96, 84);
             this.textBox_namemember.Name = "textBox_namemember";
             this.textBox_namemember.Size = new System.Drawing.Size(201, 19);
-            this.textBox_namemember.TabIndex = 12;
+            this.textBox_namemember.TabIndex = 1;
             // 
             // label_MemberPassword_RegisterPage
             // 
@@ -692,7 +692,7 @@
             this.linkLabel_MemberLogin.Location = new System.Drawing.Point(141, 509);
             this.linkLabel_MemberLogin.Name = "linkLabel_MemberLogin";
             this.linkLabel_MemberLogin.Size = new System.Drawing.Size(212, 21);
-            this.linkLabel_MemberLogin.TabIndex = 10;
+            this.linkLabel_MemberLogin.TabIndex = 9;
             this.linkLabel_MemberLogin.TabStop = true;
             this.linkLabel_MemberLogin.Text = "Do you already have an account?";
             this.linkLabel_MemberLogin.VisitedLinkColor = System.Drawing.Color.Navy;
@@ -713,7 +713,7 @@
             this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(264, 474);
             this.btn_Enter_MemberLoginPage.Name = "btn_Enter_MemberLoginPage";
             this.btn_Enter_MemberLoginPage.Size = new System.Drawing.Size(89, 32);
-            this.btn_Enter_MemberLoginPage.TabIndex = 5;
+            this.btn_Enter_MemberLoginPage.TabIndex = 8;
             this.btn_Enter_MemberLoginPage.Text = "Enter";
             this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = true;
             this.btn_Enter_MemberLoginPage.Click += new System.EventHandler(this.btn_Enter_MemberLoginPage_Click);
@@ -759,14 +759,14 @@
             this.dateTimePicker_member.Location = new System.Drawing.Point(97, 307);
             this.dateTimePicker_member.Name = "dateTimePicker_member";
             this.dateTimePicker_member.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker_member.TabIndex = 14;
+            this.dateTimePicker_member.TabIndex = 6;
             // 
             // textbox_adresmember
             // 
             this.textbox_adresmember.Location = new System.Drawing.Point(97, 354);
             this.textbox_adresmember.Name = "textbox_adresmember";
             this.textbox_adresmember.Size = new System.Drawing.Size(200, 96);
-            this.textbox_adresmember.TabIndex = 15;
+            this.textbox_adresmember.TabIndex = 7;
             this.textbox_adresmember.Text = "";
             // 
             // Register
