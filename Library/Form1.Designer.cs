@@ -81,6 +81,7 @@
             this.Controls.Add(this.button_enter_form1LibraryAutomation);
             this.Name = "Form_Welcome";
             this.Text = "Library Automation";
+            this.Load += new System.EventHandler(this.Form_Welcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

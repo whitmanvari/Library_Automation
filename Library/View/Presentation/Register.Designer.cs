@@ -36,6 +36,7 @@
             this.btn_ExitLoginPage = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_AdminRegister = new System.Windows.Forms.TabPage();
+            this.dateTimePicker_birthdate = new System.Windows.Forms.DateTimePicker();
             this.textBox_AdminAdress_Register = new System.Windows.Forms.RichTextBox();
             this.label_AdminPasswordError_Register = new System.Windows.Forms.Label();
             this.label_AdminPhoneError_Register = new System.Windows.Forms.Label();
@@ -72,9 +73,6 @@
             this.label_errorMessage_MemberEmail_RegisterPage = new System.Windows.Forms.Label();
             this.label_errorMessage_MemberSurname_RegisterPage = new System.Windows.Forms.Label();
             this.label_errorMessage_MemberName_SignIn = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -84,7 +82,6 @@
             this.label_MemberPhone_RegisterPage = new System.Windows.Forms.Label();
             this.label_MemberBirthDate_RegisterPage = new System.Windows.Forms.Label();
             this.label_MemberAdress_RegisterPage = new System.Windows.Forms.Label();
-            this.label_MemberRole_RegisterPage = new System.Windows.Forms.Label();
             this.label_MemberEmail_RegisterPage = new System.Windows.Forms.Label();
             this.label_memberSurname_RegisterPage = new System.Windows.Forms.Label();
             this.label_MemberName_RegisterPage = new System.Windows.Forms.Label();
@@ -96,7 +93,8 @@
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
             this.toolTip_SignIn = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_SignInTomember = new System.Windows.Forms.ToolTip(this.components);
-            this.dateTimePicker_birthdate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminRegister.SuspendLayout();
@@ -200,8 +198,16 @@
             this.tabPage_AdminRegister.TabIndex = 0;
             this.tabPage_AdminRegister.Text = "Admin ";
             // 
+            // dateTimePicker_birthdate
+            // 
+            this.dateTimePicker_birthdate.Location = new System.Drawing.Point(108, 214);
+            this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
+            this.dateTimePicker_birthdate.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker_birthdate.TabIndex = 6;
+            // 
             // textBox_AdminAdress_Register
             // 
+            this.textBox_AdminAdress_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminAdress_Register.Location = new System.Drawing.Point(101, 365);
             this.textBox_AdminAdress_Register.Name = "textBox_AdminAdress_Register";
             this.textBox_AdminAdress_Register.Size = new System.Drawing.Size(198, 76);
@@ -280,42 +286,42 @@
             // 
             // textBox_AdminPassword_Register
             // 
-            this.textBox_AdminPassword_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminPassword_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminPassword_Register.Location = new System.Drawing.Point(112, 318);
             this.textBox_AdminPassword_Register.Name = "textBox_AdminPassword_Register";
-            this.textBox_AdminPassword_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminPassword_Register.Size = new System.Drawing.Size(187, 31);
             this.textBox_AdminPassword_Register.TabIndex = 28;
             // 
             // textBox_AdminPhone_Register
             // 
-            this.textBox_AdminPhone_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminPhone_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminPhone_Register.Location = new System.Drawing.Point(112, 267);
             this.textBox_AdminPhone_Register.Name = "textBox_AdminPhone_Register";
-            this.textBox_AdminPhone_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminPhone_Register.Size = new System.Drawing.Size(187, 31);
             this.textBox_AdminPhone_Register.TabIndex = 27;
             // 
             // textBox_AdminEmail_Register
             // 
-            this.textBox_AdminEmail_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminEmail_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminEmail_Register.Location = new System.Drawing.Point(112, 171);
             this.textBox_AdminEmail_Register.Name = "textBox_AdminEmail_Register";
-            this.textBox_AdminEmail_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminEmail_Register.Size = new System.Drawing.Size(187, 31);
             this.textBox_AdminEmail_Register.TabIndex = 24;
             // 
             // textBox_AdminSurname_Register
             // 
-            this.textBox_AdminSurname_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminSurname_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminSurname_Register.Location = new System.Drawing.Point(112, 126);
             this.textBox_AdminSurname_Register.Name = "textBox_AdminSurname_Register";
-            this.textBox_AdminSurname_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminSurname_Register.Size = new System.Drawing.Size(187, 31);
             this.textBox_AdminSurname_Register.TabIndex = 23;
             // 
             // textBox_AdminName_Register
             // 
-            this.textBox_AdminName_Register.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminName_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminName_Register.Location = new System.Drawing.Point(112, 83);
             this.textBox_AdminName_Register.Name = "textBox_AdminName_Register";
-            this.textBox_AdminName_Register.Size = new System.Drawing.Size(187, 19);
+            this.textBox_AdminName_Register.Size = new System.Drawing.Size(187, 31);
             this.textBox_AdminName_Register.TabIndex = 22;
             // 
             // label_AdminPassword
@@ -445,6 +451,7 @@
             this.linkLabel_AdminLogin.Text = "Do you already have an account?";
             this.toolTip_SignIn.SetToolTip(this.linkLabel_AdminLogin, "If you have an account click to sign in!");
             this.linkLabel_AdminLogin.VisitedLinkColor = System.Drawing.Color.Navy;
+            this.linkLabel_AdminLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_AdminLogin_LinkClicked);
             // 
             // button_Enter_LoginPage
             // 
@@ -459,6 +466,8 @@
             // 
             // tabPage_MemberRegister
             // 
+            this.tabPage_MemberRegister.Controls.Add(this.richTextBox1);
+            this.tabPage_MemberRegister.Controls.Add(this.dateTimePicker1);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_MemberPassword_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_MemberPhone_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_MemberBirthDate_RegisterPage);
@@ -467,9 +476,6 @@
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_MemberEmail_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_MemberSurname_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_MemberName_SignIn);
-            this.tabPage_MemberRegister.Controls.Add(this.textBox8);
-            this.tabPage_MemberRegister.Controls.Add(this.textBox7);
-            this.tabPage_MemberRegister.Controls.Add(this.textBox6);
             this.tabPage_MemberRegister.Controls.Add(this.textBox5);
             this.tabPage_MemberRegister.Controls.Add(this.textBox4);
             this.tabPage_MemberRegister.Controls.Add(this.textBox3);
@@ -479,7 +485,6 @@
             this.tabPage_MemberRegister.Controls.Add(this.label_MemberPhone_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_MemberBirthDate_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_MemberAdress_RegisterPage);
-            this.tabPage_MemberRegister.Controls.Add(this.label_MemberRole_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_MemberEmail_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_memberSurname_RegisterPage);
             this.tabPage_MemberRegister.Controls.Add(this.label_MemberName_RegisterPage);
@@ -569,30 +574,6 @@
             this.label_errorMessage_MemberName_SignIn.Size = new System.Drawing.Size(0, 16);
             this.label_errorMessage_MemberName_SignIn.TabIndex = 13;
             // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(96, 410);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(201, 19);
-            this.textBox8.TabIndex = 12;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(96, 359);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(201, 19);
-            this.textBox7.TabIndex = 12;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(96, 311);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(201, 19);
-            this.textBox6.TabIndex = 12;
-            // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -637,7 +618,7 @@
             // 
             this.label_MemberPassword_RegisterPage.AutoSize = true;
             this.label_MemberPassword_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberPassword_RegisterPage.Location = new System.Drawing.Point(16, 410);
+            this.label_MemberPassword_RegisterPage.Location = new System.Drawing.Point(16, 215);
             this.label_MemberPassword_RegisterPage.Name = "label_MemberPassword_RegisterPage";
             this.label_MemberPassword_RegisterPage.Size = new System.Drawing.Size(80, 24);
             this.label_MemberPassword_RegisterPage.TabIndex = 11;
@@ -647,7 +628,7 @@
             // 
             this.label_MemberPhone_RegisterPage.AutoSize = true;
             this.label_MemberPhone_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberPhone_RegisterPage.Location = new System.Drawing.Point(16, 359);
+            this.label_MemberPhone_RegisterPage.Location = new System.Drawing.Point(16, 259);
             this.label_MemberPhone_RegisterPage.Name = "label_MemberPhone_RegisterPage";
             this.label_MemberPhone_RegisterPage.Size = new System.Drawing.Size(57, 24);
             this.label_MemberPhone_RegisterPage.TabIndex = 11;
@@ -657,7 +638,7 @@
             // 
             this.label_MemberBirthDate_RegisterPage.AutoSize = true;
             this.label_MemberBirthDate_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberBirthDate_RegisterPage.Location = new System.Drawing.Point(16, 311);
+            this.label_MemberBirthDate_RegisterPage.Location = new System.Drawing.Point(7, 312);
             this.label_MemberBirthDate_RegisterPage.Name = "label_MemberBirthDate_RegisterPage";
             this.label_MemberBirthDate_RegisterPage.Size = new System.Drawing.Size(84, 24);
             this.label_MemberBirthDate_RegisterPage.TabIndex = 11;
@@ -667,21 +648,11 @@
             // 
             this.label_MemberAdress_RegisterPage.AutoSize = true;
             this.label_MemberAdress_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberAdress_RegisterPage.Location = new System.Drawing.Point(16, 259);
+            this.label_MemberAdress_RegisterPage.Location = new System.Drawing.Point(16, 359);
             this.label_MemberAdress_RegisterPage.Name = "label_MemberAdress_RegisterPage";
             this.label_MemberAdress_RegisterPage.Size = new System.Drawing.Size(69, 24);
             this.label_MemberAdress_RegisterPage.TabIndex = 11;
             this.label_MemberAdress_RegisterPage.Text = "Address:";
-            // 
-            // label_MemberRole_RegisterPage
-            // 
-            this.label_MemberRole_RegisterPage.AutoSize = true;
-            this.label_MemberRole_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberRole_RegisterPage.Location = new System.Drawing.Point(16, 215);
-            this.label_MemberRole_RegisterPage.Name = "label_MemberRole_RegisterPage";
-            this.label_MemberRole_RegisterPage.Size = new System.Drawing.Size(43, 24);
-            this.label_MemberRole_RegisterPage.TabIndex = 11;
-            this.label_MemberRole_RegisterPage.Text = "Role:";
             // 
             // label_MemberEmail_RegisterPage
             // 
@@ -718,7 +689,7 @@
             this.linkLabel_MemberLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_MemberLogin.AutoSize = true;
             this.linkLabel_MemberLogin.LinkColor = System.Drawing.Color.Plum;
-            this.linkLabel_MemberLogin.Location = new System.Drawing.Point(151, 486);
+            this.linkLabel_MemberLogin.Location = new System.Drawing.Point(141, 509);
             this.linkLabel_MemberLogin.Name = "linkLabel_MemberLogin";
             this.linkLabel_MemberLogin.Size = new System.Drawing.Size(212, 21);
             this.linkLabel_MemberLogin.TabIndex = 10;
@@ -739,7 +710,7 @@
             // btn_Enter_MemberLoginPage
             // 
             this.btn_Enter_MemberLoginPage.Font = new System.Drawing.Font("Segoe Print", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(264, 451);
+            this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(264, 474);
             this.btn_Enter_MemberLoginPage.Name = "btn_Enter_MemberLoginPage";
             this.btn_Enter_MemberLoginPage.Size = new System.Drawing.Size(89, 32);
             this.btn_Enter_MemberLoginPage.TabIndex = 5;
@@ -782,12 +753,20 @@
             // 
             this.toolTip_SignInTomember.BackColor = System.Drawing.Color.Plum;
             // 
-            // dateTimePicker_birthdate
+            // dateTimePicker1
             // 
-            this.dateTimePicker_birthdate.Location = new System.Drawing.Point(108, 214);
-            this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
-            this.dateTimePicker_birthdate.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker_birthdate.TabIndex = 6;
+            this.dateTimePicker1.Location = new System.Drawing.Point(97, 307);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker1.TabIndex = 14;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(97, 354);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(200, 96);
+            this.richTextBox1.TabIndex = 15;
+            this.richTextBox1.Text = "";
             // 
             // Register
             // 
@@ -828,9 +807,6 @@
         private System.Windows.Forms.Label label_errorMessage_Loginpage_MemberEmail;
         private System.Windows.Forms.ToolTip toolTip_SignIn;
         private System.Windows.Forms.ToolTip toolTip_SignInTomember;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
@@ -840,7 +816,6 @@
         private System.Windows.Forms.Label label_MemberPhone_RegisterPage;
         private System.Windows.Forms.Label label_MemberBirthDate_RegisterPage;
         private System.Windows.Forms.Label label_MemberAdress_RegisterPage;
-        private System.Windows.Forms.Label label_MemberRole_RegisterPage;
         private System.Windows.Forms.Label label_MemberEmail_RegisterPage;
         private System.Windows.Forms.Label label_memberSurname_RegisterPage;
         private System.Windows.Forms.Label label_MemberName_RegisterPage;
@@ -882,5 +857,7 @@
         private System.Windows.Forms.Button button_Enter_LoginPage;
         private System.Windows.Forms.RichTextBox textBox_AdminAdress_Register;
         private System.Windows.Forms.DateTimePicker dateTimePicker_birthdate;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

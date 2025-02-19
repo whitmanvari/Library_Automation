@@ -30,10 +30,8 @@ namespace Library.View.Presentation
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
         {
-            libraryContext.Roles.Add(new Role { Name = "Admin" });
-            libraryContext.Roles.Add(new Role { Name = "Member" });
-            
-
+            libraryContext.Roles.Add(new Role { Name = "Admin"});
+            libraryContext.Roles.Add(new Role { Name = "Member"});
             string adminName = textBox_AdminName_Register.Text;
             string adminSurname = textBox_AdminSurname_Register.Text;
             string adminEmail = textBox_AdminEmail_Register.Text;
@@ -76,7 +74,7 @@ namespace Library.View.Presentation
                 Password = adminPassword,
                 BirthDate = adminBirthDate, // Ensure this is within the valid range
                 Address = adminAddress,
-                RoleId = 1
+                RoleId = 7
             };
 
             libraryContext.Users.Add(adminUser);
@@ -105,6 +103,13 @@ namespace Library.View.Presentation
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel_AdminLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

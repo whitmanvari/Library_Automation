@@ -1,4 +1,6 @@
-﻿using Library.View.Presentation;
+﻿using Library.DataContext;
+using Library.Model.Concrete;
+using Library.View.Presentation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,7 @@ namespace Library
 {
     public partial class Form_Welcome : Form
     {
+        LibraryContext libraryContext = new LibraryContext();
         public Form_Welcome()
         {
             InitializeComponent();
@@ -23,6 +26,11 @@ namespace Library
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void Form_Welcome_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
