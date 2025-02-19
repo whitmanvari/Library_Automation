@@ -77,12 +77,15 @@ namespace Library.View.Presentation
                 RoleId = 7
             };
 
-            libraryContext.Users.Add(adminUser);
-            libraryContext.SaveChanges();
-            MessageBox.Show("Admin registration is successful!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Login login = new Login();
-            login.Show();
-            this.Hide();
+            if (adminUser != null)
+            {
+                libraryContext.Users.Add(adminUser);
+                libraryContext.SaveChanges();
+                MessageBox.Show("Admin registration is successful!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
         }
         public bool IsStringValid(string text, string errorMessage, Label label)
         {
@@ -138,6 +141,26 @@ namespace Library.View.Presentation
                 var memberPhoneCheck = libraryContext.Users.FirstOrDefault(u=> u.Phone == memberPhone);
                 if (memberPhoneCheck != null) { lbl_phoneMemberError.Text = "This phone is already in use!"; return; }
                 return;
+            }
+            var memberUser = new User
+            {
+                Name = memberName,
+                Email = memberEmail,
+                Address = memberAddress,
+                BirthDate = memberBirthdate,
+                Password = memberPassword,
+                Phone = memberPhone,
+                Surname = memberSurname,
+                RoleId=8
+            };
+            if (memberUser != null)
+            {
+                libraryContext.Users.Add(memberUser);
+                libraryContext.SaveChanges();
+                MessageBox.Show("Member registration is succesfull!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Login login = new Login();
+                login.Show();
+                this.Hide();
             }
         }
     }
