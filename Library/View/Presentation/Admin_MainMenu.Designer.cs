@@ -37,7 +37,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -50,6 +50,7 @@
             // 
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(729, 10);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);

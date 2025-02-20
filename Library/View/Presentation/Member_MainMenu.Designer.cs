@@ -46,7 +46,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -59,6 +59,7 @@
             // 
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(729, 10);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
@@ -88,7 +89,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 41);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(800, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -99,7 +100,7 @@
             this.toolStripButton_booklist.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_booklist.Image")));
             this.toolStripButton_booklist.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_booklist.Name = "toolStripButton_booklist";
-            this.toolStripButton_booklist.Size = new System.Drawing.Size(23, 30);
+            this.toolStripButton_booklist.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_booklist.Text = "Show Book List";
             this.toolStripButton_booklist.Click += new System.EventHandler(this.toolStripButton_booklist_Click);
             this.toolStripButton_booklist.MouseLeave += new System.EventHandler(this.toolStripButton_booklist_MouseLeave);

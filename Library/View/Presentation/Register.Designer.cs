@@ -105,7 +105,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.label_Register_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -118,6 +118,7 @@
             // 
             this.label_Register_SignIn.AutoSize = true;
             this.label_Register_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Register_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_Register_SignIn.Location = new System.Drawing.Point(595, 10);
             this.label_Register_SignIn.Name = "label_Register_SignIn";
             this.label_Register_SignIn.Size = new System.Drawing.Size(59, 24);
@@ -138,13 +139,15 @@
             // 
             // btn_ExitLoginPage
             // 
+            this.btn_ExitLoginPage.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.btn_ExitLoginPage.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExitLoginPage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_ExitLoginPage.Location = new System.Drawing.Point(557, 635);
             this.btn_ExitLoginPage.Name = "btn_ExitLoginPage";
             this.btn_ExitLoginPage.Size = new System.Drawing.Size(97, 44);
             this.btn_ExitLoginPage.TabIndex = 0;
             this.btn_ExitLoginPage.Text = "Exit";
-            this.btn_ExitLoginPage.UseVisualStyleBackColor = true;
+            this.btn_ExitLoginPage.UseVisualStyleBackColor = false;
             // 
             // tabControl1
             // 

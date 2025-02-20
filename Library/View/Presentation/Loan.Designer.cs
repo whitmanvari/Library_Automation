@@ -38,7 +38,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.label_Loan_signinPage);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -51,6 +51,7 @@
             // 
             this.label_Loan_signinPage.AutoSize = true;
             this.label_Loan_signinPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Loan_signinPage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label_Loan_signinPage.Location = new System.Drawing.Point(729, 9);
             this.label_Loan_signinPage.Name = "label_Loan_signinPage";
             this.label_Loan_signinPage.Size = new System.Drawing.Size(59, 24);

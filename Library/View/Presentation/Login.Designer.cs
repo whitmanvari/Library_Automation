@@ -440,6 +440,7 @@
             // 
             this.label_LoginPage_Signin.AutoSize = true;
             this.label_LoginPage_Signin.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_LoginPage_Signin.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_LoginPage_Signin.Location = new System.Drawing.Point(555, 10);
             this.label_LoginPage_Signin.Name = "label_LoginPage_Signin";
             this.label_LoginPage_Signin.Size = new System.Drawing.Size(59, 24);
@@ -449,7 +450,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.label_LoginPage_Signin);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
