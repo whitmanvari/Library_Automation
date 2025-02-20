@@ -92,6 +92,7 @@
             // 
             // textbox_adresmember
             // 
+            this.textbox_adresmember.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_adresmember.Location = new System.Drawing.Point(168, 427);
             this.textbox_adresmember.Name = "textbox_adresmember";
             this.textbox_adresmember.Size = new System.Drawing.Size(200, 96);
@@ -107,42 +108,42 @@
             // 
             // textBox_phonemember
             // 
-            this.textBox_phonemember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_phonemember.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_phonemember.Location = new System.Drawing.Point(167, 332);
             this.textBox_phonemember.Name = "textBox_phonemember";
-            this.textBox_phonemember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_phonemember.Size = new System.Drawing.Size(201, 33);
             this.textBox_phonemember.TabIndex = 16;
             // 
             // textBox_passwordmember
             // 
-            this.textBox_passwordmember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_passwordmember.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_passwordmember.Location = new System.Drawing.Point(167, 288);
             this.textBox_passwordmember.Name = "textBox_passwordmember";
-            this.textBox_passwordmember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_passwordmember.Size = new System.Drawing.Size(201, 33);
             this.textBox_passwordmember.TabIndex = 15;
             // 
             // textBox_emailmember
             // 
-            this.textBox_emailmember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_emailmember.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_emailmember.Location = new System.Drawing.Point(167, 245);
             this.textBox_emailmember.Name = "textBox_emailmember";
-            this.textBox_emailmember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_emailmember.Size = new System.Drawing.Size(201, 33);
             this.textBox_emailmember.TabIndex = 14;
             // 
             // textBox_surnamemember
             // 
-            this.textBox_surnamemember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_surnamemember.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_surnamemember.Location = new System.Drawing.Point(167, 200);
             this.textBox_surnamemember.Name = "textBox_surnamemember";
-            this.textBox_surnamemember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_surnamemember.Size = new System.Drawing.Size(201, 33);
             this.textBox_surnamemember.TabIndex = 13;
             // 
             // textBox_namemember
             // 
-            this.textBox_namemember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_namemember.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_namemember.Location = new System.Drawing.Point(167, 157);
             this.textBox_namemember.Name = "textBox_namemember";
-            this.textBox_namemember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_namemember.Size = new System.Drawing.Size(201, 33);
             this.textBox_namemember.TabIndex = 12;
             // 
             // label_MemberPassword_RegisterPage
@@ -224,6 +225,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(128, 87);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
+            this.toolTip_Hello.SetToolTip(this.pictureBox1, "Hello!");
             // 
             // button1
             // 
@@ -249,6 +251,7 @@
             this.linkLabel1.TabIndex = 28;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Go Back ";
+            this.toolTip_goback.SetToolTip(this.linkLabel1, "Click to go back to main menu!");
             // 
             // toolTip_Hello
             // 

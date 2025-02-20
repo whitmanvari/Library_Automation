@@ -13,9 +13,16 @@ namespace Library.View.Presentation
 {
     public partial class MemberUpdate : Form
     {
-        public MemberUpdate(List<User> list)
+        public MemberUpdate(User member)
         {
             InitializeComponent();
+            textBox_namemember.Text = member.Name;
+            textBox_emailmember.Text = member.Email;
+            textbox_adresmember.Text = member.Address;
+            textBox_surnamemember.Text = member.Surname;
+            dateTimePicker_member.Value = member.BirthDate.Value;
+            textBox_passwordmember.Text = member.Password;
+            textBox_phonemember.Text = member.Phone;
 
         }
 
@@ -31,7 +38,7 @@ namespace Library.View.Presentation
 
         }
 
-       
+
         private void button1_Click(object sender, EventArgs e)
         {
 

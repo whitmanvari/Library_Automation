@@ -70,9 +70,9 @@ namespace Library.View.Presentation
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            var memberInfo = context.Users.Where(u => u.Name == label_memberName.Text).ToList();
+            var member = context.Users.FirstOrDefault(u => u.Name == label_memberName.Text);
 
-            MemberUpdate memberUpdate = new MemberUpdate(memberInfo);
+            MemberUpdate memberUpdate = new MemberUpdate(member);
             memberUpdate.Show();
             this.Hide();
         }
