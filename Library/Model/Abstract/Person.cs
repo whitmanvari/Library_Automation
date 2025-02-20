@@ -10,13 +10,13 @@ namespace Library.Model.Abstract
     {
         public int Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        string Name { get; set; }
-        string Surname { get; set; }
-        DateTime? BirthDate { get; set; }
-        string Email { get; set; }
-        string Password { get; set; }
-        string Phone { get; set; }
-        string Address { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public DateTime? BirthDate { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
 
     }
 }
