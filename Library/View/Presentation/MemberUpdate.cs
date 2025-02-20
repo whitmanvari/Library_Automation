@@ -1,4 +1,5 @@
-﻿using Library.Model.Concrete;
+﻿using Library.DataContext;
+using Library.Model.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,8 @@ namespace Library.View.Presentation
 {
     public partial class MemberUpdate : Form
     {
+        private User Member;
+        LibraryContext Context = new LibraryContext();
         public MemberUpdate(User member)
         {
             InitializeComponent();
@@ -23,6 +26,8 @@ namespace Library.View.Presentation
             dateTimePicker_member.Value = member.BirthDate.Value;
             textBox_passwordmember.Text = member.Password;
             textBox_phonemember.Text = member.Phone;
+            Member = member;
+            
 
         }
 
@@ -41,6 +46,8 @@ namespace Library.View.Presentation
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Member = new User { Name = textBox_namemember.Text, Address = textbox_adresmember.Text, BirthDate = dateTimePicker_member.Value, Email= textBox_emailmember.Text, Phone = textBox_phonemember.Text, Password = textBox_passwordmember.Text, Surname = textBox_surnamemember.Text, RoleId= 8};
+            Context.SaveChanges();
 
         }
     }
