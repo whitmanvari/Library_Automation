@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_AdminLogin = new System.Windows.Forms.TabPage();
+            this.label_errorEmail = new System.Windows.Forms.Label();
+            this.label_errorPassword = new System.Windows.Forms.Label();
             this.label_ErrorMessage_LoginPage_AdminPassword = new System.Windows.Forms.Label();
             this.label_ErrorMessage_LoginPage_AdminEmail = new System.Windows.Forms.Label();
             this.label_ErrorMessage_LoginPage_AdminRole = new System.Windows.Forms.Label();
@@ -49,11 +51,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Enter_MemberLoginPage = new System.Windows.Forms.Button();
-            this.textBox_MemberPasswordControl_LoginPage = new System.Windows.Forms.TextBox();
-            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage = new System.Windows.Forms.TextBox();
+            this.txt_passwordmember = new System.Windows.Forms.TextBox();
+            this.txt_emailMember = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label_errorMessage_LoginPage_MemberPassword = new System.Windows.Forms.Label();
-            this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
+            this.lbl_error_password_member = new System.Windows.Forms.Label();
+            this.lbl_error_email_member = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label_Email_UserName_assword_MemberLoginPage = new System.Windows.Forms.Label();
             this.adminsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -66,8 +68,6 @@
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.label_LoginPage_Signin = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label_errorPassword = new System.Windows.Forms.Label();
-            this.label_errorEmail = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,6 +115,22 @@
             this.tabPage_AdminLogin.Size = new System.Drawing.Size(626, 373);
             this.tabPage_AdminLogin.TabIndex = 0;
             this.tabPage_AdminLogin.Text = "Admin Login";
+            // 
+            // label_errorEmail
+            // 
+            this.label_errorEmail.AutoSize = true;
+            this.label_errorEmail.Location = new System.Drawing.Point(9, 170);
+            this.label_errorEmail.Name = "label_errorEmail";
+            this.label_errorEmail.Size = new System.Drawing.Size(0, 21);
+            this.label_errorEmail.TabIndex = 9;
+            // 
+            // label_errorPassword
+            // 
+            this.label_errorPassword.AutoSize = true;
+            this.label_errorPassword.Location = new System.Drawing.Point(9, 227);
+            this.label_errorPassword.Name = "label_errorPassword";
+            this.label_errorPassword.Size = new System.Drawing.Size(0, 21);
+            this.label_errorPassword.TabIndex = 9;
             // 
             // label_ErrorMessage_LoginPage_AdminPassword
             // 
@@ -241,11 +257,11 @@
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.btn_Enter_MemberLoginPage);
-            this.tabPage2.Controls.Add(this.textBox_MemberPasswordControl_LoginPage);
-            this.tabPage2.Controls.Add(this.textBox_MemberEmail_Phone_UserNameControl_LoginPage);
+            this.tabPage2.Controls.Add(this.txt_passwordmember);
+            this.tabPage2.Controls.Add(this.txt_emailMember);
             this.tabPage2.Controls.Add(this.pictureBox2);
-            this.tabPage2.Controls.Add(this.label_errorMessage_LoginPage_MemberPassword);
-            this.tabPage2.Controls.Add(this.label_errorMessage_Loginpage_MemberEmail);
+            this.tabPage2.Controls.Add(this.lbl_error_password_member);
+            this.tabPage2.Controls.Add(this.lbl_error_email_member);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label_Email_UserName_assword_MemberLoginPage);
             this.tabPage2.Location = new System.Drawing.Point(4, 30);
@@ -255,15 +271,17 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Member Login";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // linkLabel_MemberLogin
             // 
             this.linkLabel_MemberLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_MemberLogin.AutoSize = true;
+            this.linkLabel_MemberLogin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel_MemberLogin.LinkColor = System.Drawing.Color.Plum;
-            this.linkLabel_MemberLogin.Location = new System.Drawing.Point(195, 277);
+            this.linkLabel_MemberLogin.Location = new System.Drawing.Point(105, 295);
             this.linkLabel_MemberLogin.Name = "linkLabel_MemberLogin";
-            this.linkLabel_MemberLogin.Size = new System.Drawing.Size(180, 21);
+            this.linkLabel_MemberLogin.Size = new System.Drawing.Size(234, 28);
             this.linkLabel_MemberLogin.TabIndex = 10;
             this.linkLabel_MemberLogin.TabStop = true;
             this.linkLabel_MemberLogin.Text = "Don\'t you have an account?";
@@ -293,7 +311,8 @@
             // 
             // btn_Enter_MemberLoginPage
             // 
-            this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(300, 244);
+            this.btn_Enter_MemberLoginPage.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(264, 262);
             this.btn_Enter_MemberLoginPage.Name = "btn_Enter_MemberLoginPage";
             this.btn_Enter_MemberLoginPage.Size = new System.Drawing.Size(75, 30);
             this.btn_Enter_MemberLoginPage.TabIndex = 3;
@@ -301,23 +320,24 @@
             this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = true;
             this.btn_Enter_MemberLoginPage.Click += new System.EventHandler(this.btn_Enter_MemberLoginPage_Click_1);
             // 
-            // textBox_MemberPasswordControl_LoginPage
+            // txt_passwordmember
             // 
-            this.textBox_MemberPasswordControl_LoginPage.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_MemberPasswordControl_LoginPage.Location = new System.Drawing.Point(196, 197);
-            this.textBox_MemberPasswordControl_LoginPage.Name = "textBox_MemberPasswordControl_LoginPage";
-            this.textBox_MemberPasswordControl_LoginPage.Size = new System.Drawing.Size(179, 26);
-            this.textBox_MemberPasswordControl_LoginPage.TabIndex = 2;
-            this.textBox_MemberPasswordControl_LoginPage.TextChanged += new System.EventHandler(this.textBox_MemberPasswordControl_LoginPage_TextChanged);
+            this.txt_passwordmember.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_passwordmember.Location = new System.Drawing.Point(121, 197);
+            this.txt_passwordmember.Name = "txt_passwordmember";
+            this.txt_passwordmember.Size = new System.Drawing.Size(218, 26);
+            this.txt_passwordmember.TabIndex = 2;
+            this.txt_passwordmember.UseSystemPasswordChar = true;
+            this.txt_passwordmember.TextChanged += new System.EventHandler(this.textBox_MemberPasswordControl_LoginPage_TextChanged);
             // 
-            // textBox_MemberEmail_Phone_UserNameControl_LoginPage
+            // txt_emailMember
             // 
-            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Location = new System.Drawing.Point(196, 150);
-            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Name = "textBox_MemberEmail_Phone_UserNameControl_LoginPage";
-            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.Size = new System.Drawing.Size(179, 26);
-            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.TabIndex = 1;
-            this.textBox_MemberEmail_Phone_UserNameControl_LoginPage.TextChanged += new System.EventHandler(this.textBox_MemberEmail_Phone_UserNameControl_LoginPage_TextChanged);
+            this.txt_emailMember.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_emailMember.Location = new System.Drawing.Point(121, 150);
+            this.txt_emailMember.Name = "txt_emailMember";
+            this.txt_emailMember.Size = new System.Drawing.Size(218, 31);
+            this.txt_emailMember.TabIndex = 1;
+            this.txt_emailMember.TextChanged += new System.EventHandler(this.textBox_MemberEmail_Phone_UserNameControl_LoginPage_TextChanged);
             // 
             // pictureBox2
             // 
@@ -330,41 +350,41 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // label_errorMessage_LoginPage_MemberPassword
+            // lbl_error_password_member
             // 
-            this.label_errorMessage_LoginPage_MemberPassword.AutoSize = true;
-            this.label_errorMessage_LoginPage_MemberPassword.Location = new System.Drawing.Point(6, 223);
-            this.label_errorMessage_LoginPage_MemberPassword.Name = "label_errorMessage_LoginPage_MemberPassword";
-            this.label_errorMessage_LoginPage_MemberPassword.Size = new System.Drawing.Size(0, 21);
-            this.label_errorMessage_LoginPage_MemberPassword.TabIndex = 0;
+            this.lbl_error_password_member.AutoSize = true;
+            this.lbl_error_password_member.Location = new System.Drawing.Point(6, 223);
+            this.lbl_error_password_member.Name = "lbl_error_password_member";
+            this.lbl_error_password_member.Size = new System.Drawing.Size(0, 21);
+            this.lbl_error_password_member.TabIndex = 0;
             // 
-            // label_errorMessage_Loginpage_MemberEmail
+            // lbl_error_email_member
             // 
-            this.label_errorMessage_Loginpage_MemberEmail.AutoSize = true;
-            this.label_errorMessage_Loginpage_MemberEmail.Location = new System.Drawing.Point(6, 178);
-            this.label_errorMessage_Loginpage_MemberEmail.Name = "label_errorMessage_Loginpage_MemberEmail";
-            this.label_errorMessage_Loginpage_MemberEmail.Size = new System.Drawing.Size(0, 21);
-            this.label_errorMessage_Loginpage_MemberEmail.TabIndex = 0;
+            this.lbl_error_email_member.AutoSize = true;
+            this.lbl_error_email_member.Location = new System.Drawing.Point(6, 178);
+            this.lbl_error_email_member.Name = "lbl_error_email_member";
+            this.lbl_error_email_member.Size = new System.Drawing.Size(0, 21);
+            this.lbl_error_email_member.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 199);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 24);
+            this.label2.Size = new System.Drawing.Size(93, 28);
             this.label2.TabIndex = 0;
             this.label2.Text = "Password:";
             // 
             // label_Email_UserName_assword_MemberLoginPage
             // 
             this.label_Email_UserName_assword_MemberLoginPage.AutoSize = true;
-            this.label_Email_UserName_assword_MemberLoginPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Email_UserName_assword_MemberLoginPage.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Email_UserName_assword_MemberLoginPage.Location = new System.Drawing.Point(6, 152);
             this.label_Email_UserName_assword_MemberLoginPage.Name = "label_Email_UserName_assword_MemberLoginPage";
-            this.label_Email_UserName_assword_MemberLoginPage.Size = new System.Drawing.Size(184, 24);
+            this.label_Email_UserName_assword_MemberLoginPage.Size = new System.Drawing.Size(63, 28);
             this.label_Email_UserName_assword_MemberLoginPage.TabIndex = 0;
-            this.label_Email_UserName_assword_MemberLoginPage.Text = "Email/Phone/UserName:";
+            this.label_Email_UserName_assword_MemberLoginPage.Text = "Email:";
             // 
             // adminsBindingSource
             // 
@@ -438,22 +458,6 @@
             this.panel1.Size = new System.Drawing.Size(646, 41);
             this.panel1.TabIndex = 2;
             // 
-            // label_errorPassword
-            // 
-            this.label_errorPassword.AutoSize = true;
-            this.label_errorPassword.Location = new System.Drawing.Point(9, 227);
-            this.label_errorPassword.Name = "label_errorPassword";
-            this.label_errorPassword.Size = new System.Drawing.Size(0, 21);
-            this.label_errorPassword.TabIndex = 9;
-            // 
-            // label_errorEmail
-            // 
-            this.label_errorEmail.AutoSize = true;
-            this.label_errorEmail.Location = new System.Drawing.Point(9, 170);
-            this.label_errorEmail.Name = "label_errorEmail";
-            this.label_errorEmail.Size = new System.Drawing.Size(0, 21);
-            this.label_errorEmail.TabIndex = 9;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,12 +501,12 @@
         private System.Windows.Forms.Button btn_ExitLoginPage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label_errorMessage_Loginpage_MemberEmail;
+        private System.Windows.Forms.Label lbl_error_email_member;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_Email_UserName_assword_MemberLoginPage;
         private System.Windows.Forms.Button btn_Enter_MemberLoginPage;
-        private System.Windows.Forms.TextBox textBox_MemberPasswordControl_LoginPage;
-        private System.Windows.Forms.TextBox textBox_MemberEmail_Phone_UserNameControl_LoginPage;
+        private System.Windows.Forms.TextBox txt_passwordmember;
+        private System.Windows.Forms.TextBox txt_emailMember;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_WelcomeMessage;
@@ -511,7 +515,7 @@
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminPassword;
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminEmail;
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminRole;
-        private System.Windows.Forms.Label label_errorMessage_LoginPage_MemberPassword;
+        private System.Windows.Forms.Label lbl_error_password_member;
         private System.Windows.Forms.LinkLabel linkLabel_MemberLogin;
         private System.Windows.Forms.ToolTip toolTip_clickToSignUp;
         private System.Windows.Forms.ToolTip toolTip_clickSignUp;

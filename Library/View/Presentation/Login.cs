@@ -50,10 +50,11 @@ namespace Library.View.Presentation
 
         private void button_Enter_LoginPage_Click(object sender, EventArgs e)
         {
-            List<User> users = new List<User>();
-            users = context.Users.Where(u => u.Email == txt_AdminEmail_Login.Text).ToList();
             if(StringControl(txt_AdminEmail_Login.Text, label_errorEmail)) { return; }
             if (StringControl(txt_AdminPassword_Login.Text, label_errorPassword)) { return; }
+            List<User> users = new List<User>();
+            users = context.Users.Where(u => u.Email == txt_AdminEmail_Login.Text).ToList();
+            
 
             foreach (var admin in users)
             {
@@ -95,20 +96,37 @@ namespace Library.View.Presentation
 
         private void btn_Enter_MemberLoginPage_Click_1(object sender, EventArgs e)
         {
-            string inputControl = textBox_MemberEmail_Phone_UserNameControl_LoginPage.Text.Trim();
-            string passwordControl = textBox_MemberPasswordControl_LoginPage.Text.Trim();
+            if(StringControl(txt_emailMember.Text, lbl_error_email_member)) { return; }
+            if (StringControl(txt_passwordmember.Text, lbl_error_password_member)) { return; }
+            List<User> users = new List<User>();
+            users = context.Users.Where(u => u.Email == txt_emailMember.Text).ToList();
+            foreach (var members in users)
+            {
+                Email = members.Email.ToString();
+                Password = members.Password.ToString();
+            }
+            if(Email == txt_emailMember.Text)
+            {
+                if(Password == txt_passwordmember.Text)
+                {
+                    MessageBox.Show("Welcome!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Member_MainMenu member_Main = new Member_MainMenu();
+                    member_Main.Show();
+                    this.Hide();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("There is not a record like this, please sign up if you do not have an account!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Email is not record like this, please sign up if you do not have an account!");
+            }
 
-            if (StringControl(inputControl, label_ErrorMessage_LoginPage_AdminEmail)) { return; }
-            if (StringControl(passwordControl, label_ErrorMessage_LoginPage_AdminPassword)) { return; }
 
-            var memberUser = context.Users.FirstOrDefault(u =>
-           (IsValidEmail(inputControl) && u.Email == inputControl) ||
-           (IsValidPhone(inputControl) && u.Phone == inputControl) ||
-           (IsValidUserName(inputControl) && u.Name == inputControl)
-              && u.Password == passwordControl
-             );
-
-            if (memberUser == null)
+            if (users == null)
             {
                 MessageBox.Show("The user could not be found, if you are not a member first sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -148,12 +166,17 @@ namespace Library.View.Presentation
 
         private void textBox_MemberEmail_Phone_UserNameControl_LoginPage_TextChanged(object sender, EventArgs e)
         {
-            label_errorMessage_Loginpage_MemberEmail.Text = "";
+            lbl_error_email_member.Text = "";
         }
 
         private void textBox_MemberPasswordControl_LoginPage_TextChanged(object sender, EventArgs e)
         {
             label_ErrorMessage_LoginPage_AdminPassword.Text = "";
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
