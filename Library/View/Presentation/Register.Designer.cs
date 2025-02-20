@@ -61,10 +61,12 @@
             this.label_ErrorMessage_LoginPage_AdminPassword = new System.Windows.Forms.Label();
             this.label_ErrorMessage_LoginPage_AdminEmail = new System.Windows.Forms.Label();
             this.label_ErrorMessage_LoginPage_AdminRole = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel_AdminLogin = new System.Windows.Forms.LinkLabel();
             this.button_Enter_LoginPage = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage_MemberRegister = new System.Windows.Forms.TabPage();
+            this.textbox_adresmember = new System.Windows.Forms.RichTextBox();
+            this.dateTimePicker_member = new System.Windows.Forms.DateTimePicker();
             this.label_errorMessage_MemberPassword_RegisterPage = new System.Windows.Forms.Label();
             this.lbl_addressMemberError = new System.Windows.Forms.Label();
             this.lbl_birthdateMemberError = new System.Windows.Forms.Label();
@@ -93,8 +95,6 @@
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
             this.toolTip_SignIn = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_SignInTomember = new System.Windows.Forms.ToolTip(this.components);
-            this.dateTimePicker_member = new System.Windows.Forms.DateTimePicker();
-            this.textbox_adresmember = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminRegister.SuspendLayout();
@@ -204,14 +204,14 @@
             // 
             // dateTimePicker_birthdate
             // 
-            this.dateTimePicker_birthdate.Location = new System.Drawing.Point(112, 219);
+            this.dateTimePicker_birthdate.Location = new System.Drawing.Point(112, 225);
             this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
             this.dateTimePicker_birthdate.Size = new System.Drawing.Size(213, 29);
             this.dateTimePicker_birthdate.TabIndex = 4;
             // 
             // textBox_AdminAdress_Register
             // 
-            this.textBox_AdminAdress_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminAdress_Register.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminAdress_Register.Location = new System.Drawing.Point(112, 365);
             this.textBox_AdminAdress_Register.Name = "textBox_AdminAdress_Register";
             this.textBox_AdminAdress_Register.Size = new System.Drawing.Size(213, 76);
@@ -290,42 +290,42 @@
             // 
             // textBox_AdminPassword_Register
             // 
-            this.textBox_AdminPassword_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminPassword_Register.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminPassword_Register.Location = new System.Drawing.Point(112, 318);
             this.textBox_AdminPassword_Register.Name = "textBox_AdminPassword_Register";
-            this.textBox_AdminPassword_Register.Size = new System.Drawing.Size(213, 31);
+            this.textBox_AdminPassword_Register.Size = new System.Drawing.Size(213, 36);
             this.textBox_AdminPassword_Register.TabIndex = 6;
             // 
             // textBox_AdminPhone_Register
             // 
-            this.textBox_AdminPhone_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminPhone_Register.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminPhone_Register.Location = new System.Drawing.Point(112, 267);
             this.textBox_AdminPhone_Register.Name = "textBox_AdminPhone_Register";
-            this.textBox_AdminPhone_Register.Size = new System.Drawing.Size(213, 31);
+            this.textBox_AdminPhone_Register.Size = new System.Drawing.Size(213, 36);
             this.textBox_AdminPhone_Register.TabIndex = 5;
             // 
             // textBox_AdminEmail_Register
             // 
-            this.textBox_AdminEmail_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_AdminEmail_Register.Location = new System.Drawing.Point(112, 171);
+            this.textBox_AdminEmail_Register.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminEmail_Register.Location = new System.Drawing.Point(112, 174);
             this.textBox_AdminEmail_Register.Name = "textBox_AdminEmail_Register";
-            this.textBox_AdminEmail_Register.Size = new System.Drawing.Size(213, 31);
+            this.textBox_AdminEmail_Register.Size = new System.Drawing.Size(213, 36);
             this.textBox_AdminEmail_Register.TabIndex = 3;
             // 
             // textBox_AdminSurname_Register
             // 
-            this.textBox_AdminSurname_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_AdminSurname_Register.Location = new System.Drawing.Point(112, 126);
+            this.textBox_AdminSurname_Register.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminSurname_Register.Location = new System.Drawing.Point(112, 129);
             this.textBox_AdminSurname_Register.Name = "textBox_AdminSurname_Register";
-            this.textBox_AdminSurname_Register.Size = new System.Drawing.Size(213, 31);
+            this.textBox_AdminSurname_Register.Size = new System.Drawing.Size(213, 36);
             this.textBox_AdminSurname_Register.TabIndex = 2;
             // 
             // textBox_AdminName_Register
             // 
-            this.textBox_AdminName_Register.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AdminName_Register.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_AdminName_Register.Location = new System.Drawing.Point(112, 83);
             this.textBox_AdminName_Register.Name = "textBox_AdminName_Register";
-            this.textBox_AdminName_Register.Size = new System.Drawing.Size(213, 31);
+            this.textBox_AdminName_Register.Size = new System.Drawing.Size(213, 36);
             this.textBox_AdminName_Register.TabIndex = 1;
             // 
             // label_AdminPassword
@@ -440,16 +440,6 @@
             this.label_ErrorMessage_LoginPage_AdminRole.Size = new System.Drawing.Size(0, 21);
             this.label_ErrorMessage_LoginPage_AdminRole.TabIndex = 8;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(305, -62);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 627);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // linkLabel_AdminLogin
             // 
             this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
@@ -475,6 +465,16 @@
             this.button_Enter_LoginPage.Text = "Enter";
             this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
             this.button_Enter_LoginPage.Click += new System.EventHandler(this.button_Enter_LoginPage_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(305, -62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(359, 627);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // tabPage_MemberRegister
             // 
@@ -513,6 +513,22 @@
             this.tabPage_MemberRegister.TabIndex = 1;
             this.tabPage_MemberRegister.Text = "Member";
             this.tabPage_MemberRegister.UseVisualStyleBackColor = true;
+            // 
+            // textbox_adresmember
+            // 
+            this.textbox_adresmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_adresmember.Location = new System.Drawing.Point(97, 354);
+            this.textbox_adresmember.Name = "textbox_adresmember";
+            this.textbox_adresmember.Size = new System.Drawing.Size(200, 96);
+            this.textbox_adresmember.TabIndex = 7;
+            this.textbox_adresmember.Text = "";
+            // 
+            // dateTimePicker_member
+            // 
+            this.dateTimePicker_member.Location = new System.Drawing.Point(97, 307);
+            this.dateTimePicker_member.Name = "dateTimePicker_member";
+            this.dateTimePicker_member.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker_member.TabIndex = 6;
             // 
             // label_errorMessage_MemberPassword_RegisterPage
             // 
@@ -588,42 +604,42 @@
             // 
             // textBox_phonemember
             // 
-            this.textBox_phonemember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_phonemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_phonemember.Location = new System.Drawing.Point(96, 259);
             this.textBox_phonemember.Name = "textBox_phonemember";
-            this.textBox_phonemember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_phonemember.Size = new System.Drawing.Size(201, 36);
             this.textBox_phonemember.TabIndex = 5;
             // 
             // textBox_passwordmember
             // 
-            this.textBox_passwordmember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_passwordmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_passwordmember.Location = new System.Drawing.Point(96, 215);
             this.textBox_passwordmember.Name = "textBox_passwordmember";
-            this.textBox_passwordmember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_passwordmember.Size = new System.Drawing.Size(201, 36);
             this.textBox_passwordmember.TabIndex = 4;
             // 
             // textBox_emailmember
             // 
-            this.textBox_emailmember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_emailmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_emailmember.Location = new System.Drawing.Point(96, 172);
             this.textBox_emailmember.Name = "textBox_emailmember";
-            this.textBox_emailmember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_emailmember.Size = new System.Drawing.Size(201, 36);
             this.textBox_emailmember.TabIndex = 3;
             // 
             // textBox_surnamemember
             // 
-            this.textBox_surnamemember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_surnamemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_surnamemember.Location = new System.Drawing.Point(96, 127);
             this.textBox_surnamemember.Name = "textBox_surnamemember";
-            this.textBox_surnamemember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_surnamemember.Size = new System.Drawing.Size(201, 36);
             this.textBox_surnamemember.TabIndex = 2;
             // 
             // textBox_namemember
             // 
-            this.textBox_namemember.Font = new System.Drawing.Font("Segoe Print", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_namemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_namemember.Location = new System.Drawing.Point(96, 84);
             this.textBox_namemember.Name = "textBox_namemember";
-            this.textBox_namemember.Size = new System.Drawing.Size(201, 19);
+            this.textBox_namemember.Size = new System.Drawing.Size(201, 36);
             this.textBox_namemember.TabIndex = 1;
             // 
             // label_MemberPassword_RegisterPage
@@ -765,21 +781,6 @@
             // toolTip_SignInTomember
             // 
             this.toolTip_SignInTomember.BackColor = System.Drawing.Color.Plum;
-            // 
-            // dateTimePicker_member
-            // 
-            this.dateTimePicker_member.Location = new System.Drawing.Point(97, 307);
-            this.dateTimePicker_member.Name = "dateTimePicker_member";
-            this.dateTimePicker_member.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker_member.TabIndex = 6;
-            // 
-            // textbox_adresmember
-            // 
-            this.textbox_adresmember.Location = new System.Drawing.Point(97, 354);
-            this.textbox_adresmember.Name = "textbox_adresmember";
-            this.textbox_adresmember.Size = new System.Drawing.Size(200, 96);
-            this.textbox_adresmember.TabIndex = 7;
-            this.textbox_adresmember.Text = "";
             // 
             // Register
             // 

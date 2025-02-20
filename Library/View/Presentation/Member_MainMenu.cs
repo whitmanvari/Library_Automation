@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.DataContext;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Library.View.Presentation
 {
     public partial class Member_MainMenu : Form
     {
-        public Member_MainMenu()
+        LibraryContext context = new LibraryContext();
+        public Member_MainMenu(string text)
         {
             InitializeComponent();
+            label_memberName.Text = text;
+
         }
 
         private void label_MemberMainMenu_SignIn_Click(object sender, EventArgs e)
@@ -51,7 +55,26 @@ namespace Library.View.Presentation
 
         private void Member_MainMenu_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void toolStripButton1_MouseHover(object sender, EventArgs e)
+        {
+            toolStripLabel_myProfile.Visible = true;
+        }
+
+        private void toolStripButton1_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripLabel_myProfile.Visible = false;
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            var memberInfo = context.Users.Where(u => u.Name == label_memberName.Text).ToList();
+
+            MemberUpdate memberUpdate = new MemberUpdate(memberInfo);
+            memberUpdate.Show();
+            this.Hide();
         }
     }
 }

@@ -16,6 +16,7 @@ namespace Library.View.Presentation
         private int safetyMargin = 20;
         string Email;
         string Password;
+        string Name;
         LibraryContext context = new LibraryContext();
         public Login()
         {
@@ -82,6 +83,7 @@ namespace Library.View.Presentation
         //String Text Control
         public bool StringControl(string text, Label label)
         {
+            
             bool control = false;
             if (string.IsNullOrWhiteSpace(text))
             {
@@ -102,25 +104,26 @@ namespace Library.View.Presentation
             {
                 Email = members.Email.ToString();
                 Password = members.Password.ToString();
+                Name = members.Name.ToString();
             }
             if(Email == txt_emailMember.Text)
             {
                 if(Password == txt_passwordmember.Text)
                 {
                     MessageBox.Show("Welcome!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Member_MainMenu member_Main = new Member_MainMenu();
+                    Member_MainMenu member_Main = new Member_MainMenu(Name);
                     member_Main.Show();
                     this.Hide();
                     
                 }
                 else
                 {
-                    MessageBox.Show("There is not a record like this, please sign up if you do not have an account!");
+                    MessageBox.Show("There is no record like this, please sign up if you do not have an account!");
                 }
             }
             else
             {
-                MessageBox.Show("Email is not record like this, please sign up if you do not have an account!");
+                MessageBox.Show("There is no record like this, please sign up if you do not have an account!");
             }
 
 
@@ -129,10 +132,7 @@ namespace Library.View.Presentation
                 MessageBox.Show("The user could not be found, if you are not a member first sign up!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            Member_MainMenu member_MainMenu = new Member_MainMenu();
-            member_MainMenu.Show();
-            this.Hide();
+           
 
 
         }

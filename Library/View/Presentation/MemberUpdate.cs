@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Model.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace Library.View.Presentation
 {
     public partial class MemberUpdate : Form
     {
-        public MemberUpdate()
+        public MemberUpdate(List<User> list)
         {
             InitializeComponent();
+
         }
 
         private void label_MemberUpdate_SignIn_Click(object sender, EventArgs e)
@@ -22,6 +24,17 @@ namespace Library.View.Presentation
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void MemberUpdate_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
