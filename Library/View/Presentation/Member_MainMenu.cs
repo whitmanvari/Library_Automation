@@ -48,5 +48,10 @@ namespace Library.View.Presentation
         {
 
         }
+
+        private void Member_MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

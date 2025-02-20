@@ -3,6 +3,7 @@ using Library.Model.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -10,6 +11,9 @@ namespace Library.View.Presentation
 {
     public partial class Login : Form
     {
+        private Random random = new Random();
+        private int moveDistance = 30;
+        private int safetyMargin = 20;
         string Email;
         string Password;
         LibraryContext context = new LibraryContext();
@@ -18,12 +22,6 @@ namespace Library.View.Presentation
             InitializeComponent();
         }
 
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-
-        }
 
 
         private void label_LoginPage_Signin_Click(object sender, EventArgs e)
@@ -174,9 +172,25 @@ namespace Library.View.Presentation
             label_ErrorMessage_LoginPage_AdminPassword.Text = "";
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
 
+        private void btn_ExitLoginPage_MouseMove(object sender, MouseEventArgs e)
+        { 
+            Button btn = (Button)sender;
+
+            //Angle will be random
+            int angle = random.Next(0, 360);
+            double radians = angle * Math.PI / 180;
+            //New coordinates:
+            int newX = btn.Left + (int)(moveDistance*Math.Cos(radians));
+            int newY = btn.Top + (int)(moveDistance* Math.Sin(radians));
+
+            //Control form borders:
+            newX = Math.Max(safetyMargin, Math.Min( newX, this.ClientSize.Width - btn.Width - safetyMargin));
+            newY = Math.Max(safetyMargin, Math.Min(newY, this.ClientSize.Height - btn.Height - safetyMargin));
+
+            btn.Location = new Point(newX, newY); //update position
         }
+
+        
     }
 }

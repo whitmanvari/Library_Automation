@@ -14,7 +14,12 @@ namespace Library.View.Presentation
 {
     public partial class Register : Form
     {
+        private Random random = new Random();
+        private int moveDistance = 40; // Distance of the moves
+        private int safetyMargin = 10; // Min distance betwixt form screen
+
         LibraryContext libraryContext = new LibraryContext();
+
         public Register()
         {
             InitializeComponent();
@@ -32,6 +37,7 @@ namespace Library.View.Presentation
         {
             libraryContext.Roles.Add(new Role { Name = "Admin" });
             libraryContext.Roles.Add(new Role { Name = "Member" });
+
             string adminName = textBox_AdminName_Register.Text;
             string adminSurname = textBox_AdminSurname_Register.Text;
             string adminEmail = textBox_AdminEmail_Register.Text;
@@ -98,15 +104,6 @@ namespace Library.View.Presentation
             return true; // Doluysa true döndür
         }
 
-        private void Register_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void linkLabel_AdminLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -163,6 +160,26 @@ namespace Library.View.Presentation
                 this.Hide();
             }
         }
+
+        private void btn_ExitLoginPage_MouseMove(object sender, MouseEventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            //Angle will be random
+            int angle = random.Next(0, 360);
+            double radians = angle * Math.PI / 180;
+            //New coordinates:
+            int newX = btn.Left + (int)(moveDistance * Math.Cos(radians));
+            int newY = btn.Top + (int)(moveDistance * Math.Sin(radians));
+
+            //Control form borders:
+            newX = Math.Max(safetyMargin, Math.Min(newX, this.ClientSize.Width - btn.Width - safetyMargin));
+            newY = Math.Max(safetyMargin, Math.Min(newY, this.ClientSize.Height - btn.Height - safetyMargin));
+
+            btn.Location = new Point(newX, newY); //update position
+        }
+
+      
     }
 }
 

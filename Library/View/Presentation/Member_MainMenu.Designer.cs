@@ -117,7 +117,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 33);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton_loanpage
             // 
@@ -126,7 +126,7 @@
             this.toolStripButton_loanpage.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_loanpage.Image")));
             this.toolStripButton_loanpage.ImageTransparentColor = System.Drawing.Color.Thistle;
             this.toolStripButton_loanpage.Name = "toolStripButton_loanpage";
-            this.toolStripButton_loanpage.Size = new System.Drawing.Size(23, 30);
+            this.toolStripButton_loanpage.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_loanpage.Text = "Book Loan";
             this.toolStripButton_loanpage.ToolTipText = "Book Loan Page";
             this.toolStripButton_loanpage.MouseLeave += new System.EventHandler(this.toolStripButton_loanpage_MouseLeave);
@@ -149,6 +149,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Member_MainMenu";
             this.Text = "Member_MainMenu";
+            this.Load += new System.EventHandler(this.Member_MainMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
