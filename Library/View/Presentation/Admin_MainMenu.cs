@@ -32,8 +32,8 @@ namespace Library.View.Presentation
 
         private void Admin_MainMenu_Load(object sender, EventArgs e)
         {
-            
-           
+
+
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -47,6 +47,43 @@ namespace Library.View.Presentation
         {
             Admin_Update_Page admin_Update_ = new Admin_Update_Page(Admin);
             admin_Update_.Show();
+            this.Hide();
+        }
+
+        private void toolStripButton_adminUpdate_MouseHover(object sender, EventArgs e)
+        {
+            toolStripLabel_adminUpdate.Visible = true;
+        }
+
+        private void toolStripButton_adminUpdate_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripLabel_adminUpdate.Visible = false;
+        }
+
+        private void toolStripButton2_MouseHover(object sender, EventArgs e)
+        {
+            toolStripLabel_bookCategory_Admin.Visible = true;
+        }
+
+        private void toolStripButton2_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripLabel_bookCategory_Admin.Visible= false;
+        }
+
+        private void toolStripButton1_MouseHover(object sender, EventArgs e)
+        {
+            toolStripLabel_bookList_Admin.Visible = true;
+        }
+
+        private void toolStripButton1_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripLabel_bookList_Admin.Visible = false;
+        }
+
+        private void toolStripButton_bookCategory_Click(object sender, EventArgs e)
+        {
+            Admin_Book_Category admin_Book_Category = new Admin_Book_Category(Name);
+            admin_Book_Category.Show();
             this.Hide();
         }
     }
