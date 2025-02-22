@@ -80,5 +80,22 @@ namespace Library.View.Presentation
             memberUpdate.Show();
             this.Hide();
         }
+
+        private void toolStripButton_categoryList_MouseHover(object sender, EventArgs e)
+        {
+            toolStripLabel_categoryList.Visible = true;
+        }
+
+        private void toolStripButton_categoryList_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripLabel_categoryList.Visible = false;
+        }
+
+        private void toolStripButton_categoryList_Click(object sender, EventArgs e)
+        {
+            Category_List_Member category_List = new Category_List_Member(Name);
+            category_List.Show();
+            this.Hide();
+        }
     }
 }

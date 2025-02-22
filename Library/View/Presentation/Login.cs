@@ -192,6 +192,9 @@ namespace Library.View.Presentation
             btn.Location = new Point(newX, newY); //update position
         }
 
-        
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

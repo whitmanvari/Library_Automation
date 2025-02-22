@@ -482,6 +482,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage_AdminLogin.ResumeLayout(false);
             this.tabPage_AdminLogin.PerformLayout();
