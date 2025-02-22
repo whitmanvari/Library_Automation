@@ -131,6 +131,12 @@
     <Compile Include="View\Presentation\Admin_MainMenu.Designer.cs">
       <DependentUpon>Admin_MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Presentation\Admin_Update_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Presentation\Admin_Update_Page.Designer.cs">
+      <DependentUpon>Admin_Update_Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Presentation\BookList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Presentation\Admin_MainMenu.resx">
       <DependentUpon>Admin_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Presentation\Admin_Update_Page.resx">
+      <DependentUpon>Admin_Update_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Presentation\BookList.resx">
       <DependentUpon>BookList.cs</DependentUpon>

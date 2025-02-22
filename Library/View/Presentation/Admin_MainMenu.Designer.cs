@@ -36,11 +36,11 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton_adminUpdate = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -94,7 +94,7 @@
             this.toolStripButton2,
             this.toolStripLabel2,
             this.toolStripSeparator2,
-            this.toolStripButton3,
+            this.toolStripButton_adminUpdate,
             this.toolStripLabel3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 41);
             this.toolStrip1.Name = "toolStrip1";
@@ -123,6 +123,11 @@
             this.toolStripLabel1.Size = new System.Drawing.Size(90, 25);
             this.toolStripLabel1.Text = "Book List";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
+            // 
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -141,24 +146,20 @@
             this.toolStripLabel2.Size = new System.Drawing.Size(131, 25);
             this.toolStripLabel2.Text = "Book Category";
             // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 25);
-            this.toolStripButton3.Text = "Show Admin Information Update Page";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
-            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 28);
+            // 
+            // toolStripButton_adminUpdate
+            // 
+            this.toolStripButton_adminUpdate.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton_adminUpdate.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_adminUpdate.Image")));
+            this.toolStripButton_adminUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_adminUpdate.Name = "toolStripButton_adminUpdate";
+            this.toolStripButton_adminUpdate.Size = new System.Drawing.Size(23, 25);
+            this.toolStripButton_adminUpdate.Text = "Show Admin Information Update Page";
+            this.toolStripButton_adminUpdate.Click += new System.EventHandler(this.toolStripButton_adminUpdate_Click);
             // 
             // toolStripLabel3
             // 
@@ -236,7 +237,7 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton_adminUpdate;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
