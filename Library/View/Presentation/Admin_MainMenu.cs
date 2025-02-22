@@ -16,7 +16,7 @@ namespace Library.View.Presentation
         public Admin_MainMenu(string text)
         {
             InitializeComponent();
-            label_adminName.Text = text;
+            label_name.Text = text;
             Name = text;
         }
 
@@ -34,9 +34,9 @@ namespace Library.View.Presentation
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            BookList bookList = new BookList(Name);
-            bookList.Show();
-            this.Close();
+            Admin_Book_List _Book_List = new Admin_Book_List(Name);
+            _Book_List.Show();
+            this.Hide();
         }
     }
 }
