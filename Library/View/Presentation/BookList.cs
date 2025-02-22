@@ -27,18 +27,20 @@ namespace Library.View.Presentation
 
         }
 
-        private void label_signin_BookList_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.Show();
-            this.Hide();
-        }
+      
 
         private void label1_Click(object sender, EventArgs e)
         {
             Member_MainMenu member_Main = new Member_MainMenu(Name);
             member_Main.Show();
             this.Close();
+        }
+
+        private void label_MemberMainMenu_SignIn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

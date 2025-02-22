@@ -32,5 +32,12 @@ namespace Library.View.Presentation
             mainMenu.Show();
             this.Hide();
         }
+
+        private void label_MemberMainMenu_SignIn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
