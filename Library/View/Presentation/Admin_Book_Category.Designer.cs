@@ -297,7 +297,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Name = "Admin_Book_Category";
-            this.Text = "Admin_Book_Category";
+            this.Text = "Book Category";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
