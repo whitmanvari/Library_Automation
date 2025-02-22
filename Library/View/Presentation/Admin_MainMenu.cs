@@ -12,10 +12,12 @@ namespace Library.View.Presentation
 {
     public partial class Admin_MainMenu : Form
     {
+        string Name;
         public Admin_MainMenu(string text)
         {
             InitializeComponent();
             label_adminName.Text = text;
+            Name = text;
         }
 
         private void label_MemberMainMenu_SignIn_Click(object sender, EventArgs e)
@@ -32,7 +34,7 @@ namespace Library.View.Presentation
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            BookList bookList = new BookList();
+            BookList bookList = new BookList(Name);
             bookList.Show();
             this.Close();
         }

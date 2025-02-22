@@ -14,10 +14,12 @@ namespace Library.View.Presentation
     public partial class Member_MainMenu : Form
     {
         LibraryContext context = new LibraryContext();
+        string Name;
         public Member_MainMenu(string text)
         {
             InitializeComponent();
             label_memberName.Text = text;
+            Name = label_memberName.Text;
 
         }
 
@@ -50,7 +52,7 @@ namespace Library.View.Presentation
 
         private void toolStripButton_booklist_Click(object sender, EventArgs e)
         {
-            BookList bookList = new BookList();
+            BookList bookList = new BookList(Name);
             bookList.Show();
             this.Close();
         }

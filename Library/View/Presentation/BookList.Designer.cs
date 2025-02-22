@@ -51,6 +51,7 @@
             this.createdDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_booklist)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet6)).BeginInit();
@@ -65,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(942, 41);
+            this.panel1.Size = new System.Drawing.Size(941, 41);
             this.panel1.TabIndex = 3;
             // 
             // label_signin_BookList
@@ -131,9 +132,8 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_booklist.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView_booklist.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_booklist.GridColor = System.Drawing.Color.Black;
-            this.dataGridView_booklist.Location = new System.Drawing.Point(0, 41);
+            this.dataGridView_booklist.Location = new System.Drawing.Point(0, 61);
             this.dataGridView_booklist.Name = "dataGridView_booklist";
             this.dataGridView_booklist.RightToLeft = System.Windows.Forms.RightToLeft.No;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -144,7 +144,8 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView_booklist.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView_booklist.Size = new System.Drawing.Size(942, 436);
+            this.dataGridView_booklist.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView_booklist.Size = new System.Drawing.Size(942, 500);
             this.dataGridView_booklist.TabIndex = 4;
             // 
             // libraryAutomationDataSet6
@@ -237,11 +238,23 @@
             this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
             this.isActiveDataGridViewCheckBoxColumn.Width = 51;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(849, 564);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 27);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Go Back";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // BookList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 477);
+            this.ClientSize = new System.Drawing.Size(941, 595);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView_booklist);
             this.Controls.Add(this.panel1);
             this.Name = "BookList";
@@ -253,6 +266,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -275,5 +289,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn createdDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isActiveDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.Label label1;
     }
 }

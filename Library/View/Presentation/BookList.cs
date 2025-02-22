@@ -12,9 +12,12 @@ namespace Library.View.Presentation
 {
     public partial class BookList : Form
     {
-        public BookList()
+        string Name;
+        public BookList(string text)
         {
             InitializeComponent();
+            Name = text;
+            
         }
 
         private void BookList_Load(object sender, EventArgs e)
@@ -29,6 +32,13 @@ namespace Library.View.Presentation
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Member_MainMenu member_Main = new Member_MainMenu(Name);
+            member_Main.Show();
+            this.Close();
         }
     }
 }
