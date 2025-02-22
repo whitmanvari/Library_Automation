@@ -59,13 +59,14 @@ namespace Library.View.Presentation
             {
                 Email = admin.Email.ToString();
                 Password = admin.Password.ToString();
+                Name = admin.Name.ToString();
             }
             if(Email == txt_AdminEmail_Login.Text)
             {
                 if (Password == txt_AdminPassword_Login.Text)
                 {
                     MessageBox.Show("Welcome!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Admin_MainMenu adminMainMenu = new Admin_MainMenu();
+                    Admin_MainMenu adminMainMenu = new Admin_MainMenu(Name);
                     adminMainMenu.Show();
                     this.Hide();
                 }

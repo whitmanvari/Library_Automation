@@ -50,7 +50,9 @@ namespace Library.View.Presentation
 
         private void toolStripButton_booklist_Click(object sender, EventArgs e)
         {
-
+            BookList bookList = new BookList();
+            bookList.Show();
+            this.Close();
         }
 
         private void Member_MainMenu_Load(object sender, EventArgs e)

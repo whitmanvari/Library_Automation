@@ -217,20 +217,20 @@
             // 
             // txt_AdminPassword_Login
             // 
-            this.txt_AdminPassword_Login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_AdminPassword_Login.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_AdminPassword_Login.Location = new System.Drawing.Point(110, 199);
             this.txt_AdminPassword_Login.Name = "txt_AdminPassword_Login";
-            this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 23);
+            this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 27);
             this.txt_AdminPassword_Login.TabIndex = 3;
             this.txt_AdminPassword_Login.UseSystemPasswordChar = true;
             this.txt_AdminPassword_Login.TextChanged += new System.EventHandler(this.txt_AdminPassword_Login_TextChanged);
             // 
             // txt_AdminEmail_Login
             // 
-            this.txt_AdminEmail_Login.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_AdminEmail_Login.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_AdminEmail_Login.Location = new System.Drawing.Point(110, 142);
             this.txt_AdminEmail_Login.Name = "txt_AdminEmail_Login";
-            this.txt_AdminEmail_Login.Size = new System.Drawing.Size(225, 23);
+            this.txt_AdminEmail_Login.Size = new System.Drawing.Size(225, 27);
             this.txt_AdminEmail_Login.TabIndex = 2;
             this.txt_AdminEmail_Login.TextChanged += new System.EventHandler(this.txt_AdminEmail_Login_TextChanged);
             // 
