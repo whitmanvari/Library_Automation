@@ -69,6 +69,13 @@ namespace Library.View.Presentation
                 MessageBox.Show("There are no records, if you are not signed up please go to the register page!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Admin_MainMenu admin_Main = new Admin_MainMenu(Admin.Name);
+            admin_Main.Show();
+            this.Close();
+        }
     }
 
 }
