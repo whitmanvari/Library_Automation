@@ -252,6 +252,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Go Back ";
             this.toolTip_goback.SetToolTip(this.linkLabel1, "Click to go back to main menu!");
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // toolTip_Hello
             // 

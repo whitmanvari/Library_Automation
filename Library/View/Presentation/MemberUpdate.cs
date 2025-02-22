@@ -46,9 +46,35 @@ namespace Library.View.Presentation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Member = new User { Name = textBox_namemember.Text, Address = textbox_adresmember.Text, BirthDate = dateTimePicker_member.Value, Email= textBox_emailmember.Text, Phone = textBox_phonemember.Text, Password = textBox_passwordmember.Text, Surname = textBox_surnamemember.Text, RoleId= 8};
-            Context.SaveChanges();
+            var existingMember = Context.Users.FirstOrDefault(u => u.Id == Member.Id);
 
+            if (existingMember != null)  // Eğer kullanıcı varsa
+            {
+                existingMember.Name = textBox_namemember.Text;
+                existingMember.Address = textbox_adresmember.Text;
+                existingMember.BirthDate = dateTimePicker_member.Value;
+                existingMember.Email = textBox_emailmember.Text;
+                existingMember.Phone = textBox_phonemember.Text;
+                existingMember.Password = textBox_passwordmember.Text;
+                existingMember.Surname = textBox_surnamemember.Text;
+                Context.SaveChanges();
+                MessageBox.Show("Update is succesfull!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //go to main menu again
+                Member_MainMenu menu = new Member_MainMenu(existingMember.Name);
+                menu.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("There are no records, if you are not signed up please go to the register page!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Member_MainMenu member_MainMenu = new Member_MainMenu(Member.Name);
+            member_MainMenu.Show();
+            this.Close();
         }
     }
 }

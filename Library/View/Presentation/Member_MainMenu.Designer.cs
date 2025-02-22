@@ -99,7 +99,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 41);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(800, 37);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -110,7 +110,7 @@
             this.toolStripButton_booklist.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_booklist.Image")));
             this.toolStripButton_booklist.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_booklist.Name = "toolStripButton_booklist";
-            this.toolStripButton_booklist.Size = new System.Drawing.Size(23, 34);
+            this.toolStripButton_booklist.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_booklist.Text = "Show Book List";
             this.toolStripButton_booklist.Click += new System.EventHandler(this.toolStripButton_booklist_Click);
             this.toolStripButton_booklist.MouseLeave += new System.EventHandler(this.toolStripButton_booklist_MouseLeave);
@@ -163,10 +163,10 @@
             // label_memberName
             // 
             this.label_memberName.AutoSize = true;
-            this.label_memberName.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_memberName.Location = new System.Drawing.Point(107, 99);
+            this.label_memberName.Font = new System.Drawing.Font("Segoe Script", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_memberName.Location = new System.Drawing.Point(107, 93);
             this.label_memberName.Name = "label_memberName";
-            this.label_memberName.Size = new System.Drawing.Size(0, 27);
+            this.label_memberName.Size = new System.Drawing.Size(0, 33);
             this.label_memberName.TabIndex = 0;
             // 
             // pictureBox1
