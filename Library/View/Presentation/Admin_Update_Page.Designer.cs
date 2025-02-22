@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Update_Page));
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_updateAdmin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textbox_adresAdmin = new System.Windows.Forms.RichTextBox();
             this.dateTimePicker_Admin = new System.Windows.Forms.DateTimePicker();
@@ -64,19 +64,19 @@
             this.linkLabel1.TabIndex = 46;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Go Back ";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // button1
+            // button_updateAdmin
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button1.Location = new System.Drawing.Point(21, 555);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(456, 38);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_updateAdmin.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_updateAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_updateAdmin.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_updateAdmin.Location = new System.Drawing.Point(21, 555);
+            this.button_updateAdmin.Name = "button_updateAdmin";
+            this.button_updateAdmin.Size = new System.Drawing.Size(456, 38);
+            this.button_updateAdmin.TabIndex = 45;
+            this.button_updateAdmin.Text = "Update";
+            this.button_updateAdmin.UseVisualStyleBackColor = false;
+            this.button_updateAdmin.Click += new System.EventHandler(this.button_updateAdmin_Click);
             // 
             // pictureBox1
             // 
@@ -254,7 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 637);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_updateAdmin);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textbox_adresAdmin);
             this.Controls.Add(this.dateTimePicker_Admin);
@@ -285,7 +285,7 @@
         #endregion
 
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_updateAdmin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox textbox_adresAdmin;
         private System.Windows.Forms.DateTimePicker dateTimePicker_Admin;
