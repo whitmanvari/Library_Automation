@@ -13,10 +13,12 @@ namespace Library.View.Presentation
     public partial class Admin_Book_List : Form
     {
         string Name;
-        public Admin_Book_List(string text)
+        int Id;
+        public Admin_Book_List(string text, int id)
         {
             InitializeComponent();
             Name = text;
+            Id = id;
         }
 
         private void Admin_Book_List_Load(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace Library.View.Presentation
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Admin_MainMenu mainMenu = new Admin_MainMenu(Name);
+            Admin_MainMenu mainMenu = new Admin_MainMenu(Name, Id);
             mainMenu.Show();
             this.Hide();
         }

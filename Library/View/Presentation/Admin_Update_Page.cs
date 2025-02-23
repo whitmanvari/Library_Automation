@@ -70,7 +70,7 @@ namespace Library.View.Presentation
                 context.SaveChanges();
                 MessageBox.Show("Update is succesfull!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //go to main menu again
-                Admin_MainMenu admin_Main = new Admin_MainMenu(textBox_nameAdmin.Text);
+                Admin_MainMenu admin_Main = new Admin_MainMenu(textBox_nameAdmin.Text, Admin.Id);
                 admin_Main.Show();
                 this.Close();
             }

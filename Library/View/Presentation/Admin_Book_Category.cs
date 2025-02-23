@@ -13,15 +13,17 @@ namespace Library.View.Presentation
     public partial class Admin_Book_Category : Form
     {
         string Name;
-        public Admin_Book_Category(string text)
+        int Id;
+        public Admin_Book_Category(string text, int id)
         {
             InitializeComponent();
             Name = text;
+            Id = id;
         }
 
         private void label_gobackAdminMainMenu_Click(object sender, EventArgs e)
         {
-            Admin_MainMenu admin_MainMenu = new Admin_MainMenu(Name);
+            Admin_MainMenu admin_MainMenu = new Admin_MainMenu(Name, Id);
             admin_MainMenu.Show();
             this.Hide();
         }

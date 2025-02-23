@@ -86,7 +86,7 @@ namespace Library.View.Presentation
 
         private void toolStripButton_bookCategory_Click(object sender, EventArgs e)
         {
-            Admin_Book_Category admin_Book_Category = new Admin_Book_Category(Name);
+            Admin_Book_Category admin_Book_Category = new Admin_Book_Category(Name, Id);
             admin_Book_Category.Show();
             this.Hide();
         }

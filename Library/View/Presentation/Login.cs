@@ -17,6 +17,7 @@ namespace Library.View.Presentation
         string Email;
         string Password;
         string Name;
+        int Id;
         LibraryContext context = new LibraryContext();
         public Login()
         {
@@ -60,13 +61,14 @@ namespace Library.View.Presentation
                 Email = admin.Email.ToString();
                 Password = admin.Password.ToString();
                 Name = admin.Name.ToString();
+                Id = admin.Id;
             }
             if(Email == txt_AdminEmail_Login.Text)
             {
                 if (Password == txt_AdminPassword_Login.Text)
                 {
                     MessageBox.Show("Welcome!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Admin_MainMenu adminMainMenu = new Admin_MainMenu(Name);
+                    Admin_MainMenu adminMainMenu = new Admin_MainMenu(Name, Id);
                     adminMainMenu.Show();
                     this.Hide();
                 }
