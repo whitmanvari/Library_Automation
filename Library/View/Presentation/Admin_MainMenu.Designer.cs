@@ -203,6 +203,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "Add Book";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             this.toolStripButton1.MouseLeave += new System.EventHandler(this.toolStripButton1_MouseLeave_1);
             this.toolStripButton1.MouseHover += new System.EventHandler(this.toolStripButton1_MouseHover_1);
             // 

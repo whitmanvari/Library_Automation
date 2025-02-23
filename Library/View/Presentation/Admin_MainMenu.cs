@@ -117,5 +117,12 @@ namespace Library.View.Presentation
             admin_Book.Show();
             this.Close();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Admin_Add_Book add_book = new Admin_Add_Book();
+            add_book.Show();
+            this.Close();
+        }
     }
 }
