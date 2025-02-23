@@ -125,6 +125,7 @@
             this.toolStripButton_bookList.Name = "toolStripButton_bookList";
             this.toolStripButton_bookList.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_bookList.Text = "Show Book List";
+            this.toolStripButton_bookList.Click += new System.EventHandler(this.toolStripButton_bookList_Click);
             this.toolStripButton_bookList.MouseLeave += new System.EventHandler(this.toolStripButton1_MouseLeave);
             this.toolStripButton_bookList.MouseHover += new System.EventHandler(this.toolStripButton1_MouseHover);
             // 

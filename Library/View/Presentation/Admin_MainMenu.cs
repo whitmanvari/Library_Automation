@@ -110,5 +110,12 @@ namespace Library.View.Presentation
         {
             toolStripLabel_AddCategory.Visible= false;
         }
+
+        private void toolStripButton_bookList_Click(object sender, EventArgs e)
+        {
+            Admin_Book_List admin_Book = new Admin_Book_List(Name, Id);
+            admin_Book.Show();
+            this.Close();
+        }
     }
 }
