@@ -120,8 +120,8 @@ namespace Library.View.Presentation
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            Admin_Add_Book add_book = new Admin_Add_Book();
-            add_book.Show();
+            Admin_CategoryBeforeAddingBook admin_CategoryBeforeAddingBook = new Admin_CategoryBeforeAddingBook(Name, Id);
+            admin_CategoryBeforeAddingBook.Show();
             this.Close();
         }
     }
