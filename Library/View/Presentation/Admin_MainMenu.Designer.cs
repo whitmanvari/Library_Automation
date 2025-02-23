@@ -42,6 +42,12 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton_adminUpdate = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel_adminUpdate = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel_addBook = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel_AddCategory = new System.Windows.Forms.ToolStripLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label_name = new System.Windows.Forms.Label();
@@ -59,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(567, 41);
+            this.panel1.Size = new System.Drawing.Size(616, 41);
             this.panel1.TabIndex = 4;
             // 
             // label_MemberMainMenu_SignIn
@@ -67,7 +73,7 @@
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(493, 9);
+            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(545, 9);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
@@ -95,10 +101,16 @@
             this.toolStripLabel_bookCategory_Admin,
             this.toolStripSeparator2,
             this.toolStripButton_adminUpdate,
-            this.toolStripLabel_adminUpdate});
+            this.toolStripLabel_adminUpdate,
+            this.toolStripSeparator3,
+            this.toolStripButton1,
+            this.toolStripLabel_addBook,
+            this.toolStripSeparator4,
+            this.toolStripButton2,
+            this.toolStripLabel_AddCategory});
             this.toolStrip1.Location = new System.Drawing.Point(0, 41);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(567, 28);
+            this.toolStrip1.Size = new System.Drawing.Size(616, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -111,25 +123,24 @@
             this.toolStripButton_bookList.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_bookList.Image")));
             this.toolStripButton_bookList.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_bookList.Name = "toolStripButton_bookList";
-            this.toolStripButton_bookList.Size = new System.Drawing.Size(23, 25);
+            this.toolStripButton_bookList.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_bookList.Text = "Show Book List";
-            this.toolStripButton_bookList.Click += new System.EventHandler(this.toolStripButton1_Click);
             this.toolStripButton_bookList.MouseLeave += new System.EventHandler(this.toolStripButton1_MouseLeave);
             this.toolStripButton_bookList.MouseHover += new System.EventHandler(this.toolStripButton1_MouseHover);
             // 
             // toolStripLabel_bookList_Admin
             // 
-            this.toolStripLabel_bookList_Admin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel_bookList_Admin.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel_bookList_Admin.LinkColor = System.Drawing.Color.DarkSlateBlue;
             this.toolStripLabel_bookList_Admin.Name = "toolStripLabel_bookList_Admin";
-            this.toolStripLabel_bookList_Admin.Size = new System.Drawing.Size(90, 25);
+            this.toolStripLabel_bookList_Admin.Size = new System.Drawing.Size(68, 22);
             this.toolStripLabel_bookList_Admin.Text = "Book List";
             this.toolStripLabel_bookList_Admin.Visible = false;
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton_bookCategory
             // 
@@ -138,7 +149,7 @@
             this.toolStripButton_bookCategory.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_bookCategory.Image")));
             this.toolStripButton_bookCategory.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_bookCategory.Name = "toolStripButton_bookCategory";
-            this.toolStripButton_bookCategory.Size = new System.Drawing.Size(23, 25);
+            this.toolStripButton_bookCategory.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_bookCategory.Text = "Book Category";
             this.toolStripButton_bookCategory.Click += new System.EventHandler(this.toolStripButton_bookCategory_Click);
             this.toolStripButton_bookCategory.MouseLeave += new System.EventHandler(this.toolStripButton2_MouseLeave);
@@ -146,17 +157,17 @@
             // 
             // toolStripLabel_bookCategory_Admin
             // 
-            this.toolStripLabel_bookCategory_Admin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel_bookCategory_Admin.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel_bookCategory_Admin.LinkColor = System.Drawing.Color.DarkSlateBlue;
             this.toolStripLabel_bookCategory_Admin.Name = "toolStripLabel_bookCategory_Admin";
-            this.toolStripLabel_bookCategory_Admin.Size = new System.Drawing.Size(131, 25);
+            this.toolStripLabel_bookCategory_Admin.Size = new System.Drawing.Size(98, 22);
             this.toolStripLabel_bookCategory_Admin.Text = "Book Category";
             this.toolStripLabel_bookCategory_Admin.Visible = false;
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 28);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton_adminUpdate
             // 
@@ -164,7 +175,7 @@
             this.toolStripButton_adminUpdate.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_adminUpdate.Image")));
             this.toolStripButton_adminUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_adminUpdate.Name = "toolStripButton_adminUpdate";
-            this.toolStripButton_adminUpdate.Size = new System.Drawing.Size(23, 25);
+            this.toolStripButton_adminUpdate.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_adminUpdate.Text = "Show Admin Information Update Page";
             this.toolStripButton_adminUpdate.Click += new System.EventHandler(this.toolStripButton_adminUpdate_Click);
             this.toolStripButton_adminUpdate.MouseLeave += new System.EventHandler(this.toolStripButton_adminUpdate_MouseLeave);
@@ -172,17 +183,65 @@
             // 
             // toolStripLabel_adminUpdate
             // 
-            this.toolStripLabel_adminUpdate.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel_adminUpdate.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel_adminUpdate.Name = "toolStripLabel_adminUpdate";
-            this.toolStripLabel_adminUpdate.Size = new System.Drawing.Size(138, 25);
+            this.toolStripLabel_adminUpdate.Size = new System.Drawing.Size(103, 22);
             this.toolStripLabel_adminUpdate.Text = "Admin Update";
             this.toolStripLabel_adminUpdate.Visible = false;
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "Add Book";
+            this.toolStripButton1.MouseLeave += new System.EventHandler(this.toolStripButton1_MouseLeave_1);
+            this.toolStripButton1.MouseHover += new System.EventHandler(this.toolStripButton1_MouseHover_1);
+            // 
+            // toolStripLabel_addBook
+            // 
+            this.toolStripLabel_addBook.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel_addBook.Name = "toolStripLabel_addBook";
+            this.toolStripLabel_addBook.Size = new System.Drawing.Size(70, 22);
+            this.toolStripLabel_addBook.Text = "Add Book";
+            this.toolStripLabel_addBook.Visible = false;
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "Add Category";
+            this.toolStripButton2.MouseLeave += new System.EventHandler(this.toolStripButton2_MouseLeave_1);
+            this.toolStripButton2.MouseHover += new System.EventHandler(this.toolStripButton2_MouseHover_1);
+            // 
+            // toolStripLabel_AddCategory
+            // 
+            this.toolStripLabel_AddCategory.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripLabel_AddCategory.Name = "toolStripLabel_AddCategory";
+            this.toolStripLabel_AddCategory.Size = new System.Drawing.Size(94, 22);
+            this.toolStripLabel_AddCategory.Text = "Add Category";
+            this.toolStripLabel_AddCategory.Visible = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(234, 87);
+            this.pictureBox1.Location = new System.Drawing.Point(273, 90);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(343, 336);
             this.pictureBox1.TabIndex = 14;
@@ -216,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 421);
+            this.ClientSize = new System.Drawing.Size(616, 421);
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -253,5 +312,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_name;
         private System.Windows.Forms.ToolTip toolTip_welcome;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel_addBook;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel_AddCategory;
     }
 }

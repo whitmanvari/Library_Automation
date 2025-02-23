@@ -49,6 +49,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_MemberUpdate_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
+            this.label_nameError = new System.Windows.Forms.Label();
+            this.label_surnameError = new System.Windows.Forms.Label();
+            this.label_emailError = new System.Windows.Forms.Label();
+            this.label_passwordError = new System.Windows.Forms.Label();
+            this.label_phoneError = new System.Windows.Forms.Label();
+            this.label_birthdateError = new System.Windows.Forms.Label();
+            this.label_addressError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +78,7 @@
             this.button_updateAdmin.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.button_updateAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_updateAdmin.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button_updateAdmin.Location = new System.Drawing.Point(21, 555);
+            this.button_updateAdmin.Location = new System.Drawing.Point(17, 555);
             this.button_updateAdmin.Name = "button_updateAdmin";
             this.button_updateAdmin.Size = new System.Drawing.Size(456, 38);
             this.button_updateAdmin.TabIndex = 45;
@@ -92,15 +99,15 @@
             // textbox_adresAdmin
             // 
             this.textbox_adresAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_adresAdmin.Location = new System.Drawing.Point(172, 445);
+            this.textbox_adresAdmin.Location = new System.Drawing.Point(188, 451);
             this.textbox_adresAdmin.Name = "textbox_adresAdmin";
-            this.textbox_adresAdmin.Size = new System.Drawing.Size(200, 96);
+            this.textbox_adresAdmin.Size = new System.Drawing.Size(200, 85);
             this.textbox_adresAdmin.TabIndex = 36;
             this.textbox_adresAdmin.Text = "";
             // 
             // dateTimePicker_Admin
             // 
-            this.dateTimePicker_Admin.Location = new System.Drawing.Point(178, 407);
+            this.dateTimePicker_Admin.Location = new System.Drawing.Point(194, 413);
             this.dateTimePicker_Admin.Name = "dateTimePicker_Admin";
             this.dateTimePicker_Admin.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker_Admin.TabIndex = 35;
@@ -108,7 +115,7 @@
             // textBox_phoneAdmin
             // 
             this.textBox_phoneAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_phoneAdmin.Location = new System.Drawing.Point(171, 350);
+            this.textBox_phoneAdmin.Location = new System.Drawing.Point(187, 356);
             this.textBox_phoneAdmin.Name = "textBox_phoneAdmin";
             this.textBox_phoneAdmin.Size = new System.Drawing.Size(201, 33);
             this.textBox_phoneAdmin.TabIndex = 34;
@@ -116,7 +123,7 @@
             // textBox_passwordAdmin
             // 
             this.textBox_passwordAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_passwordAdmin.Location = new System.Drawing.Point(171, 306);
+            this.textBox_passwordAdmin.Location = new System.Drawing.Point(187, 312);
             this.textBox_passwordAdmin.Name = "textBox_passwordAdmin";
             this.textBox_passwordAdmin.Size = new System.Drawing.Size(201, 33);
             this.textBox_passwordAdmin.TabIndex = 33;
@@ -124,7 +131,7 @@
             // textBox_emailAdmin
             // 
             this.textBox_emailAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_emailAdmin.Location = new System.Drawing.Point(171, 263);
+            this.textBox_emailAdmin.Location = new System.Drawing.Point(187, 269);
             this.textBox_emailAdmin.Name = "textBox_emailAdmin";
             this.textBox_emailAdmin.Size = new System.Drawing.Size(201, 33);
             this.textBox_emailAdmin.TabIndex = 32;
@@ -132,7 +139,7 @@
             // textBox_surnameAdmin
             // 
             this.textBox_surnameAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_surnameAdmin.Location = new System.Drawing.Point(171, 218);
+            this.textBox_surnameAdmin.Location = new System.Drawing.Point(187, 224);
             this.textBox_surnameAdmin.Name = "textBox_surnameAdmin";
             this.textBox_surnameAdmin.Size = new System.Drawing.Size(201, 33);
             this.textBox_surnameAdmin.TabIndex = 31;
@@ -140,7 +147,7 @@
             // textBox_nameAdmin
             // 
             this.textBox_nameAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_nameAdmin.Location = new System.Drawing.Point(171, 169);
+            this.textBox_nameAdmin.Location = new System.Drawing.Point(187, 175);
             this.textBox_nameAdmin.Name = "textBox_nameAdmin";
             this.textBox_nameAdmin.Size = new System.Drawing.Size(201, 33);
             this.textBox_nameAdmin.TabIndex = 30;
@@ -249,11 +256,88 @@
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
+            // label_nameError
+            // 
+            this.label_nameError.AutoSize = true;
+            this.label_nameError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nameError.Location = new System.Drawing.Point(89, 202);
+            this.label_nameError.Name = "label_nameError";
+            this.label_nameError.Size = new System.Drawing.Size(0, 17);
+            this.label_nameError.TabIndex = 47;
+            this.label_nameError.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label_surnameError
+            // 
+            this.label_surnameError.AutoSize = true;
+            this.label_surnameError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_surnameError.Location = new System.Drawing.Point(89, 251);
+            this.label_surnameError.Name = "label_surnameError";
+            this.label_surnameError.Size = new System.Drawing.Size(0, 17);
+            this.label_surnameError.TabIndex = 47;
+            this.label_surnameError.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label_emailError
+            // 
+            this.label_emailError.AutoSize = true;
+            this.label_emailError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_emailError.Location = new System.Drawing.Point(89, 298);
+            this.label_emailError.Name = "label_emailError";
+            this.label_emailError.Size = new System.Drawing.Size(0, 17);
+            this.label_emailError.TabIndex = 47;
+            this.label_emailError.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label_passwordError
+            // 
+            this.label_passwordError.AutoSize = true;
+            this.label_passwordError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_passwordError.Location = new System.Drawing.Point(89, 342);
+            this.label_passwordError.Name = "label_passwordError";
+            this.label_passwordError.Size = new System.Drawing.Size(0, 17);
+            this.label_passwordError.TabIndex = 47;
+            this.label_passwordError.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label_phoneError
+            // 
+            this.label_phoneError.AutoSize = true;
+            this.label_phoneError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_phoneError.Location = new System.Drawing.Point(89, 386);
+            this.label_phoneError.Name = "label_phoneError";
+            this.label_phoneError.Size = new System.Drawing.Size(0, 17);
+            this.label_phoneError.TabIndex = 47;
+            this.label_phoneError.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label_birthdateError
+            // 
+            this.label_birthdateError.AutoSize = true;
+            this.label_birthdateError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_birthdateError.Location = new System.Drawing.Point(89, 427);
+            this.label_birthdateError.Name = "label_birthdateError";
+            this.label_birthdateError.Size = new System.Drawing.Size(0, 17);
+            this.label_birthdateError.TabIndex = 47;
+            this.label_birthdateError.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label_addressError
+            // 
+            this.label_addressError.AutoSize = true;
+            this.label_addressError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_addressError.Location = new System.Drawing.Point(89, 474);
+            this.label_addressError.Name = "label_addressError";
+            this.label_addressError.Size = new System.Drawing.Size(0, 17);
+            this.label_addressError.TabIndex = 47;
+            this.label_addressError.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Admin_Update_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 637);
+            this.Controls.Add(this.label_addressError);
+            this.Controls.Add(this.label_birthdateError);
+            this.Controls.Add(this.label_phoneError);
+            this.Controls.Add(this.label_passwordError);
+            this.Controls.Add(this.label_emailError);
+            this.Controls.Add(this.label_surnameError);
+            this.Controls.Add(this.label_nameError);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button_updateAdmin);
             this.Controls.Add(this.pictureBox1);
@@ -305,5 +389,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label_MemberUpdate_SignIn;
         private System.Windows.Forms.Label label_TitleLogin;
+        private System.Windows.Forms.Label label_nameError;
+        private System.Windows.Forms.Label label_surnameError;
+        private System.Windows.Forms.Label label_emailError;
+        private System.Windows.Forms.Label label_passwordError;
+        private System.Windows.Forms.Label label_phoneError;
+        private System.Windows.Forms.Label label_birthdateError;
+        private System.Windows.Forms.Label label_addressError;
     }
 }

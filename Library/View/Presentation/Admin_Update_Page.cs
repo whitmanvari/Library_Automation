@@ -21,17 +21,27 @@ namespace Library.View.Presentation
         public Admin_Update_Page(User admin)
         {
             InitializeComponent();
+  
+            textBox_nameAdmin.Text = admin.Name;
+            textbox_adresAdmin.Text = admin.Address;
+            textBox_emailAdmin.Text = admin.Email;
+            textBox_passwordAdmin.Text = admin.Password;
+            textBox_phoneAdmin.Text = admin.Phone;
+            textBox_surnameAdmin.Text = admin.Surname;
+            dateTimePicker_Admin.Value = admin.BirthDate.Value;
             Admin = admin;
-            textBox_nameAdmin.Text = Admin.Name;
-            textbox_adresAdmin.Text = Admin.Address;
-            textBox_emailAdmin.Text = Admin.Email;
-            textBox_passwordAdmin.Text = Admin.Password;
-            textBox_phoneAdmin.Text = Admin.Phone;
-            textBox_surnameAdmin.Text = Admin.Surname;
-            dateTimePicker_Admin.Value = Admin.BirthDate.Value;
-            
-        }
 
+        }
+        public bool IsNullControl(string text, string errorText)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+            {
+                errorText = "This area cannot be empty!";
+                return true;
+            }
+            return false;
+
+        }
         private void label_MemberUpdate_SignIn_Click(object sender, EventArgs e)
         {
             Login login = new Login();
@@ -41,7 +51,7 @@ namespace Library.View.Presentation
 
         private void Admin_Update_Page_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button_updateAdmin_Click(object sender, EventArgs e)
@@ -60,7 +70,7 @@ namespace Library.View.Presentation
                 context.SaveChanges();
                 MessageBox.Show("Update is succesfull!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //go to main menu again
-                Admin_MainMenu admin_Main = new Admin_MainMenu(Admin.Name);
+                Admin_MainMenu admin_Main = new Admin_MainMenu(textBox_nameAdmin.Text);
                 admin_Main.Show();
                 this.Close();
             }
@@ -72,9 +82,14 @@ namespace Library.View.Presentation
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Admin_MainMenu admin_Main = new Admin_MainMenu(Admin.Name);
+            Admin_MainMenu admin_Main = new Admin_MainMenu(Admin.Name, Admin.Id);
             admin_Main.Show();
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
