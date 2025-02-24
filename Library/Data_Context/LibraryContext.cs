@@ -19,14 +19,12 @@ namespace Library.DataContext
         {
             base.OnModelCreating(modelBuilder);
 
-
+            
             modelBuilder.Entity<User>()
                 .HasRequired(u => u.Role)
                 .WithMany(r => r.Users)
                 .HasForeignKey(u => u.RoleId)
                 .WillCascadeOnDelete(false);
-
-           
 
             modelBuilder.Entity<Book>()
            .HasRequired(b => b.Category)

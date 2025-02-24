@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Data_Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace Library
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form_Welcome());
+            Initializer.SeedCategories();
         }
     }
 }
