@@ -220,9 +220,9 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(198, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(187, 47);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(139, 104);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             this.toolTip_Hello.SetToolTip(this.pictureBox1, "Hello!");

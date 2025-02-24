@@ -791,6 +791,7 @@
             this.Controls.Add(this.btn_ExitLoginPage);
             this.Controls.Add(this.tabControl1);
             this.Name = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

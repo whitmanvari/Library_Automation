@@ -65,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(616, 41);
+            this.panel1.Size = new System.Drawing.Size(538, 41);
             this.panel1.TabIndex = 4;
             // 
             // label_MemberMainMenu_SignIn
@@ -73,7 +73,7 @@
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(545, 9);
+            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(463, 9);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
@@ -110,7 +110,7 @@
             this.toolStripLabel_AddCategory});
             this.toolStrip1.Location = new System.Drawing.Point(0, 41);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(616, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(538, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -243,7 +243,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(273, 90);
+            this.pictureBox1.Location = new System.Drawing.Point(195, 73);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(343, 336);
             this.pictureBox1.TabIndex = 14;
@@ -277,13 +277,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 421);
+            this.ClientSize = new System.Drawing.Size(538, 409);
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panel1);
             this.Name = "Admin_MainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
             this.Load += new System.EventHandler(this.Admin_MainMenu_Load);
             this.panel1.ResumeLayout(false);

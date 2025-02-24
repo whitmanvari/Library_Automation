@@ -248,6 +248,7 @@
             this.Controls.Add(this.label_bookIdError);
             this.Controls.Add(this.panel1);
             this.Name = "Admin_CategoryBeforeAddingBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose A Category";
             this.Load += new System.EventHandler(this.Admin_AddBook_Load);
             this.panel1.ResumeLayout(false);

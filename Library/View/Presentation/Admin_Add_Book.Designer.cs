@@ -33,7 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_MemberMainMenu_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
-            this.textBox_bookId = new System.Windows.Forms.TextBox();
             this.textBox_bookName = new System.Windows.Forms.TextBox();
             this.textBox_BookYear = new System.Windows.Forms.TextBox();
             this.textBox_BookPage = new System.Windows.Forms.TextBox();
@@ -41,7 +40,6 @@
             this.textBox_BookAuthor = new System.Windows.Forms.TextBox();
             this.textBox_BookLanguage = new System.Windows.Forms.TextBox();
             this.textBox_BookPublisher = new System.Windows.Forms.TextBox();
-            this.label_bookId = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,12 +49,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.TextBox_Description_book = new System.Windows.Forms.RichTextBox();
-            this.pictureBox_book = new System.Windows.Forms.PictureBox();
             this.linkLabel_goBack = new System.Windows.Forms.LinkLabel();
             this.toolTip_addbook = new System.Windows.Forms.ToolTip(this.components);
             this.button_addBook = new System.Windows.Forms.Button();
             this.checkBox_isactive = new System.Windows.Forms.CheckBox();
-            this.label_bookIdError = new System.Windows.Forms.Label();
             this.label_bookNameError = new System.Windows.Forms.Label();
             this.label_BookAuthorError = new System.Windows.Forms.Label();
             this.label_bookGenreError = new System.Windows.Forms.Label();
@@ -66,8 +62,9 @@
             this.label_BookPublisherError = new System.Windows.Forms.Label();
             this.label_BookLanguageError = new System.Windows.Forms.Label();
             this.label_isActiveError = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_book)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,7 +75,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(740, 41);
+            this.panel1.Size = new System.Drawing.Size(677, 41);
             this.panel1.TabIndex = 5;
             // 
             // label_MemberMainMenu_SignIn
@@ -86,7 +83,7 @@
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(669, 10);
+            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(597, 10);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
@@ -104,21 +101,12 @@
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
-            // textBox_bookId
-            // 
-            this.textBox_bookId.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_bookId.Location = new System.Drawing.Point(156, 207);
-            this.textBox_bookId.Name = "textBox_bookId";
-            this.textBox_bookId.Size = new System.Drawing.Size(183, 28);
-            this.textBox_bookId.TabIndex = 1;
-            this.textBox_bookId.TextChanged += new System.EventHandler(this.textBox_bookId_TextChanged);
-            // 
             // textBox_bookName
             // 
             this.textBox_bookName.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_bookName.Location = new System.Drawing.Point(156, 259);
             this.textBox_bookName.Name = "textBox_bookName";
-            this.textBox_bookName.Size = new System.Drawing.Size(183, 28);
+            this.textBox_bookName.Size = new System.Drawing.Size(163, 28);
             this.textBox_bookName.TabIndex = 2;
             this.textBox_bookName.TextChanged += new System.EventHandler(this.textBox_bookName_TextChanged);
             // 
@@ -127,7 +115,7 @@
             this.textBox_BookYear.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookYear.Location = new System.Drawing.Point(156, 472);
             this.textBox_BookYear.Name = "textBox_BookYear";
-            this.textBox_BookYear.Size = new System.Drawing.Size(183, 28);
+            this.textBox_BookYear.Size = new System.Drawing.Size(163, 28);
             this.textBox_BookYear.TabIndex = 6;
             this.textBox_BookYear.TextChanged += new System.EventHandler(this.textBox_BookYear_TextChanged);
             // 
@@ -136,7 +124,7 @@
             this.textBox_BookPage.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookPage.Location = new System.Drawing.Point(156, 418);
             this.textBox_BookPage.Name = "textBox_BookPage";
-            this.textBox_BookPage.Size = new System.Drawing.Size(183, 28);
+            this.textBox_BookPage.Size = new System.Drawing.Size(163, 28);
             this.textBox_BookPage.TabIndex = 5;
             this.textBox_BookPage.TextChanged += new System.EventHandler(this.textBox_BookPage_TextChanged);
             // 
@@ -145,7 +133,7 @@
             this.textBox_BookGenre.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookGenre.Location = new System.Drawing.Point(156, 365);
             this.textBox_BookGenre.Name = "textBox_BookGenre";
-            this.textBox_BookGenre.Size = new System.Drawing.Size(183, 28);
+            this.textBox_BookGenre.Size = new System.Drawing.Size(163, 28);
             this.textBox_BookGenre.TabIndex = 4;
             this.textBox_BookGenre.TextChanged += new System.EventHandler(this.textBox_BookGenre_TextChanged);
             // 
@@ -154,37 +142,27 @@
             this.textBox_BookAuthor.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookAuthor.Location = new System.Drawing.Point(156, 315);
             this.textBox_BookAuthor.Name = "textBox_BookAuthor";
-            this.textBox_BookAuthor.Size = new System.Drawing.Size(183, 28);
+            this.textBox_BookAuthor.Size = new System.Drawing.Size(163, 28);
             this.textBox_BookAuthor.TabIndex = 3;
             this.textBox_BookAuthor.TextChanged += new System.EventHandler(this.textBox_BookAuthor_TextChanged);
             // 
             // textBox_BookLanguage
             // 
             this.textBox_BookLanguage.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_BookLanguage.Location = new System.Drawing.Point(537, 63);
+            this.textBox_BookLanguage.Location = new System.Drawing.Point(489, 57);
             this.textBox_BookLanguage.Name = "textBox_BookLanguage";
-            this.textBox_BookLanguage.Size = new System.Drawing.Size(190, 28);
+            this.textBox_BookLanguage.Size = new System.Drawing.Size(167, 28);
             this.textBox_BookLanguage.TabIndex = 7;
             this.textBox_BookLanguage.TextChanged += new System.EventHandler(this.textBox_BookLanguage_TextChanged);
             // 
             // textBox_BookPublisher
             // 
             this.textBox_BookPublisher.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_BookPublisher.Location = new System.Drawing.Point(538, 110);
+            this.textBox_BookPublisher.Location = new System.Drawing.Point(489, 117);
             this.textBox_BookPublisher.Name = "textBox_BookPublisher";
-            this.textBox_BookPublisher.Size = new System.Drawing.Size(190, 28);
+            this.textBox_BookPublisher.Size = new System.Drawing.Size(167, 28);
             this.textBox_BookPublisher.TabIndex = 8;
             this.textBox_BookPublisher.TextChanged += new System.EventHandler(this.textBox_BookPublisher_TextChanged);
-            // 
-            // label_bookId
-            // 
-            this.label_bookId.AutoSize = true;
-            this.label_bookId.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_bookId.Location = new System.Drawing.Point(25, 210);
-            this.label_bookId.Name = "label_bookId";
-            this.label_bookId.Size = new System.Drawing.Size(79, 25);
-            this.label_bookId.TabIndex = 7;
-            this.label_bookId.Text = "Book Id:";
             // 
             // label1
             // 
@@ -240,7 +218,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(364, 176);
+            this.label6.Location = new System.Drawing.Point(315, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 25);
             this.label6.TabIndex = 7;
@@ -250,7 +228,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(364, 113);
+            this.label10.Location = new System.Drawing.Point(315, 120);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(145, 25);
             this.label10.TabIndex = 7;
@@ -260,7 +238,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(364, 66);
+            this.label11.Location = new System.Drawing.Point(315, 60);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(143, 25);
             this.label11.TabIndex = 7;
@@ -269,29 +247,20 @@
             // TextBox_Description_book
             // 
             this.TextBox_Description_book.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Description_book.Location = new System.Drawing.Point(538, 171);
+            this.TextBox_Description_book.Location = new System.Drawing.Point(489, 172);
             this.TextBox_Description_book.Name = "TextBox_Description_book";
-            this.TextBox_Description_book.Size = new System.Drawing.Size(190, 84);
+            this.TextBox_Description_book.Size = new System.Drawing.Size(167, 84);
             this.TextBox_Description_book.TabIndex = 12;
             this.TextBox_Description_book.Text = "";
             this.TextBox_Description_book.TextChanged += new System.EventHandler(this.TextBox_Description_book_TextChanged);
             // 
-            // pictureBox_book
-            // 
-            this.pictureBox_book.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_book.Image")));
-            this.pictureBox_book.Location = new System.Drawing.Point(-31, 47);
-            this.pictureBox_book.Name = "pictureBox_book";
-            this.pictureBox_book.Size = new System.Drawing.Size(245, 123);
-            this.pictureBox_book.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_book.TabIndex = 9;
-            this.pictureBox_book.TabStop = false;
-            this.toolTip_addbook.SetToolTip(this.pictureBox_book, "Add A New Book!");
-            // 
             // linkLabel_goBack
             // 
+            this.linkLabel_goBack.ActiveLinkColor = System.Drawing.Color.Maroon;
             this.linkLabel_goBack.AutoSize = true;
             this.linkLabel_goBack.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel_goBack.Location = new System.Drawing.Point(646, 475);
+            this.linkLabel_goBack.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabel_goBack.Location = new System.Drawing.Point(576, 475);
             this.linkLabel_goBack.Name = "linkLabel_goBack";
             this.linkLabel_goBack.Size = new System.Drawing.Size(80, 25);
             this.linkLabel_goBack.TabIndex = 15;
@@ -309,7 +278,7 @@
             this.button_addBook.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.button_addBook.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_addBook.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button_addBook.Location = new System.Drawing.Point(537, 431);
+            this.button_addBook.Location = new System.Drawing.Point(467, 431);
             this.button_addBook.Name = "button_addBook";
             this.button_addBook.Size = new System.Drawing.Size(189, 41);
             this.button_addBook.TabIndex = 14;
@@ -321,26 +290,18 @@
             // 
             this.checkBox_isactive.AutoSize = true;
             this.checkBox_isactive.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_isactive.Location = new System.Drawing.Point(538, 286);
+            this.checkBox_isactive.Location = new System.Drawing.Point(476, 288);
             this.checkBox_isactive.Name = "checkBox_isactive";
             this.checkBox_isactive.Size = new System.Drawing.Size(180, 29);
             this.checkBox_isactive.TabIndex = 13;
             this.checkBox_isactive.Text = "Is Book Available?";
             this.checkBox_isactive.UseVisualStyleBackColor = true;
             // 
-            // label_bookIdError
-            // 
-            this.label_bookIdError.AutoSize = true;
-            this.label_bookIdError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_bookIdError.Location = new System.Drawing.Point(27, 235);
-            this.label_bookIdError.Name = "label_bookIdError";
-            this.label_bookIdError.Size = new System.Drawing.Size(0, 20);
-            this.label_bookIdError.TabIndex = 14;
-            // 
             // label_bookNameError
             // 
             this.label_bookNameError.AutoSize = true;
             this.label_bookNameError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_bookNameError.ForeColor = System.Drawing.Color.Maroon;
             this.label_bookNameError.Location = new System.Drawing.Point(27, 290);
             this.label_bookNameError.Name = "label_bookNameError";
             this.label_bookNameError.Size = new System.Drawing.Size(0, 20);
@@ -350,6 +311,7 @@
             // 
             this.label_BookAuthorError.AutoSize = true;
             this.label_BookAuthorError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BookAuthorError.ForeColor = System.Drawing.Color.Maroon;
             this.label_BookAuthorError.Location = new System.Drawing.Point(27, 343);
             this.label_BookAuthorError.Name = "label_BookAuthorError";
             this.label_BookAuthorError.Size = new System.Drawing.Size(0, 20);
@@ -359,6 +321,7 @@
             // 
             this.label_bookGenreError.AutoSize = true;
             this.label_bookGenreError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_bookGenreError.ForeColor = System.Drawing.Color.Maroon;
             this.label_bookGenreError.Location = new System.Drawing.Point(27, 393);
             this.label_bookGenreError.Name = "label_bookGenreError";
             this.label_bookGenreError.Size = new System.Drawing.Size(0, 20);
@@ -368,6 +331,7 @@
             // 
             this.label_BookPageError.AutoSize = true;
             this.label_BookPageError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BookPageError.ForeColor = System.Drawing.Color.Maroon;
             this.label_BookPageError.Location = new System.Drawing.Point(27, 446);
             this.label_BookPageError.Name = "label_BookPageError";
             this.label_BookPageError.Size = new System.Drawing.Size(0, 20);
@@ -377,6 +341,7 @@
             // 
             this.label_BookYearError.AutoSize = true;
             this.label_BookYearError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BookYearError.ForeColor = System.Drawing.Color.Maroon;
             this.label_BookYearError.Location = new System.Drawing.Point(27, 500);
             this.label_BookYearError.Name = "label_BookYearError";
             this.label_BookYearError.Size = new System.Drawing.Size(0, 20);
@@ -386,7 +351,8 @@
             // 
             this.label_BookDescriptionError.AutoSize = true;
             this.label_BookDescriptionError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BookDescriptionError.Location = new System.Drawing.Point(379, 215);
+            this.label_BookDescriptionError.ForeColor = System.Drawing.Color.Maroon;
+            this.label_BookDescriptionError.Location = new System.Drawing.Point(316, 196);
             this.label_BookDescriptionError.Name = "label_BookDescriptionError";
             this.label_BookDescriptionError.Size = new System.Drawing.Size(0, 20);
             this.label_BookDescriptionError.TabIndex = 14;
@@ -395,7 +361,8 @@
             // 
             this.label_BookPublisherError.AutoSize = true;
             this.label_BookPublisherError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BookPublisherError.Location = new System.Drawing.Point(365, 138);
+            this.label_BookPublisherError.ForeColor = System.Drawing.Color.Maroon;
+            this.label_BookPublisherError.Location = new System.Drawing.Point(316, 145);
             this.label_BookPublisherError.Name = "label_BookPublisherError";
             this.label_BookPublisherError.Size = new System.Drawing.Size(0, 20);
             this.label_BookPublisherError.TabIndex = 14;
@@ -404,7 +371,8 @@
             // 
             this.label_BookLanguageError.AutoSize = true;
             this.label_BookLanguageError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BookLanguageError.Location = new System.Drawing.Point(365, 91);
+            this.label_BookLanguageError.ForeColor = System.Drawing.Color.Maroon;
+            this.label_BookLanguageError.Location = new System.Drawing.Point(316, 85);
             this.label_BookLanguageError.Name = "label_BookLanguageError";
             this.label_BookLanguageError.Size = new System.Drawing.Size(0, 20);
             this.label_BookLanguageError.TabIndex = 14;
@@ -413,16 +381,25 @@
             // 
             this.label_isActiveError.AutoSize = true;
             this.label_isActiveError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_isActiveError.Location = new System.Drawing.Point(526, 393);
+            this.label_isActiveError.Location = new System.Drawing.Point(466, 314);
             this.label_isActiveError.Name = "label_isActiveError";
             this.label_isActiveError.Size = new System.Drawing.Size(0, 20);
             this.label_isActiveError.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-12, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(318, 197);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // Admin_Add_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 539);
+            this.ClientSize = new System.Drawing.Size(677, 530);
             this.Controls.Add(this.label_BookLanguageError);
             this.Controls.Add(this.label_BookPublisherError);
             this.Controls.Add(this.label_isActiveError);
@@ -432,11 +409,9 @@
             this.Controls.Add(this.label_bookGenreError);
             this.Controls.Add(this.label_BookAuthorError);
             this.Controls.Add(this.label_bookNameError);
-            this.Controls.Add(this.label_bookIdError);
             this.Controls.Add(this.checkBox_isactive);
             this.Controls.Add(this.button_addBook);
             this.Controls.Add(this.linkLabel_goBack);
-            this.Controls.Add(this.pictureBox_book);
             this.Controls.Add(this.TextBox_Description_book);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -446,7 +421,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label_bookId);
             this.Controls.Add(this.textBox_BookAuthor);
             this.Controls.Add(this.textBox_BookGenre);
             this.Controls.Add(this.textBox_BookPage);
@@ -454,13 +428,14 @@
             this.Controls.Add(this.textBox_BookYear);
             this.Controls.Add(this.textBox_BookLanguage);
             this.Controls.Add(this.textBox_bookName);
-            this.Controls.Add(this.textBox_bookId);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Admin_Add_Book";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Book";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_book)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,7 +446,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label_MemberMainMenu_SignIn;
         private System.Windows.Forms.Label label_TitleLogin;
-        private System.Windows.Forms.TextBox textBox_bookId;
         private System.Windows.Forms.TextBox textBox_bookName;
         private System.Windows.Forms.TextBox textBox_BookYear;
         private System.Windows.Forms.TextBox textBox_BookPage;
@@ -479,7 +453,6 @@
         private System.Windows.Forms.TextBox textBox_BookAuthor;
         private System.Windows.Forms.TextBox textBox_BookLanguage;
         private System.Windows.Forms.TextBox textBox_BookPublisher;
-        private System.Windows.Forms.Label label_bookId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -489,12 +462,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RichTextBox TextBox_Description_book;
-        private System.Windows.Forms.PictureBox pictureBox_book;
         private System.Windows.Forms.LinkLabel linkLabel_goBack;
         private System.Windows.Forms.ToolTip toolTip_addbook;
         private System.Windows.Forms.Button button_addBook;
         private System.Windows.Forms.CheckBox checkBox_isactive;
-        private System.Windows.Forms.Label label_bookIdError;
         private System.Windows.Forms.Label label_bookNameError;
         private System.Windows.Forms.Label label_BookAuthorError;
         private System.Windows.Forms.Label label_bookGenreError;
@@ -504,5 +475,6 @@
         private System.Windows.Forms.Label label_BookPublisherError;
         private System.Windows.Forms.Label label_BookLanguageError;
         private System.Windows.Forms.Label label_isActiveError;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -33,7 +33,6 @@ namespace Library.View.Presentation
 
             if (NullControl())
             {
-                int bookId = int.Parse(textBox_bookId.Text);
                 string bookName = textBox_bookName.Text;
                 string bookAuthor = textBox_BookAuthor.Text;
                 string bookPublisher = textBox_BookPublisher.Text;
@@ -46,7 +45,6 @@ namespace Library.View.Presentation
 
                 var book = new Book
                 {
-                    Id = bookId,
                     BookName = bookName,
                     BookAuthor = bookAuthor,
                     BookPublisher = bookPublisher,
@@ -79,11 +77,6 @@ namespace Library.View.Presentation
             if (!int.TryParse(textBox_BookPage.Text, out int value))
             {
                 label_BookPageError.Text = "Please enter a valid page number!";
-                hasError = false;
-            }
-            if (!int.TryParse(textBox_bookId.Text, out int value1))
-            {
-                label_bookIdError.Text = "Please enter a valid book id!";
                 hasError = false;
             }
             if (!int.TryParse(textBox_BookYear.Text, out int value2))
@@ -131,11 +124,6 @@ namespace Library.View.Presentation
             Admin_MainMenu admin_MainMenu = new Admin_MainMenu(Name, Id);
             admin_MainMenu.Show();
             this.Close();
-        }
-
-        private void textBox_bookId_TextChanged(object sender, EventArgs e)
-        {
-            label_bookIdError.Text = "";
         }
 
         private void textBox_bookName_TextChanged(object sender, EventArgs e)

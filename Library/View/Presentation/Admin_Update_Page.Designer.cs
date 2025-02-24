@@ -92,7 +92,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(178, 47);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(142, 105);
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
@@ -357,6 +357,7 @@
             this.Controls.Add(this.label_MemberName_RegisterPage);
             this.Controls.Add(this.panel1);
             this.Name = "Admin_Update_Page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Profile";
             this.Load += new System.EventHandler(this.Admin_Update_Page_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -481,6 +481,7 @@
             this.Controls.Add(this.btn_ExitLoginPage);
             this.Controls.Add(this.tabControl1);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.tabControl1.ResumeLayout(false);

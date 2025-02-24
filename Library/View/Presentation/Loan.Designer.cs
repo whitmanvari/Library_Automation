@@ -86,6 +86,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.panel1);
             this.Name = "Loan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loan";
             this.Load += new System.EventHandler(this.Loan_Load);
             this.panel1.ResumeLayout(false);
