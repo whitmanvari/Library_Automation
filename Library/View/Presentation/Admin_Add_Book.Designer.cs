@@ -111,6 +111,7 @@
             this.textBox_bookId.Name = "textBox_bookId";
             this.textBox_bookId.Size = new System.Drawing.Size(183, 28);
             this.textBox_bookId.TabIndex = 1;
+            this.textBox_bookId.TextChanged += new System.EventHandler(this.textBox_bookId_TextChanged);
             // 
             // textBox_bookName
             // 
@@ -119,6 +120,7 @@
             this.textBox_bookName.Name = "textBox_bookName";
             this.textBox_bookName.Size = new System.Drawing.Size(183, 28);
             this.textBox_bookName.TabIndex = 2;
+            this.textBox_bookName.TextChanged += new System.EventHandler(this.textBox_bookName_TextChanged);
             // 
             // textBox_BookYear
             // 
@@ -127,6 +129,7 @@
             this.textBox_BookYear.Name = "textBox_BookYear";
             this.textBox_BookYear.Size = new System.Drawing.Size(183, 28);
             this.textBox_BookYear.TabIndex = 6;
+            this.textBox_BookYear.TextChanged += new System.EventHandler(this.textBox_BookYear_TextChanged);
             // 
             // textBox_BookPage
             // 
@@ -135,6 +138,7 @@
             this.textBox_BookPage.Name = "textBox_BookPage";
             this.textBox_BookPage.Size = new System.Drawing.Size(183, 28);
             this.textBox_BookPage.TabIndex = 5;
+            this.textBox_BookPage.TextChanged += new System.EventHandler(this.textBox_BookPage_TextChanged);
             // 
             // textBox_BookGenre
             // 
@@ -143,6 +147,7 @@
             this.textBox_BookGenre.Name = "textBox_BookGenre";
             this.textBox_BookGenre.Size = new System.Drawing.Size(183, 28);
             this.textBox_BookGenre.TabIndex = 4;
+            this.textBox_BookGenre.TextChanged += new System.EventHandler(this.textBox_BookGenre_TextChanged);
             // 
             // textBox_BookAuthor
             // 
@@ -151,6 +156,7 @@
             this.textBox_BookAuthor.Name = "textBox_BookAuthor";
             this.textBox_BookAuthor.Size = new System.Drawing.Size(183, 28);
             this.textBox_BookAuthor.TabIndex = 3;
+            this.textBox_BookAuthor.TextChanged += new System.EventHandler(this.textBox_BookAuthor_TextChanged);
             // 
             // textBox_BookLanguage
             // 
@@ -159,6 +165,7 @@
             this.textBox_BookLanguage.Name = "textBox_BookLanguage";
             this.textBox_BookLanguage.Size = new System.Drawing.Size(190, 28);
             this.textBox_BookLanguage.TabIndex = 7;
+            this.textBox_BookLanguage.TextChanged += new System.EventHandler(this.textBox_BookLanguage_TextChanged);
             // 
             // textBox_BookPublisher
             // 
@@ -167,6 +174,7 @@
             this.textBox_BookPublisher.Name = "textBox_BookPublisher";
             this.textBox_BookPublisher.Size = new System.Drawing.Size(190, 28);
             this.textBox_BookPublisher.TabIndex = 8;
+            this.textBox_BookPublisher.TextChanged += new System.EventHandler(this.textBox_BookPublisher_TextChanged);
             // 
             // label_bookId
             // 
@@ -266,6 +274,7 @@
             this.TextBox_Description_book.Size = new System.Drawing.Size(190, 84);
             this.TextBox_Description_book.TabIndex = 12;
             this.TextBox_Description_book.Text = "";
+            this.TextBox_Description_book.TextChanged += new System.EventHandler(this.TextBox_Description_book_TextChanged);
             // 
             // pictureBox_book
             // 

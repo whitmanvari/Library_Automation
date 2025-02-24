@@ -30,7 +30,7 @@ namespace Library.View.Presentation
 
         private void button_addBook_Click(object sender, EventArgs e)
         {
-            
+
             if (NullControl())
             {
                 int bookId = int.Parse(textBox_bookId.Text);
@@ -70,50 +70,53 @@ namespace Library.View.Presentation
         }
         private bool NullControl()
         {
+            bool hasError = true;
+            if (string.IsNullOrWhiteSpace(textBox_bookName.Text))
+            {
+                label_bookNameError.Text = "Book name cannot be empty!";
+                hasError = false;
+            }
             if (!int.TryParse(textBox_BookPage.Text, out int value))
             {
                 label_BookPageError.Text = "Please enter a valid page number!";
-                return false;
+                hasError = false;
             }
-            else if (!int.TryParse(textBox_bookId.Text, out int value1))
+            if (!int.TryParse(textBox_bookId.Text, out int value1))
             {
                 label_bookIdError.Text = "Please enter a valid book id!";
-                return false;
+                hasError = false;
             }
-            else if (!int.TryParse(textBox_BookYear.Text, out int value2))
+            if (!int.TryParse(textBox_BookYear.Text, out int value2))
             {
                 label_BookYearError.Text = "Please enter a valid year!";
-                return false;
+                hasError = false;
             }
-            else if (string.IsNullOrWhiteSpace(textBox_BookAuthor.Text))
+            if (string.IsNullOrWhiteSpace(textBox_BookAuthor.Text))
             {
                 label_BookAuthorError.Text = "Author cannot be empty!";
-                return false;
+                hasError = false;
             }
-            else if (string.IsNullOrWhiteSpace(textBox_BookGenre.Text))
+            if (string.IsNullOrWhiteSpace(textBox_BookGenre.Text))
             {
                 label_bookGenreError.Text = "Genre cannot be empty!";
-                return false;
+                hasError = false;
             }
-            else if (string.IsNullOrWhiteSpace(textBox_BookLanguage.Text))
+            if (string.IsNullOrWhiteSpace(textBox_BookLanguage.Text))
             {
                 label_BookLanguageError.Text = "Language cannot be empty!";
-                return false;
+                hasError = false;
             }
-            else if (string.IsNullOrWhiteSpace(textBox_BookPublisher.Text))
+            if (string.IsNullOrWhiteSpace(textBox_BookPublisher.Text))
             {
                 label_BookPublisherError.Text = "Publisher cannot be empty!";
-                return false;
+                hasError = false;
             }
-            else if (string.IsNullOrWhiteSpace(TextBox_Description_book.Text))
+            if (string.IsNullOrWhiteSpace(TextBox_Description_book.Text))
             {
                 label_BookDescriptionError.Text = "Description cannot be empty!";
-                return false;
+                hasError = false;
             }
-            else
-            {
-                return true;
-            }
+                return hasError;
         }
 
         private void label_MemberMainMenu_SignIn_Click(object sender, EventArgs e)
@@ -128,6 +131,51 @@ namespace Library.View.Presentation
             Admin_MainMenu admin_MainMenu = new Admin_MainMenu(Name, Id);
             admin_MainMenu.Show();
             this.Close();
+        }
+
+        private void textBox_bookId_TextChanged(object sender, EventArgs e)
+        {
+            label_bookIdError.Text = "";
+        }
+
+        private void textBox_bookName_TextChanged(object sender, EventArgs e)
+        {
+            label_bookNameError.Text = "";
+        }
+
+        private void textBox_BookAuthor_TextChanged(object sender, EventArgs e)
+        {
+            label_BookAuthorError.Text = "";
+        }
+
+        private void textBox_BookGenre_TextChanged(object sender, EventArgs e)
+        {
+            label_bookGenreError.Text = "";
+        }
+
+        private void textBox_BookPage_TextChanged(object sender, EventArgs e)
+        {
+            label_BookPageError.Text = "";
+        }
+
+        private void textBox_BookYear_TextChanged(object sender, EventArgs e)
+        {
+            label_BookYearError.Text = "";
+        }
+
+        private void textBox_BookLanguage_TextChanged(object sender, EventArgs e)
+        {
+            label_BookLanguageError.Text = "";
+        }
+
+        private void textBox_BookPublisher_TextChanged(object sender, EventArgs e)
+        {
+            label_BookPublisherError.Text = "";
+        }
+
+        private void TextBox_Description_book_TextChanged(object sender, EventArgs e)
+        {
+            label_BookDescriptionError.Text = "";
         }
     }
 }
