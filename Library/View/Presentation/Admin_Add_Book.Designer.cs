@@ -449,7 +449,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "Admin_Add_Book";
             this.Text = "Add Book";
-            this.Load += new System.EventHandler(this.Admin_Add_Book_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_book)).EndInit();

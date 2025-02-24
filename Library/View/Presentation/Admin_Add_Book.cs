@@ -26,37 +26,23 @@ namespace Library.View.Presentation
             Id = id;
             SelectedCategoryId = categoryId;
         }
-        
 
-        private void Admin_Add_Book_Load(object sender, EventArgs e)
-        {
-            
-        }
 
         private void button_addBook_Click(object sender, EventArgs e)
         {
-            int bookId = int.Parse(textBox_bookId.Text);
-            string bookName = textBox_bookName.Text;
-            string bookAuthor = textBox_BookAuthor.Text;
-            string bookPublisher = textBox_BookPublisher.Text;
-            int bookPage = int.Parse(textBox_BookPage.Text);
-            string bookGenre = textBox_BookGenre.Text;
-            string bookLanguage = textBox_BookLanguage.Text;
-            int bookYear = int.Parse(textBox_BookYear.Text);
-            string bookDescription = TextBox_Description_book.Text;
-            bool isBookActive = checkBox_isactive.Checked;
-
-            if (IsNullControl(textBox_bookId.Text, label_bookIdError.Text)
-                || IsNullControl(textBox_BookAuthor.Text, label_BookAuthorError.Text)
-                || IsNullControl(textBox_BookGenre.Text, label_bookGenreError.Text)
-                || IsNullControl(textBox_BookLanguage.Text, label_BookLanguageError.Text)
-                || IsNullControl(textBox_bookName.Text, label_bookNameError.Text)
-                || IsNullControl(textBox_BookPage.Text, label_BookPageError.Text)
-                || IsNullControl(textBox_BookPublisher.Text, label_BookPublisherError.Text)
-                || IsNullControl(textBox_BookYear.Text, label_BookYearError.Text)
-                || IsNullControl(TextBox_Description_book.Text, label_BookDescriptionError.Text)
-                || IsNullControl(checkBox_isactive.Text, label_isActiveError.Text)) { return; }
+            
+            if (NullControl())
             {
+                int bookId = int.Parse(textBox_bookId.Text);
+                string bookName = textBox_bookName.Text;
+                string bookAuthor = textBox_BookAuthor.Text;
+                string bookPublisher = textBox_BookPublisher.Text;
+                int bookPage = int.Parse(textBox_BookPage.Text);
+                string bookGenre = textBox_BookGenre.Text;
+                string bookLanguage = textBox_BookLanguage.Text;
+                int bookYear = int.Parse(textBox_BookYear.Text);
+                string bookDescription = TextBox_Description_book.Text;
+                bool isBookActive = checkBox_isactive.Checked;
 
                 var book = new Book
                 {
@@ -73,6 +59,7 @@ namespace Library.View.Presentation
                     CreatedDate = DateTime.Now,
                     CategoryId = SelectedCategoryId
                 };
+
                 context.Books.Add(book);
                 context.SaveChanges();
                 MessageBox.Show("Book added successfully!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -81,14 +68,52 @@ namespace Library.View.Presentation
                 this.Close();
             }
         }
-        private bool IsNullControl(string text, string errorMessage)
+        private bool NullControl()
         {
-            if (string.IsNullOrWhiteSpace(text))
+            if (!int.TryParse(textBox_BookPage.Text, out int value))
             {
-                errorMessage = "This area cannot be left empty!";
+                label_BookPageError.Text = "Please enter a valid page number!";
+                return false;
+            }
+            else if (!int.TryParse(textBox_bookId.Text, out int value1))
+            {
+                label_bookIdError.Text = "Please enter a valid book id!";
+                return false;
+            }
+            else if (!int.TryParse(textBox_BookYear.Text, out int value2))
+            {
+                label_BookYearError.Text = "Please enter a valid year!";
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(textBox_BookAuthor.Text))
+            {
+                label_BookAuthorError.Text = "Author cannot be empty!";
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(textBox_BookGenre.Text))
+            {
+                label_bookGenreError.Text = "Genre cannot be empty!";
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(textBox_BookLanguage.Text))
+            {
+                label_BookLanguageError.Text = "Language cannot be empty!";
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(textBox_BookPublisher.Text))
+            {
+                label_BookPublisherError.Text = "Publisher cannot be empty!";
+                return false;
+            }
+            else if (string.IsNullOrWhiteSpace(TextBox_Description_book.Text))
+            {
+                label_BookDescriptionError.Text = "Description cannot be empty!";
+                return false;
+            }
+            else
+            {
                 return true;
             }
-            return false;
         }
 
         private void label_MemberMainMenu_SignIn_Click(object sender, EventArgs e)
