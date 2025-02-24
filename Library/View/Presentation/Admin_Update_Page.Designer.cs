@@ -68,7 +68,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(386, 596);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 27);
-            this.linkLabel1.TabIndex = 46;
+            this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Go Back ";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -81,7 +81,7 @@
             this.button_updateAdmin.Location = new System.Drawing.Point(17, 555);
             this.button_updateAdmin.Name = "button_updateAdmin";
             this.button_updateAdmin.Size = new System.Drawing.Size(456, 38);
-            this.button_updateAdmin.TabIndex = 45;
+            this.button_updateAdmin.TabIndex = 8;
             this.button_updateAdmin.Text = "Update";
             this.button_updateAdmin.UseVisualStyleBackColor = false;
             this.button_updateAdmin.Click += new System.EventHandler(this.button_updateAdmin_Click);
@@ -102,7 +102,7 @@
             this.textbox_adresAdmin.Location = new System.Drawing.Point(188, 451);
             this.textbox_adresAdmin.Name = "textbox_adresAdmin";
             this.textbox_adresAdmin.Size = new System.Drawing.Size(200, 85);
-            this.textbox_adresAdmin.TabIndex = 36;
+            this.textbox_adresAdmin.TabIndex = 7;
             this.textbox_adresAdmin.Text = "";
             // 
             // dateTimePicker_Admin
@@ -110,7 +110,7 @@
             this.dateTimePicker_Admin.Location = new System.Drawing.Point(194, 413);
             this.dateTimePicker_Admin.Name = "dateTimePicker_Admin";
             this.dateTimePicker_Admin.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker_Admin.TabIndex = 35;
+            this.dateTimePicker_Admin.TabIndex = 6;
             // 
             // textBox_phoneAdmin
             // 
@@ -118,7 +118,7 @@
             this.textBox_phoneAdmin.Location = new System.Drawing.Point(187, 356);
             this.textBox_phoneAdmin.Name = "textBox_phoneAdmin";
             this.textBox_phoneAdmin.Size = new System.Drawing.Size(201, 33);
-            this.textBox_phoneAdmin.TabIndex = 34;
+            this.textBox_phoneAdmin.TabIndex = 5;
             // 
             // textBox_passwordAdmin
             // 
@@ -126,7 +126,7 @@
             this.textBox_passwordAdmin.Location = new System.Drawing.Point(187, 312);
             this.textBox_passwordAdmin.Name = "textBox_passwordAdmin";
             this.textBox_passwordAdmin.Size = new System.Drawing.Size(201, 33);
-            this.textBox_passwordAdmin.TabIndex = 33;
+            this.textBox_passwordAdmin.TabIndex = 4;
             // 
             // textBox_emailAdmin
             // 
@@ -134,7 +134,7 @@
             this.textBox_emailAdmin.Location = new System.Drawing.Point(187, 269);
             this.textBox_emailAdmin.Name = "textBox_emailAdmin";
             this.textBox_emailAdmin.Size = new System.Drawing.Size(201, 33);
-            this.textBox_emailAdmin.TabIndex = 32;
+            this.textBox_emailAdmin.TabIndex = 3;
             // 
             // textBox_surnameAdmin
             // 
@@ -142,7 +142,7 @@
             this.textBox_surnameAdmin.Location = new System.Drawing.Point(187, 224);
             this.textBox_surnameAdmin.Name = "textBox_surnameAdmin";
             this.textBox_surnameAdmin.Size = new System.Drawing.Size(201, 33);
-            this.textBox_surnameAdmin.TabIndex = 31;
+            this.textBox_surnameAdmin.TabIndex = 2;
             // 
             // textBox_nameAdmin
             // 
@@ -150,7 +150,7 @@
             this.textBox_nameAdmin.Location = new System.Drawing.Point(187, 175);
             this.textBox_nameAdmin.Name = "textBox_nameAdmin";
             this.textBox_nameAdmin.Size = new System.Drawing.Size(201, 33);
-            this.textBox_nameAdmin.TabIndex = 30;
+            this.textBox_nameAdmin.TabIndex = 1;
             // 
             // label_MemberPassword_RegisterPage
             // 

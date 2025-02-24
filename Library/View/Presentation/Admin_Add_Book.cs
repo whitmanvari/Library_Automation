@@ -17,24 +17,16 @@ namespace Library.View.Presentation
         LibraryContext context = new LibraryContext();
         string Name;
         int Id;
+        int SelectedCategoryId;
 
-        public Admin_Add_Book(string name, int id)
+        public Admin_Add_Book(string name, int id, int categoryId)
         {
             InitializeComponent();
             Name = name;
             Id = id;
+            SelectedCategoryId = categoryId;
         }
-        private void LoadCategories()
-        {
-            try
-            {
-                
-            }
-            catch(Exception ex) 
-            {
-                MessageBox.Show("There must be something wrong while categoies uploading!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        
 
         private void Admin_Add_Book_Load(object sender, EventArgs e)
         {
@@ -79,10 +71,14 @@ namespace Library.View.Presentation
                     IsActive = isBookActive,
                     BookYear = bookYear,
                     CreatedDate = DateTime.Now,
+                    CategoryId = SelectedCategoryId
                 };
                 context.Books.Add(book);
                 context.SaveChanges();
                 MessageBox.Show("Book added successfully!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Admin_Book_List admin_Book_List = new Admin_Book_List(Name, Id);
+                admin_Book_List.Show();
+                this.Close();
             }
         }
         private bool IsNullControl(string text, string errorMessage)

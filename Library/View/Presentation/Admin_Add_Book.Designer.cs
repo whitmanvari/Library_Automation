@@ -285,7 +285,7 @@
             this.linkLabel_goBack.Location = new System.Drawing.Point(646, 475);
             this.linkLabel_goBack.Name = "linkLabel_goBack";
             this.linkLabel_goBack.Size = new System.Drawing.Size(80, 25);
-            this.linkLabel_goBack.TabIndex = 10;
+            this.linkLabel_goBack.TabIndex = 15;
             this.linkLabel_goBack.TabStop = true;
             this.linkLabel_goBack.Text = "Go Back";
             this.linkLabel_goBack.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_goBack_LinkClicked);
@@ -303,7 +303,7 @@
             this.button_addBook.Location = new System.Drawing.Point(537, 431);
             this.button_addBook.Name = "button_addBook";
             this.button_addBook.Size = new System.Drawing.Size(189, 41);
-            this.button_addBook.TabIndex = 11;
+            this.button_addBook.TabIndex = 14;
             this.button_addBook.Text = "Add Book";
             this.button_addBook.UseVisualStyleBackColor = false;
             this.button_addBook.Click += new System.EventHandler(this.button_addBook_Click);

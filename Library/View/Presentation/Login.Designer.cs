@@ -197,7 +197,7 @@
             this.linkLabel_AdminLogin.Location = new System.Drawing.Point(105, 283);
             this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
             this.linkLabel_AdminLogin.Size = new System.Drawing.Size(234, 28);
-            this.linkLabel_AdminLogin.TabIndex = 3;
+            this.linkLabel_AdminLogin.TabIndex = 4;
             this.linkLabel_AdminLogin.TabStop = true;
             this.linkLabel_AdminLogin.Text = "Don\'t you have an account?";
             this.toolTip_clickSignUp.SetToolTip(this.linkLabel_AdminLogin, "Click to sign up!");
@@ -210,7 +210,7 @@
             this.button_Enter_LoginPage.Location = new System.Drawing.Point(247, 244);
             this.button_Enter_LoginPage.Name = "button_Enter_LoginPage";
             this.button_Enter_LoginPage.Size = new System.Drawing.Size(88, 36);
-            this.button_Enter_LoginPage.TabIndex = 4;
+            this.button_Enter_LoginPage.TabIndex = 3;
             this.button_Enter_LoginPage.Text = "Enter";
             this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
             this.button_Enter_LoginPage.Click += new System.EventHandler(this.button_Enter_LoginPage_Click);
@@ -221,7 +221,7 @@
             this.txt_AdminPassword_Login.Location = new System.Drawing.Point(110, 199);
             this.txt_AdminPassword_Login.Name = "txt_AdminPassword_Login";
             this.txt_AdminPassword_Login.Size = new System.Drawing.Size(225, 27);
-            this.txt_AdminPassword_Login.TabIndex = 3;
+            this.txt_AdminPassword_Login.TabIndex = 2;
             this.txt_AdminPassword_Login.UseSystemPasswordChar = true;
             this.txt_AdminPassword_Login.TextChanged += new System.EventHandler(this.txt_AdminPassword_Login_TextChanged);
             // 
@@ -231,7 +231,7 @@
             this.txt_AdminEmail_Login.Location = new System.Drawing.Point(110, 142);
             this.txt_AdminEmail_Login.Name = "txt_AdminEmail_Login";
             this.txt_AdminEmail_Login.Size = new System.Drawing.Size(225, 27);
-            this.txt_AdminEmail_Login.TabIndex = 2;
+            this.txt_AdminEmail_Login.TabIndex = 1;
             this.txt_AdminEmail_Login.TextChanged += new System.EventHandler(this.txt_AdminEmail_Login_TextChanged);
             // 
             // lbl_AdminPassword_Login
@@ -286,7 +286,7 @@
             this.linkLabel_MemberLogin.Location = new System.Drawing.Point(105, 295);
             this.linkLabel_MemberLogin.Name = "linkLabel_MemberLogin";
             this.linkLabel_MemberLogin.Size = new System.Drawing.Size(234, 28);
-            this.linkLabel_MemberLogin.TabIndex = 10;
+            this.linkLabel_MemberLogin.TabIndex = 4;
             this.linkLabel_MemberLogin.TabStop = true;
             this.linkLabel_MemberLogin.Text = "Don\'t you have an account?";
             this.toolTip_clickToSignUp.SetToolTip(this.linkLabel_MemberLogin, "Click to sign up!");
