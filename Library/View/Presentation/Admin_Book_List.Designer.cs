@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_MemberMainMenu_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.libraryAutomationDataSet9 = new Library.LibraryAutomationDataSet9();
-            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.booksTableAdapter = new Library.LibraryAutomationDataSet9TableAdapters.BooksTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookAuthorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,10 +49,13 @@
             this.createdDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryAutomationDataSet9 = new Library.LibraryAutomationDataSet9();
+            this.booksTableAdapter = new Library.LibraryAutomationDataSet9TableAdapters.BooksTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,7 +75,7 @@
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(1034, 12);
+            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(1089, 9);
             this.label_MemberMainMenu_SignIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
@@ -96,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1014, 579);
+            this.label1.Location = new System.Drawing.Point(1068, 579);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 25);
             this.label1.TabIndex = 7;
@@ -105,7 +108,20 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LavenderBlush;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -121,24 +137,19 @@
             this.categoryIdDataGridViewTextBoxColumn,
             this.isActiveDataGridViewCheckBoxColumn});
             this.dataGridView1.DataSource = this.booksBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.GridColor = System.Drawing.Color.LavenderBlush;
             this.dataGridView1.Location = new System.Drawing.Point(12, 61);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1143, 521);
             this.dataGridView1.TabIndex = 8;
-            // 
-            // libraryAutomationDataSet9
-            // 
-            this.libraryAutomationDataSet9.DataSetName = "LibraryAutomationDataSet9";
-            this.libraryAutomationDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // booksBindingSource
-            // 
-            this.booksBindingSource.DataMember = "Books";
-            this.booksBindingSource.DataSource = this.libraryAutomationDataSet9;
-            // 
-            // booksTableAdapter
-            // 
-            this.booksTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -213,6 +224,20 @@
             this.isActiveDataGridViewCheckBoxColumn.HeaderText = "IsActive";
             this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
             // 
+            // booksBindingSource
+            // 
+            this.booksBindingSource.DataMember = "Books";
+            this.booksBindingSource.DataSource = this.libraryAutomationDataSet9;
+            // 
+            // libraryAutomationDataSet9
+            // 
+            this.libraryAutomationDataSet9.DataSetName = "LibraryAutomationDataSet9";
+            this.libraryAutomationDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // booksTableAdapter
+            // 
+            this.booksTableAdapter.ClearBeforeFill = true;
+            // 
             // Admin_Book_List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,8 +253,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
