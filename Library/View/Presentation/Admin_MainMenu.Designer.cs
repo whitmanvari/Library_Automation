@@ -34,9 +34,6 @@
             this.label_MemberMainMenu_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton_bookList = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel_bookList_Admin = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton_bookCategory = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel_bookCategory_Admin = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -94,9 +91,6 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_bookList,
-            this.toolStripLabel_bookList_Admin,
-            this.toolStripSeparator1,
             this.toolStripButton_bookCategory,
             this.toolStripLabel_bookCategory_Admin,
             this.toolStripSeparator2,
@@ -113,35 +107,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(538, 25);
             this.toolStrip1.TabIndex = 10;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton_bookList
-            // 
-            this.toolStripButton_bookList.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("toolStripButton_bookList.BackgroundImage")));
-            this.toolStripButton_bookList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.toolStripButton_bookList.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_bookList.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton_bookList.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_bookList.Image")));
-            this.toolStripButton_bookList.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_bookList.Name = "toolStripButton_bookList";
-            this.toolStripButton_bookList.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_bookList.Text = "Show Book List";
-            this.toolStripButton_bookList.Click += new System.EventHandler(this.toolStripButton_bookList_Click);
-            this.toolStripButton_bookList.MouseLeave += new System.EventHandler(this.toolStripButton1_MouseLeave);
-            this.toolStripButton_bookList.MouseHover += new System.EventHandler(this.toolStripButton1_MouseHover);
-            // 
-            // toolStripLabel_bookList_Admin
-            // 
-            this.toolStripLabel_bookList_Admin.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripLabel_bookList_Admin.LinkColor = System.Drawing.Color.DarkSlateBlue;
-            this.toolStripLabel_bookList_Admin.Name = "toolStripLabel_bookList_Admin";
-            this.toolStripLabel_bookList_Admin.Size = new System.Drawing.Size(68, 22);
-            this.toolStripLabel_bookList_Admin.Text = "Book List";
-            this.toolStripLabel_bookList_Admin.Visible = false;
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton_bookCategory
             // 
@@ -286,7 +251,6 @@
             this.Name = "Admin_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
-            this.Load += new System.EventHandler(this.Admin_MainMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -303,11 +267,8 @@
         private System.Windows.Forms.Label label_MemberMainMenu_SignIn;
         private System.Windows.Forms.Label label_TitleLogin;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton_bookList;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel_bookList_Admin;
         private System.Windows.Forms.ToolStripButton toolStripButton_bookCategory;
         private System.Windows.Forms.ToolStripLabel toolStripLabel_bookCategory_Admin;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton_adminUpdate;
         private System.Windows.Forms.ToolStripLabel toolStripLabel_adminUpdate;

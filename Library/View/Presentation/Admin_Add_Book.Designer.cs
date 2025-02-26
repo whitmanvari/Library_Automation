@@ -433,6 +433,7 @@
             this.Name = "Admin_Add_Book";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Book";
+            this.Load += new System.EventHandler(this.Admin_Add_Book_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

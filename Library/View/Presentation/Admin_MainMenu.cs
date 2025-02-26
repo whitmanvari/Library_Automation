@@ -15,9 +15,11 @@ namespace Library.View.Presentation
 {
     public partial class Admin_MainMenu : Form
     {
+
         string Name;
         int Id;
         LibraryContext LibraryContext = new LibraryContext();
+        
 
         public Admin_MainMenu(string text, int id)
         {
@@ -32,12 +34,6 @@ namespace Library.View.Presentation
             Login login = new Login();
             login.Show();
             this.Hide();
-        }
-
-        private void Admin_MainMenu_Load(object sender, EventArgs e)
-        {
-
-
         }
 
        
@@ -74,16 +70,6 @@ namespace Library.View.Presentation
             toolStripLabel_bookCategory_Admin.Visible= false;
         }
 
-        private void toolStripButton1_MouseHover(object sender, EventArgs e)
-        {
-            toolStripLabel_bookList_Admin.Visible = true;
-        }
-
-        private void toolStripButton1_MouseLeave(object sender, EventArgs e)
-        {
-            toolStripLabel_bookList_Admin.Visible = false;
-        }
-
         private void toolStripButton_bookCategory_Click(object sender, EventArgs e)
         {
             Admin_Book_Category admin_Book_Category = new Admin_Book_Category(Name, Id);
@@ -109,13 +95,6 @@ namespace Library.View.Presentation
         private void toolStripButton2_MouseLeave_1(object sender, EventArgs e)
         {
             toolStripLabel_AddCategory.Visible= false;
-        }
-
-        private void toolStripButton_bookList_Click(object sender, EventArgs e)
-        {
-            Admin_Book_List admin_Book = new Admin_Book_List(Name, Id);
-            admin_Book.Show();
-            this.Close();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

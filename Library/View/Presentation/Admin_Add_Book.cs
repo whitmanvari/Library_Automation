@@ -61,7 +61,7 @@ namespace Library.View.Presentation
                 context.Books.Add(book);
                 context.SaveChanges();
                 MessageBox.Show("Book added successfully!", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Admin_Book_List admin_Book_List = new Admin_Book_List(Name, Id);
+                Admin_Book_List admin_Book_List = new Admin_Book_List(Name, Id, SelectedCategoryId);
                 admin_Book_List.Show();
                 this.Close();
             }
@@ -164,6 +164,11 @@ namespace Library.View.Presentation
         private void TextBox_Description_book_TextChanged(object sender, EventArgs e)
         {
             label_BookDescriptionError.Text = "";
+        }
+
+        private void Admin_Add_Book_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
