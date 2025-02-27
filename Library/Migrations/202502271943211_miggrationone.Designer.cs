@@ -7,13 +7,13 @@ namespace Library.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class migo : IMigrationMetadata
+    public sealed partial class miggrationone : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(migo));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(miggrationone));
         
         string IMigrationMetadata.Id
         {
-            get { return "202502191516561_migo"; }
+            get { return "202502271943211_miggrationone"; }
         }
         
         string IMigrationMetadata.Source

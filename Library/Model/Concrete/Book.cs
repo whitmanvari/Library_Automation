@@ -23,7 +23,7 @@ namespace Library.Model.Concrete
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
-
-        public bool IsActive { get; set; }
+        //default active
+        public bool IsActive { get; set; } = true; 
     }
 }

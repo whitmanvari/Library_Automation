@@ -19,7 +19,18 @@ namespace Library.DataContext
         {
             base.OnModelCreating(modelBuilder);
 
-            
+            modelBuilder.Entity<Loan>()
+                .HasRequired(l => l.User) //Specifies that each 'Loan' record must be linked to a 'User'.
+                .WithMany()
+                .HasForeignKey(l => l.UserId) //UserId in the Loan table is used as the foreign key of the User entity.
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Loan>()
+                .HasRequired(l => l.Book)
+                .WithMany()
+                .HasForeignKey(l => l.BookId)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<User>()
                 .HasRequired(u => u.Role)
                 .WithMany(r => r.Users)
@@ -27,15 +38,16 @@ namespace Library.DataContext
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Book>()
-           .HasRequired(b => b.Category)
-           .WithMany(c => c.Books)
-           .HasForeignKey(b => b.CategoryId)
-           .WillCascadeOnDelete(false);
+                .HasRequired(b => b.Category)
+                .WithMany(c => c.Books)
+                .HasForeignKey(b => b.CategoryId)
+                .WillCascadeOnDelete(false);
         }
 
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Loan> Loans { get; set; }
     }
 }

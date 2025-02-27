@@ -114,9 +114,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LibraryAutomationDataSet9.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202502191516561_migo.cs" />
-    <Compile Include="Migrations\202502191516561_migo.Designer.cs">
-      <DependentUpon>202502191516561_migo.cs</DependentUpon>
+    <Compile Include="Migrations\202502271943211_miggrationone.cs" />
+    <Compile Include="Migrations\202502271943211_miggrationone.Designer.cs">
+      <DependentUpon>202502271943211_miggrationone.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Abstract\IBase.cs" />
@@ -218,8 +218,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202502191516561_migo.resx">
-      <DependentUpon>202502191516561_migo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202502271943211_miggrationone.resx">
+      <DependentUpon>202502271943211_miggrationone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
