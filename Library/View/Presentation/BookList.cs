@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Library.DataContext;
+using Library.Model.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,18 +14,27 @@ namespace Library.View.Presentation
 {
     public partial class BookList : Form
     {
+        int CategoryId;
         string Name;
-        public BookList(string text)
+        LibraryContext context = new LibraryContext();
+        public BookList(string text, Category category)
         {
             InitializeComponent();
             Name = text;
-            
+            CategoryId = category.Id;
+           
         }
 
         private void BookList_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'libraryAutomationDataSet6.Books' table. You can move, or remove it, as needed.
             this.booksTableAdapter.Fill(this.libraryAutomationDataSet6.Books);
+            var books = context.Books.Where(b => b.CategoryId == CategoryId).ToList();
+            if (books.Count == 0)
+            {
+                MessageBox.Show("There are no records like this!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            dataGridView_booklist.DataSource = books;
 
         }
 

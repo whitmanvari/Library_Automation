@@ -1,4 +1,5 @@
 ﻿using Library.DataContext;
+using Library.Model.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,12 +15,15 @@ namespace Library.View.Presentation
     public partial class Member_MainMenu : Form
     {
         LibraryContext context = new LibraryContext();
+        
         string Name;
+        Category Category;
         public Member_MainMenu(string text)
         {
             InitializeComponent();
             label_memberName.Text = text;
             Name = label_memberName.Text;
+           
 
         }
 
@@ -28,16 +32,6 @@ namespace Library.View.Presentation
             Login login = new Login();
             login.Show();
             this.Hide();
-        }
-
-        private void toolStripButton_booklist_MouseHover(object sender, EventArgs e)
-        {
-            toolStripLabel_booklist.Visible = true;
-        }
-
-        private void toolStripButton_booklist_MouseLeave(object sender, EventArgs e)
-        {
-            toolStripLabel_booklist.Visible = false;
         }
 
         private void toolStripButton_loanpage_MouseHover(object sender, EventArgs e)
@@ -50,13 +44,7 @@ namespace Library.View.Presentation
             toolStripLabel_bookloan.Visible = false;
         }
 
-        private void toolStripButton_booklist_Click(object sender, EventArgs e)
-        {
-            BookList bookList = new BookList(Name);
-            bookList.Show();
-            this.Close();
-        }
-
+      
         private void Member_MainMenu_Load(object sender, EventArgs e)
         {
             
@@ -93,9 +81,18 @@ namespace Library.View.Presentation
 
         private void toolStripButton_categoryList_Click(object sender, EventArgs e)
         {
+            foreach (var item in context.Categories)
+            {
+                var Category = item.Id;
+            }
             Category_List_Member category_List = new Category_List_Member(Name);
             category_List.Show();
             this.Hide();
+        }
+
+        private void toolStripButton_loanpage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

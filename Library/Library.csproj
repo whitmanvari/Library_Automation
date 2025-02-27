@@ -125,6 +125,7 @@
     <Compile Include="Model\Concrete\Book.cs" />
     <Compile Include="Model\Concrete\BookRepository.cs" />
     <Compile Include="Model\Concrete\Category.cs" />
+    <Compile Include="Model\Concrete\Loan.cs" />
     <Compile Include="Model\Concrete\Role.cs" />
     <Compile Include="Model\Concrete\User.cs" />
     <Compile Include="Model\Concrete\UserRepository.cs" />

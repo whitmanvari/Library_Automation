@@ -32,18 +32,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_MemberMainMenu_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_fairyTale = new System.Windows.Forms.Button();
+            this.button_biography = new System.Windows.Forms.Button();
+            this.button_fantasy = new System.Windows.Forms.Button();
+            this.button_poetry = new System.Windows.Forms.Button();
+            this.button_philosophy = new System.Windows.Forms.Button();
+            this.button_romance = new System.Windows.Forms.Button();
+            this.button_literaryFiction = new System.Windows.Forms.Button();
+            this.button_adventure = new System.Windows.Forms.Button();
+            this.button_scienceFiction = new System.Windows.Forms.Button();
+            this.button_dystopian = new System.Windows.Forms.Button();
+            this.button_historicalFiction = new System.Windows.Forms.Button();
+            this.button_horror = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(793, 40);
             this.panel1.TabIndex = 4;
@@ -87,156 +87,167 @@
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
-            // button8
+            // button_fairyTale
             // 
-            this.button8.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button8.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(594, 106);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(184, 37);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Fairy-Tale";
-            this.button8.UseVisualStyleBackColor = false;
+            this.button_fairyTale.BackColor = System.Drawing.Color.LavenderBlush;
+            this.button_fairyTale.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_fairyTale.Location = new System.Drawing.Point(594, 106);
+            this.button_fairyTale.Margin = new System.Windows.Forms.Padding(4);
+            this.button_fairyTale.Name = "button_fairyTale";
+            this.button_fairyTale.Size = new System.Drawing.Size(184, 37);
+            this.button_fairyTale.TabIndex = 8;
+            this.button_fairyTale.Text = "Fairy-Tale";
+            this.button_fairyTale.UseVisualStyleBackColor = false;
+            this.button_fairyTale.Click += new System.EventHandler(this.button_fairyTale_Click);
             // 
-            // button12
+            // button_biography
             // 
-            this.button12.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button12.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(594, 297);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(184, 37);
-            this.button12.TabIndex = 9;
-            this.button12.Text = "Biography";
-            this.button12.UseVisualStyleBackColor = false;
+            this.button_biography.BackColor = System.Drawing.Color.LavenderBlush;
+            this.button_biography.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_biography.Location = new System.Drawing.Point(594, 297);
+            this.button_biography.Margin = new System.Windows.Forms.Padding(4);
+            this.button_biography.Name = "button_biography";
+            this.button_biography.Size = new System.Drawing.Size(184, 37);
+            this.button_biography.TabIndex = 9;
+            this.button_biography.Text = "Biography";
+            this.button_biography.UseVisualStyleBackColor = false;
+            this.button_biography.Click += new System.EventHandler(this.button_biography_Click);
             // 
-            // button4
+            // button_fantasy
             // 
-            this.button4.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button4.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(205, 197);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 37);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Fantasy";
-            this.button4.UseVisualStyleBackColor = false;
+            this.button_fantasy.BackColor = System.Drawing.Color.LavenderBlush;
+            this.button_fantasy.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_fantasy.Location = new System.Drawing.Point(205, 197);
+            this.button_fantasy.Margin = new System.Windows.Forms.Padding(4);
+            this.button_fantasy.Name = "button_fantasy";
+            this.button_fantasy.Size = new System.Drawing.Size(184, 37);
+            this.button_fantasy.TabIndex = 10;
+            this.button_fantasy.Text = "Fantasy";
+            this.button_fantasy.UseVisualStyleBackColor = false;
+            this.button_fantasy.Click += new System.EventHandler(this.button_fantasy_Click);
             // 
-            // button7
+            // button_poetry
             // 
-            this.button7.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button7.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button7.Location = new System.Drawing.Point(404, 147);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(183, 42);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "Poetry";
-            this.button7.UseVisualStyleBackColor = false;
+            this.button_poetry.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_poetry.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_poetry.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_poetry.Location = new System.Drawing.Point(404, 147);
+            this.button_poetry.Margin = new System.Windows.Forms.Padding(4);
+            this.button_poetry.Name = "button_poetry";
+            this.button_poetry.Size = new System.Drawing.Size(183, 42);
+            this.button_poetry.TabIndex = 11;
+            this.button_poetry.Text = "Poetry";
+            this.button_poetry.UseVisualStyleBackColor = false;
+            this.button_poetry.Click += new System.EventHandler(this.button_poetry_Click);
             // 
-            // button11
+            // button_philosophy
             // 
-            this.button11.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button11.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button11.Location = new System.Drawing.Point(404, 342);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(183, 42);
-            this.button11.TabIndex = 12;
-            this.button11.Text = "Philosophy";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button_philosophy.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_philosophy.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_philosophy.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_philosophy.Location = new System.Drawing.Point(404, 342);
+            this.button_philosophy.Margin = new System.Windows.Forms.Padding(4);
+            this.button_philosophy.Name = "button_philosophy";
+            this.button_philosophy.Size = new System.Drawing.Size(183, 42);
+            this.button_philosophy.TabIndex = 12;
+            this.button_philosophy.Text = "Philosophy";
+            this.button_philosophy.UseVisualStyleBackColor = false;
+            this.button_philosophy.Click += new System.EventHandler(this.button_philosophy_Click);
             // 
-            // button3
+            // button_romance
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button3.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button3.Location = new System.Drawing.Point(6, 247);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(183, 42);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Romance";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button_romance.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_romance.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_romance.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_romance.Location = new System.Drawing.Point(6, 247);
+            this.button_romance.Margin = new System.Windows.Forms.Padding(4);
+            this.button_romance.Name = "button_romance";
+            this.button_romance.Size = new System.Drawing.Size(183, 42);
+            this.button_romance.TabIndex = 13;
+            this.button_romance.Text = "Romance";
+            this.button_romance.UseVisualStyleBackColor = false;
+            this.button_romance.Click += new System.EventHandler(this.button_romance_Click);
             // 
-            // button6
+            // button_literaryFiction
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button6.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button6.Location = new System.Drawing.Point(13, 342);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(183, 42);
-            this.button6.TabIndex = 14;
-            this.button6.Text = "Literary Fiction";
-            this.button6.UseVisualStyleBackColor = false;
+            this.button_literaryFiction.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_literaryFiction.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_literaryFiction.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_literaryFiction.Location = new System.Drawing.Point(13, 342);
+            this.button_literaryFiction.Margin = new System.Windows.Forms.Padding(4);
+            this.button_literaryFiction.Name = "button_literaryFiction";
+            this.button_literaryFiction.Size = new System.Drawing.Size(183, 42);
+            this.button_literaryFiction.TabIndex = 14;
+            this.button_literaryFiction.Text = "Literary Fiction";
+            this.button_literaryFiction.UseVisualStyleBackColor = false;
+            this.button_literaryFiction.Click += new System.EventHandler(this.button_literaryFiction_Click);
             // 
-            // button10
+            // button_adventure
             // 
-            this.button10.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button10.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button10.Location = new System.Drawing.Point(404, 247);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(183, 42);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Adventure Fiction";
-            this.button10.UseVisualStyleBackColor = false;
+            this.button_adventure.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_adventure.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_adventure.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_adventure.Location = new System.Drawing.Point(404, 247);
+            this.button_adventure.Margin = new System.Windows.Forms.Padding(4);
+            this.button_adventure.Name = "button_adventure";
+            this.button_adventure.Size = new System.Drawing.Size(183, 42);
+            this.button_adventure.TabIndex = 15;
+            this.button_adventure.Text = "Adventure Fiction";
+            this.button_adventure.UseVisualStyleBackColor = false;
+            this.button_adventure.Click += new System.EventHandler(this.button_adventure_Click);
             // 
-            // button2
+            // button_scienceFiction
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button2.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button2.Location = new System.Drawing.Point(6, 147);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 42);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Science Fiction";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button_scienceFiction.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_scienceFiction.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_scienceFiction.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_scienceFiction.Location = new System.Drawing.Point(6, 147);
+            this.button_scienceFiction.Margin = new System.Windows.Forms.Padding(4);
+            this.button_scienceFiction.Name = "button_scienceFiction";
+            this.button_scienceFiction.Size = new System.Drawing.Size(183, 42);
+            this.button_scienceFiction.TabIndex = 16;
+            this.button_scienceFiction.Text = "Science Fiction";
+            this.button_scienceFiction.UseVisualStyleBackColor = false;
+            this.button_scienceFiction.Click += new System.EventHandler(this.button_scienceFiction_Click);
             // 
-            // button9
+            // button_dystopian
             // 
-            this.button9.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button9.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(594, 197);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(184, 37);
-            this.button9.TabIndex = 17;
-            this.button9.Text = "Dystopian";
-            this.button9.UseVisualStyleBackColor = false;
+            this.button_dystopian.BackColor = System.Drawing.Color.LavenderBlush;
+            this.button_dystopian.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_dystopian.Location = new System.Drawing.Point(594, 197);
+            this.button_dystopian.Margin = new System.Windows.Forms.Padding(4);
+            this.button_dystopian.Name = "button_dystopian";
+            this.button_dystopian.Size = new System.Drawing.Size(184, 37);
+            this.button_dystopian.TabIndex = 17;
+            this.button_dystopian.Text = "Dystopian";
+            this.button_dystopian.UseVisualStyleBackColor = false;
+            this.button_dystopian.Click += new System.EventHandler(this.button_dystopian_Click);
             // 
-            // button5
+            // button_historicalFiction
             // 
-            this.button5.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button5.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(205, 297);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(184, 37);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Historical Fiction";
-            this.button5.UseVisualStyleBackColor = false;
+            this.button_historicalFiction.BackColor = System.Drawing.Color.LavenderBlush;
+            this.button_historicalFiction.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_historicalFiction.Location = new System.Drawing.Point(205, 297);
+            this.button_historicalFiction.Margin = new System.Windows.Forms.Padding(4);
+            this.button_historicalFiction.Name = "button_historicalFiction";
+            this.button_historicalFiction.Size = new System.Drawing.Size(184, 37);
+            this.button_historicalFiction.TabIndex = 18;
+            this.button_historicalFiction.Text = "Historical Fiction";
+            this.button_historicalFiction.UseVisualStyleBackColor = false;
+            this.button_historicalFiction.Click += new System.EventHandler(this.button_historicalFiction_Click);
             // 
-            // button1
+            // button_horror
             // 
-            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(205, 106);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 37);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Horror/Thriller";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_horror.BackColor = System.Drawing.Color.LavenderBlush;
+            this.button_horror.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_horror.Location = new System.Drawing.Point(205, 106);
+            this.button_horror.Margin = new System.Windows.Forms.Padding(4);
+            this.button_horror.Name = "button_horror";
+            this.button_horror.Size = new System.Drawing.Size(184, 37);
+            this.button_horror.TabIndex = 19;
+            this.button_horror.Text = "Horror/Thriller";
+            this.button_horror.UseVisualStyleBackColor = false;
+            this.button_horror.Click += new System.EventHandler(this.button_horror_Click);
             // 
             // pictureBox1
             // 
@@ -284,21 +295,21 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_fairyTale);
+            this.Controls.Add(this.button_biography);
+            this.Controls.Add(this.button_fantasy);
+            this.Controls.Add(this.button_poetry);
+            this.Controls.Add(this.button_philosophy);
+            this.Controls.Add(this.button_romance);
+            this.Controls.Add(this.button_literaryFiction);
+            this.Controls.Add(this.button_adventure);
+            this.Controls.Add(this.button_scienceFiction);
+            this.Controls.Add(this.button_dystopian);
+            this.Controls.Add(this.button_historicalFiction);
+            this.Controls.Add(this.button_horror);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Category_List_Member";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Category List";
@@ -315,18 +326,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label_MemberMainMenu_SignIn;
         private System.Windows.Forms.Label label_TitleLogin;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_fairyTale;
+        private System.Windows.Forms.Button button_biography;
+        private System.Windows.Forms.Button button_fantasy;
+        private System.Windows.Forms.Button button_poetry;
+        private System.Windows.Forms.Button button_philosophy;
+        private System.Windows.Forms.Button button_romance;
+        private System.Windows.Forms.Button button_literaryFiction;
+        private System.Windows.Forms.Button button_adventure;
+        private System.Windows.Forms.Button button_scienceFiction;
+        private System.Windows.Forms.Button button_dystopian;
+        private System.Windows.Forms.Button button_historicalFiction;
+        private System.Windows.Forms.Button button_horror;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

@@ -34,9 +34,6 @@
             this.label_MemberMainMenu_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton_booklist = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel_booklist = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton_loanpage = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel_bookloan = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -92,9 +89,6 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_booklist,
-            this.toolStripLabel_booklist,
-            this.toolStripSeparator1,
             this.toolStripButton_loanpage,
             this.toolStripLabel_bookloan,
             this.toolStripSeparator2,
@@ -110,32 +104,6 @@
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton_booklist
-            // 
-            this.toolStripButton_booklist.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_booklist.Font = new System.Drawing.Font("Segoe Print", 12.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton_booklist.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_booklist.Image")));
-            this.toolStripButton_booklist.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_booklist.Name = "toolStripButton_booklist";
-            this.toolStripButton_booklist.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_booklist.Text = "Show Book List";
-            this.toolStripButton_booklist.Click += new System.EventHandler(this.toolStripButton_booklist_Click);
-            this.toolStripButton_booklist.MouseLeave += new System.EventHandler(this.toolStripButton_booklist_MouseLeave);
-            this.toolStripButton_booklist.MouseHover += new System.EventHandler(this.toolStripButton_booklist_MouseHover);
-            // 
-            // toolStripLabel_booklist
-            // 
-            this.toolStripLabel_booklist.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripLabel_booklist.Name = "toolStripLabel_booklist";
-            this.toolStripLabel_booklist.Size = new System.Drawing.Size(90, 27);
-            this.toolStripLabel_booklist.Text = "Book List";
-            this.toolStripLabel_booklist.Visible = false;
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
             // toolStripButton_loanpage
             // 
             this.toolStripButton_loanpage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -146,6 +114,7 @@
             this.toolStripButton_loanpage.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton_loanpage.Text = "Book Loan";
             this.toolStripButton_loanpage.ToolTipText = "Book Loan Page";
+            this.toolStripButton_loanpage.Click += new System.EventHandler(this.toolStripButton_loanpage_Click);
             this.toolStripButton_loanpage.MouseLeave += new System.EventHandler(this.toolStripButton_loanpage_MouseLeave);
             this.toolStripButton_loanpage.MouseHover += new System.EventHandler(this.toolStripButton_loanpage_MouseHover);
             // 
@@ -160,7 +129,7 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStripButton1
             // 
@@ -169,7 +138,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 27);
             this.toolStripButton1.Text = "My Profile";
             this.toolStripButton1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
@@ -187,7 +156,7 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 30);
             // 
             // toolStripButton_categoryList
             // 
@@ -195,7 +164,7 @@
             this.toolStripButton_categoryList.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_categoryList.Image")));
             this.toolStripButton_categoryList.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_categoryList.Name = "toolStripButton_categoryList";
-            this.toolStripButton_categoryList.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_categoryList.Size = new System.Drawing.Size(23, 27);
             this.toolStripButton_categoryList.Text = "Cate";
             this.toolStripButton_categoryList.Click += new System.EventHandler(this.toolStripButton_categoryList_Click);
             this.toolStripButton_categoryList.MouseHover += new System.EventHandler(this.toolStripButton_categoryList_MouseHover);
@@ -271,9 +240,6 @@
         private System.Windows.Forms.Label label_MemberMainMenu_SignIn;
         private System.Windows.Forms.Label label_TitleLogin;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton_booklist;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel_booklist;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolStripButton_loanpage;
         private System.Windows.Forms.ToolStripLabel toolStripLabel_bookloan;
         private System.Windows.Forms.ToolTip toolTip_booklist;
