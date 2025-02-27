@@ -74,6 +74,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LibraryAutomationDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LibraryAutomationDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryAutomationDataSet10.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LibraryAutomationDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -290,6 +295,17 @@
     </None>
     <None Include="LibraryAutomationDataSet1.xss">
       <DependentUpon>LibraryAutomationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet10.xsc">
+      <DependentUpon>LibraryAutomationDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="LibraryAutomationDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryAutomationDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LibraryAutomationDataSet10.xss">
+      <DependentUpon>LibraryAutomationDataSet10.xsd</DependentUpon>
     </None>
     <None Include="LibraryAutomationDataSet2.xsc">
       <DependentUpon>LibraryAutomationDataSet2.xsd</DependentUpon>
