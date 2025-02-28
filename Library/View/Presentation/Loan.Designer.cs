@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loan));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_Loan_signinPage = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
@@ -53,30 +54,33 @@
             this.checkInDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.complaintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label_goBackMainMenu = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel1.Controls.Add(this.label_Loan_signinPage);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1145, 41);
+            this.panel1.Size = new System.Drawing.Size(559, 43);
             this.panel1.TabIndex = 3;
             // 
             // label_Loan_signinPage
             // 
             this.label_Loan_signinPage.AutoSize = true;
             this.label_Loan_signinPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Loan_signinPage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_Loan_signinPage.Location = new System.Drawing.Point(1074, 9);
+            this.label_Loan_signinPage.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label_Loan_signinPage.Location = new System.Drawing.Point(475, 10);
             this.label_Loan_signinPage.Name = "label_Loan_signinPage";
             this.label_Loan_signinPage.Size = new System.Drawing.Size(59, 24);
             this.label_Loan_signinPage.TabIndex = 7;
@@ -87,7 +91,7 @@
             // 
             this.label_TitleLogin.AutoSize = true;
             this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_TitleLogin.ForeColor = System.Drawing.Color.Cornsilk;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
             this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
@@ -113,11 +117,11 @@
             this.isActiveDataGridViewCheckBoxColumn});
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.DataSource = this.booksBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 47);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 153);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1141, 370);
+            this.dataGridView1.Size = new System.Drawing.Size(517, 382);
             this.dataGridView1.TabIndex = 4;
             // 
             // idDataGridViewTextBoxColumn
@@ -132,66 +136,77 @@
             this.bookNameDataGridViewTextBoxColumn.DataPropertyName = "BookName";
             this.bookNameDataGridViewTextBoxColumn.HeaderText = "BookName";
             this.bookNameDataGridViewTextBoxColumn.Name = "bookNameDataGridViewTextBoxColumn";
+            this.bookNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookAuthorDataGridViewTextBoxColumn
             // 
             this.bookAuthorDataGridViewTextBoxColumn.DataPropertyName = "BookAuthor";
             this.bookAuthorDataGridViewTextBoxColumn.HeaderText = "BookAuthor";
             this.bookAuthorDataGridViewTextBoxColumn.Name = "bookAuthorDataGridViewTextBoxColumn";
+            this.bookAuthorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookPublisherDataGridViewTextBoxColumn
             // 
             this.bookPublisherDataGridViewTextBoxColumn.DataPropertyName = "BookPublisher";
             this.bookPublisherDataGridViewTextBoxColumn.HeaderText = "BookPublisher";
             this.bookPublisherDataGridViewTextBoxColumn.Name = "bookPublisherDataGridViewTextBoxColumn";
+            this.bookPublisherDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookPageDataGridViewTextBoxColumn
             // 
             this.bookPageDataGridViewTextBoxColumn.DataPropertyName = "BookPage";
             this.bookPageDataGridViewTextBoxColumn.HeaderText = "BookPage";
             this.bookPageDataGridViewTextBoxColumn.Name = "bookPageDataGridViewTextBoxColumn";
+            this.bookPageDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookYearDataGridViewTextBoxColumn
             // 
             this.bookYearDataGridViewTextBoxColumn.DataPropertyName = "BookYear";
             this.bookYearDataGridViewTextBoxColumn.HeaderText = "BookYear";
             this.bookYearDataGridViewTextBoxColumn.Name = "bookYearDataGridViewTextBoxColumn";
+            this.bookYearDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookLanguageDataGridViewTextBoxColumn
             // 
             this.bookLanguageDataGridViewTextBoxColumn.DataPropertyName = "BookLanguage";
             this.bookLanguageDataGridViewTextBoxColumn.HeaderText = "BookLanguage";
             this.bookLanguageDataGridViewTextBoxColumn.Name = "bookLanguageDataGridViewTextBoxColumn";
+            this.bookLanguageDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookGenreDataGridViewTextBoxColumn
             // 
             this.bookGenreDataGridViewTextBoxColumn.DataPropertyName = "BookGenre";
             this.bookGenreDataGridViewTextBoxColumn.HeaderText = "BookGenre";
             this.bookGenreDataGridViewTextBoxColumn.Name = "bookGenreDataGridViewTextBoxColumn";
+            this.bookGenreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // bookDescriptionDataGridViewTextBoxColumn
             // 
             this.bookDescriptionDataGridViewTextBoxColumn.DataPropertyName = "BookDescription";
             this.bookDescriptionDataGridViewTextBoxColumn.HeaderText = "BookDescription";
             this.bookDescriptionDataGridViewTextBoxColumn.Name = "bookDescriptionDataGridViewTextBoxColumn";
+            this.bookDescriptionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // createdDateDataGridViewTextBoxColumn
             // 
             this.createdDateDataGridViewTextBoxColumn.DataPropertyName = "CreatedDate";
             this.createdDateDataGridViewTextBoxColumn.HeaderText = "CreatedDate";
             this.createdDateDataGridViewTextBoxColumn.Name = "createdDateDataGridViewTextBoxColumn";
+            this.createdDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // categoryIdDataGridViewTextBoxColumn
             // 
             this.categoryIdDataGridViewTextBoxColumn.DataPropertyName = "CategoryId";
             this.categoryIdDataGridViewTextBoxColumn.HeaderText = "CategoryId";
             this.categoryIdDataGridViewTextBoxColumn.Name = "categoryIdDataGridViewTextBoxColumn";
+            this.categoryIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // isActiveDataGridViewCheckBoxColumn
             // 
             this.isActiveDataGridViewCheckBoxColumn.DataPropertyName = "IsActive";
             this.isActiveDataGridViewCheckBoxColumn.HeaderText = "IsActive";
             this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
+            this.isActiveDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // booksBindingSource
             // 
@@ -220,40 +235,64 @@
             // loanToolStripMenuItem
             // 
             this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
-            this.loanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loanToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
             this.loanToolStripMenuItem.Text = "Loan";
             // 
             // checkInDetailToolStripMenuItem
             // 
             this.checkInDetailToolStripMenuItem.Name = "checkInDetailToolStripMenuItem";
-            this.checkInDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkInDetailToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
             this.checkInDetailToolStripMenuItem.Text = "Check in detail";
             this.checkInDetailToolStripMenuItem.Click += new System.EventHandler(this.checkInDetailToolStripMenuItem_Click);
             // 
             // complaintToolStripMenuItem
             // 
             this.complaintToolStripMenuItem.Name = "complaintToolStripMenuItem";
-            this.complaintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.complaintToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
             this.complaintToolStripMenuItem.Text = "Complaint";
             // 
             // label_goBackMainMenu
             // 
             this.label_goBackMainMenu.AutoSize = true;
-            this.label_goBackMainMenu.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_goBackMainMenu.Location = new System.Drawing.Point(1081, 421);
+            this.label_goBackMainMenu.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_goBackMainMenu.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label_goBackMainMenu.Location = new System.Drawing.Point(469, 549);
             this.label_goBackMainMenu.Name = "label_goBackMainMenu";
             this.label_goBackMainMenu.Size = new System.Drawing.Size(65, 20);
             this.label_goBackMainMenu.TabIndex = 2;
             this.label_goBackMainMenu.Text = "Go Back";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(338, 33);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Right Click To Loan A Book!";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(325, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(161, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // Loan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 450);
+            this.ClientSize = new System.Drawing.Size(559, 583);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label_goBackMainMenu);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Loan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loan";
@@ -264,6 +303,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +335,7 @@
         private System.Windows.Forms.ToolStripMenuItem checkInDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem complaintToolStripMenuItem;
         private System.Windows.Forms.Label label_goBackMainMenu;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

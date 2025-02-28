@@ -166,10 +166,10 @@
             // 
             // linkLabel_goBack
             // 
-            this.linkLabel_goBack.ActiveLinkColor = System.Drawing.Color.Maroon;
+            this.linkLabel_goBack.ActiveLinkColor = System.Drawing.Color.MediumTurquoise;
             this.linkLabel_goBack.AutoSize = true;
             this.linkLabel_goBack.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel_goBack.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabel_goBack.LinkColor = System.Drawing.Color.SaddleBrown;
             this.linkLabel_goBack.Location = new System.Drawing.Point(576, 472);
             this.linkLabel_goBack.Name = "linkLabel_goBack";
             this.linkLabel_goBack.Size = new System.Drawing.Size(80, 25);
@@ -324,7 +324,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
