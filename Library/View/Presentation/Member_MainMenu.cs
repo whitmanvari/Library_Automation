@@ -92,7 +92,9 @@ namespace Library.View.Presentation
 
         private void toolStripButton_loanpage_Click(object sender, EventArgs e)
         {
-
+            Loan loan = new Loan();
+            loan.Show();
+            this.Close();
         }
     }
 }

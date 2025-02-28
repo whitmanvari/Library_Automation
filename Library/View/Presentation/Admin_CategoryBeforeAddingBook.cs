@@ -28,7 +28,7 @@ namespace Library.View.Presentation
         {
             comboBox_chooseCategory.DataSource = context.Categories.ToList();
             comboBox_chooseCategory.DisplayMember = "Name";
-            comboBox_chooseCategory.ValueMember = "Id";     
+            comboBox_chooseCategory.ValueMember = "Id";    //where would ı pull the infos! 
             // TODO: This line of code loads data into the 'libraryAutomationDataSet8.Categories' table. You can move, or remove it, as needed.
             this.categoriesTableAdapter.Fill(this.libraryAutomationDataSet8.Categories);
         }

@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Library.DataContext;
+using Library.Model.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +15,8 @@ namespace Library.View.Presentation
 {
     public partial class Loan : Form
     {
+        LibraryContext context = new LibraryContext();
+        List<Book> BookListShow;
         public Loan()
         {
             InitializeComponent();
@@ -26,8 +31,35 @@ namespace Library.View.Presentation
 
         private void Loan_Load(object sender, EventArgs e)
         {
+            var bookListShow = context.Books.ToList();
+            BookListShow = bookListShow;
+
             // TODO: This line of code loads data into the 'libraryAutomationDataSet10.Books' table. You can move, or remove it, as needed.
             this.booksTableAdapter.Fill(this.libraryAutomationDataSet10.Books);
+
+        }
+
+        private void checkInDetailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int bookId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
+                Book selectedBook = context.Books.FirstOrDefault(b => b.Id == bookId);
+                if (selectedBook != null)
+                {
+                    CheckInDetail checkInDetail = new CheckInDetail(selectedBook);
+                    checkInDetail.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("We could not found the correct book!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
     }

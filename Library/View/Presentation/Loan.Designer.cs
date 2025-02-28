@@ -33,9 +33,6 @@
             this.label_Loan_signinPage = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.libraryAutomationDataSet10 = new Library.LibraryAutomationDataSet10();
-            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.booksTableAdapter = new Library.LibraryAutomationDataSet10TableAdapters.BooksTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookAuthorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +45,9 @@
             this.createdDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryAutomationDataSet10 = new Library.LibraryAutomationDataSet10();
+            this.booksTableAdapter = new Library.LibraryAutomationDataSet10TableAdapters.BooksTableAdapter();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.loanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkInDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,8 +55,8 @@
             this.label_goBackMainMenu = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,25 +111,14 @@
             this.createdDateDataGridViewTextBoxColumn,
             this.categoryIdDataGridViewTextBoxColumn,
             this.isActiveDataGridViewCheckBoxColumn});
+            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.DataSource = this.booksBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 47);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1141, 370);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // libraryAutomationDataSet10
-            // 
-            this.libraryAutomationDataSet10.DataSetName = "LibraryAutomationDataSet10";
-            this.libraryAutomationDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // booksBindingSource
-            // 
-            this.booksBindingSource.DataMember = "Books";
-            this.booksBindingSource.DataSource = this.libraryAutomationDataSet10;
-            // 
-            // booksTableAdapter
-            // 
-            this.booksTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -204,31 +193,47 @@
             this.isActiveDataGridViewCheckBoxColumn.HeaderText = "IsActive";
             this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
             // 
+            // booksBindingSource
+            // 
+            this.booksBindingSource.DataMember = "Books";
+            this.booksBindingSource.DataSource = this.libraryAutomationDataSet10;
+            // 
+            // libraryAutomationDataSet10
+            // 
+            this.libraryAutomationDataSet10.DataSetName = "LibraryAutomationDataSet10";
+            this.libraryAutomationDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // booksTableAdapter
+            // 
+            this.booksTableAdapter.ClearBeforeFill = true;
+            // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loanToolStripMenuItem,
             this.checkInDetailToolStripMenuItem,
             this.complaintToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(185, 76);
             // 
             // loanToolStripMenuItem
             // 
             this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
-            this.loanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loanToolStripMenuItem.Text = "Loan";
             // 
             // checkInDetailToolStripMenuItem
             // 
             this.checkInDetailToolStripMenuItem.Name = "checkInDetailToolStripMenuItem";
-            this.checkInDetailToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.checkInDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkInDetailToolStripMenuItem.Text = "Check in detail";
+            this.checkInDetailToolStripMenuItem.Click += new System.EventHandler(this.checkInDetailToolStripMenuItem_Click);
             // 
             // complaintToolStripMenuItem
             // 
             this.complaintToolStripMenuItem.Name = "complaintToolStripMenuItem";
-            this.complaintToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.complaintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.complaintToolStripMenuItem.Text = "Complaint";
             // 
             // label_goBackMainMenu
@@ -256,8 +261,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
