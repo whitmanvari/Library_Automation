@@ -85,10 +85,10 @@
             // 
             this.button_fairyTale.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button_fairyTale.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_fairyTale.Location = new System.Drawing.Point(572, 101);
+            this.button_fairyTale.Location = new System.Drawing.Point(572, 97);
             this.button_fairyTale.Margin = new System.Windows.Forms.Padding(4);
             this.button_fairyTale.Name = "button_fairyTale";
-            this.button_fairyTale.Size = new System.Drawing.Size(167, 34);
+            this.button_fairyTale.Size = new System.Drawing.Size(167, 38);
             this.button_fairyTale.TabIndex = 10;
             this.button_fairyTale.Text = "Fairy-Tale";
             this.button_fairyTale.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@
             // 
             this.button_biography.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button_biography.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_biography.Location = new System.Drawing.Point(572, 223);
+            this.button_biography.Location = new System.Drawing.Point(572, 218);
             this.button_biography.Margin = new System.Windows.Forms.Padding(4);
             this.button_biography.Name = "button_biography";
-            this.button_biography.Size = new System.Drawing.Size(167, 34);
+            this.button_biography.Size = new System.Drawing.Size(167, 39);
             this.button_biography.TabIndex = 12;
             this.button_biography.Text = "Biography";
             this.button_biography.UseVisualStyleBackColor = false;
@@ -112,10 +112,10 @@
             this.button_fantasy.BackColor = System.Drawing.Color.Teal;
             this.button_fantasy.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_fantasy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_fantasy.Location = new System.Drawing.Point(572, 361);
+            this.button_fantasy.Location = new System.Drawing.Point(384, 396);
             this.button_fantasy.Margin = new System.Windows.Forms.Padding(4);
             this.button_fantasy.Name = "button_fantasy";
-            this.button_fantasy.Size = new System.Drawing.Size(167, 34);
+            this.button_fantasy.Size = new System.Drawing.Size(168, 39);
             this.button_fantasy.TabIndex = 5;
             this.button_fantasy.Text = "Fantasy";
             this.button_fantasy.UseVisualStyleBackColor = false;
@@ -154,10 +154,10 @@
             this.button_romance.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button_romance.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_romance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_romance.Location = new System.Drawing.Point(384, 399);
+            this.button_romance.Location = new System.Drawing.Point(384, 186);
             this.button_romance.Margin = new System.Windows.Forms.Padding(4);
             this.button_romance.Name = "button_romance";
-            this.button_romance.Size = new System.Drawing.Size(166, 39);
+            this.button_romance.Size = new System.Drawing.Size(166, 44);
             this.button_romance.TabIndex = 2;
             this.button_romance.Text = "Romance";
             this.button_romance.UseVisualStyleBackColor = false;
@@ -168,10 +168,10 @@
             this.button_literaryFiction.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button_literaryFiction.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_literaryFiction.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_literaryFiction.Location = new System.Drawing.Point(386, 466);
+            this.button_literaryFiction.Location = new System.Drawing.Point(384, 466);
             this.button_literaryFiction.Margin = new System.Windows.Forms.Padding(4);
             this.button_literaryFiction.Name = "button_literaryFiction";
-            this.button_literaryFiction.Size = new System.Drawing.Size(166, 39);
+            this.button_literaryFiction.Size = new System.Drawing.Size(168, 39);
             this.button_literaryFiction.TabIndex = 3;
             this.button_literaryFiction.Text = "Literary Fiction";
             this.button_literaryFiction.UseVisualStyleBackColor = false;
@@ -182,7 +182,7 @@
             this.button_adventureFiction.BackColor = System.Drawing.Color.Teal;
             this.button_adventureFiction.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_adventureFiction.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button_adventureFiction.Location = new System.Drawing.Point(386, 188);
+            this.button_adventureFiction.Location = new System.Drawing.Point(572, 157);
             this.button_adventureFiction.Margin = new System.Windows.Forms.Padding(4);
             this.button_adventureFiction.Name = "button_adventureFiction";
             this.button_adventureFiction.Size = new System.Drawing.Size(166, 39);
@@ -199,7 +199,7 @@
             this.button_scienceFiction.Location = new System.Drawing.Point(384, 325);
             this.button_scienceFiction.Margin = new System.Windows.Forms.Padding(4);
             this.button_scienceFiction.Name = "button_scienceFiction";
-            this.button_scienceFiction.Size = new System.Drawing.Size(166, 39);
+            this.button_scienceFiction.Size = new System.Drawing.Size(166, 43);
             this.button_scienceFiction.TabIndex = 1;
             this.button_scienceFiction.Text = "Science Fiction";
             this.button_scienceFiction.UseVisualStyleBackColor = false;
@@ -209,10 +209,10 @@
             // 
             this.button_dystopian.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button_dystopian.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_dystopian.Location = new System.Drawing.Point(572, 160);
+            this.button_dystopian.Location = new System.Drawing.Point(572, 359);
             this.button_dystopian.Margin = new System.Windows.Forms.Padding(4);
             this.button_dystopian.Name = "button_dystopian";
-            this.button_dystopian.Size = new System.Drawing.Size(167, 34);
+            this.button_dystopian.Size = new System.Drawing.Size(166, 38);
             this.button_dystopian.TabIndex = 11;
             this.button_dystopian.Text = "Dystopian";
             this.button_dystopian.UseVisualStyleBackColor = false;
@@ -223,10 +223,10 @@
             this.button_historicalFiction.BackColor = System.Drawing.Color.Teal;
             this.button_historicalFiction.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_historicalFiction.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_historicalFiction.Location = new System.Drawing.Point(572, 436);
+            this.button_historicalFiction.Location = new System.Drawing.Point(572, 429);
             this.button_historicalFiction.Margin = new System.Windows.Forms.Padding(4);
             this.button_historicalFiction.Name = "button_historicalFiction";
-            this.button_historicalFiction.Size = new System.Drawing.Size(167, 34);
+            this.button_historicalFiction.Size = new System.Drawing.Size(167, 41);
             this.button_historicalFiction.TabIndex = 6;
             this.button_historicalFiction.Text = "Historical Fiction";
             this.button_historicalFiction.UseVisualStyleBackColor = false;
@@ -237,10 +237,10 @@
             this.button_horror.BackColor = System.Drawing.Color.Teal;
             this.button_horror.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_horror.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_horror.Location = new System.Drawing.Point(572, 287);
+            this.button_horror.Location = new System.Drawing.Point(571, 285);
             this.button_horror.Margin = new System.Windows.Forms.Padding(4);
             this.button_horror.Name = "button_horror";
-            this.button_horror.Size = new System.Drawing.Size(167, 34);
+            this.button_horror.Size = new System.Drawing.Size(167, 42);
             this.button_horror.TabIndex = 4;
             this.button_horror.Text = "Horror/Thriller";
             this.button_horror.UseVisualStyleBackColor = false;

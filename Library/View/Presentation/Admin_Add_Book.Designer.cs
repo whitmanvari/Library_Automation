@@ -69,7 +69,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.Tan;
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -94,7 +94,7 @@
             // 
             this.label_TitleLogin.AutoSize = true;
             this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_TitleLogin.ForeColor = System.Drawing.Color.Black;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
             this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
@@ -103,7 +103,7 @@
             // 
             // textBox_bookName
             // 
-            this.textBox_bookName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox_bookName.BackColor = System.Drawing.Color.Tan;
             this.textBox_bookName.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_bookName.Location = new System.Drawing.Point(156, 259);
             this.textBox_bookName.Name = "textBox_bookName";
@@ -113,7 +113,7 @@
             // 
             // textBox_BookYear
             // 
-            this.textBox_BookYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox_BookYear.BackColor = System.Drawing.Color.Tan;
             this.textBox_BookYear.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookYear.Location = new System.Drawing.Point(156, 472);
             this.textBox_BookYear.Name = "textBox_BookYear";
@@ -123,7 +123,7 @@
             // 
             // textBox_BookPage
             // 
-            this.textBox_BookPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox_BookPage.BackColor = System.Drawing.Color.Tan;
             this.textBox_BookPage.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookPage.Location = new System.Drawing.Point(156, 418);
             this.textBox_BookPage.Name = "textBox_BookPage";
@@ -133,7 +133,7 @@
             // 
             // textBox_BookGenre
             // 
-            this.textBox_BookGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox_BookGenre.BackColor = System.Drawing.Color.Tan;
             this.textBox_BookGenre.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookGenre.Location = new System.Drawing.Point(156, 365);
             this.textBox_BookGenre.Name = "textBox_BookGenre";
@@ -143,7 +143,7 @@
             // 
             // textBox_BookAuthor
             // 
-            this.textBox_BookAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox_BookAuthor.BackColor = System.Drawing.Color.Tan;
             this.textBox_BookAuthor.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookAuthor.Location = new System.Drawing.Point(156, 315);
             this.textBox_BookAuthor.Name = "textBox_BookAuthor";
@@ -153,7 +153,7 @@
             // 
             // textBox_BookLanguage
             // 
-            this.textBox_BookLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox_BookLanguage.BackColor = System.Drawing.Color.Tan;
             this.textBox_BookLanguage.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookLanguage.Location = new System.Drawing.Point(489, 57);
             this.textBox_BookLanguage.Name = "textBox_BookLanguage";
@@ -163,7 +163,7 @@
             // 
             // textBox_BookPublisher
             // 
-            this.textBox_BookPublisher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.textBox_BookPublisher.BackColor = System.Drawing.Color.Tan;
             this.textBox_BookPublisher.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookPublisher.Location = new System.Drawing.Point(489, 114);
             this.textBox_BookPublisher.Name = "textBox_BookPublisher";
@@ -258,7 +258,7 @@
             // 
             // TextBox_Description_book
             // 
-            this.TextBox_Description_book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.TextBox_Description_book.BackColor = System.Drawing.Color.Tan;
             this.TextBox_Description_book.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_Description_book.Location = new System.Drawing.Point(489, 172);
             this.TextBox_Description_book.Name = "TextBox_Description_book";
@@ -288,9 +288,9 @@
             // 
             // button_addBook
             // 
-            this.button_addBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.button_addBook.BackColor = System.Drawing.Color.Tan;
             this.button_addBook.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_addBook.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_addBook.ForeColor = System.Drawing.Color.Black;
             this.button_addBook.Location = new System.Drawing.Point(467, 431);
             this.button_addBook.Name = "button_addBook";
             this.button_addBook.Size = new System.Drawing.Size(189, 41);
