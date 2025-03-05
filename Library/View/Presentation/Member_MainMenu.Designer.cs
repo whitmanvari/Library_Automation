@@ -55,7 +55,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel1.BackColor = System.Drawing.Color.Cornsilk;
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -68,7 +68,7 @@
             // 
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.Color.Black;
             this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(441, 9);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(69, 28);
@@ -79,9 +79,9 @@
             // label_TitleLogin
             // 
             this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.BackColor = System.Drawing.Color.BurlyWood;
+            this.label_TitleLogin.BackColor = System.Drawing.Color.Cornsilk;
             this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_TitleLogin.ForeColor = System.Drawing.Color.Black;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
             this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
@@ -183,6 +183,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 146);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 44);
@@ -193,6 +194,7 @@
             // 
             this.label_memberName.AutoSize = true;
             this.label_memberName.Font = new System.Drawing.Font("Segoe Script", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_memberName.ForeColor = System.Drawing.Color.Black;
             this.label_memberName.Location = new System.Drawing.Point(14, 214);
             this.label_memberName.Name = "label_memberName";
             this.label_memberName.Size = new System.Drawing.Size(0, 50);
@@ -204,7 +206,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(193, 69);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(343, 336);
+            this.pictureBox1.Size = new System.Drawing.Size(343, 340);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.toolTip_welcome.SetToolTip(this.pictureBox1, "Let\'s hire some books!");
@@ -218,9 +220,9 @@
             // lbl_selectOperation
             // 
             this.lbl_selectOperation.AutoSize = true;
-            this.lbl_selectOperation.BackColor = System.Drawing.Color.Tan;
+            this.lbl_selectOperation.BackColor = System.Drawing.Color.LemonChiffon;
             this.lbl_selectOperation.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_selectOperation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_selectOperation.ForeColor = System.Drawing.Color.Black;
             this.lbl_selectOperation.Location = new System.Drawing.Point(11, 441);
             this.lbl_selectOperation.Name = "lbl_selectOperation";
             this.lbl_selectOperation.Size = new System.Drawing.Size(398, 34);
@@ -232,6 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(521, 504);
             this.Controls.Add(this.lbl_selectOperation);
             this.Controls.Add(this.pictureBox1);

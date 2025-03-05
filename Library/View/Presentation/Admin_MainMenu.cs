@@ -120,5 +120,10 @@ namespace Library.View.Presentation
         {
             lbl_selectOperation.Visible= false;
         }
+
+        private void lbl_selectOperation_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

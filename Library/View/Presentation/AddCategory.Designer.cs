@@ -52,8 +52,8 @@
             // 
             this.button_approveCategoryiüğ.BackColor = System.Drawing.Color.RosyBrown;
             this.button_approveCategoryiüğ.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_approveCategoryiüğ.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.button_approveCategoryiüğ.Location = new System.Drawing.Point(336, 151);
+            this.button_approveCategoryiüğ.ForeColor = System.Drawing.Color.Black;
+            this.button_approveCategoryiüğ.Location = new System.Drawing.Point(336, 140);
             this.button_approveCategoryiüğ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_approveCategoryiüğ.Name = "button_approveCategoryiüğ";
             this.button_approveCategoryiüğ.Size = new System.Drawing.Size(115, 39);
@@ -74,10 +74,10 @@
             // label_goBack
             // 
             this.label_goBack.AutoSize = true;
-            this.label_goBack.BackColor = System.Drawing.SystemColors.Control;
+            this.label_goBack.BackColor = System.Drawing.Color.Transparent;
             this.label_goBack.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_goBack.ForeColor = System.Drawing.Color.RosyBrown;
-            this.label_goBack.Location = new System.Drawing.Point(371, 644);
+            this.label_goBack.ForeColor = System.Drawing.Color.Black;
+            this.label_goBack.Location = new System.Drawing.Point(371, 541);
             this.label_goBack.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_goBack.Name = "label_goBack";
             this.label_goBack.Size = new System.Drawing.Size(80, 27);
@@ -188,7 +188,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(24, 214);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(383, 347);
+            this.pictureBox1.Size = new System.Drawing.Size(383, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
@@ -208,12 +208,12 @@
             // label_categoryAdd
             // 
             this.label_categoryAdd.AutoSize = true;
-            this.label_categoryAdd.Font = new System.Drawing.Font("Segoe Script", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_categoryAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label_categoryAdd.Location = new System.Drawing.Point(17, 582);
+            this.label_categoryAdd.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_categoryAdd.ForeColor = System.Drawing.Color.Black;
+            this.label_categoryAdd.Location = new System.Drawing.Point(66, 496);
             this.label_categoryAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_categoryAdd.Name = "label_categoryAdd";
-            this.label_categoryAdd.Size = new System.Drawing.Size(309, 25);
+            this.label_categoryAdd.Size = new System.Drawing.Size(323, 27);
             this.label_categoryAdd.TabIndex = 67;
             this.label_categoryAdd.Text = "Please write a category name to add!";
             this.label_categoryAdd.Visible = false;
@@ -222,7 +222,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 690);
+            this.BackColor = System.Drawing.Color.Linen;
+            this.ClientSize = new System.Drawing.Size(466, 581);
             this.Controls.Add(this.label_categoryAdd);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);

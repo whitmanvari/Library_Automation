@@ -193,9 +193,9 @@
             // label_goBack
             // 
             this.label_goBack.AutoSize = true;
-            this.label_goBack.BackColor = System.Drawing.SystemColors.Control;
+            this.label_goBack.BackColor = System.Drawing.Color.Thistle;
             this.label_goBack.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_goBack.ForeColor = System.Drawing.Color.Thistle;
+            this.label_goBack.ForeColor = System.Drawing.Color.White;
             this.label_goBack.Location = new System.Drawing.Point(273, 407);
             this.label_goBack.Name = "label_goBack";
             this.label_goBack.Size = new System.Drawing.Size(80, 27);
@@ -233,6 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(365, 461);
             this.Controls.Add(this.button_approveCategory);
             this.Controls.Add(this.label_categoryErrorMessage);

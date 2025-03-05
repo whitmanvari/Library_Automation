@@ -79,5 +79,15 @@ namespace Library
         {
 
         }
+
+        private void pictureBox2_MouseHover(object sender, EventArgs e)
+        {
+            label_enterClick.Visible = true;
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            label_enterClick.Visible = false;
+        }
     }
 }

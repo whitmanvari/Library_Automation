@@ -62,10 +62,12 @@
             // 
             // linkLabel1
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Brown;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Snow;
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Tan;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.ForeColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
             this.linkLabel1.Location = new System.Drawing.Point(386, 596);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 27);
@@ -99,7 +101,7 @@
             // 
             // textbox_adresAdmin
             // 
-            this.textbox_adresAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_adresAdmin.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_adresAdmin.Location = new System.Drawing.Point(187, 447);
             this.textbox_adresAdmin.Name = "textbox_adresAdmin";
             this.textbox_adresAdmin.Size = new System.Drawing.Size(200, 85);
@@ -115,48 +117,49 @@
             // 
             // textBox_phoneAdmin
             // 
-            this.textBox_phoneAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_phoneAdmin.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_phoneAdmin.Location = new System.Drawing.Point(187, 356);
             this.textBox_phoneAdmin.Name = "textBox_phoneAdmin";
-            this.textBox_phoneAdmin.Size = new System.Drawing.Size(201, 33);
+            this.textBox_phoneAdmin.Size = new System.Drawing.Size(201, 28);
             this.textBox_phoneAdmin.TabIndex = 5;
             // 
             // textBox_passwordAdmin
             // 
-            this.textBox_passwordAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_passwordAdmin.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_passwordAdmin.Location = new System.Drawing.Point(187, 312);
             this.textBox_passwordAdmin.Name = "textBox_passwordAdmin";
-            this.textBox_passwordAdmin.Size = new System.Drawing.Size(201, 33);
+            this.textBox_passwordAdmin.Size = new System.Drawing.Size(201, 28);
             this.textBox_passwordAdmin.TabIndex = 4;
             // 
             // textBox_emailAdmin
             // 
-            this.textBox_emailAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_emailAdmin.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_emailAdmin.Location = new System.Drawing.Point(187, 269);
             this.textBox_emailAdmin.Name = "textBox_emailAdmin";
-            this.textBox_emailAdmin.Size = new System.Drawing.Size(201, 33);
+            this.textBox_emailAdmin.Size = new System.Drawing.Size(201, 28);
             this.textBox_emailAdmin.TabIndex = 3;
             // 
             // textBox_surnameAdmin
             // 
-            this.textBox_surnameAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_surnameAdmin.Location = new System.Drawing.Point(187, 224);
+            this.textBox_surnameAdmin.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_surnameAdmin.Location = new System.Drawing.Point(187, 223);
             this.textBox_surnameAdmin.Name = "textBox_surnameAdmin";
-            this.textBox_surnameAdmin.Size = new System.Drawing.Size(201, 33);
+            this.textBox_surnameAdmin.Size = new System.Drawing.Size(201, 28);
             this.textBox_surnameAdmin.TabIndex = 2;
             // 
             // textBox_nameAdmin
             // 
-            this.textBox_nameAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_nameAdmin.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_nameAdmin.Location = new System.Drawing.Point(187, 175);
             this.textBox_nameAdmin.Name = "textBox_nameAdmin";
-            this.textBox_nameAdmin.Size = new System.Drawing.Size(201, 33);
+            this.textBox_nameAdmin.Size = new System.Drawing.Size(201, 28);
             this.textBox_nameAdmin.TabIndex = 1;
             // 
             // label_MemberPassword_RegisterPage
             // 
             this.label_MemberPassword_RegisterPage.AutoSize = true;
             this.label_MemberPassword_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberPassword_RegisterPage.ForeColor = System.Drawing.Color.Black;
             this.label_MemberPassword_RegisterPage.Location = new System.Drawing.Point(88, 315);
             this.label_MemberPassword_RegisterPage.Name = "label_MemberPassword_RegisterPage";
             this.label_MemberPassword_RegisterPage.Size = new System.Drawing.Size(80, 24);
@@ -167,6 +170,7 @@
             // 
             this.label_MemberPhone_RegisterPage.AutoSize = true;
             this.label_MemberPhone_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberPhone_RegisterPage.ForeColor = System.Drawing.Color.Black;
             this.label_MemberPhone_RegisterPage.Location = new System.Drawing.Point(88, 359);
             this.label_MemberPhone_RegisterPage.Name = "label_MemberPhone_RegisterPage";
             this.label_MemberPhone_RegisterPage.Size = new System.Drawing.Size(57, 24);
@@ -177,6 +181,7 @@
             // 
             this.label_MemberBirthDate_RegisterPage.AutoSize = true;
             this.label_MemberBirthDate_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberBirthDate_RegisterPage.ForeColor = System.Drawing.Color.Black;
             this.label_MemberBirthDate_RegisterPage.Location = new System.Drawing.Point(88, 403);
             this.label_MemberBirthDate_RegisterPage.Name = "label_MemberBirthDate_RegisterPage";
             this.label_MemberBirthDate_RegisterPage.Size = new System.Drawing.Size(84, 24);
@@ -187,6 +192,7 @@
             // 
             this.label_MemberAdress_RegisterPage.AutoSize = true;
             this.label_MemberAdress_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberAdress_RegisterPage.ForeColor = System.Drawing.Color.Black;
             this.label_MemberAdress_RegisterPage.Location = new System.Drawing.Point(88, 450);
             this.label_MemberAdress_RegisterPage.Name = "label_MemberAdress_RegisterPage";
             this.label_MemberAdress_RegisterPage.Size = new System.Drawing.Size(69, 24);
@@ -197,6 +203,7 @@
             // 
             this.label_MemberEmail_RegisterPage.AutoSize = true;
             this.label_MemberEmail_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberEmail_RegisterPage.ForeColor = System.Drawing.Color.Black;
             this.label_MemberEmail_RegisterPage.Location = new System.Drawing.Point(88, 272);
             this.label_MemberEmail_RegisterPage.Name = "label_MemberEmail_RegisterPage";
             this.label_MemberEmail_RegisterPage.Size = new System.Drawing.Size(54, 24);
@@ -207,7 +214,8 @@
             // 
             this.label_memberSurname_RegisterPage.AutoSize = true;
             this.label_memberSurname_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_memberSurname_RegisterPage.Location = new System.Drawing.Point(88, 227);
+            this.label_memberSurname_RegisterPage.ForeColor = System.Drawing.Color.Black;
+            this.label_memberSurname_RegisterPage.Location = new System.Drawing.Point(88, 223);
             this.label_memberSurname_RegisterPage.Name = "label_memberSurname_RegisterPage";
             this.label_memberSurname_RegisterPage.Size = new System.Drawing.Size(77, 24);
             this.label_memberSurname_RegisterPage.TabIndex = 42;
@@ -217,7 +225,8 @@
             // 
             this.label_MemberName_RegisterPage.AutoSize = true;
             this.label_MemberName_RegisterPage.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberName_RegisterPage.Location = new System.Drawing.Point(88, 178);
+            this.label_MemberName_RegisterPage.ForeColor = System.Drawing.Color.Black;
+            this.label_MemberName_RegisterPage.Location = new System.Drawing.Point(88, 179);
             this.label_MemberName_RegisterPage.Name = "label_MemberName_RegisterPage";
             this.label_MemberName_RegisterPage.Size = new System.Drawing.Size(54, 24);
             this.label_MemberName_RegisterPage.TabIndex = 43;
@@ -231,15 +240,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(503, 41);
+            this.panel1.Size = new System.Drawing.Size(486, 41);
             this.panel1.TabIndex = 29;
             // 
             // label_MemberUpdate_SignIn
             // 
             this.label_MemberUpdate_SignIn.AutoSize = true;
             this.label_MemberUpdate_SignIn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberUpdate_SignIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_MemberUpdate_SignIn.Location = new System.Drawing.Point(422, 8);
+            this.label_MemberUpdate_SignIn.ForeColor = System.Drawing.Color.Black;
+            this.label_MemberUpdate_SignIn.Location = new System.Drawing.Point(404, 8);
             this.label_MemberUpdate_SignIn.Name = "label_MemberUpdate_SignIn";
             this.label_MemberUpdate_SignIn.Size = new System.Drawing.Size(69, 28);
             this.label_MemberUpdate_SignIn.TabIndex = 7;
@@ -261,6 +270,7 @@
             // 
             this.label_nameError.AutoSize = true;
             this.label_nameError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nameError.ForeColor = System.Drawing.Color.Black;
             this.label_nameError.Location = new System.Drawing.Point(89, 202);
             this.label_nameError.Name = "label_nameError";
             this.label_nameError.Size = new System.Drawing.Size(0, 17);
@@ -271,6 +281,7 @@
             // 
             this.label_surnameError.AutoSize = true;
             this.label_surnameError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_surnameError.ForeColor = System.Drawing.Color.Black;
             this.label_surnameError.Location = new System.Drawing.Point(89, 251);
             this.label_surnameError.Name = "label_surnameError";
             this.label_surnameError.Size = new System.Drawing.Size(0, 17);
@@ -281,6 +292,7 @@
             // 
             this.label_emailError.AutoSize = true;
             this.label_emailError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_emailError.ForeColor = System.Drawing.Color.Black;
             this.label_emailError.Location = new System.Drawing.Point(89, 298);
             this.label_emailError.Name = "label_emailError";
             this.label_emailError.Size = new System.Drawing.Size(0, 17);
@@ -291,6 +303,7 @@
             // 
             this.label_passwordError.AutoSize = true;
             this.label_passwordError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_passwordError.ForeColor = System.Drawing.Color.Black;
             this.label_passwordError.Location = new System.Drawing.Point(89, 342);
             this.label_passwordError.Name = "label_passwordError";
             this.label_passwordError.Size = new System.Drawing.Size(0, 17);
@@ -301,6 +314,7 @@
             // 
             this.label_phoneError.AutoSize = true;
             this.label_phoneError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_phoneError.ForeColor = System.Drawing.Color.Black;
             this.label_phoneError.Location = new System.Drawing.Point(89, 386);
             this.label_phoneError.Name = "label_phoneError";
             this.label_phoneError.Size = new System.Drawing.Size(0, 17);
@@ -311,6 +325,7 @@
             // 
             this.label_birthdateError.AutoSize = true;
             this.label_birthdateError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_birthdateError.ForeColor = System.Drawing.Color.Black;
             this.label_birthdateError.Location = new System.Drawing.Point(89, 427);
             this.label_birthdateError.Name = "label_birthdateError";
             this.label_birthdateError.Size = new System.Drawing.Size(0, 17);
@@ -321,6 +336,7 @@
             // 
             this.label_addressError.AutoSize = true;
             this.label_addressError.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_addressError.ForeColor = System.Drawing.Color.Black;
             this.label_addressError.Location = new System.Drawing.Point(89, 474);
             this.label_addressError.Name = "label_addressError";
             this.label_addressError.Size = new System.Drawing.Size(0, 17);
@@ -331,7 +347,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 637);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(486, 637);
             this.Controls.Add(this.label_addressError);
             this.Controls.Add(this.label_birthdateError);
             this.Controls.Add(this.label_phoneError);

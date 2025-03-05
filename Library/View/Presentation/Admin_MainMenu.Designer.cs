@@ -57,10 +57,11 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(547, 41);
@@ -70,7 +71,7 @@
             // 
             this.label_MemberMainMenu_SignIn.AutoSize = true;
             this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.Color.Black;
             this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(463, 9);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(72, 27);
@@ -82,7 +83,7 @@
             // 
             this.label_TitleLogin.AutoSize = true;
             this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_TitleLogin.ForeColor = System.Drawing.Color.Black;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
             this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
@@ -223,6 +224,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe Script", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(9, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 44);
@@ -233,6 +235,7 @@
             // 
             this.label_name.AutoSize = true;
             this.label_name.Font = new System.Drawing.Font("Segoe Script", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_name.ForeColor = System.Drawing.Color.White;
             this.label_name.Location = new System.Drawing.Point(14, 182);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(0, 51);
@@ -254,11 +257,13 @@
             this.lbl_selectOperation.TabIndex = 18;
             this.lbl_selectOperation.Text = "Select one of the operations below!";
             this.lbl_selectOperation.Visible = false;
+            this.lbl_selectOperation.Click += new System.EventHandler(this.lbl_selectOperation_Click);
             // 
             // Admin_MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(547, 517);
             this.Controls.Add(this.lbl_selectOperation);
             this.Controls.Add(this.label_name);

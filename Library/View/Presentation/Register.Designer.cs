@@ -63,7 +63,6 @@
             this.label_ErrorMessage_LoginPage_AdminRole = new System.Windows.Forms.Label();
             this.linkLabel_AdminLogin = new System.Windows.Forms.LinkLabel();
             this.button_Enter_LoginPage = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage_MemberRegister = new System.Windows.Forms.TabPage();
             this.textbox_adresmember = new System.Windows.Forms.RichTextBox();
             this.dateTimePicker_member = new System.Windows.Forms.DateTimePicker();
@@ -90,22 +89,23 @@
             this.linkLabel_MemberLogin = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Enter_MemberLoginPage = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label_errorMessage_LoginPage_MemberPassword = new System.Windows.Forms.Label();
             this.label_errorMessage_Loginpage_MemberEmail = new System.Windows.Forms.Label();
             this.toolTip_SignIn = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip_SignInTomember = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage_AdminRegister.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage_MemberRegister.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Thistle;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label_Register_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -118,7 +118,7 @@
             // 
             this.label_Register_SignIn.AutoSize = true;
             this.label_Register_SignIn.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Register_SignIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Register_SignIn.ForeColor = System.Drawing.Color.White;
             this.label_Register_SignIn.Location = new System.Drawing.Point(594, 9);
             this.label_Register_SignIn.Name = "label_Register_SignIn";
             this.label_Register_SignIn.Size = new System.Drawing.Size(72, 27);
@@ -130,7 +130,7 @@
             // 
             this.label_TitleLogin.AutoSize = true;
             this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_TitleLogin.ForeColor = System.Drawing.Color.White;
             this.label_TitleLogin.Location = new System.Drawing.Point(11, 8);
             this.label_TitleLogin.Name = "label_TitleLogin";
             this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
@@ -139,9 +139,9 @@
             // 
             // btn_ExitLoginPage
             // 
-            this.btn_ExitLoginPage.BackColor = System.Drawing.Color.Thistle;
+            this.btn_ExitLoginPage.BackColor = System.Drawing.Color.ForestGreen;
             this.btn_ExitLoginPage.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ExitLoginPage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_ExitLoginPage.ForeColor = System.Drawing.Color.White;
             this.btn_ExitLoginPage.Location = new System.Drawing.Point(569, 635);
             this.btn_ExitLoginPage.Name = "btn_ExitLoginPage";
             this.btn_ExitLoginPage.Size = new System.Drawing.Size(97, 44);
@@ -163,9 +163,10 @@
             // 
             // tabPage_AdminRegister
             // 
-            this.tabPage_AdminRegister.BackColor = System.Drawing.Color.Thistle;
+            this.tabPage_AdminRegister.BackColor = System.Drawing.Color.ForestGreen;
             this.tabPage_AdminRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage_AdminRegister.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage_AdminRegister.Controls.Add(this.pictureBox1);
             this.tabPage_AdminRegister.Controls.Add(this.dateTimePicker_birthdate);
             this.tabPage_AdminRegister.Controls.Add(this.textBox_AdminAdress_Register);
             this.tabPage_AdminRegister.Controls.Add(this.label_AdminPasswordError_Register);
@@ -193,7 +194,6 @@
             this.tabPage_AdminRegister.Controls.Add(this.label_ErrorMessage_LoginPage_AdminRole);
             this.tabPage_AdminRegister.Controls.Add(this.linkLabel_AdminLogin);
             this.tabPage_AdminRegister.Controls.Add(this.button_Enter_LoginPage);
-            this.tabPage_AdminRegister.Controls.Add(this.pictureBox1);
             this.tabPage_AdminRegister.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.tabPage_AdminRegister.Location = new System.Drawing.Point(4, 30);
             this.tabPage_AdminRegister.Name = "tabPage_AdminRegister";
@@ -205,8 +205,8 @@
             // dateTimePicker_birthdate
             // 
             this.dateTimePicker_birthdate.CalendarFont = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_birthdate.CalendarMonthBackground = System.Drawing.Color.Thistle;
-            this.dateTimePicker_birthdate.CalendarTitleBackColor = System.Drawing.Color.Thistle;
+            this.dateTimePicker_birthdate.CalendarMonthBackground = System.Drawing.Color.ForestGreen;
+            this.dateTimePicker_birthdate.CalendarTitleBackColor = System.Drawing.Color.ForestGreen;
             this.dateTimePicker_birthdate.Location = new System.Drawing.Point(112, 225);
             this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
             this.dateTimePicker_birthdate.Size = new System.Drawing.Size(213, 29);
@@ -334,8 +334,9 @@
             // label_AdminPassword
             // 
             this.label_AdminPassword.AutoSize = true;
+            this.label_AdminPassword.BackColor = System.Drawing.Color.ForestGreen;
             this.label_AdminPassword.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_AdminPassword.ForeColor = System.Drawing.Color.White;
             this.label_AdminPassword.Location = new System.Drawing.Point(6, 321);
             this.label_AdminPassword.Name = "label_AdminPassword";
             this.label_AdminPassword.Size = new System.Drawing.Size(93, 28);
@@ -345,8 +346,9 @@
             // label_AdminPhone
             // 
             this.label_AdminPhone.AutoSize = true;
+            this.label_AdminPhone.BackColor = System.Drawing.Color.ForestGreen;
             this.label_AdminPhone.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_AdminPhone.ForeColor = System.Drawing.Color.White;
             this.label_AdminPhone.Location = new System.Drawing.Point(7, 270);
             this.label_AdminPhone.Name = "label_AdminPhone";
             this.label_AdminPhone.Size = new System.Drawing.Size(66, 28);
@@ -356,8 +358,9 @@
             // label_AdminBirthDate
             // 
             this.label_AdminBirthDate.AutoSize = true;
+            this.label_AdminBirthDate.BackColor = System.Drawing.Color.ForestGreen;
             this.label_AdminBirthDate.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminBirthDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_AdminBirthDate.ForeColor = System.Drawing.Color.White;
             this.label_AdminBirthDate.Location = new System.Drawing.Point(7, 220);
             this.label_AdminBirthDate.Name = "label_AdminBirthDate";
             this.label_AdminBirthDate.Size = new System.Drawing.Size(96, 28);
@@ -367,8 +370,9 @@
             // label_AdminAdress
             // 
             this.label_AdminAdress.AutoSize = true;
+            this.label_AdminAdress.BackColor = System.Drawing.Color.ForestGreen;
             this.label_AdminAdress.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminAdress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_AdminAdress.ForeColor = System.Drawing.Color.White;
             this.label_AdminAdress.Location = new System.Drawing.Point(10, 365);
             this.label_AdminAdress.Name = "label_AdminAdress";
             this.label_AdminAdress.Size = new System.Drawing.Size(81, 28);
@@ -378,8 +382,9 @@
             // label_AdminEmail
             // 
             this.label_AdminEmail.AutoSize = true;
+            this.label_AdminEmail.BackColor = System.Drawing.Color.ForestGreen;
             this.label_AdminEmail.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_AdminEmail.ForeColor = System.Drawing.Color.White;
             this.label_AdminEmail.Location = new System.Drawing.Point(7, 174);
             this.label_AdminEmail.Name = "label_AdminEmail";
             this.label_AdminEmail.Size = new System.Drawing.Size(63, 28);
@@ -389,8 +394,9 @@
             // label_AdminSurname
             // 
             this.label_AdminSurname.AutoSize = true;
+            this.label_AdminSurname.BackColor = System.Drawing.Color.ForestGreen;
             this.label_AdminSurname.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminSurname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_AdminSurname.ForeColor = System.Drawing.Color.White;
             this.label_AdminSurname.Location = new System.Drawing.Point(10, 129);
             this.label_AdminSurname.Name = "label_AdminSurname";
             this.label_AdminSurname.Size = new System.Drawing.Size(89, 28);
@@ -400,8 +406,9 @@
             // label_AdminName
             // 
             this.label_AdminName.AutoSize = true;
+            this.label_AdminName.BackColor = System.Drawing.Color.ForestGreen;
             this.label_AdminName.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_AdminName.ForeColor = System.Drawing.Color.White;
             this.label_AdminName.Location = new System.Drawing.Point(10, 86);
             this.label_AdminName.Name = "label_AdminName";
             this.label_AdminName.Size = new System.Drawing.Size(63, 28);
@@ -411,8 +418,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.ForestGreen;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(17, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(308, 30);
@@ -447,9 +455,10 @@
             // 
             this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_AdminLogin.AutoSize = true;
+            this.linkLabel_AdminLogin.BackColor = System.Drawing.Color.ForestGreen;
             this.linkLabel_AdminLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel_AdminLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkLabel_AdminLogin.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel_AdminLogin.ForeColor = System.Drawing.Color.White;
+            this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.White;
             this.linkLabel_AdminLogin.Location = new System.Drawing.Point(29, 499);
             this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
             this.linkLabel_AdminLogin.Size = new System.Drawing.Size(296, 27);
@@ -471,18 +480,10 @@
             this.button_Enter_LoginPage.UseVisualStyleBackColor = true;
             this.button_Enter_LoginPage.Click += new System.EventHandler(this.button_Enter_LoginPage_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(305, -62);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 627);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPage_MemberRegister
             // 
+            this.tabPage_MemberRegister.BackColor = System.Drawing.Color.White;
+            this.tabPage_MemberRegister.Controls.Add(this.pictureBox2);
             this.tabPage_MemberRegister.Controls.Add(this.textbox_adresmember);
             this.tabPage_MemberRegister.Controls.Add(this.dateTimePicker_member);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_MemberPassword_RegisterPage);
@@ -508,7 +509,6 @@
             this.tabPage_MemberRegister.Controls.Add(this.linkLabel_MemberLogin);
             this.tabPage_MemberRegister.Controls.Add(this.label4);
             this.tabPage_MemberRegister.Controls.Add(this.btn_Enter_MemberLoginPage);
-            this.tabPage_MemberRegister.Controls.Add(this.pictureBox2);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_LoginPage_MemberPassword);
             this.tabPage_MemberRegister.Controls.Add(this.label_errorMessage_Loginpage_MemberEmail);
             this.tabPage_MemberRegister.Location = new System.Drawing.Point(4, 30);
@@ -517,12 +517,12 @@
             this.tabPage_MemberRegister.Size = new System.Drawing.Size(662, 548);
             this.tabPage_MemberRegister.TabIndex = 1;
             this.tabPage_MemberRegister.Text = "Member";
-            this.tabPage_MemberRegister.UseVisualStyleBackColor = true;
             // 
             // textbox_adresmember
             // 
-            this.textbox_adresmember.BackColor = System.Drawing.Color.Thistle;
+            this.textbox_adresmember.BackColor = System.Drawing.Color.ForestGreen;
             this.textbox_adresmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_adresmember.ForeColor = System.Drawing.Color.White;
             this.textbox_adresmember.Location = new System.Drawing.Point(97, 354);
             this.textbox_adresmember.Name = "textbox_adresmember";
             this.textbox_adresmember.Size = new System.Drawing.Size(200, 96);
@@ -531,8 +531,8 @@
             // 
             // dateTimePicker_member
             // 
-            this.dateTimePicker_member.CalendarMonthBackground = System.Drawing.Color.Thistle;
-            this.dateTimePicker_member.CalendarTitleBackColor = System.Drawing.Color.Thistle;
+            this.dateTimePicker_member.CalendarMonthBackground = System.Drawing.Color.ForestGreen;
+            this.dateTimePicker_member.CalendarTitleBackColor = System.Drawing.Color.ForestGreen;
             this.dateTimePicker_member.CalendarTrailingForeColor = System.Drawing.SystemColors.ControlText;
             this.dateTimePicker_member.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_member.Location = new System.Drawing.Point(97, 307);
@@ -616,8 +616,9 @@
             // 
             // textBox_phonemember
             // 
-            this.textBox_phonemember.BackColor = System.Drawing.Color.Thistle;
+            this.textBox_phonemember.BackColor = System.Drawing.Color.ForestGreen;
             this.textBox_phonemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_phonemember.ForeColor = System.Drawing.Color.White;
             this.textBox_phonemember.Location = new System.Drawing.Point(96, 259);
             this.textBox_phonemember.Name = "textBox_phonemember";
             this.textBox_phonemember.Size = new System.Drawing.Size(201, 36);
@@ -625,8 +626,9 @@
             // 
             // textBox_passwordmember
             // 
-            this.textBox_passwordmember.BackColor = System.Drawing.Color.Thistle;
+            this.textBox_passwordmember.BackColor = System.Drawing.Color.ForestGreen;
             this.textBox_passwordmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_passwordmember.ForeColor = System.Drawing.Color.White;
             this.textBox_passwordmember.Location = new System.Drawing.Point(96, 215);
             this.textBox_passwordmember.Name = "textBox_passwordmember";
             this.textBox_passwordmember.Size = new System.Drawing.Size(201, 36);
@@ -634,8 +636,9 @@
             // 
             // textBox_emailmember
             // 
-            this.textBox_emailmember.BackColor = System.Drawing.Color.Thistle;
+            this.textBox_emailmember.BackColor = System.Drawing.Color.ForestGreen;
             this.textBox_emailmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_emailmember.ForeColor = System.Drawing.Color.White;
             this.textBox_emailmember.Location = new System.Drawing.Point(96, 172);
             this.textBox_emailmember.Name = "textBox_emailmember";
             this.textBox_emailmember.Size = new System.Drawing.Size(201, 36);
@@ -643,8 +646,9 @@
             // 
             // textBox_surnamemember
             // 
-            this.textBox_surnamemember.BackColor = System.Drawing.Color.Thistle;
+            this.textBox_surnamemember.BackColor = System.Drawing.Color.ForestGreen;
             this.textBox_surnamemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_surnamemember.ForeColor = System.Drawing.Color.White;
             this.textBox_surnamemember.Location = new System.Drawing.Point(96, 127);
             this.textBox_surnamemember.Name = "textBox_surnamemember";
             this.textBox_surnamemember.Size = new System.Drawing.Size(201, 36);
@@ -652,8 +656,9 @@
             // 
             // textBox_namemember
             // 
-            this.textBox_namemember.BackColor = System.Drawing.Color.Thistle;
+            this.textBox_namemember.BackColor = System.Drawing.Color.ForestGreen;
             this.textBox_namemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_namemember.ForeColor = System.Drawing.Color.White;
             this.textBox_namemember.Location = new System.Drawing.Point(96, 84);
             this.textBox_namemember.Name = "textBox_namemember";
             this.textBox_namemember.Size = new System.Drawing.Size(201, 36);
@@ -755,8 +760,9 @@
             // 
             // btn_Enter_MemberLoginPage
             // 
-            this.btn_Enter_MemberLoginPage.BackColor = System.Drawing.Color.Thistle;
+            this.btn_Enter_MemberLoginPage.BackColor = System.Drawing.Color.ForestGreen;
             this.btn_Enter_MemberLoginPage.Font = new System.Drawing.Font("Segoe Print", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Enter_MemberLoginPage.ForeColor = System.Drawing.Color.White;
             this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(234, 474);
             this.btn_Enter_MemberLoginPage.Name = "btn_Enter_MemberLoginPage";
             this.btn_Enter_MemberLoginPage.Size = new System.Drawing.Size(89, 32);
@@ -764,17 +770,6 @@
             this.btn_Enter_MemberLoginPage.Text = "Enter";
             this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = false;
             this.btn_Enter_MemberLoginPage.Click += new System.EventHandler(this.btn_Enter_MemberLoginPage_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(306, -30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(352, 560);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // label_errorMessage_LoginPage_MemberPassword
             // 
@@ -801,6 +796,27 @@
             // 
             this.toolTip_SignInTomember.BackColor = System.Drawing.Color.Plum;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(341, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(311, 504);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(329, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(305, 539);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -817,9 +833,9 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage_AdminRegister.ResumeLayout(false);
             this.tabPage_AdminRegister.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage_MemberRegister.ResumeLayout(false);
             this.tabPage_MemberRegister.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -835,7 +851,6 @@
         private System.Windows.Forms.LinkLabel linkLabel_MemberLogin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_Enter_MemberLoginPage;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label_errorMessage_LoginPage_MemberPassword;
         private System.Windows.Forms.Label label_errorMessage_Loginpage_MemberEmail;
         private System.Windows.Forms.ToolTip toolTip_SignIn;
@@ -885,12 +900,13 @@
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminPassword;
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminEmail;
         private System.Windows.Forms.Label label_ErrorMessage_LoginPage_AdminRole;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel_AdminLogin;
         private System.Windows.Forms.Button button_Enter_LoginPage;
         private System.Windows.Forms.RichTextBox textBox_AdminAdress_Register;
         private System.Windows.Forms.DateTimePicker dateTimePicker_birthdate;
         private System.Windows.Forms.RichTextBox textbox_adresmember;
         private System.Windows.Forms.DateTimePicker dateTimePicker_member;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
