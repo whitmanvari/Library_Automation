@@ -69,7 +69,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -81,11 +81,11 @@
             // label_MemberMainMenu_SignIn
             // 
             this.label_MemberMainMenu_SignIn.AutoSize = true;
-            this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(597, 10);
+            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(587, 6);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
-            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
+            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(69, 28);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
             this.label_MemberMainMenu_SignIn.Text = "Sign In";
             this.label_MemberMainMenu_SignIn.Click += new System.EventHandler(this.label_MemberMainMenu_SignIn_Click);
@@ -93,163 +93,176 @@
             // label_TitleLogin
             // 
             this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
             // textBox_bookName
             // 
+            this.textBox_bookName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox_bookName.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_bookName.Location = new System.Drawing.Point(156, 259);
             this.textBox_bookName.Name = "textBox_bookName";
-            this.textBox_bookName.Size = new System.Drawing.Size(163, 28);
+            this.textBox_bookName.Size = new System.Drawing.Size(170, 28);
             this.textBox_bookName.TabIndex = 2;
             this.textBox_bookName.TextChanged += new System.EventHandler(this.textBox_bookName_TextChanged);
             // 
             // textBox_BookYear
             // 
+            this.textBox_BookYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox_BookYear.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookYear.Location = new System.Drawing.Point(156, 472);
             this.textBox_BookYear.Name = "textBox_BookYear";
-            this.textBox_BookYear.Size = new System.Drawing.Size(163, 28);
+            this.textBox_BookYear.Size = new System.Drawing.Size(170, 28);
             this.textBox_BookYear.TabIndex = 6;
             this.textBox_BookYear.TextChanged += new System.EventHandler(this.textBox_BookYear_TextChanged);
             // 
             // textBox_BookPage
             // 
+            this.textBox_BookPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox_BookPage.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookPage.Location = new System.Drawing.Point(156, 418);
             this.textBox_BookPage.Name = "textBox_BookPage";
-            this.textBox_BookPage.Size = new System.Drawing.Size(163, 28);
+            this.textBox_BookPage.Size = new System.Drawing.Size(170, 28);
             this.textBox_BookPage.TabIndex = 5;
             this.textBox_BookPage.TextChanged += new System.EventHandler(this.textBox_BookPage_TextChanged);
             // 
             // textBox_BookGenre
             // 
+            this.textBox_BookGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox_BookGenre.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookGenre.Location = new System.Drawing.Point(156, 365);
             this.textBox_BookGenre.Name = "textBox_BookGenre";
-            this.textBox_BookGenre.Size = new System.Drawing.Size(163, 28);
+            this.textBox_BookGenre.Size = new System.Drawing.Size(170, 28);
             this.textBox_BookGenre.TabIndex = 4;
             this.textBox_BookGenre.TextChanged += new System.EventHandler(this.textBox_BookGenre_TextChanged);
             // 
             // textBox_BookAuthor
             // 
+            this.textBox_BookAuthor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox_BookAuthor.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookAuthor.Location = new System.Drawing.Point(156, 315);
             this.textBox_BookAuthor.Name = "textBox_BookAuthor";
-            this.textBox_BookAuthor.Size = new System.Drawing.Size(163, 28);
+            this.textBox_BookAuthor.Size = new System.Drawing.Size(170, 28);
             this.textBox_BookAuthor.TabIndex = 3;
             this.textBox_BookAuthor.TextChanged += new System.EventHandler(this.textBox_BookAuthor_TextChanged);
             // 
             // textBox_BookLanguage
             // 
+            this.textBox_BookLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox_BookLanguage.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookLanguage.Location = new System.Drawing.Point(489, 57);
             this.textBox_BookLanguage.Name = "textBox_BookLanguage";
-            this.textBox_BookLanguage.Size = new System.Drawing.Size(167, 28);
+            this.textBox_BookLanguage.Size = new System.Drawing.Size(160, 28);
             this.textBox_BookLanguage.TabIndex = 7;
             this.textBox_BookLanguage.TextChanged += new System.EventHandler(this.textBox_BookLanguage_TextChanged);
             // 
             // textBox_BookPublisher
             // 
+            this.textBox_BookPublisher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.textBox_BookPublisher.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_BookPublisher.Location = new System.Drawing.Point(489, 117);
+            this.textBox_BookPublisher.Location = new System.Drawing.Point(489, 114);
             this.textBox_BookPublisher.Name = "textBox_BookPublisher";
-            this.textBox_BookPublisher.Size = new System.Drawing.Size(167, 28);
+            this.textBox_BookPublisher.Size = new System.Drawing.Size(160, 28);
             this.textBox_BookPublisher.TabIndex = 8;
             this.textBox_BookPublisher.TextChanged += new System.EventHandler(this.textBox_BookPublisher_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(25, 265);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.Size = new System.Drawing.Size(110, 27);
             this.label1.TabIndex = 7;
             this.label1.Text = "Book Name:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(25, 318);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 25);
+            this.label2.Size = new System.Drawing.Size(126, 27);
             this.label2.TabIndex = 7;
             this.label2.Text = "Book Author:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label3.Location = new System.Drawing.Point(25, 368);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 25);
+            this.label3.Size = new System.Drawing.Size(112, 27);
             this.label3.TabIndex = 7;
             this.label3.Text = "Book Genre:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(25, 421);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 25);
+            this.label4.Size = new System.Drawing.Size(103, 27);
             this.label4.TabIndex = 7;
             this.label4.Text = "Book Page:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(25, 475);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 25);
+            this.label5.Size = new System.Drawing.Size(98, 27);
             this.label5.TabIndex = 7;
             this.label5.Text = "Book Year:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(315, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 25);
+            this.label6.Size = new System.Drawing.Size(162, 27);
             this.label6.TabIndex = 7;
             this.label6.Text = "Book Description:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(315, 120);
+            this.label10.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(315, 115);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 25);
+            this.label10.Size = new System.Drawing.Size(145, 27);
             this.label10.TabIndex = 7;
             this.label10.Text = "Book Publisher:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(315, 60);
+            this.label11.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(315, 58);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(143, 25);
+            this.label11.Size = new System.Drawing.Size(143, 27);
             this.label11.TabIndex = 7;
             this.label11.Text = "Book Language:";
             // 
             // TextBox_Description_book
             // 
+            this.TextBox_Description_book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.TextBox_Description_book.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_Description_book.Location = new System.Drawing.Point(489, 172);
             this.TextBox_Description_book.Name = "TextBox_Description_book";
-            this.TextBox_Description_book.Size = new System.Drawing.Size(167, 84);
+            this.TextBox_Description_book.Size = new System.Drawing.Size(160, 84);
             this.TextBox_Description_book.TabIndex = 12;
             this.TextBox_Description_book.Text = "";
             this.TextBox_Description_book.TextChanged += new System.EventHandler(this.TextBox_Description_book_TextChanged);
@@ -258,11 +271,11 @@
             // 
             this.linkLabel_goBack.ActiveLinkColor = System.Drawing.Color.Maroon;
             this.linkLabel_goBack.AutoSize = true;
-            this.linkLabel_goBack.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel_goBack.LinkColor = System.Drawing.Color.DarkSlateBlue;
-            this.linkLabel_goBack.Location = new System.Drawing.Point(576, 475);
+            this.linkLabel_goBack.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_goBack.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.linkLabel_goBack.Location = new System.Drawing.Point(561, 475);
             this.linkLabel_goBack.Name = "linkLabel_goBack";
-            this.linkLabel_goBack.Size = new System.Drawing.Size(80, 25);
+            this.linkLabel_goBack.Size = new System.Drawing.Size(95, 31);
             this.linkLabel_goBack.TabIndex = 15;
             this.linkLabel_goBack.TabStop = true;
             this.linkLabel_goBack.Text = "Go Back";
@@ -275,8 +288,8 @@
             // 
             // button_addBook
             // 
-            this.button_addBook.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button_addBook.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_addBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.button_addBook.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_addBook.ForeColor = System.Drawing.Color.LavenderBlush;
             this.button_addBook.Location = new System.Drawing.Point(467, 431);
             this.button_addBook.Name = "button_addBook";
@@ -289,10 +302,10 @@
             // checkBox_isactive
             // 
             this.checkBox_isactive.AutoSize = true;
-            this.checkBox_isactive.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_isactive.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_isactive.Location = new System.Drawing.Point(476, 288);
             this.checkBox_isactive.Name = "checkBox_isactive";
-            this.checkBox_isactive.Size = new System.Drawing.Size(180, 29);
+            this.checkBox_isactive.Size = new System.Drawing.Size(180, 31);
             this.checkBox_isactive.TabIndex = 13;
             this.checkBox_isactive.Text = "Is Book Available?";
             this.checkBox_isactive.UseVisualStyleBackColor = true;
@@ -300,41 +313,41 @@
             // label_bookNameError
             // 
             this.label_bookNameError.AutoSize = true;
-            this.label_bookNameError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_bookNameError.ForeColor = System.Drawing.Color.Maroon;
+            this.label_bookNameError.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_bookNameError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label_bookNameError.Location = new System.Drawing.Point(27, 290);
             this.label_bookNameError.Name = "label_bookNameError";
-            this.label_bookNameError.Size = new System.Drawing.Size(0, 20);
+            this.label_bookNameError.Size = new System.Drawing.Size(0, 27);
             this.label_bookNameError.TabIndex = 14;
             // 
             // label_BookAuthorError
             // 
             this.label_BookAuthorError.AutoSize = true;
-            this.label_BookAuthorError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BookAuthorError.ForeColor = System.Drawing.Color.Maroon;
+            this.label_BookAuthorError.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BookAuthorError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label_BookAuthorError.Location = new System.Drawing.Point(27, 343);
             this.label_BookAuthorError.Name = "label_BookAuthorError";
-            this.label_BookAuthorError.Size = new System.Drawing.Size(0, 20);
+            this.label_BookAuthorError.Size = new System.Drawing.Size(0, 27);
             this.label_BookAuthorError.TabIndex = 14;
             // 
             // label_bookGenreError
             // 
             this.label_bookGenreError.AutoSize = true;
-            this.label_bookGenreError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_bookGenreError.ForeColor = System.Drawing.Color.Maroon;
+            this.label_bookGenreError.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_bookGenreError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label_bookGenreError.Location = new System.Drawing.Point(27, 393);
             this.label_bookGenreError.Name = "label_bookGenreError";
-            this.label_bookGenreError.Size = new System.Drawing.Size(0, 20);
+            this.label_bookGenreError.Size = new System.Drawing.Size(0, 27);
             this.label_bookGenreError.TabIndex = 14;
             // 
             // label_BookPageError
             // 
             this.label_BookPageError.AutoSize = true;
-            this.label_BookPageError.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BookPageError.ForeColor = System.Drawing.Color.Maroon;
+            this.label_BookPageError.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BookPageError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label_BookPageError.Location = new System.Drawing.Point(27, 446);
             this.label_BookPageError.Name = "label_BookPageError";
-            this.label_BookPageError.Size = new System.Drawing.Size(0, 20);
+            this.label_BookPageError.Size = new System.Drawing.Size(0, 27);
             this.label_BookPageError.TabIndex = 14;
             // 
             // label_BookYearError
@@ -399,6 +412,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(677, 530);
             this.Controls.Add(this.label_BookLanguageError);
             this.Controls.Add(this.label_BookPublisherError);

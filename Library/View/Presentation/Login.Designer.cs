@@ -91,7 +91,7 @@
             // 
             // tabPage_AdminLogin
             // 
-            this.tabPage_AdminLogin.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tabPage_AdminLogin.BackColor = System.Drawing.Color.Thistle;
             this.tabPage_AdminLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage_AdminLogin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage_AdminLogin.Controls.Add(this.label_errorEmail);
@@ -160,7 +160,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(8, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 30);
@@ -171,7 +171,7 @@
             // 
             this.label_WelcomeMessage.AutoSize = true;
             this.label_WelcomeMessage.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_WelcomeMessage.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_WelcomeMessage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_WelcomeMessage.Location = new System.Drawing.Point(6, 17);
             this.label_WelcomeMessage.Name = "label_WelcomeMessage";
             this.label_WelcomeMessage.Size = new System.Drawing.Size(385, 35);
@@ -193,7 +193,8 @@
             this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_AdminLogin.AutoSize = true;
             this.linkLabel_AdminLogin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.LavenderBlush;
+            this.linkLabel_AdminLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel_AdminLogin.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.linkLabel_AdminLogin.Location = new System.Drawing.Point(105, 283);
             this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
             this.linkLabel_AdminLogin.Size = new System.Drawing.Size(234, 28);
@@ -238,7 +239,7 @@
             // 
             this.lbl_AdminPassword_Login.AutoSize = true;
             this.lbl_AdminPassword_Login.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminPassword_Login.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.lbl_AdminPassword_Login.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_AdminPassword_Login.Location = new System.Drawing.Point(2, 199);
             this.lbl_AdminPassword_Login.Name = "lbl_AdminPassword_Login";
             this.lbl_AdminPassword_Login.Size = new System.Drawing.Size(93, 28);
@@ -249,7 +250,7 @@
             // 
             this.lbl_AdminEmail_Login.AutoSize = true;
             this.lbl_AdminEmail_Login.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_AdminEmail_Login.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.lbl_AdminEmail_Login.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbl_AdminEmail_Login.Location = new System.Drawing.Point(7, 142);
             this.lbl_AdminEmail_Login.Name = "lbl_AdminEmail_Login";
             this.lbl_AdminEmail_Login.Size = new System.Drawing.Size(63, 28);
@@ -281,11 +282,12 @@
             // 
             this.linkLabel_MemberLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_MemberLogin.AutoSize = true;
-            this.linkLabel_MemberLogin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel_MemberLogin.LinkColor = System.Drawing.Color.Plum;
+            this.linkLabel_MemberLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_MemberLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel_MemberLogin.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.linkLabel_MemberLogin.Location = new System.Drawing.Point(105, 295);
             this.linkLabel_MemberLogin.Name = "linkLabel_MemberLogin";
-            this.linkLabel_MemberLogin.Size = new System.Drawing.Size(234, 28);
+            this.linkLabel_MemberLogin.Size = new System.Drawing.Size(251, 27);
             this.linkLabel_MemberLogin.TabIndex = 4;
             this.linkLabel_MemberLogin.TabStop = true;
             this.linkLabel_MemberLogin.Text = "Don\'t you have an account?";
@@ -307,11 +309,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Plum;
-            this.label5.Location = new System.Drawing.Point(15, 31);
+            this.label5.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Thistle;
+            this.label5.Location = new System.Drawing.Point(15, 32);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(385, 35);
+            this.label5.Size = new System.Drawing.Size(386, 31);
             this.label5.TabIndex = 8;
             this.label5.Text = "Welcome to the Library Automation!";
             // 
@@ -330,16 +332,18 @@
             // 
             // txt_passwordmember
             // 
-            this.txt_passwordmember.Font = new System.Drawing.Font("Segoe Print", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_passwordmember.BackColor = System.Drawing.Color.Thistle;
+            this.txt_passwordmember.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_passwordmember.Location = new System.Drawing.Point(121, 197);
             this.txt_passwordmember.Name = "txt_passwordmember";
-            this.txt_passwordmember.Size = new System.Drawing.Size(218, 26);
+            this.txt_passwordmember.Size = new System.Drawing.Size(218, 30);
             this.txt_passwordmember.TabIndex = 2;
             this.txt_passwordmember.UseSystemPasswordChar = true;
             this.txt_passwordmember.TextChanged += new System.EventHandler(this.textBox_MemberPasswordControl_LoginPage_TextChanged);
             // 
             // txt_emailMember
             // 
+            this.txt_emailMember.BackColor = System.Drawing.Color.Thistle;
             this.txt_emailMember.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_emailMember.Location = new System.Drawing.Point(121, 150);
             this.txt_emailMember.Name = "txt_emailMember";
@@ -412,10 +416,10 @@
             // 
             // btn_ExitLoginPage
             // 
-            this.btn_ExitLoginPage.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btn_ExitLoginPage.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ExitLoginPage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ExitLoginPage.Location = new System.Drawing.Point(517, 456);
+            this.btn_ExitLoginPage.BackColor = System.Drawing.Color.Thistle;
+            this.btn_ExitLoginPage.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExitLoginPage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_ExitLoginPage.Location = new System.Drawing.Point(527, 456);
             this.btn_ExitLoginPage.Name = "btn_ExitLoginPage";
             this.btn_ExitLoginPage.Size = new System.Drawing.Size(97, 44);
             this.btn_ExitLoginPage.TabIndex = 0;
@@ -441,29 +445,29 @@
             // label_TitleLogin
             // 
             this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
             // label_LoginPage_Signin
             // 
             this.label_LoginPage_Signin.AutoSize = true;
-            this.label_LoginPage_Signin.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_LoginPage_Signin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_LoginPage_Signin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_LoginPage_Signin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_LoginPage_Signin.Location = new System.Drawing.Point(555, 10);
             this.label_LoginPage_Signin.Name = "label_LoginPage_Signin";
-            this.label_LoginPage_Signin.Size = new System.Drawing.Size(59, 24);
+            this.label_LoginPage_Signin.Size = new System.Drawing.Size(72, 27);
             this.label_LoginPage_Signin.TabIndex = 7;
             this.label_LoginPage_Signin.Text = "Sign In";
             this.label_LoginPage_Signin.Click += new System.EventHandler(this.label_LoginPage_Signin_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.Thistle;
             this.panel1.Controls.Add(this.label_LoginPage_Signin);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;

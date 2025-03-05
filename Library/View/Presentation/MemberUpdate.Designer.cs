@@ -58,7 +58,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.label_MemberUpdate_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -70,11 +70,11 @@
             // label_MemberUpdate_SignIn
             // 
             this.label_MemberUpdate_SignIn.AutoSize = true;
-            this.label_MemberUpdate_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberUpdate_SignIn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_MemberUpdate_SignIn.Location = new System.Drawing.Point(409, 10);
+            this.label_MemberUpdate_SignIn.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberUpdate_SignIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_MemberUpdate_SignIn.Location = new System.Drawing.Point(401, 9);
             this.label_MemberUpdate_SignIn.Name = "label_MemberUpdate_SignIn";
-            this.label_MemberUpdate_SignIn.Size = new System.Drawing.Size(59, 24);
+            this.label_MemberUpdate_SignIn.Size = new System.Drawing.Size(72, 27);
             this.label_MemberUpdate_SignIn.TabIndex = 7;
             this.label_MemberUpdate_SignIn.Text = "Sign In";
             this.label_MemberUpdate_SignIn.Click += new System.EventHandler(this.label_MemberUpdate_SignIn_Click);
@@ -82,11 +82,11 @@
             // label_TitleLogin
             // 
             this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
@@ -229,9 +229,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(17, 537);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(456, 38);
@@ -242,10 +242,11 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Black;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.DarkSlateBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(382, 578);
+            this.linkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel1.Location = new System.Drawing.Point(387, 587);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 27);
             this.linkLabel1.TabIndex = 28;
@@ -263,7 +264,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 646);
+            this.ClientSize = new System.Drawing.Size(487, 640);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);

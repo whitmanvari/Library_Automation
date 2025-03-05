@@ -111,7 +111,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.Thistle;
             this.panel1.Controls.Add(this.label_MemberMainMenu_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -123,11 +123,11 @@
             // label_MemberMainMenu_SignIn
             // 
             this.label_MemberMainMenu_SignIn.AutoSize = true;
-            this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberMainMenu_SignIn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(299, 10);
+            this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(284, 8);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
-            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(59, 24);
+            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(69, 28);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
             this.label_MemberMainMenu_SignIn.Text = "Sign In";
             this.label_MemberMainMenu_SignIn.Click += new System.EventHandler(this.label_MemberMainMenu_SignIn_Click);
@@ -135,11 +135,11 @@
             // label_TitleLogin
             // 
             this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
@@ -194,11 +194,11 @@
             // 
             this.label_goBack.AutoSize = true;
             this.label_goBack.BackColor = System.Drawing.SystemColors.Control;
-            this.label_goBack.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_goBack.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label_goBack.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_goBack.ForeColor = System.Drawing.Color.Thistle;
             this.label_goBack.Location = new System.Drawing.Point(273, 407);
             this.label_goBack.Name = "label_goBack";
-            this.label_goBack.Size = new System.Drawing.Size(80, 25);
+            this.label_goBack.Size = new System.Drawing.Size(80, 27);
             this.label_goBack.TabIndex = 50;
             this.label_goBack.Text = "Go Back";
             this.label_goBack.Click += new System.EventHandler(this.label_goBack_Click);
@@ -218,12 +218,12 @@
             // 
             // button_approveCategory
             // 
-            this.button_approveCategory.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_approveCategory.BackColor = System.Drawing.Color.Thistle;
             this.button_approveCategory.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_approveCategory.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_approveCategory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button_approveCategory.Location = new System.Drawing.Point(226, 141);
             this.button_approveCategory.Name = "button_approveCategory";
-            this.button_approveCategory.Size = new System.Drawing.Size(99, 37);
+            this.button_approveCategory.Size = new System.Drawing.Size(110, 37);
             this.button_approveCategory.TabIndex = 52;
             this.button_approveCategory.Text = "Approve";
             this.button_approveCategory.UseVisualStyleBackColor = false;

@@ -105,23 +105,23 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.Thistle;
             this.panel1.Controls.Add(this.label_Register_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(669, 41);
+            this.panel1.Size = new System.Drawing.Size(683, 41);
             this.panel1.TabIndex = 5;
             // 
             // label_Register_SignIn
             // 
             this.label_Register_SignIn.AutoSize = true;
-            this.label_Register_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Register_SignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_Register_SignIn.Location = new System.Drawing.Point(595, 10);
+            this.label_Register_SignIn.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Register_SignIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Register_SignIn.Location = new System.Drawing.Point(594, 9);
             this.label_Register_SignIn.Name = "label_Register_SignIn";
-            this.label_Register_SignIn.Size = new System.Drawing.Size(59, 24);
+            this.label_Register_SignIn.Size = new System.Drawing.Size(72, 27);
             this.label_Register_SignIn.TabIndex = 6;
             this.label_Register_SignIn.Text = "Sign In";
             this.label_Register_SignIn.Click += new System.EventHandler(this.label_Register_SignIn_Click);
@@ -129,20 +129,20 @@
             // label_TitleLogin
             // 
             this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
+            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_TitleLogin.Location = new System.Drawing.Point(11, 8);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
             // btn_ExitLoginPage
             // 
-            this.btn_ExitLoginPage.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.btn_ExitLoginPage.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ExitLoginPage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ExitLoginPage.Location = new System.Drawing.Point(557, 635);
+            this.btn_ExitLoginPage.BackColor = System.Drawing.Color.Thistle;
+            this.btn_ExitLoginPage.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExitLoginPage.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_ExitLoginPage.Location = new System.Drawing.Point(569, 635);
             this.btn_ExitLoginPage.Name = "btn_ExitLoginPage";
             this.btn_ExitLoginPage.Size = new System.Drawing.Size(97, 44);
             this.btn_ExitLoginPage.TabIndex = 0;
@@ -163,7 +163,7 @@
             // 
             // tabPage_AdminRegister
             // 
-            this.tabPage_AdminRegister.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.tabPage_AdminRegister.BackColor = System.Drawing.Color.Thistle;
             this.tabPage_AdminRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage_AdminRegister.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage_AdminRegister.Controls.Add(this.dateTimePicker_birthdate);
@@ -204,6 +204,9 @@
             // 
             // dateTimePicker_birthdate
             // 
+            this.dateTimePicker_birthdate.CalendarFont = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_birthdate.CalendarMonthBackground = System.Drawing.Color.Thistle;
+            this.dateTimePicker_birthdate.CalendarTitleBackColor = System.Drawing.Color.Thistle;
             this.dateTimePicker_birthdate.Location = new System.Drawing.Point(112, 225);
             this.dateTimePicker_birthdate.Name = "dateTimePicker_birthdate";
             this.dateTimePicker_birthdate.Size = new System.Drawing.Size(213, 29);
@@ -332,7 +335,7 @@
             // 
             this.label_AdminPassword.AutoSize = true;
             this.label_AdminPassword.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminPassword.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label_AdminPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_AdminPassword.Location = new System.Drawing.Point(6, 321);
             this.label_AdminPassword.Name = "label_AdminPassword";
             this.label_AdminPassword.Size = new System.Drawing.Size(93, 28);
@@ -343,7 +346,7 @@
             // 
             this.label_AdminPhone.AutoSize = true;
             this.label_AdminPhone.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminPhone.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label_AdminPhone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_AdminPhone.Location = new System.Drawing.Point(7, 270);
             this.label_AdminPhone.Name = "label_AdminPhone";
             this.label_AdminPhone.Size = new System.Drawing.Size(66, 28);
@@ -354,7 +357,7 @@
             // 
             this.label_AdminBirthDate.AutoSize = true;
             this.label_AdminBirthDate.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminBirthDate.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label_AdminBirthDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_AdminBirthDate.Location = new System.Drawing.Point(7, 220);
             this.label_AdminBirthDate.Name = "label_AdminBirthDate";
             this.label_AdminBirthDate.Size = new System.Drawing.Size(96, 28);
@@ -365,7 +368,7 @@
             // 
             this.label_AdminAdress.AutoSize = true;
             this.label_AdminAdress.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminAdress.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label_AdminAdress.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_AdminAdress.Location = new System.Drawing.Point(10, 365);
             this.label_AdminAdress.Name = "label_AdminAdress";
             this.label_AdminAdress.Size = new System.Drawing.Size(81, 28);
@@ -376,7 +379,7 @@
             // 
             this.label_AdminEmail.AutoSize = true;
             this.label_AdminEmail.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminEmail.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label_AdminEmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_AdminEmail.Location = new System.Drawing.Point(7, 174);
             this.label_AdminEmail.Name = "label_AdminEmail";
             this.label_AdminEmail.Size = new System.Drawing.Size(63, 28);
@@ -387,7 +390,7 @@
             // 
             this.label_AdminSurname.AutoSize = true;
             this.label_AdminSurname.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminSurname.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label_AdminSurname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_AdminSurname.Location = new System.Drawing.Point(10, 129);
             this.label_AdminSurname.Name = "label_AdminSurname";
             this.label_AdminSurname.Size = new System.Drawing.Size(89, 28);
@@ -398,7 +401,7 @@
             // 
             this.label_AdminName.AutoSize = true;
             this.label_AdminName.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AdminName.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label_AdminName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_AdminName.Location = new System.Drawing.Point(10, 86);
             this.label_AdminName.Name = "label_AdminName";
             this.label_AdminName.Size = new System.Drawing.Size(63, 28);
@@ -409,7 +412,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(17, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(308, 30);
@@ -444,10 +447,12 @@
             // 
             this.linkLabel_AdminLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_AdminLogin.AutoSize = true;
-            this.linkLabel_AdminLogin.LinkColor = System.Drawing.Color.Plum;
-            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(113, 499);
+            this.linkLabel_AdminLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_AdminLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel_AdminLogin.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel_AdminLogin.Location = new System.Drawing.Point(29, 499);
             this.linkLabel_AdminLogin.Name = "linkLabel_AdminLogin";
-            this.linkLabel_AdminLogin.Size = new System.Drawing.Size(212, 21);
+            this.linkLabel_AdminLogin.Size = new System.Drawing.Size(296, 27);
             this.linkLabel_AdminLogin.TabIndex = 9;
             this.linkLabel_AdminLogin.TabStop = true;
             this.linkLabel_AdminLogin.Text = "Do you already have an account?";
@@ -472,7 +477,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(305, -62);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 627);
+            this.pictureBox1.Size = new System.Drawing.Size(352, 627);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -516,6 +521,7 @@
             // 
             // textbox_adresmember
             // 
+            this.textbox_adresmember.BackColor = System.Drawing.Color.Thistle;
             this.textbox_adresmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_adresmember.Location = new System.Drawing.Point(97, 354);
             this.textbox_adresmember.Name = "textbox_adresmember";
@@ -525,10 +531,16 @@
             // 
             // dateTimePicker_member
             // 
+            this.dateTimePicker_member.CalendarMonthBackground = System.Drawing.Color.Thistle;
+            this.dateTimePicker_member.CalendarTitleBackColor = System.Drawing.Color.Thistle;
+            this.dateTimePicker_member.CalendarTrailingForeColor = System.Drawing.SystemColors.ControlText;
+            this.dateTimePicker_member.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_member.Location = new System.Drawing.Point(97, 307);
+            this.dateTimePicker_member.MaxDate = new System.DateTime(2025, 3, 5, 0, 0, 0, 0);
             this.dateTimePicker_member.Name = "dateTimePicker_member";
-            this.dateTimePicker_member.Size = new System.Drawing.Size(200, 29);
+            this.dateTimePicker_member.Size = new System.Drawing.Size(200, 28);
             this.dateTimePicker_member.TabIndex = 6;
+            this.dateTimePicker_member.Value = new System.DateTime(2025, 3, 5, 0, 0, 0, 0);
             // 
             // label_errorMessage_MemberPassword_RegisterPage
             // 
@@ -604,6 +616,7 @@
             // 
             // textBox_phonemember
             // 
+            this.textBox_phonemember.BackColor = System.Drawing.Color.Thistle;
             this.textBox_phonemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_phonemember.Location = new System.Drawing.Point(96, 259);
             this.textBox_phonemember.Name = "textBox_phonemember";
@@ -612,6 +625,7 @@
             // 
             // textBox_passwordmember
             // 
+            this.textBox_passwordmember.BackColor = System.Drawing.Color.Thistle;
             this.textBox_passwordmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_passwordmember.Location = new System.Drawing.Point(96, 215);
             this.textBox_passwordmember.Name = "textBox_passwordmember";
@@ -620,6 +634,7 @@
             // 
             // textBox_emailmember
             // 
+            this.textBox_emailmember.BackColor = System.Drawing.Color.Thistle;
             this.textBox_emailmember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_emailmember.Location = new System.Drawing.Point(96, 172);
             this.textBox_emailmember.Name = "textBox_emailmember";
@@ -628,6 +643,7 @@
             // 
             // textBox_surnamemember
             // 
+            this.textBox_surnamemember.BackColor = System.Drawing.Color.Thistle;
             this.textBox_surnamemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_surnamemember.Location = new System.Drawing.Point(96, 127);
             this.textBox_surnamemember.Name = "textBox_surnamemember";
@@ -636,6 +652,7 @@
             // 
             // textBox_namemember
             // 
+            this.textBox_namemember.BackColor = System.Drawing.Color.Thistle;
             this.textBox_namemember.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_namemember.Location = new System.Drawing.Point(96, 84);
             this.textBox_namemember.Name = "textBox_namemember";
@@ -716,10 +733,11 @@
             // 
             this.linkLabel_MemberLogin.ActiveLinkColor = System.Drawing.Color.DarkMagenta;
             this.linkLabel_MemberLogin.AutoSize = true;
-            this.linkLabel_MemberLogin.LinkColor = System.Drawing.Color.Plum;
-            this.linkLabel_MemberLogin.Location = new System.Drawing.Point(141, 509);
+            this.linkLabel_MemberLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_MemberLogin.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel_MemberLogin.Location = new System.Drawing.Point(27, 509);
             this.linkLabel_MemberLogin.Name = "linkLabel_MemberLogin";
-            this.linkLabel_MemberLogin.Size = new System.Drawing.Size(212, 21);
+            this.linkLabel_MemberLogin.Size = new System.Drawing.Size(296, 27);
             this.linkLabel_MemberLogin.TabIndex = 9;
             this.linkLabel_MemberLogin.TabStop = true;
             this.linkLabel_MemberLogin.Text = "Do you already have an account?";
@@ -737,13 +755,14 @@
             // 
             // btn_Enter_MemberLoginPage
             // 
+            this.btn_Enter_MemberLoginPage.BackColor = System.Drawing.Color.Thistle;
             this.btn_Enter_MemberLoginPage.Font = new System.Drawing.Font("Segoe Print", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(264, 474);
+            this.btn_Enter_MemberLoginPage.Location = new System.Drawing.Point(234, 474);
             this.btn_Enter_MemberLoginPage.Name = "btn_Enter_MemberLoginPage";
             this.btn_Enter_MemberLoginPage.Size = new System.Drawing.Size(89, 32);
             this.btn_Enter_MemberLoginPage.TabIndex = 8;
             this.btn_Enter_MemberLoginPage.Text = "Enter";
-            this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = true;
+            this.btn_Enter_MemberLoginPage.UseVisualStyleBackColor = false;
             this.btn_Enter_MemberLoginPage.Click += new System.EventHandler(this.btn_Enter_MemberLoginPage_Click);
             // 
             // pictureBox2
@@ -786,7 +805,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 691);
+            this.ClientSize = new System.Drawing.Size(683, 691);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_ExitLoginPage);
             this.Controls.Add(this.tabControl1);

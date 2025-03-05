@@ -103,5 +103,22 @@ namespace Library.View.Presentation
             admin_CategoryBeforeAddingBook.Show();
             this.Close();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            AddCategory addCategory = new AddCategory();
+            addCategory.Show();
+            this.Close();
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            lbl_selectOperation.Visible = true;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_selectOperation.Visible= false;
+        }
     }
 }

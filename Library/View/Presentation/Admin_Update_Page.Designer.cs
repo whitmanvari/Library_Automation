@@ -62,9 +62,10 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Brown;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.DarkSlateBlue;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(386, 596);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(86, 27);
@@ -75,9 +76,9 @@
             // 
             // button_updateAdmin
             // 
-            this.button_updateAdmin.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.button_updateAdmin.BackColor = System.Drawing.Color.AntiqueWhite;
             this.button_updateAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_updateAdmin.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.button_updateAdmin.ForeColor = System.Drawing.Color.Black;
             this.button_updateAdmin.Location = new System.Drawing.Point(17, 555);
             this.button_updateAdmin.Name = "button_updateAdmin";
             this.button_updateAdmin.Size = new System.Drawing.Size(456, 38);
@@ -99,7 +100,7 @@
             // textbox_adresAdmin
             // 
             this.textbox_adresAdmin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_adresAdmin.Location = new System.Drawing.Point(188, 451);
+            this.textbox_adresAdmin.Location = new System.Drawing.Point(187, 447);
             this.textbox_adresAdmin.Name = "textbox_adresAdmin";
             this.textbox_adresAdmin.Size = new System.Drawing.Size(200, 85);
             this.textbox_adresAdmin.TabIndex = 7;
@@ -107,7 +108,7 @@
             // 
             // dateTimePicker_Admin
             // 
-            this.dateTimePicker_Admin.Location = new System.Drawing.Point(194, 413);
+            this.dateTimePicker_Admin.Location = new System.Drawing.Point(187, 407);
             this.dateTimePicker_Admin.Name = "dateTimePicker_Admin";
             this.dateTimePicker_Admin.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker_Admin.TabIndex = 6;
@@ -224,7 +225,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.panel1.Controls.Add(this.label_MemberUpdate_SignIn);
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -236,11 +237,11 @@
             // label_MemberUpdate_SignIn
             // 
             this.label_MemberUpdate_SignIn.AutoSize = true;
-            this.label_MemberUpdate_SignIn.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MemberUpdate_SignIn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label_MemberUpdate_SignIn.Location = new System.Drawing.Point(409, 10);
+            this.label_MemberUpdate_SignIn.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_MemberUpdate_SignIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_MemberUpdate_SignIn.Location = new System.Drawing.Point(422, 8);
             this.label_MemberUpdate_SignIn.Name = "label_MemberUpdate_SignIn";
-            this.label_MemberUpdate_SignIn.Size = new System.Drawing.Size(59, 24);
+            this.label_MemberUpdate_SignIn.Size = new System.Drawing.Size(69, 28);
             this.label_MemberUpdate_SignIn.TabIndex = 7;
             this.label_MemberUpdate_SignIn.Text = "Sign In";
             this.label_MemberUpdate_SignIn.Click += new System.EventHandler(this.label_MemberUpdate_SignIn_Click);
@@ -248,11 +249,11 @@
             // label_TitleLogin
             // 
             this.label_TitleLogin.AutoSize = true;
-            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label_TitleLogin.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_TitleLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 

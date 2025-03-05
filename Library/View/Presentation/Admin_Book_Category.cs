@@ -123,6 +123,21 @@ namespace Library.View.Presentation
             this.Close();
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            label_chooseAcategory.Visible = true;
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            label_chooseAcategory.Visible=false;
+        }
     }
 }
 
