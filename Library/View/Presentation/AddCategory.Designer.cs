@@ -42,7 +42,7 @@
             this.label_MemberMainMenu_SignIn = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_categoryName = new System.Windows.Forms.TextBox();
             this.label_categoryAdd = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,12 +54,13 @@
             this.button_approveCategoryiüğ.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_approveCategoryiüğ.ForeColor = System.Drawing.Color.Black;
             this.button_approveCategoryiüğ.Location = new System.Drawing.Point(336, 140);
-            this.button_approveCategoryiüğ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_approveCategoryiüğ.Margin = new System.Windows.Forms.Padding(4);
             this.button_approveCategoryiüğ.Name = "button_approveCategoryiüğ";
             this.button_approveCategoryiüğ.Size = new System.Drawing.Size(115, 39);
             this.button_approveCategoryiüğ.TabIndex = 64;
             this.button_approveCategoryiüğ.Text = "Approve";
             this.button_approveCategoryiüğ.UseVisualStyleBackColor = false;
+            this.button_approveCategoryiüğ.Click += new System.EventHandler(this.button_approveCategoryiüğ_Click);
             // 
             // label_categoryErrorMessage
             // 
@@ -152,7 +153,7 @@
             this.panel1.Controls.Add(this.label_TitleLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(466, 49);
             this.panel1.TabIndex = 53;
@@ -168,6 +169,7 @@
             this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(69, 28);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
             this.label_MemberMainMenu_SignIn.Text = "Sign In";
+            this.label_MemberMainMenu_SignIn.Click += new System.EventHandler(this.label_MemberMainMenu_SignIn_Click);
             // 
             // label_TitleLogin
             // 
@@ -186,7 +188,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(24, 214);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(383, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -195,15 +197,15 @@
             this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox1_MouseLeave);
             this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
-            // textBox1
+            // textBox_categoryName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.RosyBrown;
-            this.textBox1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(199, 90);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 33);
-            this.textBox1.TabIndex = 66;
+            this.textBox_categoryName.BackColor = System.Drawing.Color.RosyBrown;
+            this.textBox_categoryName.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_categoryName.Location = new System.Drawing.Point(199, 90);
+            this.textBox_categoryName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox_categoryName.Name = "textBox_categoryName";
+            this.textBox_categoryName.Size = new System.Drawing.Size(252, 33);
+            this.textBox_categoryName.TabIndex = 66;
             // 
             // label_categoryAdd
             // 
@@ -225,7 +227,7 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(466, 581);
             this.Controls.Add(this.label_categoryAdd);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_categoryName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button_approveCategoryiüğ);
             this.Controls.Add(this.label_categoryErrorMessage);
@@ -238,7 +240,7 @@
             this.Controls.Add(this.label_bookIdError);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCategory";
@@ -265,7 +267,7 @@
         private System.Windows.Forms.Label label_MemberMainMenu_SignIn;
         private System.Windows.Forms.Label label_TitleLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_categoryName;
         private System.Windows.Forms.Label label_categoryAdd;
     }
 }
