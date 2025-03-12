@@ -199,6 +199,7 @@
             this.progressBar_addCategory.Size = new System.Drawing.Size(207, 23);
             this.progressBar_addCategory.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar_addCategory.TabIndex = 67;
+            this.progressBar_addCategory.Visible = false;
             // 
             // textBox_addCategory
             // 
