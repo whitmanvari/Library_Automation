@@ -12,7 +12,8 @@ using System.Windows.Forms;
 
 namespace Library.View.Presentation
 {
-   
+    string Name;
+    int Id;
     public partial class AddCategory : Form
     {
         LibraryContext _context = new LibraryContext();
@@ -38,13 +39,5 @@ namespace Library.View.Presentation
             this.Close();
         }
 
-        private void button_approveCategoryiüğ_Click(object sender, EventArgs e)
-        {
-            _context.Categories.Add(new Category
-            {
-                Name = textBox_categoryName.Text
-            });
-            //Open categories list form
-        }
     }
 }

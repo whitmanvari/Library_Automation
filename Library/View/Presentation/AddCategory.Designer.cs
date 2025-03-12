@@ -60,7 +60,6 @@
             this.button_approveCategoryiüğ.TabIndex = 64;
             this.button_approveCategoryiüğ.Text = "Approve";
             this.button_approveCategoryiüğ.UseVisualStyleBackColor = false;
-            this.button_approveCategoryiüğ.Click += new System.EventHandler(this.button_approveCategoryiüğ_Click);
             // 
             // label_categoryErrorMessage
             // 
