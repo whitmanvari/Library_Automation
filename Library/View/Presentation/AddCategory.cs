@@ -29,13 +29,16 @@ namespace Library.View.Presentation
             this.Close();
         }
 
-        private void button_approveCategory_Click(object sender, EventArgs e)
+        private async void button_approveCategory_Click(object sender, EventArgs e)
         {
+            progressBar_addCategory.Visible = true;
+            await Task.Delay(2000);
             _context.Categories.Add(new Category
             {
                 Name = textBox_addCategory.Text
             });
             _context.SaveChanges();
+            progressBar_addCategory.Visible = false; //after save changes, progress bar will be invisible
             MessageBox.Show("Category added successfully.", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //Open categories list form
             Name = _context.Categories.FirstOrDefault(c => c.Name == textBox_addCategory.Text).ToString();
