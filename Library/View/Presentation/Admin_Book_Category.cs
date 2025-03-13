@@ -76,8 +76,12 @@ namespace Library.View.Presentation
 
         private void comboBox_categoriesOther_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //get the selected category from the combobox.
-            int selectedCategory = Convert.ToInt32(comboBox_categoriesOther.SelectedValue);
+            //get the selected category id from the combobox.
+            int selectedCategoryId = Convert.ToInt32(comboBox_categoriesOther.SelectedValue);
+
+            var books = context.Books
+                .Where(b=> b.CategoryId==selectedCategoryId)
+                .ToList(); //get books from database where the category id is equal to the selected category id.
         }
 
         private void Admin_Book_Category_Load(object sender, EventArgs e)
