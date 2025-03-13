@@ -76,14 +76,20 @@ namespace Library.View.Presentation
 
         private void comboBox_categoriesOther_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //get the selected category from the combobox.
+            int selectedCategory = Convert.ToInt32(comboBox_categoriesOther.SelectedValue);
         }
 
         private void Admin_Book_Category_Load(object sender, EventArgs e)
         {
             //get categories from database and put them in a new list named categories.
             var categories = context.Categories.ToList();
-            comboBox_categoriesOther.Items.Add(categories);
+
+            comboBox_categoriesOther.DataSource = categories;
+
+            //this area will be displayed in the combobox.
+            comboBox_categoriesOther.DisplayMember = "Name"; 
+            comboBox_categoriesOther.ValueMember = "Id";
         }
     }
 }
