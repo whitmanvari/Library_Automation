@@ -82,6 +82,13 @@ namespace Library.View.Presentation
             var books = context.Books
                 .Where(b=> b.CategoryId==selectedCategoryId)
                 .ToList(); //get books from database where the category id is equal to the selected category id.
+
+            //if there are no books in the list, show the Empty error message..
+            if (books.Count == 0)
+            {
+                MessageBox.Show("There are no records of this book!", "Empty!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
         }
 
         private void Admin_Book_Category_Load(object sender, EventArgs e)
