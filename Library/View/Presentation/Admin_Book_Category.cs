@@ -76,9 +76,11 @@ namespace Library.View.Presentation
 
         private void comboBox_categoriesOther_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //get the selected category id from the combobox.
-            int selectedCategoryId = Convert.ToInt32(comboBox_categoriesOther.SelectedValue);
-
+            //get the selected category name from the combobox, then get the category id from the database.
+            var selectedCategory= context.Categories.FirstOrDefault(c => c.Name == comboBox_categoriesOther.SelectedValue.ToString());
+            int selectedCategoryId= selectedCategory.Id;
+           
+            //manuel query to get the books from the database where the category id is equal to the selected category id.
             var books = context.Books
                 .Where(b=> b.CategoryId==selectedCategoryId)
                 .ToList(); //get books from database where the category id is equal to the selected category id.
@@ -89,6 +91,9 @@ namespace Library.View.Presentation
                 MessageBox.Show("There are no records of this book!", "Empty!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
+            //show the books in the list.
+            Show(selectedCategoryId);
         }
 
         private void Admin_Book_Category_Load(object sender, EventArgs e)
