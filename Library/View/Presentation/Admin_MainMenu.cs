@@ -106,7 +106,7 @@ namespace Library.View.Presentation
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            AddCategory addCategory = new AddCategory();
+            AddCategory addCategory = new AddCategory(Name, Id);
             addCategory.Show();
             this.Close();
         }

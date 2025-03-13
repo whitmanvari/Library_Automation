@@ -17,9 +17,11 @@ namespace Library.View.Presentation
         string Name;
         int Id;
         LibraryContext _context = new LibraryContext();
-        public AddCategory()
+        public AddCategory(string name, int id)
         {
             InitializeComponent();
+            Name = name;
+            Id = id;
         }
 
         private void label_MemberMainMenu_SignIn_Click(object sender, EventArgs e)
@@ -33,16 +35,17 @@ namespace Library.View.Presentation
         {
             progressBar_addCategory.Visible = true;
             await Task.Delay(2000);
+            
+            //Add new category to the database
             _context.Categories.Add(new Category
             {
                 Name = textBox_addCategory.Text
             });
             _context.SaveChanges();
             progressBar_addCategory.Visible = false; //after save changes, progress bar will be invisible
+
             MessageBox.Show("Category added successfully.", "Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //Open categories list form
-            Name = _context.Categories.FirstOrDefault(c => c.Name == textBox_addCategory.Text).ToString();
-            Id = _context.Categories.FirstOrDefault(c => c.Name == textBox_addCategory.Text).Id;
+            
             Admin_Book_Category admin_Book_Category = new Admin_Book_Category(Name, Id);
             admin_Book_Category.Show();
             this.Close();
