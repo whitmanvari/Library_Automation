@@ -110,9 +110,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-31, 84);
+            this.pictureBox1.Location = new System.Drawing.Point(-24, 58);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 367);
+            this.pictureBox1.Size = new System.Drawing.Size(223, 370);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
@@ -134,7 +134,7 @@
             // 
             this.label_chooseAcategory.AutoSize = true;
             this.label_chooseAcategory.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_chooseAcategory.Location = new System.Drawing.Point(33, 143);
+            this.label_chooseAcategory.Location = new System.Drawing.Point(1, 151);
             this.label_chooseAcategory.Name = "label_chooseAcategory";
             this.label_chooseAcategory.Size = new System.Drawing.Size(166, 27);
             this.label_chooseAcategory.TabIndex = 41;
@@ -143,13 +143,13 @@
             // 
             // comboBox_categoriesOther
             // 
-            this.comboBox_categoriesOther.BackColor = System.Drawing.Color.Teal;
+            this.comboBox_categoriesOther.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.comboBox_categoriesOther.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_categoriesOther.ForeColor = System.Drawing.Color.White;
+            this.comboBox_categoriesOther.ForeColor = System.Drawing.Color.Black;
             this.comboBox_categoriesOther.FormattingEnabled = true;
-            this.comboBox_categoriesOther.Location = new System.Drawing.Point(291, 143);
+            this.comboBox_categoriesOther.Location = new System.Drawing.Point(231, 148);
             this.comboBox_categoriesOther.Name = "comboBox_categoriesOther";
-            this.comboBox_categoriesOther.Size = new System.Drawing.Size(218, 35);
+            this.comboBox_categoriesOther.Size = new System.Drawing.Size(267, 35);
             this.comboBox_categoriesOther.TabIndex = 9;
             this.comboBox_categoriesOther.Text = "Categories";
             this.comboBox_categoriesOther.SelectedIndexChanged += new System.EventHandler(this.comboBox_categoriesOther_SelectedIndexChanged);
@@ -170,6 +170,7 @@
             this.Name = "Admin_Book_Category";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book Category";
+            this.Load += new System.EventHandler(this.Admin_Book_Category_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
