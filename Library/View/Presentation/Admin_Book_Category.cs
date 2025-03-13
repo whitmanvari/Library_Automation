@@ -93,10 +93,7 @@ namespace Library.View.Presentation
             Show(ShowBooksByCategory("Fairy Tale"));
         }
 
-        private void button_dystopian_Click(object sender, EventArgs e)
-        {
-            Show(ShowBooksByCategory("Dystopian"));
-        }
+        
 
         private void button_biography_Click(object sender, EventArgs e)
         {
@@ -138,6 +135,13 @@ namespace Library.View.Presentation
         {
             label_chooseAcategory.Visible=false;
         }
+
+        private void comboBox_categoriesOther_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
 
