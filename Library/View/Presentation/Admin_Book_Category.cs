@@ -76,24 +76,33 @@ namespace Library.View.Presentation
 
         private void comboBox_categoriesOther_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //get the selected category name from the combobox, then get the category id from the database.
-            var selectedCategory= context.Categories.FirstOrDefault(c => c.Name == comboBox_categoriesOther.SelectedValue.ToString());
-            int selectedCategoryId= selectedCategory.Id;
-           
-            //manuel query to get the books from the database where the category id is equal to the selected category id.
-            var books = context.Books
-                .Where(b=> b.CategoryId==selectedCategoryId)
-                .ToList(); //get books from database where the category id is equal to the selected category id.
-
-            //if there are no books in the list, show the Empty error message..
-            if (books.Count == 0)
+            if (comboBox_categoriesOther.SelectedValue is int selectedCategoryId)
             {
-                MessageBox.Show("There are no records of this book!", "Empty!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
+                // Get the category from the database
+                var selectedCategory = context.Categories.FirstOrDefault(c => c.Id == selectedCategoryId);
 
-            //show the books in the list.
-            Show(selectedCategoryId);
+                if (selectedCategory == null)
+                {
+                    MessageBox.Show("Category not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Manual query to get the books from the database where the category id is equal to the selected category id.
+                var books = context.Books
+                    .Where(b => b.CategoryId == selectedCategoryId)
+                    .ToList();
+
+                // If there are no books in the list, show the Empty error message.
+                if (books.Count == 0)
+                {
+                    MessageBox.Show("There are no records of this book!", "Empty!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                // Show the books in the list.
+                Show(selectedCategoryId);
+            }
+           
         }
 
         private void Admin_Book_Category_Load(object sender, EventArgs e)
@@ -106,6 +115,11 @@ namespace Library.View.Presentation
             //this area will be displayed in the combobox.
             comboBox_categoriesOther.DisplayMember = "Name"; 
             comboBox_categoriesOther.ValueMember = "Id";
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
