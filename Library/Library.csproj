@@ -196,11 +196,11 @@
     <Compile Include="View\Presentation\CheckInDetail.Designer.cs">
       <DependentUpon>CheckInDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Presentation\Loan.cs">
+    <Compile Include="View\Presentation\MemberLoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Presentation\Loan.Designer.cs">
-      <DependentUpon>Loan.cs</DependentUpon>
+    <Compile Include="View\Presentation\MemberLoan.Designer.cs">
+      <DependentUpon>MemberLoan.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Presentation\Login.cs">
       <SubType>Form</SubType>
@@ -277,8 +277,8 @@
     <EmbeddedResource Include="View\Presentation\CheckInDetail.resx">
       <DependentUpon>CheckInDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Presentation\Loan.resx">
-      <DependentUpon>Loan.cs</DependentUpon>
+    <EmbeddedResource Include="View\Presentation\MemberLoan.resx">
+      <DependentUpon>MemberLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

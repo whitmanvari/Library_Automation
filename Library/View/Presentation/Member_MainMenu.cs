@@ -17,13 +17,14 @@ namespace Library.View.Presentation
         LibraryContext context = new LibraryContext();
         
         string Name;
+        int _UserId;
         Category Category;
-        public Member_MainMenu(string text)
+        public Member_MainMenu(string text, int userId)
         {
             InitializeComponent();
             label_memberName.Text = text;
             Name = label_memberName.Text;
-           
+            _UserId = userId;
 
         }
 
@@ -92,7 +93,7 @@ namespace Library.View.Presentation
 
         private void toolStripButton_loanpage_Click(object sender, EventArgs e)
         {
-            Loan loan = new Loan();
+            MemberLoan loan = new MemberLoan(_UserId);
             loan.Show();
             this.Close();
         }
@@ -105,6 +106,11 @@ namespace Library.View.Presentation
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
             lbl_selectOperation.Visible=false;
+        }
+
+        private void toolStripLabel_bookloan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

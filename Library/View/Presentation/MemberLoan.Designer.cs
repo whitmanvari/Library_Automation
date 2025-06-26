@@ -1,6 +1,6 @@
 ﻿namespace Library.View.Presentation
 {
-    partial class Loan
+    partial class MemberLoan
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loan));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberLoan));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_Loan_signinPage = new System.Windows.Forms.Label();
             this.label_TitleLogin = new System.Windows.Forms.Label();
@@ -50,21 +50,21 @@
             this.createdDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isActiveDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.libraryAutomationDataSet10 = new Library.LibraryAutomationDataSet10();
-            this.booksTableAdapter = new Library.LibraryAutomationDataSet10TableAdapters.BooksTableAdapter();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.loanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkInDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.complaintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryAutomationDataSet10 = new Library.LibraryAutomationDataSet10();
+            this.booksTableAdapter = new Library.LibraryAutomationDataSet10TableAdapters.BooksTableAdapter();
             this.label_goBackMainMenu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,7 +86,7 @@
             this.label_Loan_signinPage.ForeColor = System.Drawing.Color.Cornsilk;
             this.label_Loan_signinPage.Location = new System.Drawing.Point(782, 7);
             this.label_Loan_signinPage.Name = "label_Loan_signinPage";
-            this.label_Loan_signinPage.Size = new System.Drawing.Size(72, 27);
+            this.label_Loan_signinPage.Size = new System.Drawing.Size(90, 33);
             this.label_Loan_signinPage.TabIndex = 7;
             this.label_Loan_signinPage.Text = "Sign In";
             this.label_Loan_signinPage.Click += new System.EventHandler(this.label_Loan_signinPage_Click);
@@ -98,7 +98,7 @@
             this.label_TitleLogin.ForeColor = System.Drawing.Color.Cornsilk;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 25);
+            this.label_TitleLogin.Size = new System.Drawing.Size(233, 32);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
@@ -106,14 +106,14 @@
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -130,31 +130,32 @@
             this.isActiveDataGridViewCheckBoxColumn});
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.DataSource = this.booksBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dataGridView1.Location = new System.Drawing.Point(17, 153);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe Script", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dataGridView1.Size = new System.Drawing.Size(828, 382);
             this.dataGridView1.TabIndex = 4;
@@ -163,85 +164,140 @@
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookNameDataGridViewTextBoxColumn
             // 
             this.bookNameDataGridViewTextBoxColumn.DataPropertyName = "BookName";
             this.bookNameDataGridViewTextBoxColumn.HeaderText = "BookName";
+            this.bookNameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookNameDataGridViewTextBoxColumn.Name = "bookNameDataGridViewTextBoxColumn";
             this.bookNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookAuthorDataGridViewTextBoxColumn
             // 
             this.bookAuthorDataGridViewTextBoxColumn.DataPropertyName = "BookAuthor";
             this.bookAuthorDataGridViewTextBoxColumn.HeaderText = "BookAuthor";
+            this.bookAuthorDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookAuthorDataGridViewTextBoxColumn.Name = "bookAuthorDataGridViewTextBoxColumn";
             this.bookAuthorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookAuthorDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookPublisherDataGridViewTextBoxColumn
             // 
             this.bookPublisherDataGridViewTextBoxColumn.DataPropertyName = "BookPublisher";
             this.bookPublisherDataGridViewTextBoxColumn.HeaderText = "BookPublisher";
+            this.bookPublisherDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookPublisherDataGridViewTextBoxColumn.Name = "bookPublisherDataGridViewTextBoxColumn";
             this.bookPublisherDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookPublisherDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookPageDataGridViewTextBoxColumn
             // 
             this.bookPageDataGridViewTextBoxColumn.DataPropertyName = "BookPage";
             this.bookPageDataGridViewTextBoxColumn.HeaderText = "BookPage";
+            this.bookPageDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookPageDataGridViewTextBoxColumn.Name = "bookPageDataGridViewTextBoxColumn";
             this.bookPageDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookPageDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookYearDataGridViewTextBoxColumn
             // 
             this.bookYearDataGridViewTextBoxColumn.DataPropertyName = "BookYear";
             this.bookYearDataGridViewTextBoxColumn.HeaderText = "BookYear";
+            this.bookYearDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookYearDataGridViewTextBoxColumn.Name = "bookYearDataGridViewTextBoxColumn";
             this.bookYearDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookYearDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookLanguageDataGridViewTextBoxColumn
             // 
             this.bookLanguageDataGridViewTextBoxColumn.DataPropertyName = "BookLanguage";
             this.bookLanguageDataGridViewTextBoxColumn.HeaderText = "BookLanguage";
+            this.bookLanguageDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookLanguageDataGridViewTextBoxColumn.Name = "bookLanguageDataGridViewTextBoxColumn";
             this.bookLanguageDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookLanguageDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookGenreDataGridViewTextBoxColumn
             // 
             this.bookGenreDataGridViewTextBoxColumn.DataPropertyName = "BookGenre";
             this.bookGenreDataGridViewTextBoxColumn.HeaderText = "BookGenre";
+            this.bookGenreDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookGenreDataGridViewTextBoxColumn.Name = "bookGenreDataGridViewTextBoxColumn";
             this.bookGenreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookGenreDataGridViewTextBoxColumn.Width = 125;
             // 
             // bookDescriptionDataGridViewTextBoxColumn
             // 
             this.bookDescriptionDataGridViewTextBoxColumn.DataPropertyName = "BookDescription";
             this.bookDescriptionDataGridViewTextBoxColumn.HeaderText = "BookDescription";
+            this.bookDescriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.bookDescriptionDataGridViewTextBoxColumn.Name = "bookDescriptionDataGridViewTextBoxColumn";
             this.bookDescriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bookDescriptionDataGridViewTextBoxColumn.Width = 125;
             // 
             // createdDateDataGridViewTextBoxColumn
             // 
             this.createdDateDataGridViewTextBoxColumn.DataPropertyName = "CreatedDate";
             this.createdDateDataGridViewTextBoxColumn.HeaderText = "CreatedDate";
+            this.createdDateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.createdDateDataGridViewTextBoxColumn.Name = "createdDateDataGridViewTextBoxColumn";
             this.createdDateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.createdDateDataGridViewTextBoxColumn.Width = 125;
             // 
             // categoryIdDataGridViewTextBoxColumn
             // 
             this.categoryIdDataGridViewTextBoxColumn.DataPropertyName = "CategoryId";
             this.categoryIdDataGridViewTextBoxColumn.HeaderText = "CategoryId";
+            this.categoryIdDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.categoryIdDataGridViewTextBoxColumn.Name = "categoryIdDataGridViewTextBoxColumn";
             this.categoryIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.categoryIdDataGridViewTextBoxColumn.Width = 125;
             // 
             // isActiveDataGridViewCheckBoxColumn
             // 
             this.isActiveDataGridViewCheckBoxColumn.DataPropertyName = "IsActive";
             this.isActiveDataGridViewCheckBoxColumn.HeaderText = "IsActive";
+            this.isActiveDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.isActiveDataGridViewCheckBoxColumn.Name = "isActiveDataGridViewCheckBoxColumn";
             this.isActiveDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.isActiveDataGridViewCheckBoxColumn.Width = 125;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.loanToolStripMenuItem,
+            this.checkInDetailToolStripMenuItem,
+            this.complaintToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(225, 128);
+            // 
+            // loanToolStripMenuItem
+            // 
+            this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
+            this.loanToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.loanToolStripMenuItem.Text = "Loan";
+            this.loanToolStripMenuItem.Click += new System.EventHandler(this.loanToolStripMenuItem_Click);
+            // 
+            // checkInDetailToolStripMenuItem
+            // 
+            this.checkInDetailToolStripMenuItem.Name = "checkInDetailToolStripMenuItem";
+            this.checkInDetailToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.checkInDetailToolStripMenuItem.Text = "Check in detail";
+            this.checkInDetailToolStripMenuItem.Click += new System.EventHandler(this.checkInDetailToolStripMenuItem_Click);
+            // 
+            // complaintToolStripMenuItem
+            // 
+            this.complaintToolStripMenuItem.Name = "complaintToolStripMenuItem";
+            this.complaintToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.complaintToolStripMenuItem.Text = "Complaint";
             // 
             // booksBindingSource
             // 
@@ -257,35 +313,6 @@
             // 
             this.booksTableAdapter.ClearBeforeFill = true;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.loanToolStripMenuItem,
-            this.checkInDetailToolStripMenuItem,
-            this.complaintToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(185, 76);
-            // 
-            // loanToolStripMenuItem
-            // 
-            this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
-            this.loanToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
-            this.loanToolStripMenuItem.Text = "Loan";
-            // 
-            // checkInDetailToolStripMenuItem
-            // 
-            this.checkInDetailToolStripMenuItem.Name = "checkInDetailToolStripMenuItem";
-            this.checkInDetailToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
-            this.checkInDetailToolStripMenuItem.Text = "Check in detail";
-            this.checkInDetailToolStripMenuItem.Click += new System.EventHandler(this.checkInDetailToolStripMenuItem_Click);
-            // 
-            // complaintToolStripMenuItem
-            // 
-            this.complaintToolStripMenuItem.Name = "complaintToolStripMenuItem";
-            this.complaintToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
-            this.complaintToolStripMenuItem.Text = "Complaint";
-            // 
             // label_goBackMainMenu
             // 
             this.label_goBackMainMenu.AutoSize = true;
@@ -293,7 +320,7 @@
             this.label_goBackMainMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label_goBackMainMenu.Location = new System.Drawing.Point(774, 547);
             this.label_goBackMainMenu.Name = "label_goBackMainMenu";
-            this.label_goBackMainMenu.Size = new System.Drawing.Size(80, 27);
+            this.label_goBackMainMenu.Size = new System.Drawing.Size(100, 33);
             this.label_goBackMainMenu.TabIndex = 2;
             this.label_goBackMainMenu.Text = "Go Back";
             // 
@@ -304,7 +331,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(11, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 33);
+            this.label1.Size = new System.Drawing.Size(436, 42);
             this.label1.TabIndex = 8;
             this.label1.Text = "Right Click To Loan A Book!";
             // 
@@ -337,9 +364,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.libraryAutomationDataSet10)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

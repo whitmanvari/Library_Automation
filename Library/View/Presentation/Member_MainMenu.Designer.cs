@@ -71,7 +71,7 @@
             this.label_MemberMainMenu_SignIn.ForeColor = System.Drawing.Color.Black;
             this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(441, 9);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
-            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(69, 28);
+            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(85, 35);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
             this.label_MemberMainMenu_SignIn.Text = "Sign In";
             this.label_MemberMainMenu_SignIn.Click += new System.EventHandler(this.label_MemberMainMenu_SignIn_Click);
@@ -84,12 +84,13 @@
             this.label_TitleLogin.ForeColor = System.Drawing.Color.Black;
             this.label_TitleLogin.Location = new System.Drawing.Point(12, 9);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(186, 27);
+            this.label_TitleLogin.Size = new System.Drawing.Size(234, 33);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton_loanpage,
             this.toolStripLabel_bookloan,
@@ -102,7 +103,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 41);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(521, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(521, 36);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -113,7 +114,7 @@
             this.toolStripButton_loanpage.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_loanpage.Image")));
             this.toolStripButton_loanpage.ImageTransparentColor = System.Drawing.Color.Thistle;
             this.toolStripButton_loanpage.Name = "toolStripButton_loanpage";
-            this.toolStripButton_loanpage.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_loanpage.Size = new System.Drawing.Size(29, 33);
             this.toolStripButton_loanpage.Text = "Book Loan";
             this.toolStripButton_loanpage.ToolTipText = "Book Loan Page";
             this.toolStripButton_loanpage.Click += new System.EventHandler(this.toolStripButton_loanpage_Click);
@@ -124,14 +125,15 @@
             // 
             this.toolStripLabel_bookloan.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel_bookloan.Name = "toolStripLabel_bookloan";
-            this.toolStripLabel_bookloan.Size = new System.Drawing.Size(100, 27);
+            this.toolStripLabel_bookloan.Size = new System.Drawing.Size(127, 33);
             this.toolStripLabel_bookloan.Text = "Book Loan";
             this.toolStripLabel_bookloan.Visible = false;
+            this.toolStripLabel_bookloan.Click += new System.EventHandler(this.toolStripLabel_bookloan_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 36);
             // 
             // toolStripButton1
             // 
@@ -140,7 +142,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 33);
             this.toolStripButton1.Text = "My Profile";
             this.toolStripButton1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
@@ -151,14 +153,14 @@
             // 
             this.toolStripLabel_myProfile.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel_myProfile.Name = "toolStripLabel_myProfile";
-            this.toolStripLabel_myProfile.Size = new System.Drawing.Size(99, 27);
+            this.toolStripLabel_myProfile.Size = new System.Drawing.Size(124, 33);
             this.toolStripLabel_myProfile.Text = "My Profile";
             this.toolStripLabel_myProfile.Visible = false;
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 36);
             // 
             // toolStripButton_categoryList
             // 
@@ -166,7 +168,7 @@
             this.toolStripButton_categoryList.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_categoryList.Image")));
             this.toolStripButton_categoryList.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_categoryList.Name = "toolStripButton_categoryList";
-            this.toolStripButton_categoryList.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton_categoryList.Size = new System.Drawing.Size(29, 33);
             this.toolStripButton_categoryList.Text = "Cate";
             this.toolStripButton_categoryList.Click += new System.EventHandler(this.toolStripButton_categoryList_Click);
             this.toolStripButton_categoryList.MouseHover += new System.EventHandler(this.toolStripButton_categoryList_MouseHover);
@@ -175,7 +177,7 @@
             // 
             this.toolStripLabel_categoryList.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel_categoryList.Name = "toolStripLabel_categoryList";
-            this.toolStripLabel_categoryList.Size = new System.Drawing.Size(129, 27);
+            this.toolStripLabel_categoryList.Size = new System.Drawing.Size(163, 33);
             this.toolStripLabel_categoryList.Text = "Category List ";
             this.toolStripLabel_categoryList.Visible = false;
             // 
@@ -186,7 +188,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 44);
+            this.label1.Size = new System.Drawing.Size(194, 57);
             this.label1.TabIndex = 5;
             this.label1.Text = "Welcome ";
             // 
@@ -197,7 +199,7 @@
             this.label_memberName.ForeColor = System.Drawing.Color.Black;
             this.label_memberName.Location = new System.Drawing.Point(14, 214);
             this.label_memberName.Name = "label_memberName";
-            this.label_memberName.Size = new System.Drawing.Size(0, 50);
+            this.label_memberName.Size = new System.Drawing.Size(0, 61);
             this.label_memberName.TabIndex = 0;
             // 
             // pictureBox1
@@ -225,7 +227,7 @@
             this.lbl_selectOperation.ForeColor = System.Drawing.Color.Black;
             this.lbl_selectOperation.Location = new System.Drawing.Point(11, 441);
             this.lbl_selectOperation.Name = "lbl_selectOperation";
-            this.lbl_selectOperation.Size = new System.Drawing.Size(398, 34);
+            this.lbl_selectOperation.Size = new System.Drawing.Size(518, 44);
             this.lbl_selectOperation.TabIndex = 17;
             this.lbl_selectOperation.Text = "Select one of the operations below!";
             this.lbl_selectOperation.Visible = false;

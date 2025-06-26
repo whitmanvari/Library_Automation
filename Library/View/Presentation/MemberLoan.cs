@@ -13,13 +13,15 @@ using System.Windows.Forms;
 
 namespace Library.View.Presentation
 {
-    public partial class Loan : Form
+    public partial class MemberLoan : Form
     {
         LibraryContext context = new LibraryContext();
         List<Book> BookListShow;
-        public Loan()
+        int id;
+        public MemberLoan(int userId)
         {
             InitializeComponent();
+            id = userId;
         }
 
         private void label_Loan_signinPage_Click(object sender, EventArgs e)
@@ -61,6 +63,24 @@ namespace Library.View.Presentation
                 MessageBox.Show("Please select a row!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void loanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count>0)
+            {
+                int bookId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value); //id al
+                //userıd çek
+                Loan newLoan = new Loan
+                {
+                    BookId= bookId,
+                    UserId= id,
+                    LoanDate=DateTime.Now,
+                    CreatedDate=DateTime.Now,
+                    //ReturnDate
+
+                };
+            }
         }
     }
 }

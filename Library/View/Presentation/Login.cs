@@ -12,8 +12,8 @@ namespace Library.View.Presentation //uı katmanı, kullanıcı kayıt sorgusu
     public partial class Login : Form
     {
         private Random random = new Random();
-        private int moveDistance = 30;
-        private int safetyMargin = 20;
+        private int moveDistance = 30; //30 pixel hareket mesafesi
+        private int safetyMargin = 20; //20 pixel kenar boşluğu, butonun form kenarına çok yaklaşmasını engellemek için
         string Email;
         string Password;
         string Name;
@@ -108,13 +108,14 @@ namespace Library.View.Presentation //uı katmanı, kullanıcı kayıt sorgusu
                 Email = members.Email.ToString();
                 Password = members.Password.ToString();
                 Name = members.Name.ToString();
+                Id = members.Id;
             }
             if(Email == txt_emailMember.Text)
             {
                 if(Password == txt_passwordmember.Text)
                 {
                     MessageBox.Show("Welcome!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Member_MainMenu member_Main = new Member_MainMenu(Name);
+                    Member_MainMenu member_Main = new Member_MainMenu(Name, Id);
                     member_Main.Show();
                     this.Hide();
                     
