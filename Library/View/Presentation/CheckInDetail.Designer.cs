@@ -185,9 +185,9 @@
             this.TextBox_Description_book.BackColor = System.Drawing.Color.PeachPuff;
             this.TextBox_Description_book.Font = new System.Drawing.Font("Segoe Script", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_Description_book.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_Description_book.Location = new System.Drawing.Point(482, 181);
+            this.TextBox_Description_book.Location = new System.Drawing.Point(508, 181);
             this.TextBox_Description_book.Name = "TextBox_Description_book";
-            this.TextBox_Description_book.Size = new System.Drawing.Size(180, 84);
+            this.TextBox_Description_book.Size = new System.Drawing.Size(201, 84);
             this.TextBox_Description_book.TabIndex = 33;
             this.TextBox_Description_book.Text = "";
             // 
@@ -306,9 +306,9 @@
             this.textBox_BookPublisher.BackColor = System.Drawing.Color.PeachPuff;
             this.textBox_BookPublisher.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookPublisher.ForeColor = System.Drawing.Color.Black;
-            this.textBox_BookPublisher.Location = new System.Drawing.Point(482, 114);
+            this.textBox_BookPublisher.Location = new System.Drawing.Point(508, 114);
             this.textBox_BookPublisher.Name = "textBox_BookPublisher";
-            this.textBox_BookPublisher.Size = new System.Drawing.Size(180, 33);
+            this.textBox_BookPublisher.Size = new System.Drawing.Size(201, 33);
             this.textBox_BookPublisher.TabIndex = 32;
             // 
             // textBox_BookYear
@@ -326,9 +326,9 @@
             this.textBox_BookLanguage.BackColor = System.Drawing.Color.PeachPuff;
             this.textBox_BookLanguage.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_BookLanguage.ForeColor = System.Drawing.Color.Black;
-            this.textBox_BookLanguage.Location = new System.Drawing.Point(482, 54);
+            this.textBox_BookLanguage.Location = new System.Drawing.Point(508, 54);
             this.textBox_BookLanguage.Name = "textBox_BookLanguage";
-            this.textBox_BookLanguage.Size = new System.Drawing.Size(180, 33);
+            this.textBox_BookLanguage.Size = new System.Drawing.Size(201, 33);
             this.textBox_BookLanguage.TabIndex = 29;
             // 
             // textBox_bookName
