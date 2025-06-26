@@ -1,5 +1,5 @@
-﻿using Library.DataContext;
-using Library.Model.Concrete;
+﻿using Library.DataContext; //ef contex bağlantısı buradan çekiliyor
+using Library.Model.Concrete; //model classları buradan çekiliyor
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Library.View.Presentation
+namespace Library.View.Presentation //uı katmanı, kullanıcı kayıt sorgusu
 {
     public partial class Login : Form
     {
@@ -48,7 +48,7 @@ namespace Library.View.Presentation
         }
 
 
-        private void button_Enter_LoginPage_Click(object sender, EventArgs e)
+        private void button_Enter_LoginPage_Click(object sender, EventArgs e) //admnin entrance button
         {
             if(StringControl(txt_AdminEmail_Login.Text, label_errorEmail)) { return; }
             if (StringControl(txt_AdminPassword_Login.Text, label_errorPassword)) { return; }
@@ -97,7 +97,7 @@ namespace Library.View.Presentation
             return control;
         }
 
-        private void btn_Enter_MemberLoginPage_Click_1(object sender, EventArgs e)
+        private void btn_Enter_MemberLoginPage_Click_1(object sender, EventArgs e) //member entrance button
         {
             if(StringControl(txt_emailMember.Text, lbl_error_email_member)) { return; }
             if (StringControl(txt_passwordmember.Text, lbl_error_password_member)) { return; }
