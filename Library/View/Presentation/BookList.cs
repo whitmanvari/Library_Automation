@@ -16,12 +16,14 @@ namespace Library.View.Presentation
     {
         int CategoryId;
         string Name;
+        int Id;
         LibraryContext context = new LibraryContext();
-        public BookList(string text, Category category)
+        public BookList(string text, Category category, int Id)
         {
             InitializeComponent();
             Name = text;
             CategoryId = category.Id;
+            this.Id = Id;
            
         }
 
@@ -42,7 +44,7 @@ namespace Library.View.Presentation
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Member_MainMenu member_Main = new Member_MainMenu(Name);
+            Member_MainMenu member_Main = new Member_MainMenu(Name,Id);
             member_Main.Show();
             this.Close();
         }

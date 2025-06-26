@@ -14,18 +14,19 @@ namespace Library.View.Presentation
     public partial class Category_List_Member : Form
     {
         string Name;
+        int Id;
         
-        
-        public Category_List_Member(string text)
+        public Category_List_Member(string text, int id)
         {
             InitializeComponent();
             Name = text;
+            this.Id= id;
            
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Member_MainMenu mainMenu = new Member_MainMenu(Name);
+            Member_MainMenu mainMenu = new Member_MainMenu(Name, Id);
             mainMenu.Show();
             this.Hide();
 
@@ -36,7 +37,7 @@ namespace Library.View.Presentation
             var booksByCategoryId = libraryContext.Categories.FirstOrDefault(c => c.Name == categoryName);
             if (booksByCategoryId != null)
             {
-                BookList bookList = new BookList(Name, booksByCategoryId);
+                BookList bookList = new BookList(Name, booksByCategoryId, Id);
             }
             else
             {

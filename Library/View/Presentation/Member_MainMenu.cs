@@ -86,7 +86,7 @@ namespace Library.View.Presentation
             {
                 var Category = item.Id;
             }
-            Category_List_Member category_List = new Category_List_Member(Name);
+            Category_List_Member category_List = new Category_List_Member(Name, _UserId);
             category_List.Show();
             this.Hide();
         }

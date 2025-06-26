@@ -60,7 +60,7 @@ namespace Library.View.Presentation
                 Context.SaveChanges();
                 MessageBox.Show("Update is succesfull!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //go to main menu again
-                Member_MainMenu menu = new Member_MainMenu(existingMember.Name);
+                Member_MainMenu menu = new Member_MainMenu(existingMember.Name, existingMember.Id);
                 menu.Show();
                 this.Close();
             }
@@ -72,7 +72,7 @@ namespace Library.View.Presentation
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Member_MainMenu member_MainMenu = new Member_MainMenu(Member.Name);
+            Member_MainMenu member_MainMenu = new Member_MainMenu(Member.Name, Member.Id);
             member_MainMenu.Show();
             this.Close();
         }
