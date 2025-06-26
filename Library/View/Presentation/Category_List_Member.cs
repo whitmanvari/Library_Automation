@@ -105,5 +105,10 @@ namespace Library.View.Presentation
         {
             ShowBooksByCategory("Biography");
         }
+
+        private void Category_List_Member_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

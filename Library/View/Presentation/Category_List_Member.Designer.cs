@@ -71,7 +71,7 @@
             this.label_MemberMainMenu_SignIn.Location = new System.Drawing.Point(709, 10);
             this.label_MemberMainMenu_SignIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_MemberMainMenu_SignIn.Name = "label_MemberMainMenu_SignIn";
-            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(72, 27);
+            this.label_MemberMainMenu_SignIn.Size = new System.Drawing.Size(90, 33);
             this.label_MemberMainMenu_SignIn.TabIndex = 7;
             this.label_MemberMainMenu_SignIn.Text = "Sign In";
             // 
@@ -83,7 +83,7 @@
             this.label_TitleLogin.Location = new System.Drawing.Point(7, 8);
             this.label_TitleLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_TitleLogin.Name = "label_TitleLogin";
-            this.label_TitleLogin.Size = new System.Drawing.Size(223, 31);
+            this.label_TitleLogin.Size = new System.Drawing.Size(279, 40);
             this.label_TitleLogin.TabIndex = 2;
             this.label_TitleLogin.Text = "Library Automation";
             // 
@@ -277,7 +277,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(698, 459);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 27);
+            this.label2.Size = new System.Drawing.Size(100, 33);
             this.label2.TabIndex = 22;
             this.label2.Text = "Go Back";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -295,7 +295,7 @@
             // 
             // Category_List_Member
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(793, 498);
@@ -320,6 +320,7 @@
             this.Name = "Category_List_Member";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Category List";
+            this.Load += new System.EventHandler(this.Category_List_Member_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

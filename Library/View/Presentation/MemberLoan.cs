@@ -18,7 +18,11 @@ namespace Library.View.Presentation
         LibraryContext context = new LibraryContext();
         List<Book> BookListShow;
         int id;
-        public MemberLoan(int userId)
+        string Name;
+        Category category;
+
+
+        public MemberLoan(int userId, string Name, Category category)
         {
             InitializeComponent();
             id = userId;
@@ -38,6 +42,9 @@ namespace Library.View.Presentation
 
             // TODO: This line of code loads data into the 'libraryAutomationDataSet10.Books' table. You can move, or remove it, as needed.
             this.booksTableAdapter.Fill(this.libraryAutomationDataSet10.Books);
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //bu sayede bir hücre de seçse kullanıcı, yine bütün ROW'u seçmiş gibi olacak.
+            dataGridView1.MultiSelect = false; //bu sayede kullanıcı birden fazla satırı seçemeyecek.
+            dataGridView1.ReadOnly = true; //bu sayede kullanıcı gridview'deki verileri düzenleyemeyecek.
 
         }
 
@@ -45,11 +52,11 @@ namespace Library.View.Presentation
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                int bookId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
+                int bookId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value);
                 Book selectedBook = context.Books.FirstOrDefault(b => b.Id == bookId);
                 if (selectedBook != null)
                 {
-                    CheckInDetail checkInDetail = new CheckInDetail(selectedBook);
+                    CheckInDetail checkInDetail = new CheckInDetail(selectedBook, Name, id, category);
                     checkInDetail.Show();
                     this.Hide();
                 }
@@ -69,7 +76,7 @@ namespace Library.View.Presentation
         {
             if(dataGridView1.SelectedRows.Count>0)
             {
-                int bookId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value); //id al
+                int bookId = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value); //id al
                 //userıd çek
                 Loan newLoan = new Loan
                 {

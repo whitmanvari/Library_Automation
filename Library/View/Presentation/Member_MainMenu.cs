@@ -93,7 +93,7 @@ namespace Library.View.Presentation
 
         private void toolStripButton_loanpage_Click(object sender, EventArgs e)
         {
-            MemberLoan loan = new MemberLoan(_UserId);
+            MemberLoan loan = new MemberLoan(_UserId, Name, Category);
             loan.Show();
             this.Close();
         }

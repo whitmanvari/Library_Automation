@@ -125,5 +125,10 @@ namespace Library.View.Presentation
         {
 
         }
+
+        private void Admin_MainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

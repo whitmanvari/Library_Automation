@@ -14,10 +14,17 @@ namespace Library.View.Presentation
     public partial class CheckInDetail : Form
     {
         Book SelectedBook;
-        public CheckInDetail(Book selectedBook)
+        Category BookCategory;
+        string MemberName;
+        int MemberId;
+        public CheckInDetail(Book selectedBook, string memberName, int memberId, Category category)
         {
             InitializeComponent();
             SelectedBook = selectedBook;
+            BookCategory = category;
+            MemberName = memberName;
+            MemberId = memberId;
+
             
         }
 
@@ -31,6 +38,13 @@ namespace Library.View.Presentation
             textBox_BookPublisher.Text = SelectedBook.BookPublisher;
             textBox_BookYear.Text = SelectedBook.BookYear.ToString();
             TextBox_Description_book.Text = SelectedBook.BookDescription;
+        }
+
+        private void linkLabel_goBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            BookList bookList = new BookList(MemberName, BookCategory, MemberId);
+            bookList.Show();
+            this.Close();
         }
     }
 }
