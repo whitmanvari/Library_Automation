@@ -208,6 +208,12 @@
     <Compile Include="View\Presentation\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Presentation\MemberLoanCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Presentation\MemberLoanCount.Designer.cs">
+      <DependentUpon>MemberLoanCount.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Presentation\MemberUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Presentation\MemberLoanCount.resx">
+      <DependentUpon>MemberLoanCount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Presentation\MemberUpdate.resx">
       <DependentUpon>MemberUpdate.cs</DependentUpon>
